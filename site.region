@@ -134,7 +134,6 @@
 
 <squarespace:script src="site.js" combo="true" />
 
-{@|apply footer.block}
 {squarespace-footers}
 
 </body>
