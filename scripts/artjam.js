@@ -32,7 +32,7 @@
   };
 
   var submitVotes = function submitVotes(submittedVotes) {
-    var voteJSON = JSON.stringify(submitVotes);
+    var voteJSON = JSON.stringify(submittedVotes);
     console.log(voteJSON);
   }; // event listeners
 
@@ -45,7 +45,7 @@
   });
   $(document).on('click', '#submitvotes-button', function (e) {
     e.preventDefault();
-    submitVotes();
+    submitVotes(votes);
   });
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
