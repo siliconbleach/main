@@ -25,8 +25,6 @@
 			votes.push(id);
 		}
 
-		console.log(votes);
-
 		$voteSlide.toggleClass('slide-seiected');
 	};
 
