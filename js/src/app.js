@@ -44,6 +44,7 @@ import axios from 'axios';
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
 
+		console.log(axios);
 	}
 
 	// event listeners
