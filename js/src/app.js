@@ -2,6 +2,8 @@
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
 
+	const buttonTemplate = `<button class="vote-button">uarr;Selectiarr;</button>`;
+
 	const votes = [];
 
 	// helpers
