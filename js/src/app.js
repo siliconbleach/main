@@ -37,4 +37,8 @@
 
 		toggleVote(voteId);
 	});
+
+	$(document).on('ready', function () {
+		$('.slide').append(buttonTemplate);
+	});
 })(window)
