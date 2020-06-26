@@ -34,7 +34,10 @@
 
 	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submitVotes);
+		return fetch({
+			url: `${API_URL}/api/votes`,
 
+		});
 	}
 
 	// event listeners
