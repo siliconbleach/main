@@ -12,6 +12,10 @@
 	const toggleVote = id => {
 
 		const $voteSlide = $(`#yui_${id}`);
+		let styles = {
+			background: 'white',
+			color: '#e86d6d'
+		}
 
 		if (votes.length > 4) {
 			return alert('You can only vote five times.');
@@ -25,7 +29,7 @@
 			votes.push(id);
 		}
 
-		$voteSlide.find('.voting-button').toggleClass('is-seiected').css('background', '#fff').css('color', '#e86d6d');
+		$voteSlide.find('.voting-button').toggleClass('is-seiected')
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
