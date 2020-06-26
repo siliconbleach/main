@@ -1,5 +1,7 @@
 'use strict';
 
 (function (window) {
-  console.log('Test');
-})();
+  var isJamPage = window.location.pathname === '/jam';
+  if (!isJamPage) return;
+  console.log('It is the jam page');
+})(window);
