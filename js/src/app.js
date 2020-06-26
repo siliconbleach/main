@@ -1,6 +1,6 @@
 import * as axios from 'axios';
 
-((window) => {
+((window, axios) => {
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
@@ -64,4 +64,4 @@ import * as axios from 'axios';
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
 	});
-})(window)
+})(window, axios)
