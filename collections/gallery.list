@@ -41,7 +41,7 @@
         <div class="image-detail-wrapper">
           <div class="image-title">{title}</div>
           <div class="image-description">{body}</div>
-        </div>
+        </button>
       </div>
     {.end}
   </div>
