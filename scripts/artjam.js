@@ -38,10 +38,6 @@ function _asyncToGenerator(fn) {
 
 module.exports = require('./lib/axios');
 
-var axios = /*#__PURE__*/Object.freeze({
-  __proto__: null
-});
-
 (function (window, axios) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
