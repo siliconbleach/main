@@ -3,7 +3,7 @@
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
-  var buttonTemplate = "<button class=\"vote-button\">&uarr; SELECT &uarr;</button>";
+  var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = []; // helpers
 
   var toggleVote = function toggleVote(id) {
@@ -36,7 +36,7 @@
   }; // event listeners
 
 
-  $(document).on('click', '.vote-button', function (e) {
+  $(document).on('click', '.voting-button', function (e) {
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
     toggleVote(voteId);
