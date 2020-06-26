@@ -1,68 +1,68 @@
-const axios = require('axios').
+const axios = require('axios')
 
-((window) => {
-	const isJamPage = window.location.pathname === '/jam';
-	if (!isJamPage) return;
-	const API_URL = 'https://artjam.ngrok.io';
+	((window) => {
+		const isJamPage = window.location.pathname === '/jam';
+		if (!isJamPage) return;
+		const API_URL = 'https://artjam.ngrok.io';
 
-	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
+		const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
-	const votes = [];
+		const votes = [];
 
-	// helpers
+		// helpers
 
-	const toggleVote = id => {
+		const toggleVote = id => {
 
-		const $voteSlide = $(`#yui_${id}`);
-		let styles = {
-			background: 'white',
-			color: '#e86d6d'
-		}
-
-		if (votes.length > 4) {
-			return alert('You can only vote five times.');
-		}
-
-		const vote = votes.find(v => v === id);
-
-		if (typeof vote !== 'undefined') {
-			votes.splice(vote, 1);
-			styles = {
-				background: 'transparent',
-				color: '#fff'
+			const $voteSlide = $(`#yui_${id}`);
+			let styles = {
+				background: 'white',
+				color: '#e86d6d'
 			}
-		} else {
-			votes.push(id);
+
+			if (votes.length > 4) {
+				return alert('You can only vote five times.');
+			}
+
+			const vote = votes.find(v => v === id);
+
+			if (typeof vote !== 'undefined') {
+				votes.splice(vote, 1);
+				styles = {
+					background: 'transparent',
+					color: '#fff'
+				}
+			} else {
+				votes.push(id);
+			}
+
+			$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
+		};
+
+		const elementIdToVoteId = id => id.replace('yui_', '');
+
+		const submitVotes = async submittedVotes => {
+			const voteJSON = JSON.stringify(submittedVotes);
+			const { history } = window;
+
+
+			history.pushState({}, 'Auth', API_URL);
 		}
 
-		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
-	};
+		// event listeners
 
-	const elementIdToVoteId = id => id.replace('yui_', '');
+		$(document).on('click', '.voting-button', function (e) {
+			const $slide = $(this).parent();
+			const voteId = elementIdToVoteId($slide.attr('id'));
 
-	const submitVotes = async submittedVotes => {
-		const voteJSON = JSON.stringify(submittedVotes);
-		const { history } = window;
+			toggleVote(voteId);
+		});
 
+		$(document).on('click', '#submitvotes-button', e => {
+			e.preventDefault();
+			submitVotes(votes);
+		});
 
-		history.pushState({}, 'Auth', API_URL);
-	}
-
-	// event listeners
-
-	$(document).on('click', '.voting-button', function (e) {
-		const $slide = $(this).parent();
-		const voteId = elementIdToVoteId($slide.attr('id'));
-
-		toggleVote(voteId);
-	});
-
-	$(document).on('click', '#submitvotes-button', e => {
-		e.preventDefault();
-		submitVotes(votes);
-	});
-
-	$(document).on('ready', function () {
-		$('.slide').append(buttonTemplate);
-	});
-})(window)
+		$(document).on('ready', function () {
+			$('.slide').append(buttonTemplate);
+		});
+	})(window)
