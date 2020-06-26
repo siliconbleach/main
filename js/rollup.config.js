@@ -5,7 +5,7 @@ export default {
     input: 'src/app.js',
     output: {
         file: '../scripts/artjam.js',
-        format: "esm"
+        format: "cjs"
     },
     plugins: [
         resolve(),
