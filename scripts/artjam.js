@@ -36,7 +36,7 @@ function _asyncToGenerator(fn) {
   };
 }
 
-module.exports = require('./lib/axios');
+var axios = require('axios')["default"];
 
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
