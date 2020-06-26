@@ -3,7 +3,7 @@
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
-  var buttonTemplate = "<button class=\"vote-button\">uarr; Select uarr;</button>";
+  var buttonTemplate = "<button class=\"vote-button\">&uarr; Select &uarr;</button>";
   var votes = []; // helpers
 
   var toggleVote = function toggleVote(id) {
