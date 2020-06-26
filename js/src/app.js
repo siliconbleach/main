@@ -24,7 +24,7 @@
 			votes.splice(vote, 1);
 		}
 
-		console.log(votes)
+		console.log(votes);
 
 		$voteSlide.toggleClass('slide-seiected');
 	};
