@@ -3,6 +3,13 @@
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
+  var votes = []; // helpers
+
+  var toggleVote = function toggleVote(id) {
+    if (votes.length > 4) {
+      return alert('You can only vote five times.');
+    }
+  };
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
     return id.replace('yui_', '');
@@ -12,5 +19,6 @@
   $(document).on('click', '.vote-button', function (e) {
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
+    toggleVote();
   });
 })(window);
