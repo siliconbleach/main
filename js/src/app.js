@@ -41,7 +41,7 @@
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
-		const response = await fetch(`${API_URL}/votes`, {
+		const response = await fetch(`${API_URL}/api/votes`, {
 			method: 'POST',
 			mode: 'cors',
 			cache: 'no-cache',
