@@ -25,7 +25,7 @@
 			votes.push(id);
 		}
 
-		$voteSlide.find('.voting-button').toggleClass('is-seiected').css('background', '#fff').css('color', '#e86d6d')
+		$voteSlide.find('.voting-button').toggleClass('is-seiected').css('background', '#fff').css('color', '#e86d6d');
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
