@@ -24,7 +24,7 @@
     if (typeof vote !== 'undefined') {
       votes.splice(vote, 1);
       styles = {
-        background: 'white',
+        background: 'transparent',
         color: '#fff'
       };
     } else {
