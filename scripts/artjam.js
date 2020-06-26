@@ -95,7 +95,9 @@ function _asyncToGenerator(fn) {
                 redirect: 'follow',
                 referrerPolicy: 'no-referrer',
                 body: JSON.stringify(votes)
-              }).json();
+              }).then(function (res) {
+                return res.json();
+              });
 
             case 4:
               response = _context.sent;
