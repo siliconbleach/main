@@ -23,8 +23,6 @@
 		}
 
 		$voteSlide.toggleClass('slide-seiected');
-
-
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
