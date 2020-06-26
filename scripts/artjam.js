@@ -6,6 +6,8 @@
   var votes = []; // helpers
 
   var toggleVote = function toggleVote(id) {
+    var $voteSlide = $("#yui_".concat(id));
+
     if (votes.length > 4) {
       return alert('You can only vote five times.');
     }
@@ -19,6 +21,6 @@
   $(document).on('click', '.vote-button', function (e) {
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
-    toggleVote();
+    toggleVote(voteId);
   });
 })(window);
