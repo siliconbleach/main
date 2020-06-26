@@ -8,7 +8,8 @@
 
 	const toggleVote = id => {
 
-		const $voteSlide = $(`#yui_${id}`)
+		const $voteSlide = $(`#yui_${id}`);
+		console.log($voteSlide);
 
 		if (votes.length > 4) {
 			return alert('You can only vote five times.');
