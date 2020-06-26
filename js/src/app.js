@@ -38,9 +38,20 @@
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
-	const submitVotes = submittedVotes => {
+	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		console.log(voteJSON);
+		const { history } = window;
+		const response = await fetch(`${API_URL}/votes`, {
+			method: 'POST',
+			mode: 'cors',
+			cache: 'no-cache',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			redirect: 'follow',
+			referrerPolicy: 'no-referrer',
+			body: JSON.stringify(votes),
+		}).json();
 	}
 
 	// event listeners
