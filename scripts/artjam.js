@@ -29,6 +29,10 @@
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
     return id.replace('yui_', '');
+  };
+
+  var submitVotes = function submitVotes(submittedVotes) {
+    var voteJSON = JSON.stringify(submitVotes);
   }; // event listeners
 
 
@@ -37,6 +41,9 @@
     var voteId = elementIdToVoteId($slide.attr('id'));
     console.log(voteId);
     toggleVote(voteId);
+  });
+  $(document).on('click', '#submitvotes-button', function (e) {
+    return e.preventDefault() || submitVotes();
   });
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
