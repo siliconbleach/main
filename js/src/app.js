@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
@@ -41,6 +43,8 @@
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
+
+		const response = 
 		const response = await fetch(`${API_URL}/api/votes`, {
 			method: 'POST',
 			mode: 'cors',
