@@ -84,7 +84,7 @@ function _asyncToGenerator(fn) {
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
               history = window.history;
-              window.location.href = "".concat(API_URL, "/?votes=").concat(voteJSON);
+              window.location.href = "".concat(API_URL, "/votes?votes=").concat(voteJSON);
 
             case 3:
             case "end":
