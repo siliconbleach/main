@@ -19,9 +19,9 @@
 		const vote = votes.find(v => v === id);
 
 		if (typeof vote !== 'undefined') {
-			votes.splice(vote, 1);
+			votes.splice(id, 1);
 		} else {
-			votes.push(vote);
+			votes.push(id);
 		}
 
 		console.log(votes);
