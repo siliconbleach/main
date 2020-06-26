@@ -85,7 +85,7 @@ function _asyncToGenerator(fn) {
               voteJSON = JSON.stringify(submittedVotes);
               history = window.history;
               _context.next = 4;
-              return fetch("".concat(API_URL, "/votes"), {
+              return fetch("".concat(API_URL, "/api/votes"), {
                 method: 'POST',
                 mode: 'cors',
                 cache: 'no-cache',
