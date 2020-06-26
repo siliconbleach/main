@@ -12,6 +12,5 @@
   $(document).on('click', '.vote-button', function (e) {
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
-    console.log('vote id is:' + voteId);
   });
 })(window);
