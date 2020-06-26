@@ -45,14 +45,7 @@ import axios from 'axios';
 		const { history } = window;
 
 		const response = await axios.post(`${API_URL}/api/votes`, {
-			method: 'POST',
-			mode: 'cors',
-			cache: 'no-cache',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			redirect: 'follow',
-			body: JSON.stringify(votes),
+			votes
 		}).then();
 	}
 
