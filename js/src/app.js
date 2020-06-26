@@ -33,7 +33,7 @@
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
 	const submitVotes = submittedVotes => {
-		const voteJSON = JSON.stringify(submitVotes);
+		const voteJSON = JSON.stringify(submittedVotes);
 		console.log(voteJSON);
 	}
 
