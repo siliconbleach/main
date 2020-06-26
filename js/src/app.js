@@ -1,6 +1,4 @@
-import Axios from 'axios';
-
-((window, axios) => {
+((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
@@ -64,4 +62,4 @@ import Axios from 'axios';
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
 	});
-})(window, axios)
+})(window)
