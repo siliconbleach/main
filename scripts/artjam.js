@@ -23,8 +23,7 @@
       votes.push(id);
     }
 
-    console.log($voteSlide);
-    $voteSlide.toggleClass('slide-seiected');
+    $voteSlide.find('.vote-button').toggleClass('slide-seiected');
   };
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
