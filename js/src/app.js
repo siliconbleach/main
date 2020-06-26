@@ -8,6 +8,11 @@
 
 	const toggleVote = id => {
 
+		if (votes.length > 4) {
+			return alert('You can only vote five times.');
+		}
+		const vote = votes.find(v => v === id);
+
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
