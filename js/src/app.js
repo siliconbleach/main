@@ -1,6 +1,7 @@
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
+	const API_URL = 'https://artjam.ngrok.io';
 
 	const buttonTemplate = `<button class="vote-button">&uarr; SELECT &uarr;</button>`;
 
@@ -31,6 +32,11 @@
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
+	const submitVotes = submittedVotes => {
+		const voteJSON = JSON.stringify(submitVotes);
+
+	}
+
 	// event listeners
 
 	$(document).on('click', '.vote-button', function (e) {
@@ -40,6 +46,8 @@
 		console.log(voteId);
 		toggleVote(voteId);
 	});
+
+	$(document).on('click', '#submitvotes-button', e => e.preventDefault() || submitVotes(votes));
 
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
