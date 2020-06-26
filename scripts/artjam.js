@@ -87,9 +87,8 @@ module.exports = require('./lib/axios');
               voteJSON = JSON.stringify(submittedVotes);
               history = window.history;
               history.pushState({}, 'Auth', API_URL);
-              console.log(response);
 
-            case 4:
+            case 3:
             case "end":
               return _context.stop();
           }
