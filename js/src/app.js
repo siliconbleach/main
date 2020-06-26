@@ -46,8 +46,6 @@ import axios from 'axios';
 
 
 		history.pushState({}, 'Auth', API_URL);
-
-		console.log(response);
 	}
 
 	// event listeners
