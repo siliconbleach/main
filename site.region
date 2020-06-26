@@ -133,6 +133,8 @@
   </div>
 
 <squarespace:script src="site.js" combo="true" />
+
+{@|apply footer}
 {squarespace-footers}
 
 </body>
