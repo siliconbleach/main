@@ -20,7 +20,6 @@
 
 		if (typeof vote !== 'undefined') {
 			votes.splice(vote, 1);
-
 		} else {
 			votes.push(vote);
 		}
