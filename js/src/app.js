@@ -3,7 +3,7 @@
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
 
-	const buttonTemplate = `<button class="vote-button">&uarr; SELECT &uarr;</button>`;
+	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
 	const votes = [];
 
@@ -37,7 +37,7 @@
 
 	// event listeners
 
-	$(document).on('click', '.vote-button', function (e) {
+	$(document).on('click', '.voting-button', function (e) {
 		const $slide = $(this).parent();
 		const voteId = elementIdToVoteId($slide.attr('id'));
 
