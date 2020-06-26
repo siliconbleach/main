@@ -7,10 +7,17 @@
 
   var toggleVote = function toggleVote(id) {
     var $voteSlide = $("#yui_".concat(id));
-    console.log($voteSlide);
 
     if (votes.length > 4) {
       return alert('You can only vote five times.');
+    }
+
+    var vote = votes.find(function (v) {
+      return v === id;
+    });
+
+    if (typeof vote !== 'undefined') {
+      votes.push(vote);
     }
   };
 
