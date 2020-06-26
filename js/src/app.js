@@ -47,7 +47,10 @@
 		toggleVote(voteId);
 	});
 
-	$(document).on('click', '#submitvotes-button', e => e.preventDefault() || submitVotes(votes));
+	$(document).on('click', '#submitvotes-button', e => {
+		e.preventDefault();
+		submitVotes(votes);
+	});
 
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
