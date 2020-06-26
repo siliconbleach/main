@@ -42,7 +42,7 @@ var axios = /*#__PURE__*/Object.freeze({
   __proto__: null
 });
 
-(function (window) {
+(function (window, axios) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
@@ -117,4 +117,4 @@ var axios = /*#__PURE__*/Object.freeze({
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
   });
-})(window);
+})(window, axios);
