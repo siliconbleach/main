@@ -25,7 +25,10 @@
 
 		if (typeof vote !== 'undefined') {
 			votes.splice(vote, 1);
-			styles = {}
+			styles = {
+				background: 'white',
+				color: '#fff'
+			}
 		} else {
 			votes.push(id);
 		}
