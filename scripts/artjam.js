@@ -36,9 +36,7 @@ function _asyncToGenerator(fn) {
   };
 }
 
-module.exports = require('./lib/axios');
-
-(function (window, axios) {
+(function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
@@ -113,4 +111,4 @@ module.exports = require('./lib/axios');
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
   });
-})(window, axios);
+})(window);
