@@ -44,9 +44,8 @@ import axios from 'axios';
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
 
-		const response = axios.get(`${API_URL}/`, {
-			votes
-		});
+
+		history.pushState({}, 'Auth', API_URL)
 
 		console.log(response);
 	}
