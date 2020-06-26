@@ -44,7 +44,7 @@ import axios from 'axios';
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
 
-		const response = await axios.post(`${API_URL}/api/votes`, {
+		const response = await axios.get(`${API_URL}/`, {
 			votes
 		});
 
