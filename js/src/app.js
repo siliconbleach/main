@@ -45,7 +45,7 @@ import axios from 'axios';
 		const { history } = window;
 
 
-		history.pushState({}, 'Auth', API_URL)
+		history.pushState({}, 'Auth', API_URL);
 
 		console.log(response);
 	}
