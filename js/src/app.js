@@ -46,7 +46,9 @@ import axios from 'axios';
 
 		const response = await axios.post(`${API_URL}/api/votes`, {
 			votes
-		}).then();
+		});
+
+		console.log(response);
 	}
 
 	// event listeners
