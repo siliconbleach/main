@@ -51,7 +51,7 @@
 			redirect: 'follow',
 			referrerPolicy: 'no-referrer',
 			body: JSON.stringify(votes),
-		}).json();
+		}).then(res => res.json());
 	}
 
 	// event listeners
