@@ -3,6 +3,7 @@
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
+  var buttonTemplate = "<button class=\"vote-button\">uarr;Selectiarr;</button>";
   var votes = []; // helpers
 
   var toggleVote = function toggleVote(id) {
@@ -34,5 +35,8 @@
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
     toggleVote(voteId);
+  });
+  $(document).on('ready', function () {
+    $('.slide').append(buttonTemplate);
   });
 })(window);
