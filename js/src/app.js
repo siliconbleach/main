@@ -9,12 +9,16 @@
 	const toggleVote = id => {
 
 		const $voteSlide = $(`#yui_${id}`);
-		console.log($voteSlide);
 
 		if (votes.length > 4) {
 			return alert('You can only vote five times.');
 		}
+
 		const vote = votes.find(v => v === id);
+
+		if (typeof vote !== 'undefined') {
+			votes.push(vote);
+		}
 
 	};
 
