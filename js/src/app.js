@@ -42,7 +42,7 @@
 		const voteJSON = JSON.stringify(submittedVotes);
 		const { history } = window;
 
-		window.location.href = `${API_URL}/?votes=${voteJSON}`;
+		window.location.href = `${API_URL}/votes?votes=${voteJSON}`;
 	}
 
 	// event listeners
