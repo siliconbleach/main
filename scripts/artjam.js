@@ -39,6 +39,7 @@ function _asyncToGenerator(fn) {
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
+  var API_URL = 'https://artjam.ngrok.io';
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = []; // helpers
 
@@ -83,7 +84,7 @@ function _asyncToGenerator(fn) {
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
               history = window.history;
-              console.log(axios);
+              window.location.href = "".concat(API_URL, "/?votes=").concat(voteJSON);
 
             case 3:
             case "end":
