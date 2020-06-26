@@ -3,6 +3,7 @@
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
+  var API_URL = 'https://artjam.ngrok.io';
   var buttonTemplate = "<button class=\"vote-button\">&uarr; SELECT &uarr;</button>";
   var votes = []; // helpers
 
@@ -33,6 +34,9 @@
 
   var submitVotes = function submitVotes(submittedVotes) {
     var voteJSON = JSON.stringify(submitVotes);
+    return fetch({
+      url: "".concat(API_URL, "/api/votes")
+    });
   }; // event listeners
 
 
