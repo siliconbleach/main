@@ -36,8 +36,6 @@ function _asyncToGenerator(fn) {
   };
 }
 
-var axios = require('axios')["default"];
-
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   if (!isJamPage) return;
