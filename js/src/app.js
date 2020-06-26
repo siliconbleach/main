@@ -15,6 +15,9 @@
 	// event listeners
 
 	$(document).on('click', '.vote-button', function (e) {
-
+		const $slide = $(this).parent();
+		const voteId = elementIdToVoteId($slide.attr('id'));
+		console.log(voteId)
+		toggleVote(voteId);
 	});
 })(window)
