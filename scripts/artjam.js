@@ -44,7 +44,8 @@
     toggleVote(voteId);
   });
   $(document).on('click', '#submitvotes-button', function (e) {
-    return e.preventDefault() || submitVotes();
+    e.preventDefault();
+    submitVotes();
   });
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
