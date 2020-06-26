@@ -33,7 +33,7 @@ $(document).ready(function () {
 		console.log('clicked - ' + $(this).closest('.slide').attr('id'));
 
 
-		vote($(this).closest('.slide').attr('id'),);
+		vote($(this).closest('.slide').attr('id'));
 	});
 	$('#submitvotes-button').click(function (e) {
 		//vote($(this).attr('id'));
