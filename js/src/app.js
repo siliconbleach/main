@@ -2,7 +2,7 @@
 	const isJamPage = window.location.pathname === '/jam';
 	if (!isJamPage) return;
 
-	const buttonTemplate = `<button class="vote-button">&uarr; Select &uarr;</button>`;
+	const buttonTemplate = `<button class="vote-button">&uarr; SELECT &uarr;</button>`;
 
 	const votes = [];
 
