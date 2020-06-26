@@ -25,7 +25,7 @@
 			votes.push(id);
 		}
 
-		$voteSlide.find('.vote-button').toggleClass('seiected');
+		$voteSlide.find('.voting-button').toggleClass('seiected');
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
