@@ -18,7 +18,11 @@
 
     if (typeof vote !== 'undefined') {
       votes.push(vote);
+    } else {
+      votes.splice(vote, 1);
     }
+
+    $voteSlide.toggleClass('slide-seiected');
   };
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
