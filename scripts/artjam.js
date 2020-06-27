@@ -38,6 +38,9 @@ function _asyncToGenerator(fn) {
 
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
+  var hasCookie = document.cookie.split('; ').find(function (row) {
+    return row.startsWith('artjam_admin');
+  });
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
@@ -111,5 +114,11 @@ function _asyncToGenerator(fn) {
   });
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
+    var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
+
+    if (typeof retrieveStoredSettings === 'string') {
+      var storedSettings = JSON.parse(retrieveVotesFromStorage);
+      votes = storedSettings.votes;
+    }
   });
 })(window);
