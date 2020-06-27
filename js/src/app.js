@@ -1,11 +1,12 @@
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
+	const hasCookie = document.cookie.split('; ').find(row => row.startsWith('artjam_admin'));
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
-	const votes = [];
+	let votes = [];
 
 	// helpers
 
@@ -32,6 +33,7 @@
 		} else {
 			votes.push(id);
 		}
+
 
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
 	};
@@ -61,5 +63,11 @@
 
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
+
+		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
+		if (typeof retrieveStoredSettings === 'string') {
+			const storedSettings = JSON.parse(retrieveVotesFromStorage);
+			votes = storedSettings.votes;
+		}
 	});
 })(window)
