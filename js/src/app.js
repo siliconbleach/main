@@ -1,4 +1,4 @@
-import { Cookie } from 'js-cookie';
+import { CookieAttributes } from 'js-cookie';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
