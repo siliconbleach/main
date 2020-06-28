@@ -80,28 +80,17 @@ function _asyncToGenerator(fn) {
 
   var submitVotes = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(submittedVotes) {
-      var voteJSON, response;
+      var voteJSON;
       return regeneratorRuntime.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
-              _context.next = 3;
-              return $.post("".concat(API_URL, "/api/votes"), {
+              window.history.pushState({
                 votes: votes
-              }).then(function (res) {
-                return res.json();
-              })["catch"](function (e) {
-                return console.log({
-                  e: e
-                });
-              });
+              }, '', "".concat(API_URL, "/authenticate"));
 
-            case 3:
-              response = _context.sent;
-              console.log('Got here');
-
-            case 5:
+            case 2:
             case "end":
               return _context.stop();
           }
