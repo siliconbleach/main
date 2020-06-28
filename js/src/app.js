@@ -1,4 +1,5 @@
-import axios from 'axios';
+import { Axios } from 'axios';
+
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
