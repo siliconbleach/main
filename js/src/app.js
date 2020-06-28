@@ -1,4 +1,4 @@
-const { default: Axios } = require("axios");
+import axios from 'axios';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
