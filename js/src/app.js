@@ -47,7 +47,7 @@ import cookie from 'js-cookie';
 
 	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		Cookies.set('vote', voteJSON)
+		cookie.set('vote', voteJSON)
 		window.location.href = `${API_URL}/authenticate`;
 	}
 
