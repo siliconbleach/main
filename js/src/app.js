@@ -45,11 +45,7 @@
 
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		const response = await $.post(`${API_URL}/api/votes`, {
-			votes
-		}).then(res => res.json()).catch(e => console.log({ e }));
-
-		console.log('Got here');
+		window.history.pushState({ votes }, '', `${API_URL}/authenticate`);
 	}
 
 	// event listeners
