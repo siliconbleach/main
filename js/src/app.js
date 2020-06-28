@@ -44,7 +44,7 @@ const { default: Axios } = require("axios");
 
 
 	const saveVotes = votes => localStorage.setItem('savedSettings', { votes: JSON.stringify(votes) });
-	const submitVotes = submittedVotes => {
+	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
 		const response = await Axios.post(`${API_URL}/api/votes`, {
 			votes
