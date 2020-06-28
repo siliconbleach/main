@@ -49,7 +49,7 @@ import cookie from 'js-cookie';
 		const voteJSON = JSON.stringify(submittedVotes);
 		cookie.set('votes', voteJSON);
 
-		window.location.href = `${API_URL}/authenticate?votes=${voteJSON}`;
+		window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
 	}
 
 	// event listeners
