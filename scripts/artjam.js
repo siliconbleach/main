@@ -86,9 +86,7 @@ function _asyncToGenerator(fn) {
           switch (_context.prev = _context.next) {
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
-              window.history.pushState({
-                votes: votes
-              }, '', "".concat(API_URL, "/authenticate"));
+              window.location.href = "".concat(API_URL, "/authenticate");
 
             case 2:
             case "end":
