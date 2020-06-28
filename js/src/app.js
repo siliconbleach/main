@@ -1,4 +1,4 @@
-import Cookies from './node_modules/js-cookie'.default ;
+import Cookies from 'js-cookie';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
@@ -47,7 +47,7 @@ import Cookies from './node_modules/js-cookie'.default ;
 
 	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		Cookies.set('vote', voteJSON);
+		Cookies.set('vote', voteJSON)
 		window.location.href = `${API_URL}/authenticate`;
 	}
 
