@@ -44,7 +44,7 @@ import * as axios from 'axios';
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
 
-	const saveVotes = votes => localStorage.setItem('savedSettings', { votes: JSON.stringify(votes) });
+	const saveVotes = votes => localStorage.setItem('savedSettings', JSON.stringify({ votes: votes }));
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
 		const response = await axios.post(`${API_URL}/api/votes`, {
