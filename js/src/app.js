@@ -45,7 +45,7 @@
 
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		window.history.pushState({ votes }, '', `${API_URL}/authenticate`);
+		window.location.href = `${API_URL}/authenticate`;
 	}
 
 	// event listeners
