@@ -93,7 +93,7 @@ var axios = /*#__PURE__*/Object.freeze({
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
               _context.next = 3;
-              return axios("".concat(API_URL, "/api/votes"), {
+              return undefined("".concat(API_URL, "/api/votes"), {
                 votes: votes
               }).then(function (res) {
                 return res.json();
