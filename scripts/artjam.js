@@ -38,6 +38,10 @@ function _asyncToGenerator(fn) {
 
 module.exports = require('./lib/axios');
 
+var axios = /*#__PURE__*/Object.freeze({
+  __proto__: null
+});
+
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   var hasCookie = document.cookie.split('; ').find(function (row) {
@@ -89,7 +93,7 @@ module.exports = require('./lib/axios');
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
               _context.next = 3;
-              return post("".concat(API_URL, "/api/votes"), {
+              return axios("".concat(API_URL, "/api/votes"), {
                 votes: votes
               }).then(function (res) {
                 return res.json();
