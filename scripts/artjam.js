@@ -89,7 +89,7 @@ module.exports = require('./lib/axios');
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
               _context.next = 3;
-              return Axios.post("".concat(API_URL, "/api/votes"), {
+              return axios.post("".concat(API_URL, "/api/votes"), {
                 votes: votes
               }).then(function (res) {
                 return res.json();
