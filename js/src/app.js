@@ -46,7 +46,7 @@ const { default: Axios } = require("axios");
 		const voteJSON = JSON.stringify(submittedVotes);
 		const response = Axios.post(`${API_URL}/api/votes`, {
 			votes
-		}).then(res => res.json()).catch(e => console.log({ e }))
+		}).then(res => res.json()).catch(e => console.log({ e }));
 	}
 
 	// event listeners
