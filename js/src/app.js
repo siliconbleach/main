@@ -1,3 +1,5 @@
+import cookie from 'js-cookie';
+
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	const hasCookie = document.cookie.split('; ').find(row => row.startsWith('artjam_admin'));
@@ -43,8 +45,9 @@
 
 	const saveVotes = votes => localStorage.setItem('savedSettings', JSON.stringify({ votes: votes }));
 
-	const submitVotes = async submittedVotes => {
+	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
+		cookie.set
 		window.location.href = `${API_URL}/authenticate`;
 	}
 
