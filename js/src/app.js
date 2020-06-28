@@ -47,7 +47,7 @@ import * as axios from 'axios';
 	const saveVotes = votes => localStorage.setItem('savedSettings', { votes: JSON.stringify(votes) });
 	const submitVotes = async submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		const response = await post(`${API_URL}/api/votes`, {
+		const response = await axios(`${API_URL}/api/votes`, {
 			votes
 		}).then(res => res.json()).catch(e => console.log({ e }));
 
