@@ -36,6 +36,9 @@ function _asyncToGenerator(fn) {
   };
 }
 
+var _require = require("axios"),
+    Axios = _require["default"];
+
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   var hasCookie = document.cookie.split('; ').find(function (row) {
@@ -80,16 +83,23 @@ function _asyncToGenerator(fn) {
 
   var submitVotes = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(submittedVotes) {
-      var voteJSON, history;
+      var voteJSON, response;
       return regeneratorRuntime.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               voteJSON = JSON.stringify(submittedVotes);
-              history = window.history;
-              window.location.href = "".concat(API_URL, "/votes?votes=").concat(voteJSON);
+              response = Axios.post("".concat(API_URL, "/api/votes"), {
+                votes: votes
+              }).then(function (res) {
+                return res.json();
+              })["catch"](function (e) {
+                return console.log({
+                  e: e
+                });
+              });
 
-            case 3:
+            case 2:
             case "end":
               return _context.stop();
           }
