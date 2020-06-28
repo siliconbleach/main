@@ -217,6 +217,7 @@
 
   var submitVotes = function submitVotes(submittedVotes) {
     var voteJSON = JSON.stringify(submittedVotes);
+    cookie.set;
     window.location.href = "".concat(API_URL, "/authenticate");
   }; // event listeners
 
