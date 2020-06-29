@@ -239,6 +239,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     submitVotes(votes);
   });
   $(document).on('ready', function () {
+    // 
     $('.slide').append(buttonTemplate);
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
