@@ -47,7 +47,7 @@ import cookie from 'js-cookie';
 
 	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
-		cookie.set('votes', voteJSON);
+		cookie.set('votes', voteJSON, { domain: `${API_URL}`, expires: 7 });
 
 		window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
 	}
