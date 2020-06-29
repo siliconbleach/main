@@ -68,6 +68,7 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('ready', function () {
+		// 
 		$('.slide').append(buttonTemplate);
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
