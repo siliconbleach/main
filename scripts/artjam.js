@@ -221,7 +221,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
   var submitVotes = function submitVotes(submittedVotes) {
     var voteJSON = JSON.stringify(submittedVotes);
-    js_cookie.set('votes', voteJSON);
+    js_cookie.set('votes', voteJSON, {
+      domain: "".concat(API_URL),
+      expires: 7
+    });
     window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(','));
   }; // event listeners
 
