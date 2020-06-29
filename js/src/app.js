@@ -68,13 +68,15 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('ready', function () {
-		// 
-		// $('.slide').append(buttonTemplate);
+		$('.slide').append(buttonTemplate);
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
+			user = storedSettings?.user || null;
 			votes = storedSettings.votes;
 		}
+
+
 	});
 })(window)
