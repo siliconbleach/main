@@ -13,4 +13,17 @@ export default {
         commonjs(),
         babel({ babelHelpers: 'bundled' })
     ]
+
+    {
+    id: 1,
+        nickname: 'drunkteemoorgy',
+            name: 'DrunkTeemoOrgy',
+                voterStatus: 1,
+                    votes: {
+        215: {
+            id: 6,
+                user_id: 7
+        }
+    }
+}
 }
