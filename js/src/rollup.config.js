@@ -13,26 +13,4 @@ export default {
         commonjs(),
         babel({ babelHelpers: 'bundled' })
         ,],
-
-    staging: {
-        id: 1,
-        nickname: 'drunkteemoorgy',
-        name: 'DrunkTeemoOrgy',
-        voterStatus: 1,
-        votes: {
-            215: {
-                id: 6,
-                user_id: 7
-            },
-            216: {
-                id: 7,
-                user_id: 7,
-            },
-            217: {
-
-                id: 8,
-                user_id: 7
-            }
-        }
-    }
 }
