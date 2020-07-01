@@ -3,7 +3,6 @@ import cookie from 'js-cookie';
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	const urlParams = new URLSearchParams(window.location.search);
-	const hasCookie = document.cookie.split('; ').find(row => row.startsWith('artjam_admin'));
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
 
@@ -81,7 +80,6 @@ import cookie from 'js-cookie';
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
 		const twitchIdFromCookie = cookie.get('userTwitchId');
-
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
 			settings = Object.assign(settings, storedSettings);
