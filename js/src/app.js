@@ -9,9 +9,9 @@ import cookie from 'js-cookie';
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
 	let votes = [];
-
-	// helpers
-
+	/**
+	 * 
+	 */
 	const toggleVote = id => {
 
 		const $voteSlide = $(`#yui_${id}`);
@@ -36,12 +36,10 @@ import cookie from 'js-cookie';
 			votes.push(id);
 		}
 
-
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
 	};
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
-
 
 	const saveVotes = votes => localStorage.setItem('savedSettings', JSON.stringify({ votes: votes }));
 
@@ -52,12 +50,12 @@ import cookie from 'js-cookie';
 		window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
 	}
 
-	// event listeners
-
+	/**
+	 * Event Listeners
+	 */
 	$(document).on('click', '.voting-button', function (e) {
 		const $slide = $(this).parent();
 		const voteId = elementIdToVoteId($slide.attr('id'));
-
 		toggleVote(voteId);
 	});
 
@@ -75,10 +73,8 @@ import cookie from 'js-cookie';
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
-			user = storedSettings?.user || null;
-			votes = storedSettings.votes;
+			user = storedSettings?.user ?? null;
+			votes = storedSettings.votes ?? []
 		}
-
-
 	});
 })(window)
