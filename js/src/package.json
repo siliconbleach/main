@@ -1,0 +1,25 @@
+{
+  "name": "rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "artjam.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "@rollup/plugin-json": "^4.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "js-cookie": "^2.2.1"
+  }
+}
