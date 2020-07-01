@@ -1626,20 +1626,18 @@ body.sqs-mobile-nav-open.collection-type-index {
         transform: translateY(0);
         transition: transform 300ms ease-in-out;
         border: 3px inset transparent;
-        border-bottom: 3px inset transparent;
+
         border-radius: 0.25rem;
-        border-left: none;
-        border-top: none;
+        border-bottom: 3px inset transparent;
+        border-left: 3px solid transparent;
         &:hover {
           transform: translateY(-1rem);
           border: 2px inset rgba(255, 255, 255, 0.5);
-          border-left: 3px solid transparent;
           border-top: 3px solid transparent;
         }
 
         &.is-selected {
           border: 3px inset rgba(255, 255, 255, 0.5);
-          border-left: 3px solid transparent;
           border-top: 3px solid transparent;
         }
       }
