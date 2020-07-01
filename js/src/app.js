@@ -13,8 +13,10 @@ import Axios from 'axios';
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
 	let votes = [];
+
+	console.log({ settings })
 	/**
-	 * 
+	 * Main
 	 */
 	const toggleVote = id => {
 
