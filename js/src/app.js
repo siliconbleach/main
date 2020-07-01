@@ -82,7 +82,6 @@ import axios from 'axios';
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
 		const twitchIdFromCookie = Cookie.get('userTwitchId');
-		console.log({ twitchIdFromCookie });
 
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
