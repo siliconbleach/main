@@ -1622,7 +1622,12 @@ body.sqs-mobile-nav-open.collection-type-index {
 .image-slide-anchor {
   transform: translateY(0);
   transition: transform 300ms ease-in-out;
+  border: 1px solid transparent;
   &:hover {
     transform: translateY(-1rem);
+  }
+
+  &.is-selected {
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
 }
