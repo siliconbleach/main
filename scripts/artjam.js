@@ -185,7 +185,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
-  var votes = []; // helpers
+  var votes = [];
+  /**
+   * 
+   */
 
   var toggleVote = function toggleVote(id) {
     var $voteSlide = $("#yui_".concat(id));
@@ -226,7 +229,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       expires: 7
     });
     window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(','));
-  }; // event listeners
+  };
+  /**
+   * Event Listeners
+   */
 
 
   $(document).on('click', '.voting-button', function (e) {
@@ -244,9 +250,11 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
     if (typeof retrieveStoredSettings === 'string') {
+      var _storedSettings$user, _storedSettings$votes;
+
       var storedSettings = JSON.parse(retrieveVotesFromStorage);
-      user = (storedSettings === null || storedSettings === void 0 ? void 0 : storedSettings.user) || null;
-      votes = storedSettings.votes;
+      user = (_storedSettings$user = storedSettings === null || storedSettings === void 0 ? void 0 : storedSettings.user) !== null && _storedSettings$user !== void 0 ? _storedSettings$user : null;
+      votes = (_storedSettings$votes = storedSettings.votes) !== null && _storedSettings$votes !== void 0 ? _storedSettings$votes : [];
     }
   });
 })(window);
