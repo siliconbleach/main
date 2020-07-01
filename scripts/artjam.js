@@ -184,6 +184,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
+  var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = []; // helpers
 
   var toggleVote = function toggleVote(id) {
@@ -238,7 +239,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     submitVotes(votes);
   });
   $(document).on('ready', function () {
-    // $('.slide').append(buttonTemplate);
+    $('.slide').append(buttonTemplate);
     var cookieCheck = js_cookie.get('');
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
