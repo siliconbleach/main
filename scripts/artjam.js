@@ -278,7 +278,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios.get("".concat(API_URL, "/votes"), {
+              return fetch("".concat(API_URL, "/votes"), {
                 twitchId: twitchId
               }).then(function (res) {
                 return res.json();
