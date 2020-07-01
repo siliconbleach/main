@@ -68,7 +68,7 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('ready', function () {
-		// $('.slide').append(buttonTemplate);
+		$('.slide').append(buttonTemplate);
 
 		const cookieCheck = cookie.get('');
 
