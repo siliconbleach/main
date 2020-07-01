@@ -1,5 +1,4 @@
 import cookie from 'js-cookie';
-import axios from './node_modules/axios';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
