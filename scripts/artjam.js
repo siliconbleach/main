@@ -3203,9 +3203,6 @@ var axios$1 = axios_1;
     $('.slide').append(buttonTemplate);
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
     var twitchIdFromCookie = Cookie.get('userTwitchId');
-    console.log({
-      twitchIdFromCookie: twitchIdFromCookie
-    });
 
     if (typeof retrieveStoredSettings === 'string') {
       var storedSettings = JSON.parse(retrieveVotesFromStorage);
