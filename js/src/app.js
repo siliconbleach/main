@@ -81,7 +81,7 @@ import cookie from 'js-cookie';
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
 		const twitchIdFromCookie = cookie.get('userTwitchId');
-		console.log(twitchIdFromCookie);
+		console.log({ twitchIdFromCookie });
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
 			settings = Object.assign(settings, storedSettings);
