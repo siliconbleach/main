@@ -327,9 +327,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     $('.slide').append(buttonTemplate);
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
     var twitchIdFromCookie = js_cookie.get('userTwitchId');
-    console.log({
-      twitchIdFromCookie: twitchIdFromCookie
-    });
 
     if (typeof retrieveStoredSettings === 'string') {
       var storedSettings = JSON.parse(retrieveVotesFromStorage);
