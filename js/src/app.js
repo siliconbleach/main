@@ -78,14 +78,16 @@ import Axios from 'axios';
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
+
+		const twitchIdFromCookie = Cookie.get('userTwitchId');
+		console.log({ twitchIdFromCookie });
+
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
 			settings = Object.assign(settings, storedSettings);
 			return settings;
 		}
 
-		const twitchIdFromCookie = Cookie.get('userTwitchId');
-		console.log({ twitchIdFromCookie });
 		if (typeof twitchIdFromCookie === 'string') {
 			settings = getVotes(twitchIdFromCookie);
 		}
