@@ -12,8 +12,8 @@ export default {
     plugins: [
         resolve(),
         commonjs(),
-        babel({ babelHelpers: 'bundled' })
-        , json({
+        babel({ babelHelpers: 'bundled' }),
+        json({
             // All JSON files will be parsed by default,
             // but you can also specifically include/exclude files
             include: 'node_modules/**',
@@ -23,9 +23,9 @@ export default {
             // variables, using either `var` or `const`
             preferConst: true, // Default: false
 
+            indent: '  ',
             // specify indentation for the generated default export —
             // defaults to '\t'
-            indent: '  ',
 
             // ignores indent and generates the smallest code
             compact: true, // Default: false
