@@ -17,6 +17,7 @@ export default {
             // All JSON files will be parsed by default,
             // but you can also specifically include/exclude files
             include: 'node_modules/**',
+            exclude: ['node_modules/foo/**', 'node_modules/bar/**'],
 
             // for tree-shaking, properties will be declared as
             // variables, using either `var` or `const`
