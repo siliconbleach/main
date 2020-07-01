@@ -1,10 +1,14 @@
 import cookie from 'js-cookie';
+import Axios from 'axios';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
+	const urlParams = new URLSearchParams(window.location.search);
 	const hasCookie = document.cookie.split('; ').find(row => row.startsWith('artjam_admin'));
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
+
+	const settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
@@ -41,7 +45,13 @@ import cookie from 'js-cookie';
 
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
-	const saveVotes = votes => localStorage.setItem('savedSettings', JSON.stringify({ votes: votes }));
+	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
+	const getVotes = async twitchId => {
+		const response = await Axios.get(`${API_URL}/votes`, {
+			twitchId
+		}).then(res => res.json());
+		return response;
+	}
 
 	const submitVotes = submittedVotes => {
 		const voteJSON = JSON.stringify(submittedVotes);
@@ -67,14 +77,16 @@ import cookie from 'js-cookie';
 
 	$(document).on('ready', function () {
 		$('.slide').append(buttonTemplate);
-
-		const cookieCheck = cookie.get('');
-
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
-			user = storedSettings?.user ?? null;
-			votes = storedSettings.votes ?? []
+			settings = Object.assign(settings, storedSettings);
+			return settings;
+		}
+
+		const twitchIdFromCookie = Cookie.get('userTwitchId');
+		if (typeof twitchIdFromCookie === 'string') {
+			settings = getVotes(twitchIdFromCookie);
 		}
 	});
 })(window)
