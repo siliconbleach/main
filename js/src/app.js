@@ -70,7 +70,7 @@ import cookie from 'js-cookie';
 	$(document).on('ready', function () {
 		// $('.slide').append(buttonTemplate);
 
-		const cookieCheck = cookie.get('')
+		const cookieCheck = cookie.get('');
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 		if (typeof retrieveStoredSettings === 'string') {
