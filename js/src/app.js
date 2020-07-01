@@ -85,6 +85,7 @@ import Axios from 'axios';
 		}
 
 		const twitchIdFromCookie = Cookie.get('userTwitchId');
+		console.log(twitchIdFromCookie)
 		if (typeof twitchIdFromCookie === 'string') {
 			settings = getVotes(twitchIdFromCookie);
 		}
