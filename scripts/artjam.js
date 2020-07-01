@@ -220,9 +220,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   var urlParams = new URLSearchParams(window.location.search);
-  var hasCookie = document.cookie.split('; ').find(function (row) {
-    return row.startsWith('artjam_admin');
-  });
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
   var settings = {
