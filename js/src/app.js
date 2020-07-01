@@ -1,5 +1,5 @@
 import cookie from 'js-cookie';
-import Axios from 'axios';
+import axios from 'axios';
 
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
@@ -49,7 +49,7 @@ import Axios from 'axios';
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const getVotes = async twitchId => {
-		const response = await Axios.get(`${API_URL}/votes`, {
+		const response = await axios.get(`${API_URL}/votes`, {
 			twitchId
 		}).then(res => res.json());
 		return response;
