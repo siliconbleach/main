@@ -80,7 +80,7 @@ import cookie from 'js-cookie';
 		$('.slide').append(buttonTemplate);
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
-		const twitchIdFromCookie = Cookie.get('userTwitchId');
+		const twitchIdFromCookie = cookie.get('userTwitchId');
 
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
