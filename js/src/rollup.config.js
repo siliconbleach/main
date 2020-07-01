@@ -11,7 +11,9 @@ export default {
     },
     plugins: [
         resolve(),
-        json({
+        commonjs(),
+        babel({ babelHelpers: 'bundled' })
+        , json({
             // All JSON files will be parsed by default,
             // but you can also specifically include/exclude files
             include: 'node_modules/**',
@@ -31,7 +33,5 @@ export default {
             // generate a named export for every property of the JSON object
             namedExports: true // Default: true
         }),
-        commonjs(),
-        babel({ babelHelpers: 'bundled' })
-        ,],
+    ],
 }
