@@ -48,7 +48,7 @@ import cookie from 'js-cookie';
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const getVotes = async twitchId => {
-		const response = await axios.get(`${API_URL}/votes`, {
+		const response = await fetch(`${API_URL}/votes`, {
 			twitchId
 		}).then(res => res.json());
 		return response;
