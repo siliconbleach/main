@@ -67,6 +67,7 @@ import cookie from 'js-cookie';
 	$(document).on('click', '.voting-button', function (e) {
 		const $slide = $(this).parent();
 		const voteId = elementIdToVoteId($slide.attr('id'));
+		console.log(voteId);
 		toggleVote(voteId);
 	});
 
