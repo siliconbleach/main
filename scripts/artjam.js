@@ -235,11 +235,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       background: 'white',
       color: '#e86d6d'
     };
-
-    if (settings.votes.length === 5) {
-      return alert('You can only vote for five pieces.');
-    }
-
     var vote = settings.votes.find(function (v) {
       return v === id;
     });
@@ -251,6 +246,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         color: '#fff'
       };
     } else {
+      if (settings.votes.length === 5) {
+        return alert('You can only vote for five pieces.');
+      }
+
       settings.votes.push(id);
     }
 
