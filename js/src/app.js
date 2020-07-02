@@ -25,13 +25,14 @@ import cookie from 'js-cookie';
 
 		const vote = settings.votes.find(v => v.piece_id === id);
 		if (typeof vote !== 'undefined') {
+			debugger;
 			settings.votes.splice(vote, 1);
+			debugger;
 			styles = {
 				background: 'transparent',
 				color: '#fff'
 			}
 		} else {
-
 			if (settings.votes.length < 5) {
 				settings.votes.push({ piece_id: id });
 			} else {
