@@ -59,9 +59,9 @@ import cookie from 'js-cookie';
 		const response = await fetch(`${API_URL}/api/votes`, {
 			method: 'POST',
 			body: settings,
-			headers: [
-				{ 'Content-Type': 'application/json' }
-			]
+			headers: {
+				'Content-Type': 'application/json',
+			}
 		}).then(res => res.json())
 			.then(data => {
 				console.log(data);
