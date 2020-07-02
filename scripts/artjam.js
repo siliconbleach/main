@@ -236,9 +236,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       color: '#e86d6d'
     };
     var vote = settings.votes.find(function (v) {
-      return v === id;
+      return v.piece_id === id;
     });
-    console.log(vote);
 
     if (typeof vote !== 'undefined') {
       settings.votes.splice(vote, 1);
@@ -248,7 +247,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       };
     } else {
       if (settings.votes.length < 5) {
-        settings.votes.push(id);
+        settings.votes.push({
+          piece_id: id
+        });
       } else {
         return alert('You can only vote for five pieces.');
       }
