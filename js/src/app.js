@@ -101,8 +101,12 @@ import cookie from 'js-cookie';
 
 		if (typeof twitchIdFromCookie === 'string') {
 			fetchVotes(twitchIdFromCookie).then(res => res.json()).then(({ user: { votes, twitch_id, id, name } }) => {
-				debugger;
-
+				settings.user = {
+					twitch_id,
+					id,
+					name,
+				}
+				settings.votes = votes;
 			});
 		}
 
