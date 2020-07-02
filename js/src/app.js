@@ -49,7 +49,7 @@ import cookie from 'js-cookie';
 		const response = await fetch(`${API_URL}/user/${twitchId}/votes`, {
 			method: 'GET',
 			mode: 'no-cors',
-		}).then(res => res.json());
+		});
 		return response;
 	}
 
