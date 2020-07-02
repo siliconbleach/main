@@ -63,7 +63,7 @@ import cookie from 'js-cookie';
 			.then(data => {
 				console.log(data);
 			});
-
+		return response;
 	}
 
 	/**
