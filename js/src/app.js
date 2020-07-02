@@ -7,7 +7,7 @@ import cookie from 'js-cookie';
 	const API_URL = 'https://artjam.ngrok.io';
 
 	const YUI_PREFIX = 'yui_';
-
+	let yui_gallery_id = '';
 	let settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
@@ -77,7 +77,9 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('ready', function () {
-
+		const $slide = $('.slide');
+		yui_gallery_id = $slide.attr('id').split('_').shift().pop().join('_');
+		console.log(yui_gallery_id);
 		$('.slide').append(buttonTemplate);
 
 
