@@ -236,9 +236,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       color: '#e86d6d'
     };
     var vote = settings.votes.find(function (v) {
-      return v.piece_id === id;
+      return v === id;
     });
-    console.log(vote);
 
     if (typeof vote !== 'undefined') {
       settings.votes.splice(vote, 1);
@@ -355,11 +354,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           id: id,
           name: name
         };
-        settings.votes = votes.map(function (_ref3) {
-          var piece_id = _ref3.piece_id;
-          return {
-            piece_id: piece_id
-          };
+        settings.votes = votes.map(function (v) {
+          return v.piece_id;
         });
         settings.votes.forEach(function (vote) {
           $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote.piece_id)).find('.voting-button').toggleClass('is-selected');
