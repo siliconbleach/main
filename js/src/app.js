@@ -78,8 +78,9 @@ import cookie from 'js-cookie';
 
 	$(document).on('ready', function () {
 		const $slides = Array.from(document.querySelectorAll('.slide'));
-		debugger;
-		yui_gallery_id = $slides[0].id.split('_').shift().pop();
+		yui_gallery_id = $slides[0].id.split('_');
+		yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 2).join('_');
+
 		console.log(yui_gallery_id);
 
 		$('.slide').append(buttonTemplate);
