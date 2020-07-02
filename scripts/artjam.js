@@ -1,21 +1,5 @@
 'use strict';
 
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
   try {
     var info = gen[key](arg);
@@ -253,7 +237,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     };
     var voteIndex = settings.votes.indexOf(id);
 
-    if ((typeof vote === "undefined" ? "undefined" : _typeof(vote)) > -1) {
+    if (voteIndex > -1) {
       settings.votes.splice(voteIndex, 1);
       styles = {
         background: 'transparent',
