@@ -289,6 +289,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
   var submitVotes = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+      var response;
       return regeneratorRuntime.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -301,6 +302,20 @@ var js_cookie = createCommonjsModule(function (module, exports) {
               return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(',')));
 
             case 2:
+              _context2.next = 4;
+              return fetch("".concat(API_URL, "/api/votes"), {
+                method: 'POST',
+                body: JSON.stringify(settings)
+              }).then(function (res) {
+                return res.json();
+              }).then(function (data) {
+                console.log(data);
+              });
+
+            case 4:
+              response = _context2.sent;
+
+            case 5:
             case "end":
               return _context2.stop();
           }
@@ -324,7 +339,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('click', '#submitvotes-button', function (e) {
     e.preventDefault();
-    submitVotes(settings.votes);
+    submitVotes();
   });
   $(document).on('ready', function () {
     var $slides = Array.from(document.querySelectorAll('.slide'));
