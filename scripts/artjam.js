@@ -349,6 +349,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     $(e.target).css({
       zIndex: 10
     });
+  }).on('mouseleave', '.image-slide-anchor', function (e) {
+    return $(e.target).css({
+      zIndex: inherit
+    });
   });
   $(document).on('ready', function () {
     var $slides = Array.from(document.querySelectorAll('.slide'));
