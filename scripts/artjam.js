@@ -350,7 +350,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         console.log(votes);
         settings.votes = votes;
         settings.votes.forEach(function (vote) {
-          return console.log(vote);
+          return console.log(document.getElementById(vote.piece_id));
         });
       });
     }
