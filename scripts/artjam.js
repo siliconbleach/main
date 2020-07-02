@@ -226,16 +226,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     user: {},
     votes: []
   };
-
-  if (urlParams.has('twitchId')) {
-    settings.user.twitchId = urlParams.get('twitchId');
-    js_cookie.set('userTwitchId', settings.user.twitchId, {
-      expires: 14,
-      sameSite: 'lax',
-      secure: true
-    });
-  }
-
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = [];
   /**
@@ -329,6 +319,16 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
+
+    if (urlParams.has('success') && urlParams.has('twitchId')) {
+      settings.user.twitchId = urlParams.get('twitchId');
+      js_cookie.set('userTwitchId', settings.user.twitchId, {
+        expires: 14,
+        sameSite: 'lax',
+        secure: true
+      });
+    }
+
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
     var twitchIdFromCookie = js_cookie.get('userTwitchId');
 
