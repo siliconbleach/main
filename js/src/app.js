@@ -11,8 +11,6 @@ import cookie from 'js-cookie';
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
 	let votes = [];
-
-	console.log({ settings })
 	/**
 	 * Main
 	 */
