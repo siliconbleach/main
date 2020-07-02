@@ -315,6 +315,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('ready', function () {
     var $slides = Array.from(document.querySelectorAll('.slide'));
+    debugger;
     yui_gallery_id = $slides[0].id.split('_').shift().pop();
     console.log(yui_gallery_id);
     $('.slide').append(buttonTemplate);
