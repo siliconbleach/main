@@ -24,7 +24,7 @@ import cookie from 'js-cookie';
 		}
 
 		if (settings.votes.length > 4) {
-			return alert('You can only vote five times.');
+			return alert('You can only vote for five pieces.');
 		}
 
 		const vote = settings.votes.find(v => v === id);
