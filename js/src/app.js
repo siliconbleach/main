@@ -24,7 +24,7 @@ import cookie from 'js-cookie';
 		}
 
 		const voteIndex = settings.votes.indexOf(id);
-		if (typeof vote > -1) {
+		if (voteIndex > -1) {
 			settings.votes.splice(voteIndex, 1);
 			styles = {
 				background: 'transparent',
