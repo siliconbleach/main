@@ -42,7 +42,7 @@ import cookie from 'js-cookie';
 
 		console.log(settings.votes.length);
 
-		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
+		$voteSlide.find('.voting-button').toggleClass('is-selected').css(styles)
 	};
 
 	const elementIdToVoteId = id => id.split('_').pop();
