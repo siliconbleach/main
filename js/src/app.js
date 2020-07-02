@@ -56,13 +56,9 @@ import cookie from 'js-cookie';
 			return window.location.href = `${API_URL}/authenticate?votes=${settings.votes.join(',')}`;
 		}
 
-		const response = await fetch(`${API_URL}/api/votes`, {
-			method: 'POST',
-			body: settings
-		}).then(res => res.json())
-			.then(data => {
-				console.log(data);
-			});
+		const response = await $.post(`${API_URL}/api/votes`, {
+			settings
+		})
 		return response;
 	}
 
