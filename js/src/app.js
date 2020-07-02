@@ -51,11 +51,12 @@ import cookie from 'js-cookie';
 		return response;
 	}
 
-	const submitVotes = submittedVotes => {
-		const voteJSON = JSON.stringify(submittedVotes);
-		cookie.set('votes', voteJSON, { domain: `${API_URL}`, expires: 7 });
+	const submitVotes = async () => {
+		if (!settings.user.twitchId) {
+			return window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
 
-		window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
+		}
+
 	}
 
 	/**
