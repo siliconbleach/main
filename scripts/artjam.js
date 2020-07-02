@@ -347,7 +347,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('mouseenter', '.image-slide-anchor', function (e) {
     $(e.target).css({
-      zIndex: 10
+      'z-index': 10
     });
   }).on('mouseleave', '.image-slide-anchor', function (e) {
     return $(e.target).css({
