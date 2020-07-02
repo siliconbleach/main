@@ -32,7 +32,7 @@ import cookie from 'js-cookie';
 			}
 		} else {
 			if (settings.votes.length < 5) {
-				settings.votes.push({ piece_id: id });
+				settings.votes.push(id);
 			} else {
 				return alert('You can only vote for five pieces.');
 			}
@@ -116,7 +116,7 @@ import cookie from 'js-cookie';
 
 
 				settings.votes.forEach(vote => {
-					$(`#${YUI_PREFIX}${yui_gallery_id}${vote.piece_id}`).find('.voting-button').toggleClass('is-selected');
+					$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
 				});
 			});
 		}
