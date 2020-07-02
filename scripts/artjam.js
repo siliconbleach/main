@@ -269,8 +269,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
             case 0:
               _context.next = 2;
               return fetch("".concat(API_URL, "/api/user/").concat(twitchId, "/votes"), {
-                method: 'GET',
-                mode: 'no-cors'
+                method: 'GET'
               });
 
             case 2:
