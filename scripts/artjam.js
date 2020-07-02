@@ -251,7 +251,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       background: 'white',
       color: '#e86d6d'
     };
-    var voteIndex = settings.vote.indexOf(id);
+    var voteIndex = settings.votes.indexOf(id);
 
     if ((typeof vote === "undefined" ? "undefined" : _typeof(vote)) > -1) {
       settings.votes.splice(voteIndex, 1);
