@@ -79,12 +79,15 @@ import cookie from 'js-cookie';
 		$('.slide').append(buttonTemplate);
 
 		if (urlParams.has('success') && urlParams.has('twitchId')) {
+
 			settings.user.twitchId = urlParams.get('twitchId');
-			cookie.set('userTwitchId', settings.user.twitchId, {
+
+			const twitchIdCookie = cookie.set('userTwitchId', settings.user.twitchId, {
 				expires: 14,
 				sameSite: 'lax',
 				secure: true
 			});
+			debugger;
 		}
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
