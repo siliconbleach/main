@@ -85,9 +85,8 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('mouseenter', '.image-slide-anchor', e => {
-		console.log(e);
-		$(e.target).css({ 'z-index': 10 });
-	}).on('mouseleave', '.image-slide-anchor', e => $(e.target).css({ 'z-index': 'inherit' }));
+		$(e.currentTarget).css({ 'z-index': 10 });
+	}).on('mouseleave', '.image-slide-anchor', e => $(e.currentTarget).css({ 'z-index': 'inherit' }));
 
 	$(document).on('ready', function () {
 		const $slides = Array.from(document.querySelectorAll('.slide'));
