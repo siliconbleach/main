@@ -50,6 +50,7 @@ import cookie from 'js-cookie';
 			method: 'GET',
 			mode: 'no-cors',
 		});
+		console.dir(response);
 		return response;
 	}
 
