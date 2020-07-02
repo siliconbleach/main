@@ -219,6 +219,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
   var YUI_PREFIX = 'yui_';
+  var yui_gallery_id = '';
   var settings = {
     user: {},
     votes: []
@@ -313,6 +314,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     submitVotes(votes);
   });
   $(document).on('ready', function () {
+    var $slide = $('.slide');
+    yui_gallery_id = $slide.attr('id').split('_').shift().pop().join('_');
+    console.log(yui_gallery_id);
     $('.slide').append(buttonTemplate);
 
     if (urlParams.has('success') && urlParams.has('twitch_id')) {
