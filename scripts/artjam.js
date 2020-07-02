@@ -307,7 +307,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   $(document).on('click', '.voting-button', function (e) {
     var $slide = $(this).parent();
     var voteId = elementIdToVoteId($slide.attr('id'));
-    console.log(voteId);
     toggleVote(voteId);
   });
   $(document).on('click', '#submitvotes-button', function (e) {
