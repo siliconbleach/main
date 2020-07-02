@@ -7,17 +7,11 @@ import cookie from 'js-cookie';
 	const API_URL = 'https://artjam.ngrok.io';
 
 	const settings = { user: {}, votes: [] };
-	if (urlParams.has('twitchId')) {
-		settings.user.twitchId = urlParams.get('twitchId');
-		cookie.set('userTwitchId', settings.user.twitchId, {
-			expires: 14,
-			sameSite: 'lax',
-			secure: true
-		});
-	}
+
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
 	let votes = [];
+
 	/**
 	 * Main
 	 */
@@ -83,6 +77,15 @@ import cookie from 'js-cookie';
 	$(document).on('ready', function () {
 
 		$('.slide').append(buttonTemplate);
+
+		if (urlParams.has('success') && urlParams.has('twitchId')) {
+			settings.user.twitchId = urlParams.get('twitchId');
+			cookie.set('userTwitchId', settings.user.twitchId, {
+				expires: 14,
+				sameSite: 'lax',
+				secure: true
+			});
+		}
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
