@@ -338,6 +338,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       var userData = fetchVotes(twitchIdFromCookie).then(function (res) {
         return res.json();
       });
+      debugger;
     }
   });
 })(window);
