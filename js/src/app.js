@@ -23,7 +23,7 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		if (settings.votes.length > 4) {
+		if (settings.votes.length === 5) {
 			return alert('You can only vote for five pieces.');
 		}
 
