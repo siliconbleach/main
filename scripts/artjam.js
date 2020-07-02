@@ -225,7 +225,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     votes: []
   };
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
-  var votes = [];
   /**
    * Main
    */
@@ -237,22 +236,22 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       color: '#e86d6d'
     };
 
-    if (votes.length > 4) {
+    if (settings.votes.length > 4) {
       return alert('You can only vote five times.');
     }
 
-    var vote = votes.find(function (v) {
+    var vote = settings.votes.find(function (v) {
       return v === id;
     });
 
     if (typeof vote !== 'undefined') {
-      votes.splice(vote, 1);
+      settings.votes.splice(vote, 1);
       styles = {
         background: 'transparent',
         color: '#fff'
       };
     } else {
-      votes.push(id);
+      settings.votes.push(id);
     }
 
     $voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles);
@@ -311,7 +310,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('click', '#submitvotes-button', function (e) {
     e.preventDefault();
-    submitVotes(votes);
+    submitVotes(settings.votes);
   });
   $(document).on('ready', function () {
     var $slides = Array.from(document.querySelectorAll('.slide'));
