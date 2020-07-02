@@ -237,7 +237,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     };
 
     if (settings.votes.length > 4) {
-      return alert('You can only vote five times.');
+      return alert('You can only vote for five pieces.');
     }
 
     var vote = settings.votes.find(function (v) {
