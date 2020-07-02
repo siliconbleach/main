@@ -236,7 +236,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       color: '#e86d6d'
     };
 
-    if (settings.votes.length > 4) {
+    if (settings.votes.length === 5) {
       return alert('You can only vote for five pieces.');
     }
 
