@@ -23,10 +23,6 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		if (settings.votes.length === 5) {
-			return alert('You can only vote for five pieces.');
-		}
-
 		const vote = settings.votes.find(v => v === id);
 
 		if (typeof vote !== 'undefined') {
@@ -36,6 +32,10 @@ import cookie from 'js-cookie';
 				color: '#fff'
 			}
 		} else {
+
+			if (settings.votes.length === 5) {
+				return alert('You can only vote for five pieces.');
+			}
 			settings.votes.push(id);
 		}
 
