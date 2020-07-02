@@ -287,14 +287,31 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     };
   }();
 
-  var submitVotes = function submitVotes(submittedVotes) {
-    var voteJSON = JSON.stringify(submittedVotes);
-    js_cookie.set('votes', voteJSON, {
-      domain: "".concat(API_URL),
-      expires: 7
-    });
-    window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(','));
-  };
+  var submitVotes = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+      return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              if (settings.user.twitchId) {
+                _context2.next = 2;
+                break;
+              }
+
+              return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(',')));
+
+            case 2:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    return function submitVotes() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
   /**
    * Event Listeners
    */
@@ -337,12 +354,12 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     if (typeof twitchIdFromCookie === 'string') {
       fetchVotes(twitchIdFromCookie).then(function (res) {
         return res.json();
-      }).then(function (_ref2) {
-        var _ref2$user = _ref2.user,
-            votes = _ref2$user.votes,
-            twitch_id = _ref2$user.twitch_id,
-            id = _ref2$user.id,
-            name = _ref2$user.name;
+      }).then(function (_ref3) {
+        var _ref3$user = _ref3.user,
+            votes = _ref3$user.votes,
+            twitch_id = _ref3$user.twitch_id,
+            id = _ref3$user.id,
+            name = _ref3$user.name;
         settings.user = {
           twitch_id: twitch_id,
           id: id,
