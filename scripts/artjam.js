@@ -341,9 +341,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
             twitch_id = _ref2$user.twitch_id,
             id = _ref2$user.id,
             name = _ref2$user.name;
-        console.log({
-          votes: votes
-        });
+        debugger;
       });
     }
   });
