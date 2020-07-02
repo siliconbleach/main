@@ -92,13 +92,13 @@ import cookie from 'js-cookie';
 
 		const retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
 
-		const twitchIdFromCookie = cookie.get('userTwitchId');
 		if (typeof retrieveStoredSettings === 'string') {
 			const storedSettings = JSON.parse(retrieveVotesFromStorage);
 			settings = Object.assign(settings, storedSettings);
 			return settings;
 		}
 
+		const twitchIdFromCookie = cookie.get('userTwitchId');
 		if (typeof twitchIdFromCookie === 'string') {
 			fetchVotes(twitchIdFromCookie).then(res => res.json()).then(({ user: { votes, twitch_id, id, name } }) => {
 				settings.user = {
