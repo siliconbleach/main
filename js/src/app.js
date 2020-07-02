@@ -23,7 +23,7 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		const voteIndex = settings.vote.indexOf(id);
+		const voteIndex = settings.votes.indexOf(id);
 		if (typeof vote > -1) {
 			settings.votes.splice(voteIndex, 1);
 			styles = {
