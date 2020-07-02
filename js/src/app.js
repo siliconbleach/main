@@ -100,7 +100,7 @@ import cookie from 'js-cookie';
 		}
 
 		if (typeof twitchIdFromCookie === 'string') {
-			settings = getVotes(twitchIdFromCookie);
+			settings.votes = getVotes(twitchIdFromCookie);
 		}
 	});
 })(window)
