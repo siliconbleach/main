@@ -106,6 +106,7 @@ import cookie from 'js-cookie';
 					id,
 					name,
 				}
+				console.log(votes);
 				settings.votes = votes;
 
 				settings.votes.forEach(vote => document.getElementById(vote.piece_id).querySelector('.voting-button').toggleClass('is-selected'));
