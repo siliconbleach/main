@@ -348,6 +348,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           name: name
         };
         settings.votes = votes;
+        settings.votes.forEach(function (vote) {
+          return document.getElementById(vote.piece_id).querySelector('.voting-button').toggleClass('is-selected');
+        });
       });
     }
   });
