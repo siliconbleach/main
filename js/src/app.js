@@ -84,6 +84,10 @@ import cookie from 'js-cookie';
 		submitVotes();
 	});
 
+	$(document).on('mouseenter', '.image-slide-anchor', e => {
+		$(e.target).css(zIndex: 10);
+	});
+
 	$(document).on('ready', function () {
 		const $slides = Array.from(document.querySelectorAll('.slide'));
 		yui_gallery_id = $slides[0].id.split('_');
