@@ -268,18 +268,20 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return fetch("".concat(API_URL, "/votes"), {
-                twitchId: twitchId
+              return fetch("".concat(API_URL, "/votes/").concat(twitchId), {
+                method: 'GET',
+                mode: 'no-cors'
               }).then(function (res) {
-                return res.json();
+                return res.json().then(function (data) {
+                  return data;
+                });
               });
 
             case 2:
               response = _context.sent;
-              debugger;
               return _context.abrupt("return", response);
 
-            case 5:
+            case 4:
             case "end":
               return _context.stop();
           }
