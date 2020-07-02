@@ -102,5 +102,7 @@ import cookie from 'js-cookie';
 		if (typeof twitchIdFromCookie === 'string') {
 			settings.votes = getVotes(twitchIdFromCookie);
 		}
+
+		debugger;
 	});
 })(window)
