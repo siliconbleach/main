@@ -25,7 +25,7 @@ import cookie from 'js-cookie';
 
 		const voteIndex = settings.vote.indexOf(id);
 		if (typeof vote > -1) {
-			settings.votes.splice(vote, 1);
+			settings.votes.splice(voteIndex, 1);
 			styles = {
 				background: 'transparent',
 				color: '#fff'
