@@ -19,7 +19,7 @@ import cookie from 'js-cookie';
 	 */
 	const toggleVote = id => {
 
-		const $voteSlide = $(`#${YUI_PREFIX}${id}`);
+		const $voteSlide = $(`#${YUI_PREFIX}${yui_gallery_id}${id}`);
 		let styles = {
 			background: 'white',
 			color: '#e86d6d'
