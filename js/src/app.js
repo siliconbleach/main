@@ -109,7 +109,6 @@ import cookie from 'js-cookie';
 					id,
 					name,
 				}
-				console.log(votes);
 				settings.votes = votes;
 
 				settings.votes.forEach(vote => {
