@@ -276,9 +276,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
             case 2:
               response = _context.sent;
+              debugger;
               return _context.abrupt("return", response);
 
-            case 4:
+            case 5:
             case "end":
               return _context.stop();
           }
