@@ -109,7 +109,7 @@ import cookie from 'js-cookie';
 				console.log(votes);
 				settings.votes = votes;
 
-				setTimeout(settings.votes.forEach(vote => console.log(document.getElementById(vote.piece_id))), 2000)
+				setTimeout(settings.votes.forEach(vote => console.log(document.getElementById(vote.piece_id))), 2000);
 			});
 		}
 
