@@ -10,7 +10,9 @@ import cookie from 'js-cookie';
 	if (urlParams.has('twitchId')) {
 		settings.user.twitchId = urlParams.get('twitchId');
 		cookie.set('userTwitchId', settings.user.twitchId, {
-			expires: 14
+			expires: 14,
+			sameSite: 'lax',
+			secure: true
 		});
 	}
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
