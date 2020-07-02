@@ -306,9 +306,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
               return fetch("".concat(API_URL, "/api/votes"), {
                 method: 'POST',
                 body: settings,
-                headers: [{
+                headers: {
                   'Content-Type': 'application/json'
-                }]
+                }
               }).then(function (res) {
                 return res.json();
               }).then(function (data) {
