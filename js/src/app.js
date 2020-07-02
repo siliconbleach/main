@@ -107,6 +107,8 @@ import cookie from 'js-cookie';
 					name,
 				}
 				settings.votes = votes;
+
+				settings.votes.forEach(vote => document.getElementById(vote.piece_id).querySelector('.voting-button').toggleClass('is-selected'));
 			});
 		}
 
