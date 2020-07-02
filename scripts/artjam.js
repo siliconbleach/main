@@ -294,7 +294,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              if (settings.user.twitchId) {
+              if (settings.user.twitch_id) {
                 _context2.next = 2;
                 break;
               }
