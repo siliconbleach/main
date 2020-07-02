@@ -317,7 +317,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     var $slides = Array.from(document.querySelectorAll('.slide'));
     yui_gallery_id = $slides[0].id.split('_');
     yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
-    console.log(yui_gallery_id);
     $('.slide').append(buttonTemplate);
 
     if (urlParams.has('success') && urlParams.has('twitch_id')) {
@@ -356,7 +355,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         console.log(votes);
         settings.votes = votes;
         settings.votes.forEach(function (vote) {
-          return document.getElementById("".concat(YUI_PREFIX).concat(vote.piece_id)).querySelector('.voting-button').toggleClass('is-selected');
+          return document.getElementById("".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote.piece_id)).querySelector('.voting-button').toggleClass('is-selected');
         });
       });
     }
