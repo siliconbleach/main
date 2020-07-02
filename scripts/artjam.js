@@ -247,9 +247,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       };
     } else {
       if (settings.votes.length < 5) {
-        settings.votes.push({
-          piece_id: id
-        });
+        settings.votes.push(id);
       } else {
         return alert('You can only vote for five pieces.');
       }
@@ -358,7 +356,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           return v.piece_id;
         });
         settings.votes.forEach(function (vote) {
-          $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote.piece_id)).find('.voting-button').toggleClass('is-selected');
+          $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
         });
       });
     }
