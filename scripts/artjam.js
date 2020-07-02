@@ -232,6 +232,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
   var toggleVote = function toggleVote(id) {
     var $voteSlide = $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(id));
+    debugger;
     var styles = {
       background: 'white',
       color: '#e86d6d'
