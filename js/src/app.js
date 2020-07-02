@@ -44,7 +44,7 @@ import cookie from 'js-cookie';
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
 	};
 
-	const elementIdToVoteId = id => id.replace(YUI_PREFIX, '');
+	const elementIdToVoteId = id => id.split('_').pop();
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const fetchVotes = async twitchId => {
