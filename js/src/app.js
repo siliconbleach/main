@@ -78,7 +78,8 @@ import cookie from 'js-cookie';
 
 		$('.slide').append(buttonTemplate);
 
-		if (urlParams.has('success') && urlParams.has('twitchId')) {
+
+		if (urlParams.has('success') && urlParams.has('twitch_id')) {
 
 			settings.user.twitchId = urlParams.get('twitchId');
 
