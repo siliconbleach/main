@@ -346,12 +346,11 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     submitVotes();
   });
   $(document).on('mouseenter', '.image-slide-anchor', function (e) {
-    console.log(e);
-    $(e.target).css({
+    $(e.currentTarget).css({
       'z-index': 10
     });
   }).on('mouseleave', '.image-slide-anchor', function (e) {
-    return $(e.target).css({
+    return $(e.currentTarget).css({
       'z-index': 'inherit'
     });
   });
