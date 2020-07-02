@@ -240,7 +240,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     });
 
     if (typeof vote !== 'undefined') {
-      settings.votes.splice();
+      settings.votes.splice(vote, 1);
       styles = {
         background: 'transparent',
         color: '#fff'
