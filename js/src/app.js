@@ -81,7 +81,6 @@ import cookie from 'js-cookie';
 		yui_gallery_id = $slides[0].id.split('_');
 		yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
 
-		console.log(yui_gallery_id);
 
 		$('.slide').append(buttonTemplate);
 
@@ -116,7 +115,7 @@ import cookie from 'js-cookie';
 				console.log(votes);
 				settings.votes = votes;
 
-				settings.votes.forEach(vote => document.getElementById(`${YUI_PREFIX}${vote.piece_id}`).querySelector('.voting-button').toggleClass('is-selected'));
+				settings.votes.forEach(vote => document.getElementById(`${YUI_PREFIX}${yui_gallery_id}${vote.piece_id}`).querySelector('.voting-button').toggleClass('is-selected'));
 			});
 		}
 
