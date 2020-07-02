@@ -77,8 +77,10 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('ready', function () {
-		const $slide = $('.slide');
-		yui_gallery_id = $slide.first().attr('id').split('_').shift().pop().join('_');
+		const $slides = Array.from(document.querySelectorAll('.slide'));
+		yui_gallery_id = $slides[0].id.split('_').shift().pop();
+		console.log(yui_gallery_id);
+
 		$('.slide').append(buttonTemplate);
 
 
