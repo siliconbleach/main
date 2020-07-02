@@ -322,11 +322,12 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
     if (urlParams.has('success') && urlParams.has('twitchId')) {
       settings.user.twitchId = urlParams.get('twitchId');
-      js_cookie.set('userTwitchId', settings.user.twitchId, {
+      var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
         expires: 14,
         sameSite: 'lax',
         secure: true
       });
+      debugger;
     }
 
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
