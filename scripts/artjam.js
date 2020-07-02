@@ -351,7 +351,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     });
   }).on('mouseleave', '.image-slide-anchor', function (e) {
     return $(e.target).css({
-      zIndex: inherit
+      zIndex: 'inherit'
     });
   });
   $(document).on('ready', function () {
