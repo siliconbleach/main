@@ -299,7 +299,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
                 break;
               }
 
-              return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(submittedVotes.join(',')));
+              return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(settings.votes.join(',')));
 
             case 2:
               _context2.next = 4;
