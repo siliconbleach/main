@@ -25,9 +25,7 @@ import cookie from 'js-cookie';
 
 		const vote = settings.votes.find(v => v.piece_id === id);
 		if (typeof vote !== 'undefined') {
-			debugger;
-			settings.votes.splice(vote, 1, 1);
-			debugger;
+			settings.votes.splice();
 			styles = {
 				background: 'transparent',
 				color: '#fff'
@@ -35,7 +33,6 @@ import cookie from 'js-cookie';
 		} else {
 			if (settings.votes.length < 5) {
 				settings.votes.push({ piece_id: id });
-				debugger;
 			} else {
 				return alert('You can only vote for five pieces.');
 			}
@@ -113,7 +110,7 @@ import cookie from 'js-cookie';
 					id,
 					name,
 				}
-				settings.votes = votes;
+				settings.votes = votes.map(v => ({ piece_id: v.piece_id }));
 
 
 				settings.votes.forEach(vote => {
