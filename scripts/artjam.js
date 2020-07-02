@@ -258,7 +258,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   };
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
-    return id.replace(YUI_PREFIX, '');
+    return id.split('_').pop();
   };
 
   var fetchVotes = /*#__PURE__*/function () {
