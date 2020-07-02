@@ -326,7 +326,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       debugger;
       var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
         expires: 14,
-        sameSite: 'lax',
         secure: true
       });
     }
