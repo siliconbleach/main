@@ -228,9 +228,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   };
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = [];
-  console.log({
-    settings: settings
-  });
   /**
    * Main
    */
