@@ -53,7 +53,7 @@ import cookie from 'js-cookie';
 
 	const submitVotes = async () => {
 		if (!settings.user.twitchId) {
-			return window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
+			return window.location.href = `${API_URL}/authenticate?votes=${settings.votes.join(',')}`;
 		}
 
 		const response = await fetch(`${API_URL}/api/votes`, {
