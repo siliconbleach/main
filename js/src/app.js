@@ -24,6 +24,7 @@ import cookie from 'js-cookie';
 		}
 
 		const vote = settings.votes.find(v => v.piece_id === id);
+		console.log(vote);
 		if (typeof vote !== 'undefined') {
 			settings.votes.splice(vote, 1);
 			styles = {
