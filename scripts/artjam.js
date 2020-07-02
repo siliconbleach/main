@@ -353,9 +353,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           id: id,
           name: name
         };
-        settings.votes = votes.map(function (v) {
+        settings.votes = votes.map(function (_ref3) {
+          var piece_id = _ref3.piece_id;
           return {
-            piece_id: v.piece_id
+            piece_id: piece_id
           };
         });
         settings.votes.forEach(function (vote) {
