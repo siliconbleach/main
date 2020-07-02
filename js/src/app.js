@@ -52,8 +52,8 @@ import cookie from 'js-cookie';
 			headers: [
 				'Content-Type': 'application/json',
 			]
-		}).then(res => res.json().then(data => data));
-		return response;
+		})
+		return response.json();
 	}
 
 	const submitVotes = submittedVotes => {
