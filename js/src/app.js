@@ -6,7 +6,7 @@ import cookie from 'js-cookie';
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
 
-	const settings = { user: {}, votes: [] };
+	let settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
