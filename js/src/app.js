@@ -45,7 +45,7 @@ import cookie from 'js-cookie';
 	const elementIdToVoteId = id => id.replace('yui_', '');
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
-	const getVotes = async twitchId => {
+	const fetchVotes = async twitchId => {
 		const response = await fetch(`${API_URL}/votes/${twitchId}`, {
 			method: 'GET',
 			mode: 'no-cors',
@@ -105,8 +105,10 @@ import cookie from 'js-cookie';
 		}
 
 		if (typeof twitchIdFromCookie === 'string') {
-			settings.votes = getVotes(twitchIdFromCookie);
-			console.log({ settings.votes });
+			const fetchedVotes = fetchVotes(twitchIdFromCookie);
+			console.log(fetchedVotes);
+
+			debugger;
 		}
 
 	});
