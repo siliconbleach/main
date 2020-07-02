@@ -23,8 +23,7 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		const vote = settings.votes.find(v => v.piece_id === id);
-		console.log(vote);
+		const vote = settings.votes.find(v => v === id);
 		if (typeof vote !== 'undefined') {
 			settings.votes.splice(vote, 1);
 			styles = {
@@ -113,7 +112,7 @@ import cookie from 'js-cookie';
 					id,
 					name,
 				}
-				settings.votes = votes.map(({ piece_id }) => ({ piece_id }));
+				settings.votes = votes.map(v => v.piece_id);
 
 
 				settings.votes.forEach(vote => {
