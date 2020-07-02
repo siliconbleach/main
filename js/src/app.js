@@ -52,7 +52,7 @@ import cookie from 'js-cookie';
 	}
 
 	const submitVotes = async () => {
-		if (!settings.user.twitchId) {
+		if (!settings.user.twitch_id) {
 			return window.location.href = `${API_URL}/authenticate?votes=${settings.votes.join(',')}`;
 		}
 
