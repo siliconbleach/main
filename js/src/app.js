@@ -23,8 +23,8 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		const vote = settings.votes.find(v => v === id);
-		if (typeof vote !== 'undefined') {
+		const voteIndex = settings.vote.indexOf(id);
+		if (typeof vote > -1) {
 			settings.votes.splice(vote, 1);
 			styles = {
 				background: 'transparent',
@@ -37,10 +37,6 @@ import cookie from 'js-cookie';
 				return alert('You can only vote for five pieces.');
 			}
 		}
-
-		console.log(settings.votes);
-
-		console.log(settings.votes.length);
 
 		$voteSlide.find('.voting-button').toggleClass('is-selected').css(styles)
 	};
