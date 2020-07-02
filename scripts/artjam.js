@@ -218,6 +218,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   var urlParams = new URLSearchParams(window.location.search);
   if (!isJamPage) return;
   var API_URL = 'https://artjam.ngrok.io';
+  var YUI_PREFIX = 'yui_';
   var settings = {
     user: {},
     votes: []
@@ -229,7 +230,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
    */
 
   var toggleVote = function toggleVote(id) {
-    var $voteSlide = $("#yui_".concat(id));
+    var $voteSlide = $("#".concat(YUI_PREFIX).concat(id));
     var styles = {
       background: 'white',
       color: '#e86d6d'
@@ -257,7 +258,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   };
 
   var elementIdToVoteId = function elementIdToVoteId(id) {
-    return id.replace('yui_', '');
+    return id.replace(YUI_PREFIX, '');
   };
 
   var fetchVotes = /*#__PURE__*/function () {
@@ -349,9 +350,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         };
         console.log(votes);
         settings.votes = votes;
-        setTimeout(settings.votes.forEach(function (vote) {
-          return console.log(document.getElementById(vote.piece_id));
-        }), 2000);
+        settings.votes.forEach(function (vote) {
+          return document.getElementById(vote.piece_id).querySelector('.voting-button').toggleClass('is-selected');
+        });
       });
     }
   });
