@@ -303,8 +303,14 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
             case 2:
               _context2.next = 4;
-              return $.post("".concat(API_URL, "/api/votes"), {
-                settings: settings
+              return fetch("".concat(API_URL, "/api/votes"), {
+                method: 'POST',
+                body: JSON.stringify,
+                headers: ['Content-Type:application/json']
+              }).then(function (res) {
+                return res.json();
+              }).then(function (data) {
+                console.log(data);
               });
 
             case 4:
