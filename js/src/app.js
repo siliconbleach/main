@@ -104,8 +104,6 @@ import cookie from 'js-cookie';
 			const fetchedVotes = fetchVotes(twitchIdFromCookie);
 			console.log(fetchedVotes);
 
-			debugger;
-		}
 
-	});
+		});
 })(window)
