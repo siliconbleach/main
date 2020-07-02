@@ -12,8 +12,6 @@ import cookie from 'js-cookie';
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 
-	let votes = [];
-
 	/**
 	 * Main
 	 */
@@ -25,20 +23,20 @@ import cookie from 'js-cookie';
 			color: '#e86d6d'
 		}
 
-		if (votes.length > 4) {
+		if (settings.votes.length > 4) {
 			return alert('You can only vote five times.');
 		}
 
-		const vote = votes.find(v => v === id);
+		const vote = settings.votes.find(v => v === id);
 
 		if (typeof vote !== 'undefined') {
-			votes.splice(vote, 1);
+			settings.votes.splice(vote, 1);
 			styles = {
 				background: 'transparent',
 				color: '#fff'
 			}
 		} else {
-			votes.push(id);
+			settings.votes.push(id);
 		}
 
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
@@ -73,7 +71,7 @@ import cookie from 'js-cookie';
 
 	$(document).on('click', '#submitvotes-button', e => {
 		e.preventDefault();
-		submitVotes(votes);
+		submitVotes(settings.votes);
 	});
 
 	$(document).on('ready', function () {
