@@ -100,7 +100,10 @@ import cookie from 'js-cookie';
 		}
 
 		if (typeof twitchIdFromCookie === 'string') {
-			const fetchedVotes = fetchVotes(twitchIdFromCookie).then(res => res.json());
+			const userData = fetchVotes(twitchIdFromCookie);
+
+			console.log(userData);
+
 		}
 
 	});
