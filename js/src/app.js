@@ -60,7 +60,7 @@ import cookie from 'js-cookie';
 			method: 'POST',
 			body: settings,
 			headers: [
-				'Content-Type:application/json'
+				{ 'Content-Type': 'application/json' }
 			]
 		}).then(res => res.json())
 			.then(data => {
