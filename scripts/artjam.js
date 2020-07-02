@@ -336,7 +336,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     if (typeof twitchIdFromCookie === 'string') {
       var fetchedVotes = fetchVotes(twitchIdFromCookie);
       console.log(fetchedVotes);
-      debugger;
     }
   });
 })(window);
