@@ -50,7 +50,7 @@ import cookie from 'js-cookie';
 			method: 'GET',
 			mode: 'no-cors',
 			headers: [
-				'Content-Type: application/json',
+				`'Content-Type' : 'application/json'`,
 			]
 		})
 		return response.json();
