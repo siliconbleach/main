@@ -226,6 +226,14 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     user: {},
     votes: []
   };
+
+  if (urlParams.has('twitchId')) {
+    settings.user.twitchId = urlParams.get('twitchId');
+    js_cookie.set('userTwitchId', settings.user.twitchId, {
+      expires: 14
+    });
+  }
+
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var votes = [];
   /**
