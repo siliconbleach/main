@@ -103,6 +103,5 @@ import cookie from 'js-cookie';
 			settings.votes = getVotes(twitchIdFromCookie);
 		}
 
-		debugger;
 	});
 })(window)
