@@ -81,7 +81,7 @@ import cookie from 'js-cookie';
 
 		if (urlParams.has('success') && urlParams.has('twitch_id')) {
 
-			settings.user.twitchId = urlParams.get('twitchId');
+			settings.user.twitchId = urlParams.get('twitch_id');
 
 			const twitchIdCookie = cookie.set('userTwitchId', settings.user.twitchId, {
 				expires: 14,
