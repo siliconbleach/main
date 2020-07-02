@@ -24,7 +24,7 @@ import cookie from 'js-cookie';
 		}
 
 		const vote = settings.votes.find(v => v === id);
-		console.log(settings.votes);
+		console.log(settings.votes.length);
 
 		if (typeof vote !== 'undefined') {
 			settings.votes.splice(vote, 1);
