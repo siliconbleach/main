@@ -352,6 +352,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
           name: name
         };
         settings.votes = votes;
+        console.log(settings.votes.length);
         settings.votes.forEach(function (vote) {
           $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote.piece_id)).find('.voting-button').toggleClass('is-selected');
         });
