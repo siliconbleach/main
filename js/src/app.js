@@ -54,8 +54,15 @@ import cookie from 'js-cookie';
 	const submitVotes = async () => {
 		if (!settings.user.twitchId) {
 			return window.location.href = `${API_URL}/authenticate?votes=${submittedVotes.join(',')}`;
-
 		}
+
+		const response = await fetch(`${API_URL}/api/votes`, {
+			method: 'POST',
+			body: JSON.stringify(settings)
+		}).then(res => res.json())
+			.then(data => {
+				console.log(data);
+			});
 
 	}
 
@@ -71,7 +78,7 @@ import cookie from 'js-cookie';
 
 	$(document).on('click', '#submitvotes-button', e => {
 		e.preventDefault();
-		submitVotes(settings.votes);
+		submitVotes();
 	});
 
 	$(document).on('ready', function () {
