@@ -335,10 +335,18 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     }
 
     if (typeof twitchIdFromCookie === 'string') {
-      var userData = fetchVotes(twitchIdFromCookie).then(function (res) {
+      fetchVotes(twitchIdFromCookie).then(function (res) {
         return res.json();
+      }).then(function (_ref2) {
+        var _ref2$user = _ref2.user,
+            votes = _ref2$user.votes,
+            twitch_id = _ref2$user.twitch_id,
+            id = _ref2$user.id,
+            name = _ref2$user.name;
+        console.log({
+          votes: votes
+        });
       });
-      debugger;
     }
   });
 })(window);
