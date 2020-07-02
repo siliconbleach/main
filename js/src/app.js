@@ -46,7 +46,7 @@ import cookie from 'js-cookie';
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const fetchVotes = async twitchId => {
-		const response = await fetch(`${API_URL}/votes/${twitchId}`, {
+		const response = await fetch(`${API_URL}/user/${twitchId}/votes`, {
 			method: 'GET',
 			mode: 'no-cors',
 		})
