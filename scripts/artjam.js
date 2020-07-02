@@ -324,13 +324,14 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     }
 
     var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
-    var twitchIdFromCookie = js_cookie.get('userTwitchId');
 
     if (typeof retrieveStoredSettings === 'string') {
       var storedSettings = JSON.parse(retrieveVotesFromStorage);
       settings = Object.assign(settings, storedSettings);
       return settings;
     }
+
+    var twitchIdFromCookie = js_cookie.get('userTwitchId');
 
     if (typeof twitchIdFromCookie === 'string') {
       fetchVotes(twitchIdFromCookie).then(function (res) {
