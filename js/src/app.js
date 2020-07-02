@@ -49,7 +49,6 @@ import cookie from 'js-cookie';
 		const response = await fetch(`${API_URL}/votes`, {
 			twitchId
 		}).then(res => res.json());
-
 		debugger;
 		return response;
 	}
