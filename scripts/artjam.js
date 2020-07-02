@@ -260,7 +260,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     return id.replace('yui_', '');
   };
 
-  var getVotes = /*#__PURE__*/function () {
+  var fetchVotes = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(twitchId) {
       var response;
       return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -270,16 +270,14 @@ var js_cookie = createCommonjsModule(function (module, exports) {
               _context.next = 2;
               return fetch("".concat(API_URL, "/votes/").concat(twitchId), {
                 method: 'GET',
-                mode: 'no-cors'
-              }).then(function (res) {
-                return res.json().then(function (data) {
-                  return data;
-                });
+                mode: 'no-cors',
+                credentials: 'include',
+                headers: ["'Content-Type' : 'application/json'"]
               });
 
             case 2:
               response = _context.sent;
-              return _context.abrupt("return", response);
+              return _context.abrupt("return", response.json());
 
             case 4:
             case "end":
@@ -289,7 +287,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       }, _callee);
     }));
 
-    return function getVotes(_x) {
+    return function fetchVotes(_x) {
       return _ref.apply(this, arguments);
     };
   }();
@@ -338,8 +336,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     }
 
     if (typeof twitchIdFromCookie === 'string') {
-      settings.votes = getVotes(twitchIdFromCookie);
-      console.log(settings.votes);
+      var fetchedVotes = fetchVotes(twitchIdFromCookie);
+      console.log(fetchedVotes);
+      debugger;
     }
   });
 })(window);
