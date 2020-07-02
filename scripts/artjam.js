@@ -255,6 +255,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       }
     }
 
+    console.log(settings.votes);
     console.log(settings.votes.length);
     $voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles);
   };
