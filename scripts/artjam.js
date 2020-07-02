@@ -36,10 +36,6 @@ function _asyncToGenerator(fn) {
   };
 }
 
-function _readOnlyError(name) {
-  throw new Error("\"" + name + "\" is read-only");
-}
-
 function createCommonjsModule(fn, basedir, module) {
 	return module = {
 	  path: basedir,
@@ -335,12 +331,12 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
     if (typeof retrieveStoredSettings === 'string') {
       var storedSettings = JSON.parse(retrieveVotesFromStorage);
-      settings = (_readOnlyError("settings"), Object.assign(settings, storedSettings));
+      settings = Object.assign(settings, storedSettings);
       return settings;
     }
 
     if (typeof twitchIdFromCookie === 'string') {
-      settings = (_readOnlyError("settings"), getVotes(twitchIdFromCookie));
+      settings = getVotes(twitchIdFromCookie);
     }
   });
 })(window);
