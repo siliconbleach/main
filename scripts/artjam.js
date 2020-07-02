@@ -252,6 +252,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
         settings.votes.push({
           piece_id: id
         });
+        debugger;
       } else {
         return alert('You can only vote for five pieces.');
       }
