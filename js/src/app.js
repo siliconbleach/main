@@ -109,7 +109,7 @@ import cookie from 'js-cookie';
 				console.log(votes);
 				settings.votes = votes;
 
-				settings.votes.forEach(vote => console.log(vote));
+				settings.votes.forEach(vote => console.log(document.getElementById(vote.piece_id)));
 			});
 		}
 
