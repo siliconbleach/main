@@ -78,6 +78,7 @@ import cookie from 'js-cookie';
 
 	$(document).on('ready', function () {
 		const $slides = Array.from(document.querySelectorAll('.slide'));
+		debugger;
 		yui_gallery_id = $slides[0].id.split('_').shift().pop();
 		console.log(yui_gallery_id);
 
