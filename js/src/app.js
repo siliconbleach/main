@@ -25,7 +25,7 @@ import cookie from 'js-cookie';
 
 		const vote = settings.votes.find(v => v.piece_id === id);
 		if (typeof vote !== 'undefined') {
-			settings.votes.splice();
+			settings.votes.splice(vote, 1);
 			styles = {
 				background: 'transparent',
 				color: '#fff'
