@@ -1,5 +1,21 @@
 'use strict';
 
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
   try {
     var info = gen[key](arg);
@@ -235,11 +251,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       background: 'white',
       color: '#e86d6d'
     };
-    var vote = settings.votes.find(function (v) {
-      return v === id;
-    });
+    var voteIndex = settings.vote.indexOf(id);
 
-    if (typeof vote !== 'undefined') {
+    if ((typeof vote === "undefined" ? "undefined" : _typeof(vote)) > -1) {
       settings.votes.splice(vote, 1);
       styles = {
         background: 'transparent',
@@ -253,8 +267,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       }
     }
 
-    console.log(settings.votes);
-    console.log(settings.votes.length);
     $voteSlide.find('.voting-button').toggleClass('is-selected').css(styles);
   };
 
