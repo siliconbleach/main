@@ -238,7 +238,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     var vote = settings.votes.find(function (v) {
       return v === id;
     });
-    console.log(settings.votes);
+    console.log(settings.votes.length);
 
     if (typeof vote !== 'undefined') {
       settings.votes.splice(vote, 1);
