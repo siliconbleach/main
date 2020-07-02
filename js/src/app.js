@@ -6,6 +6,8 @@ import cookie from 'js-cookie';
 	if (!isJamPage) return;
 	const API_URL = 'https://artjam.ngrok.io';
 
+	const YUI_PREFIX = 'yui_';
+
 	let settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
@@ -17,7 +19,7 @@ import cookie from 'js-cookie';
 	 */
 	const toggleVote = id => {
 
-		const $voteSlide = $(`#yui_${id}`);
+		const $voteSlide = $(`#${YUI_PREFIX}${id}`);
 		let styles = {
 			background: 'white',
 			color: '#e86d6d'
@@ -42,7 +44,7 @@ import cookie from 'js-cookie';
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
 	};
 
-	const elementIdToVoteId = id => id.replace('yui_', '');
+	const elementIdToVoteId = id => id.replace(YUI_PREFIX, '');
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const fetchVotes = async twitchId => {
@@ -109,7 +111,7 @@ import cookie from 'js-cookie';
 				console.log(votes);
 				settings.votes = votes;
 
-				setTimeout(settings.votes.forEach(vote => console.log(document.getElementById(vote.piece_id))), 2000);
+				settings.votes.forEach(vote => document.getElementById(vote.piece_id).querySelector('.voting-button').toggleClass('is-selected'));
 			});
 		}
 
