@@ -112,6 +112,8 @@ import cookie from 'js-cookie';
 				}
 				settings.votes = votes;
 
+				console.log(settings.votes.length);
+
 				settings.votes.forEach(vote => {
 					$(`#${YUI_PREFIX}${yui_gallery_id}${vote.piece_id}`).find('.voting-button').toggleClass('is-selected');
 				});
