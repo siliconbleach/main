@@ -241,6 +241,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
     if (typeof vote !== 'undefined') {
       settings.votes.splice(vote, 1);
+      console.log(settings.votes);
       styles = {
         background: 'transparent',
         color: '#fff'
