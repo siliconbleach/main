@@ -100,7 +100,7 @@ import cookie from 'js-cookie';
 		}
 
 		if (typeof twitchIdFromCookie === 'string') {
-			const userData = fetchVotes(twitchIdFromCookie);
+			const userData = fetchVotes(twitchIdFromCookie).then(res => res.data);
 
 			console.log(userData);
 
