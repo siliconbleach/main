@@ -320,7 +320,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   $(document).on('ready', function () {
     $('.slide').append(buttonTemplate);
 
-    if (urlParams.has('success') && urlParams.has('twitchId')) {
+    if (urlParams.has('success') && urlParams.has('twitch_id')) {
       settings.user.twitchId = urlParams.get('twitchId');
       var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
         expires: 14,
