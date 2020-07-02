@@ -110,7 +110,7 @@ import cookie from 'js-cookie';
 					id,
 					name,
 				}
-				settings.votes = votes.map(v => ({ piece_id: v.piece_id }));
+				settings.votes = votes.map(({ piece_id }) => ({ piece_id }));
 
 
 				settings.votes.forEach(vote => {
