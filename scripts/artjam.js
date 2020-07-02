@@ -323,6 +323,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     if (urlParams.has('success') && urlParams.has('twitch_id')) {
       var twitchId = urlParams.get('twitch_id');
       settings.user.twitchId = urlParams.get('twitch_id');
+      debugger;
       var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
         expires: 14,
         sameSite: 'lax',
