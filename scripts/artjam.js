@@ -241,7 +241,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
 
     if (typeof vote !== 'undefined') {
       debugger;
-      settings.votes.splice(vote, 1);
+      settings.votes.splice(vote, 1, 1);
       debugger;
       styles = {
         background: 'transparent',
