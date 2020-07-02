@@ -35,6 +35,7 @@ import cookie from 'js-cookie';
 		} else {
 			if (settings.votes.length < 5) {
 				settings.votes.push({ piece_id: id });
+				debugger;
 			} else {
 				return alert('You can only vote for five pieces.');
 			}
