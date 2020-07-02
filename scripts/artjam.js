@@ -315,8 +315,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
   $(document).on('ready', function () {
     var $slide = $('.slide');
+    console.log($slide);
     yui_gallery_id = $slide.attr('id').split('_').shift().pop().join('_');
-    console.log(yui_gallery_id);
     $('.slide').append(buttonTemplate);
 
     if (urlParams.has('success') && urlParams.has('twitch_id')) {
