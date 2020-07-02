@@ -24,7 +24,6 @@ import cookie from 'js-cookie';
 		}
 
 		const vote = settings.votes.find(v => v === id);
-		console.log(settings.votes.length);
 
 		if (typeof vote !== 'undefined') {
 			settings.votes.splice(vote, 1);
@@ -34,11 +33,14 @@ import cookie from 'js-cookie';
 			}
 		} else {
 
-			if (settings.votes.length === 5) {
+			if (settings.votes.length < 5) {
+				settings.votes.push(id);
+			} else {
 				return alert('You can only vote for five pieces.');
 			}
-			settings.votes.push(id);
 		}
+
+		console.log(settings.votes.length);
 
 		$voteSlide.find('.voting-button').toggleClass('is-seiected').css(styles)
 	};
@@ -112,7 +114,6 @@ import cookie from 'js-cookie';
 				}
 				settings.votes = votes;
 
-				console.log(settings.votes.length);
 
 				settings.votes.forEach(vote => {
 					$(`#${YUI_PREFIX}${yui_gallery_id}${vote.piece_id}`).find('.voting-button').toggleClass('is-selected');
