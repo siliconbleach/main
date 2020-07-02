@@ -86,7 +86,7 @@ import cookie from 'js-cookie';
 
 	$(document).on('mouseenter', '.image-slide-anchor', e => {
 		$(e.target).css({ zIndex: 10 });
-	}).on('mouseleave', '.image-slide-anchor', e => $(e.target).css({ zIndex: inherit });)
+	}).on('mouseleave', '.image-slide-anchor', e => $(e.target).css({ zIndex: inherit }));
 
 	$(document).on('ready', function () {
 		const $slides = Array.from(document.querySelectorAll('.slide'));
