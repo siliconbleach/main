@@ -345,6 +345,11 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     e.preventDefault();
     submitVotes();
   });
+  $(document).on('mouseenter', '.image-slide-anchor', function (e) {
+    $(e.target).css({
+      zIndex: 10
+    });
+  });
   $(document).on('ready', function () {
     var $slides = Array.from(document.querySelectorAll('.slide'));
     yui_gallery_id = $slides[0].id.split('_');
