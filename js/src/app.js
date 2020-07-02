@@ -85,7 +85,7 @@ import cookie from 'js-cookie';
 	});
 
 	$(document).on('mouseenter', '.image-slide-anchor', e => {
-		$(e.target).css({ zIndex: 10 });
+		$(e.target).css({ 'z-index': 10 });
 	}).on('mouseleave', '.image-slide-anchor', e => $(e.target).css({ 'z-index': 'inherit' }));
 
 	$(document).on('ready', function () {
