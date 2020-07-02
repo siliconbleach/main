@@ -87,7 +87,6 @@ import cookie from 'js-cookie';
 			debugger;
 			const twitchIdCookie = cookie.set('userTwitchId', settings.user.twitchId, {
 				expires: 14,
-				sameSite: 'lax',
 				secure: true
 			});
 		}
