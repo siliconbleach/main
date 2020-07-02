@@ -58,7 +58,7 @@ import cookie from 'js-cookie';
 
 		const response = await fetch(`${API_URL}/api/votes`, {
 			method: 'POST',
-			body: JSON.stringify(settings)
+			body: JSON.stringify({ settings })
 		}).then(res => res.json())
 			.then(data => {
 				console.log(data);
@@ -117,7 +117,6 @@ import cookie from 'js-cookie';
 					name,
 				}
 				settings.votes = votes.map(v => v.piece_id);
-
 
 				settings.votes.forEach(vote => {
 					$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
