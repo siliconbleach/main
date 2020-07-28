@@ -4,7 +4,7 @@ import cookie from 'js-cookie';
 	const isJamPage = window.location.pathname === '/jam';
 	const urlParams = new URLSearchParams(window.location.search);
 	if (!isJamPage) return;
-	const API_URL = 'https://artjam.ngrok.io';
+	const API_URL = 'https://artofkoko.com';
 
 	const YUI_PREFIX = 'yui_';
 	let yui_gallery_id = '';
