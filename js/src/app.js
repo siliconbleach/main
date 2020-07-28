@@ -118,8 +118,8 @@ import cookie from 'js-cookie';
 		const twitchIdFromCookie = cookie.get('userTwitchId');
 		if (typeof twitchIdFromCookie === 'string') {
 			fetchVotes(twitchIdFromCookie).then(res => res.json()).then(({ user }) => {
+				console.log(user);
 				const { votes, twitch_id, id, name } = user;
-				console.log(votes);
 				settings.user = {
 					twitch_id,
 					id,
