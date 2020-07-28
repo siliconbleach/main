@@ -125,7 +125,7 @@ import cookie from 'js-cookie';
 				}
 				settings?.votes = votes.map(v => v.piece_id);
 
-				settings.votes.forEach(vote => {
+				settings?.votes.forEach(vote => {
 					$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
 				});
 			});
