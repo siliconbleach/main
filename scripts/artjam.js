@@ -217,7 +217,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   var isJamPage = window.location.pathname === '/jam';
   var urlParams = new URLSearchParams(window.location.search);
   if (!isJamPage) return;
-  var API_URL = 'https://artjam.ngrok.io';
+  var API_URL = 'https://artofkoko.com';
   var YUI_PREFIX = 'yui_';
   var yui_gallery_id = '';
   var settings = {
