@@ -119,21 +119,21 @@ import cookie from 'js-cookie';
 		if (typeof twitchIdFromCookie === 'string') {
 			fetchVotes(twitchIdFromCookie).then(res => res.json()).then(({ user }) => {
 				console.log(user);
-				if (user)) {
-				const { votes, twitch_id, id, name } = user;
-				settings.user = {
-					twitch_id,
-					id,
-					name,
-				}
-				settings.votes = votes.map(v => v.piece_id);
+				if (user) {
+					const { votes, twitch_id, id, name } = user;
+					settings.user = {
+						twitch_id,
+						id,
+						name,
+					}
+					settings.votes = votes.map(v => v.piece_id);
 
-				settings?.votes.forEach(vote => {
-					$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
-				});
-			}
-		});
-}
+					settings?.votes.forEach(vote => {
+						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
+					});
+				}
+			});
+		}
 
 	});
-}) (window)
+})(window)
