@@ -383,22 +383,28 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       fetchVotes(twitchIdFromCookie).then(function (res) {
         return res.json();
       }).then(function (_ref3) {
-        var _ref3$user = _ref3.user,
-            votes = _ref3$user.votes,
-            twitch_id = _ref3$user.twitch_id,
-            id = _ref3$user.id,
-            name = _ref3$user.name;
-        settings.user = {
-          twitch_id: twitch_id,
-          id: id,
-          name: name
-        };
-        settings.votes = votes.map(function (v) {
-          return v.piece_id;
-        });
-        settings.votes.forEach(function (vote) {
-          $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
-        });
+        var user = _ref3.user;
+        console.log(user);
+
+        if (user) {
+          var _settings;
+
+          var votes = user.votes,
+              twitch_id = user.twitch_id,
+              id = user.id,
+              name = user.name;
+          settings.user = {
+            twitch_id: twitch_id,
+            id: id,
+            name: name
+          };
+          settings.votes = votes.map(function (v) {
+            return v.piece_id;
+          });
+          (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
+            $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
+          });
+        }
       });
     }
   });
