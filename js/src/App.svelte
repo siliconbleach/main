@@ -16,8 +16,13 @@
 
     border: 2px inset #fff;
     border-radius: 6px;
-
     margin: 0 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .vote-container {
+      flex-direction: column;
+    }
   }
 </style>
 
