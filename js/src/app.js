@@ -126,7 +126,8 @@ import cookie from 'js-cookie';
 		$(e.currentTarget).css({ 'z-index': 10 });
 	}).on('mouseleave', '.image-slide-anchor', e => $(e.currentTarget).css({ 'z-index': 'inherit' }));
 
-	$(document).on('click', '.ctrl-button', function () {
+	$(document).on('click', '.ctrl-button', function (event) {
+		event.preventDefault();
 		const $icon = $(this).first();
 		console.log($icon);
 	});
