@@ -1,10 +1,17 @@
 <script>
+import { current_component } from "svelte/internal";
+
+
   const INITIAL_VOTE = {
     user_id: null,
     piece_id: 0
   };
   export let user;
   export let votes;
+
+  $: userVotes = Array(5).map((cur, i) => {
+	  return user.votes[i] ?? {piece_id: 0};
+  });
 </script>
 
 <style>
