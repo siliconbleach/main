@@ -7,7 +7,8 @@
   };
   export let user = { votes: [] };
 
-  $: votes = user.votes.concat(Array(5 - user.votes.length));
+
+$: votes = user?.votes || Array(5);
 </script>
 
 <style lang="postcss">
