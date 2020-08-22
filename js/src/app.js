@@ -1,5 +1,5 @@
 import cookie from 'js-cookie';
-let settings = { user: {}, votes: [] };
+let window.settings = { user: {}, votes: [] };
 import App from './App.svelte';
 
 ((window) => {
