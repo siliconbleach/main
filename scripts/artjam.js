@@ -751,6 +751,10 @@
     var API_URL = 'https://artofkoko.com';
     var YUI_PREFIX = 'yui_';
     var yui_gallery_id = '';
+    var settings = {
+      user: {},
+      votes: []
+    };
     var svelteRoot = "<div id=\"jam-app\"></div>";
     var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
     var $toast = null;
