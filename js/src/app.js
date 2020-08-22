@@ -28,8 +28,6 @@ import cookie from 'js-cookie';
 			$('body').append(toastTemplate);
 			$toast = $('#kokoToast');
 			this.el = $toast;
-
-			console.log(this.el);
 		},
 		success: function () {
 			console.log(this);
