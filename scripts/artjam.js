@@ -571,8 +571,8 @@
 
   function add_css() {
   	var style = element("style");
-  	style.id = "svelte-1ut0ii1-style";
-  	style.textContent = ".test.svelte-1ut0ii1{color:pink;font-size:24px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudGVzdCB7XG4gICAgY29sb3I6IHBpbms7XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwidGVzdFwiPlRoaXMgaXMgYSB0ZXN0PC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0UsS0FBSyxlQUFDLENBQUMsQUFDTCxLQUFLLENBQUUsSUFBSSxDQUNYLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMifQ== */";
+  	style.id = "svelte-1c0kdbj-style";
+  	style.textContent = ".vote-container.svelte-1c0kdbj{display:flex;position:fixed;bottom:8px;left:8px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCIgLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -582,9 +582,8 @@
   	const block = {
   		c: function create() {
   			div = element("div");
-  			div.textContent = "This is a test";
-  			attr_dev(div, "class", "test svelte-1ut0ii1");
-  			add_location(div, file, 11, 0, 109);
+  			attr_dev(div, "class", "vote-container svelte-1c0kdbj");
+  			add_location(div, file, 13, 0, 153);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -642,7 +641,7 @@
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-1ut0ii1-style")) add_css();
+  		if (!document.getElementById("svelte-1c0kdbj-style")) add_css();
   		init(this, options, instance, create_fragment, safe_not_equal, { name: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
