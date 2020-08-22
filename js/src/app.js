@@ -131,7 +131,7 @@ import cookie from 'js-cookie';
 
 		toast.init();
 
-		$(body).append(svelteRoot);
+		$('body').append(svelteRoot);
 
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
