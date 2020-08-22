@@ -11,8 +11,8 @@
   }
 
   .vote-holder {
-    width: 34px;
-    height: 34px;
+    width: 64px;
+    height: 64px;
 
     border: 2px inset #fff;
     border-radius: 6px;
