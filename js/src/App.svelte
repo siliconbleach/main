@@ -42,7 +42,7 @@ $: votes = user?.votes || Array(5);
 <div class="vote-container">
   {#each votes as vote}
     <div class="vote-holder">
-      <span>{vote.piece_id}</span>
+      <span>{vote?.piece_id || ''}</span>
     </div>
   {/each}
 </div>
