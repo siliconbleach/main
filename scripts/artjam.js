@@ -235,8 +235,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       $toast = $('#kokoToast');
       this.el = $toast;
     },
-    success: function success() {
-      console.log(this);
+    success: function success(message) {
+      this.el.toggleClass('js-toast-show');
     }
   };
   /**
