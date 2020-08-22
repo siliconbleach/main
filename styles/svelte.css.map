@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "svelte.css",
+  "sources": [
+    "../js/src/App.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\n  export let name;\n</script>\n\n<style>\n  .test {\n    color: pink;\n    font-size: 24px;\n  }\n</style>\n\n<div class=\"test\">This is a test</div>\n"
+  ],
+  "names": [],
+  "mappings": "AAKE,KAAK,eAAC,CAAC,AACL,KAAK,CAAE,IAAI,CACX,SAAS,CAAE,IAAI,AACjB,CAAC"
+}
