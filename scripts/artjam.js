@@ -312,7 +312,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
               }).then(function (res) {
                 return res.json();
               }).then(function (data) {
-                console.log(data);
+                var success = data.success;
               });
 
             case 4:
