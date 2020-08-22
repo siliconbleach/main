@@ -213,6 +213,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   });
 });
 
+var _this = undefined;
+
 (function (window) {
   var isJamPage = window.location.pathname === '/jam';
   var urlParams = new URLSearchParams(window.location.search);
@@ -238,9 +240,18 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       this.el = $toast;
       this.message = $toastMessage;
     },
+    hide: function hide() {
+      _this.el.removeClass('js-toast-show');
+
+      _this.message.text('');
+    },
+    show: function show() {
+      _this.el.addClass('js-toast-show');
+    },
     success: function success(message) {
-      this.el.toggleClass('js-toast-show');
       this.message.text(message);
+      this.show();
+      setTimeout(this.hide, 2500);
     }
   };
   /**
