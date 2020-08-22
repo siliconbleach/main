@@ -10,7 +10,6 @@
 
 {squarespace-headers}
 
-<link rel="stylesheet" href="./styles/svelte.css" />
 
 </head>
 {.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
