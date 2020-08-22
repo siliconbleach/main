@@ -43,7 +43,7 @@ import cookie from 'js-cookie';
 			this.message.text(message);
 			this.show();
 
-			setTimeout(() => this.hide, 2500);
+			setTimeout(() => this.hide)(), 2500);
 		}
 	};
 
