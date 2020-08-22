@@ -186,9 +186,9 @@ import App from './App.svelte';
 					});
 
 					const { user, votes } = settings;
-					app.$$set($$props => {
-						$$props.user = user;
-						$$props.votes = votes;
+					app.$set({
+						user,
+						votes
 					});
 				}
 			});
