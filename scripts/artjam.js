@@ -267,10 +267,6 @@
     return document.createTextNode(data);
   }
 
-  function space() {
-    return text(' ');
-  }
-
   function attr(node, attribute, value) {
     if (value == null) node.removeAttribute(attribute);else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
   }
@@ -608,7 +604,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IHVzZXI7XG4gIGV4cG9ydCBsZXQgdm90ZXM7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwidm90ZS1jb250YWluZXJcIj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuXG4gIHsjZWFjaCB2b3RlcyBhcyB2b3RlfVxuICAgIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPnt2b3RlLnBpZWNlX2lkfTwvZGl2PlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
+  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IHVzZXI7XG4gIGV4cG9ydCBsZXQgdm90ZXM7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwidm90ZS1jb250YWluZXJcIj5cbiAgeyNlYWNoIHZvdGVzIGFzIHZvdGV9XG4gICAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+e3ZvdGUucGllY2VfaWR9PC9kaXY+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU1FLGVBQWUsZUFBQyxDQUFDLEFBQ2YsT0FBTyxDQUFFLElBQUksQ0FDYixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQUFDWCxDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixLQUFLLENBQUUsSUFBSSxDQUNYLE1BQU0sQ0FBRSxJQUFJLENBRVosTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUN0QixhQUFhLENBQUUsR0FBRyxDQUNsQixNQUFNLENBQUUsQ0FBQyxDQUFDLEdBQUcsQUFDZixDQUFDLEFBRUQsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQUNwQyxlQUFlLGVBQUMsQ0FBQyxBQUNmLGNBQWMsQ0FBRSxNQUFNLEFBQ3hCLENBQUMsQUFFRCxZQUFZLGVBQUMsQ0FBQyxBQUNaLE1BQU0sQ0FBRSxHQUFHLENBQUMsSUFBSSxBQUNsQixDQUFDLEFBQ0gsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -618,7 +614,7 @@
   	return child_ctx;
   }
 
-  // (51:2) {#each votes as vote}
+  // (35:2) {#each votes as vote}
   function create_each_block(ctx) {
   	let div;
   	let t_value = /*vote*/ ctx[2].piece_id + "";
@@ -629,7 +625,7 @@
   			div = element("div");
   			t = text(t_value);
   			attr_dev(div, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div, file, 51, 4, 839);
+  			add_location(div, file, 35, 4, 513);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, div, anchor);
@@ -647,7 +643,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(51:2) {#each votes as vote}",
+  		source: "(35:2) {#each votes as vote}",
   		ctx
   	});
 
@@ -655,22 +651,7 @@
   }
 
   function create_fragment(ctx) {
-  	let div5;
-  	let div0;
-  	let span0;
-  	let t1;
-  	let div1;
-  	let span1;
-  	let t3;
-  	let div2;
-  	let span2;
-  	let t5;
-  	let div3;
-  	let span3;
-  	let t7;
-  	let div4;
-  	let span4;
-  	let t9;
+  	let div;
   	let each_value = /*votes*/ ctx[0];
   	validate_each_argument(each_value);
   	let each_blocks = [];
@@ -681,73 +662,23 @@
 
   	const block = {
   		c: function create() {
-  			div5 = element("div");
-  			div0 = element("div");
-  			span0 = element("span");
-  			span0.textContent = "Piece name";
-  			t1 = space();
-  			div1 = element("div");
-  			span1 = element("span");
-  			span1.textContent = "Piece name";
-  			t3 = space();
-  			div2 = element("div");
-  			span2 = element("span");
-  			span2.textContent = "Piece name";
-  			t5 = space();
-  			div3 = element("div");
-  			span3 = element("span");
-  			span3.textContent = "Piece name";
-  			t7 = space();
-  			div4 = element("div");
-  			span4 = element("span");
-  			span4.textContent = "Piece name";
-  			t9 = space();
+  			div = element("div");
 
   			for (let i = 0; i < each_blocks.length; i += 1) {
   				each_blocks[i].c();
   			}
 
-  			add_location(span0, file, 35, 4, 517);
-  			attr_dev(div0, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div0, file, 34, 2, 487);
-  			add_location(span1, file, 38, 4, 582);
-  			attr_dev(div1, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div1, file, 37, 2, 552);
-  			add_location(span2, file, 41, 4, 647);
-  			attr_dev(div2, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div2, file, 40, 2, 617);
-  			add_location(span3, file, 44, 4, 712);
-  			attr_dev(div3, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div3, file, 43, 2, 682);
-  			add_location(span4, file, 47, 4, 777);
-  			attr_dev(div4, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div4, file, 46, 2, 747);
-  			attr_dev(div5, "class", "vote-container svelte-1j3wdui");
-  			add_location(div5, file, 33, 0, 456);
+  			attr_dev(div, "class", "vote-container svelte-1j3wdui");
+  			add_location(div, file, 33, 0, 456);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
   		},
   		m: function mount(target, anchor) {
-  			insert_dev(target, div5, anchor);
-  			append_dev(div5, div0);
-  			append_dev(div0, span0);
-  			append_dev(div5, t1);
-  			append_dev(div5, div1);
-  			append_dev(div1, span1);
-  			append_dev(div5, t3);
-  			append_dev(div5, div2);
-  			append_dev(div2, span2);
-  			append_dev(div5, t5);
-  			append_dev(div5, div3);
-  			append_dev(div3, span3);
-  			append_dev(div5, t7);
-  			append_dev(div5, div4);
-  			append_dev(div4, span4);
-  			append_dev(div5, t9);
+  			insert_dev(target, div, anchor);
 
   			for (let i = 0; i < each_blocks.length; i += 1) {
-  				each_blocks[i].m(div5, null);
+  				each_blocks[i].m(div, null);
   			}
   		},
   		p: function update(ctx, [dirty]) {
@@ -764,7 +695,7 @@
   					} else {
   						each_blocks[i] = create_each_block(child_ctx);
   						each_blocks[i].c();
-  						each_blocks[i].m(div5, null);
+  						each_blocks[i].m(div, null);
   					}
   				}
 
@@ -778,7 +709,7 @@
   		i: noop,
   		o: noop,
   		d: function destroy(detaching) {
-  			if (detaching) detach_dev(div5);
+  			if (detaching) detach_dev(div);
   			destroy_each(each_blocks, detaching);
   		}
   	};
