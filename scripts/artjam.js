@@ -333,8 +333,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
                 var success = data.success;
 
                 if (success) {
-                  toast.message = 'Vote received successfully!';
-                  toast.success();
+                  toast.success('Vote received successfully!');
                 }
               });
 
