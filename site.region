@@ -10,6 +10,8 @@
 
 {squarespace-headers}
 
+<link rel="stylesheet" href="./styles/svelte.css" />
+
 </head>
 {.if template.mobileStylesEnabled}{.or}<!-- Mobile Styles Disabled -->{.end}
 <body id="{squarespace.page-id}" class="{squarespace.page-classes} page-{collection.urlId}{.if template.mobileStylesEnabled}{.or} no-mobile-styles{.end}">
