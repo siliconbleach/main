@@ -388,7 +388,8 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       'z-index': 'inherit'
     });
   });
-  $(document).on('click', '.ctrl-button', function () {
+  $(document).on('click', '.ctrl-button', function (event) {
+    event.preventDefault();
     var $icon = $(this).first();
     console.log($icon);
   });
