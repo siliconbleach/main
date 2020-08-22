@@ -111,10 +111,10 @@ import cookie from 'js-cookie';
 
 	$(document).on('ready', function () {
 
-		$(this).append(toastTemplate);
+		$('body').append(toastTemplate);
 
-		// $toast = $('#kokoToast');
-		// console.log($toast);
+		$toast = $('#kokoToast');
+		console.log($toast);
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
 		yui_gallery_id = $slides[0].id.split('_');
