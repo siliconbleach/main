@@ -136,10 +136,10 @@ import App from './App.svelte';
 
 		$('body').append(svelteRoot);
 
-		const app = new App({
-			target: document.getElementById('jam-app'),
-			props: settings,
-		});
+		// const app = new App({
+		// 	target: document.getElementById('jam-app'),
+		// 	props: settings,
+		// });
 
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
@@ -185,12 +185,10 @@ import App from './App.svelte';
 						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
 					});
 
-					app.$set({
-						user,
-						votes
-					});
-
-					console.log(app);
+					// app.$set({
+					// 	user,
+					// 	votes
+					// });
 				}
 			});
 		}
