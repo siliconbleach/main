@@ -64,7 +64,10 @@ import cookie from 'js-cookie';
 			}
 		}).then(res => res.json())
 			.then(data => {
-				console.log(data);
+				const { success } = data;
+				if (success) {
+
+				}
 			});
 		return response;
 	}
