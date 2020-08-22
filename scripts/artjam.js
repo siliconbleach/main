@@ -225,7 +225,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     votes: []
   };
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
-  var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
   var $toast = null;
   var toast = {
     el: $toast,
@@ -375,9 +374,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     });
   });
   $(document).on('ready', function () {
-    $('body').append(toastTemplate);
-    $toast = $('#kokoToast');
-    console.log($toast);
+    toast.init();
     var $slides = Array.from(document.querySelectorAll('.slide'));
     yui_gallery_id = $slides[0].id.split('_');
     yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
