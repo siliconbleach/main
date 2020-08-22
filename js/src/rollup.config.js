@@ -22,9 +22,9 @@ export default {
             dev: !production,
             // we'll extract any component CSS out into
             // a separate file - better for performance
-            css: css => {
-                css.write('../../styles/svelte.css');
-            }
+            // css: css => {
+            //     css.write('../../styles/svelte.css');
+            // }
         }),
         resolve({
             browser: true,
