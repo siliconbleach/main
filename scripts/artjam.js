@@ -246,9 +246,13 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       this.el.addClass('js-toast-show');
     },
     success: function success(message) {
+      var _this = this;
+
       this.message.text(message);
       this.show();
-      setTimeout(this.hide, 2500);
+      setTimeout(function () {
+        return _this.hide;
+      }, 2500);
     }
   };
   /**
