@@ -257,6 +257,14 @@
     return document.createElement(name);
   }
 
+  function text(data) {
+    return document.createTextNode(data);
+  }
+
+  function space() {
+    return text(' ');
+  }
+
   function attr(node, attribute, value) {
     if (value == null) node.removeAttribute(attribute);else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
   }
@@ -572,30 +580,92 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1c0kdbj-style";
-  	style.textContent = ".vote-container.svelte-1c0kdbj{display:flex;position:fixed;bottom:8px;left:8px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCIgLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyJ9 */";
+  	style.textContent = ".vote-container.svelte-1c0kdbj{display:flex;position:fixed;bottom:8px;left:8px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCI+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtFLGVBQWUsZUFBQyxDQUFDLEFBQ2YsT0FBTyxDQUFFLElBQUksQ0FDYixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQUFDWCxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
   function create_fragment(ctx) {
-  	let div;
+  	let div5;
+  	let div0;
+  	let span0;
+  	let t1;
+  	let div1;
+  	let span1;
+  	let t3;
+  	let div2;
+  	let span2;
+  	let t5;
+  	let div3;
+  	let span3;
+  	let t7;
+  	let div4;
+  	let span4;
 
   	const block = {
   		c: function create() {
-  			div = element("div");
-  			attr_dev(div, "class", "vote-container svelte-1c0kdbj");
-  			add_location(div, file, 13, 0, 153);
+  			div5 = element("div");
+  			div0 = element("div");
+  			span0 = element("span");
+  			span0.textContent = "Piece name";
+  			t1 = space();
+  			div1 = element("div");
+  			span1 = element("span");
+  			span1.textContent = "Piece name";
+  			t3 = space();
+  			div2 = element("div");
+  			span2 = element("span");
+  			span2.textContent = "Piece name";
+  			t5 = space();
+  			div3 = element("div");
+  			span3 = element("span");
+  			span3.textContent = "Piece name";
+  			t7 = space();
+  			div4 = element("div");
+  			span4 = element("span");
+  			span4.textContent = "Piece name";
+  			add_location(span0, file, 15, 4, 214);
+  			attr_dev(div0, "class", "vote-holder");
+  			add_location(div0, file, 14, 2, 184);
+  			add_location(span1, file, 18, 4, 279);
+  			attr_dev(div1, "class", "vote-holder");
+  			add_location(div1, file, 17, 2, 249);
+  			add_location(span2, file, 21, 4, 344);
+  			attr_dev(div2, "class", "vote-holder");
+  			add_location(div2, file, 20, 2, 314);
+  			add_location(span3, file, 24, 4, 409);
+  			attr_dev(div3, "class", "vote-holder");
+  			add_location(div3, file, 23, 2, 379);
+  			add_location(span4, file, 27, 4, 474);
+  			attr_dev(div4, "class", "vote-holder");
+  			add_location(div4, file, 26, 2, 444);
+  			attr_dev(div5, "class", "vote-container svelte-1c0kdbj");
+  			add_location(div5, file, 13, 0, 153);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
   		},
   		m: function mount(target, anchor) {
-  			insert_dev(target, div, anchor);
+  			insert_dev(target, div5, anchor);
+  			append_dev(div5, div0);
+  			append_dev(div0, span0);
+  			append_dev(div5, t1);
+  			append_dev(div5, div1);
+  			append_dev(div1, span1);
+  			append_dev(div5, t3);
+  			append_dev(div5, div2);
+  			append_dev(div2, span2);
+  			append_dev(div5, t5);
+  			append_dev(div5, div3);
+  			append_dev(div3, span3);
+  			append_dev(div5, t7);
+  			append_dev(div5, div4);
+  			append_dev(div4, span4);
   		},
   		p: noop,
   		i: noop,
   		o: noop,
   		d: function destroy(detaching) {
-  			if (detaching) detach_dev(div);
+  			if (detaching) detach_dev(div5);
   		}
   	};
 
