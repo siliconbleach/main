@@ -1,5 +1,8 @@
 <script>
   export let name;
+  let votes = [];
+
+  console.log(settings);
 </script>
 
 <style>
