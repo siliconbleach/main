@@ -33,6 +33,8 @@
 
 <div class="vote-container">
   {#each votes as vote}
-    <div class="vote-holder">{vote.piece_id}</div>
+    <div class="vote-holder">
+      <span>{vote.piece_id}</span>
+    </div>
   {/each}
 </div>
