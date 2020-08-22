@@ -607,7 +607,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuaW1wb3J0IHsgY3VycmVudF9jb21wb25lbnQgfSBmcm9tIFwic3ZlbHRlL2ludGVybmFsXCI7XG5cblxuICBjb25zdCBJTklUSUFMX1ZPVEUgPSB7XG4gICAgdXNlcl9pZDogbnVsbCxcbiAgICBwaWVjZV9pZDogMFxuICB9O1xuICBleHBvcnQgbGV0IHVzZXI7XG5cbiAgJDogdXNlclZvdGVzID0gQXJyYXkoNSkubWFwKChjdXIsIGkpID0+IHtcblx0ICByZXR1cm4gdXNlci52b3Rlc1tpXSA/PyB7cGllY2VfaWQ6IDB9O1xuICB9KTtcbjwvc2NyaXB0PlxuXG48c3R5bGU+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2VhY2ggdXNlci52b3RlcyBhcyB2b3RlfVxuICAgIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgICAgPHNwYW4+e3ZvdGUucGllY2VfaWR9PC9zcGFuPlxuICAgIDwvZGl2PlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQkUsZUFBZSxlQUFDLENBQUMsQUFDZixPQUFPLENBQUUsSUFBSSxDQUNiLFFBQVEsQ0FBRSxLQUFLLENBQ2YsTUFBTSxDQUFFLEdBQUcsQ0FDWCxJQUFJLENBQUUsR0FBRyxBQUNYLENBQUMsQUFFRCxZQUFZLGVBQUMsQ0FBQyxBQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLElBQUksQ0FFWixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLGFBQWEsQ0FBRSxHQUFHLENBQ2xCLE1BQU0sQ0FBRSxDQUFDLENBQUMsR0FBRyxBQUNmLENBQUMsQUFFRCxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBQ3BDLGVBQWUsZUFBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLE1BQU0sQUFDeEIsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxJQUFJLEFBQ2xCLENBQUMsQUFDSCxDQUFDIn0= */";
+  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgeyBjdXJyZW50X2NvbXBvbmVudCB9IGZyb20gXCJzdmVsdGUvaW50ZXJuYWxcIjtcblxuICBjb25zdCBJTklUSUFMX1ZPVEUgPSB7XG4gICAgdXNlcl9pZDogbnVsbCxcbiAgICBwaWVjZV9pZDogMFxuICB9O1xuICBleHBvcnQgbGV0IHVzZXI7XG5cbiAgJDogdm90ZXMgPSB1c2VyLnZvdGVzLmNvbmNhdChBcnJheSg1IC0gdXNlci52b3Rlcy5sZW5ndGgpKTtcbjwvc2NyaXB0PlxuXG48c3R5bGU+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2VhY2ggdXNlci52b3RlcyBhcyB2b3RlfVxuICAgIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgICAgPHNwYW4+e3ZvdGUucGllY2VfaWR9PC9zcGFuPlxuICAgIDwvZGl2PlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFhRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
@@ -617,7 +617,7 @@
   	return child_ctx;
   }
 
-  // (45:2) {#each user.votes as vote}
+  // (42:2) {#each user.votes as vote}
   function create_each_block(ctx) {
   	let div;
   	let span;
@@ -631,9 +631,9 @@
   			span = element("span");
   			t0 = text(t0_value);
   			t1 = space();
-  			add_location(span, file, 46, 6, 743);
+  			add_location(span, file, 43, 6, 714);
   			attr_dev(div, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div, file, 45, 4, 711);
+  			add_location(div, file, 42, 4, 682);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, div, anchor);
@@ -653,7 +653,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(45:2) {#each user.votes as vote}",
+  		source: "(42:2) {#each user.votes as vote}",
   		ctx
   	});
 
@@ -679,7 +679,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container svelte-1j3wdui");
-  			add_location(div, file, 43, 0, 649);
+  			add_location(div, file, 40, 0, 620);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -755,15 +755,15 @@
   		current_component,
   		INITIAL_VOTE,
   		user,
-  		userVotes
+  		votes
   	});
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("userVotes" in $$props) userVotes = $$props.userVotes;
+  		if ("votes" in $$props) votes = $$props.votes;
   	};
 
-  	let userVotes;
+  	let votes;
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
@@ -771,9 +771,7 @@
 
   	$$self.$$.update = () => {
   		if ($$self.$$.dirty & /*user*/ 1) {
-  			 userVotes = Array(5).map((cur, i) => {
-  				return user.votes[i] ?? { piece_id: 0 };
-  			});
+  			 votes = user.votes.concat(Array(5 - user.votes.length));
   		}
   	};
 
