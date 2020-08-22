@@ -190,6 +190,8 @@ import App from './App.svelte';
 						user,
 						votes
 					});
+
+					console.log(app);
 				}
 			});
 		}
