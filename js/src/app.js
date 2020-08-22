@@ -29,8 +29,8 @@ import cookie from 'js-cookie';
 			$toast = $('#kokoToast');
 			this.el = $toast;
 		},
-		success: function () {
-			console.log(this);
+		success: function (message) {
+			this.el.toggleClass('js-toast-show')
 		}
 	};
 
