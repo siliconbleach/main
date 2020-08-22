@@ -15,8 +15,7 @@ export default {
         format: "cjs"
     },
     plugins: [
-        resolve(),
-        commonjs(),
+
         svelte({
             // enable run-time checks when not in production
             dev: !production,
@@ -26,6 +25,11 @@ export default {
                 css.write('public/build/bundle.css');
             }
         }),
+        resolve({
+            browser: true,
+            dedupe: ['svelte']
+        }),
+        commonjs(),
         babel({ babelHelpers: 'bundled' }),
         json({
             // All JSON files will be parsed by default,
