@@ -32,11 +32,11 @@ import cookie from 'js-cookie';
 			this.el = $toast;
 			this.message = $toastMessage;
 		},
-		hide: () => {
+		hide: function () {
 			this.el.removeClass('js-toast-show');
 			this.message.text('');
 		},
-		show: () => {
+		show: function () {
 			this.el.addClass('js-toast-show');
 		},
 		success: function (message) {
