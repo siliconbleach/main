@@ -252,7 +252,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       this.show();
       setTimeout(function () {
         return _this.hide();
-      }, 2500);
+      }, 1250);
     }
   };
   /**
