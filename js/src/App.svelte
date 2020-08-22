@@ -1,12 +1,11 @@
 <script>
-  import { current_component } from "svelte/internal";
 
   const INITIAL_VOTE = {
     user_id: null,
     piece_id: 0
   };
   export let user = { votes: [] };
-  let votes = Array(5);
+  export let votes = Array(5);
   $: votes = user?.votes?.concat(Array(5 - user.votes.length));
 debugger;
 </script>
