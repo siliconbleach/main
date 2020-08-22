@@ -253,6 +253,12 @@
     node.parentNode.removeChild(node);
   }
 
+  function destroy_each(iterations, detaching) {
+    for (let i = 0; i < iterations.length; i += 1) {
+      if (iterations[i]) iterations[i].d(detaching);
+    }
+  }
+
   function element(name) {
     return document.createElement(name);
   }
@@ -542,6 +548,28 @@
     });
   }
 
+  function set_data_dev(text, data) {
+    data = '' + data;
+    if (text.wholeText === data) return;
+    dispatch_dev("SvelteDOMSetData", {
+      node: text,
+      data
+    });
+    text.data = data;
+  }
+
+  function validate_each_argument(arg) {
+    if (typeof arg !== 'string' && !(arg && typeof arg === 'object' && 'length' in arg)) {
+      let msg = '{#each} only iterates over array-like objects.';
+
+      if (typeof Symbol === 'function' && arg && Symbol.iterator in arg) {
+        msg += ' You can use a spread to convert this iterable into an array.';
+      }
+
+      throw new Error(msg);
+    }
+  }
+
   function validate_slots(name, slot, keys) {
     for (const slot_key of Object.keys(slot)) {
       if (!~keys.indexOf(slot_key)) {
@@ -580,8 +608,50 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IHVzZXI7XG4gIGV4cG9ydCBsZXQgdm90ZXM7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwidm90ZS1jb250YWluZXJcIj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBTUUsZUFBZSxlQUFDLENBQUMsQUFDZixPQUFPLENBQUUsSUFBSSxDQUNiLFFBQVEsQ0FBRSxLQUFLLENBQ2YsTUFBTSxDQUFFLEdBQUcsQ0FDWCxJQUFJLENBQUUsR0FBRyxBQUNYLENBQUMsQUFFRCxZQUFZLGVBQUMsQ0FBQyxBQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLElBQUksQ0FFWixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLGFBQWEsQ0FBRSxHQUFHLENBQ2xCLE1BQU0sQ0FBRSxDQUFDLENBQUMsR0FBRyxBQUNmLENBQUMsQUFFRCxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBQ3BDLGVBQWUsZUFBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLE1BQU0sQUFDeEIsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxJQUFJLEFBQ2xCLENBQUMsQUFDSCxDQUFDIn0= */";
+  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IHVzZXI7XG4gIGV4cG9ydCBsZXQgdm90ZXM7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwidm90ZS1jb250YWluZXJcIj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuXG4gIHsjZWFjaCB2b3RlcyBhcyB2b3RlfVxuICAgIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPnt2b3RlLnBpZWNlX2lkfTwvZGl2PlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
   	append_dev(document.head, style);
+  }
+
+  function get_each_context(ctx, list, i) {
+  	const child_ctx = ctx.slice();
+  	child_ctx[2] = list[i];
+  	return child_ctx;
+  }
+
+  // (51:2) {#each votes as vote}
+  function create_each_block(ctx) {
+  	let div;
+  	let t_value = /*vote*/ ctx[2].piece_id + "";
+  	let t;
+
+  	const block = {
+  		c: function create() {
+  			div = element("div");
+  			t = text(t_value);
+  			attr_dev(div, "class", "vote-holder svelte-1j3wdui");
+  			add_location(div, file, 51, 4, 839);
+  		},
+  		m: function mount(target, anchor) {
+  			insert_dev(target, div, anchor);
+  			append_dev(div, t);
+  		},
+  		p: function update(ctx, dirty) {
+  			if (dirty & /*votes*/ 1 && t_value !== (t_value = /*vote*/ ctx[2].piece_id + "")) set_data_dev(t, t_value);
+  		},
+  		d: function destroy(detaching) {
+  			if (detaching) detach_dev(div);
+  		}
+  	};
+
+  	dispatch_dev("SvelteRegisterBlock", {
+  		block,
+  		id: create_each_block.name,
+  		type: "each",
+  		source: "(51:2) {#each votes as vote}",
+  		ctx
+  	});
+
+  	return block;
   }
 
   function create_fragment(ctx) {
@@ -600,6 +670,14 @@
   	let t7;
   	let div4;
   	let span4;
+  	let t9;
+  	let each_value = /*votes*/ ctx[0];
+  	validate_each_argument(each_value);
+  	let each_blocks = [];
+
+  	for (let i = 0; i < each_value.length; i += 1) {
+  		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+  	}
 
   	const block = {
   		c: function create() {
@@ -623,6 +701,12 @@
   			div4 = element("div");
   			span4 = element("span");
   			span4.textContent = "Piece name";
+  			t9 = space();
+
+  			for (let i = 0; i < each_blocks.length; i += 1) {
+  				each_blocks[i].c();
+  			}
+
   			add_location(span0, file, 35, 4, 517);
   			attr_dev(div0, "class", "vote-holder svelte-1j3wdui");
   			add_location(div0, file, 34, 2, 487);
@@ -660,12 +744,42 @@
   			append_dev(div5, t7);
   			append_dev(div5, div4);
   			append_dev(div4, span4);
+  			append_dev(div5, t9);
+
+  			for (let i = 0; i < each_blocks.length; i += 1) {
+  				each_blocks[i].m(div5, null);
+  			}
   		},
-  		p: noop,
+  		p: function update(ctx, [dirty]) {
+  			if (dirty & /*votes*/ 1) {
+  				each_value = /*votes*/ ctx[0];
+  				validate_each_argument(each_value);
+  				let i;
+
+  				for (i = 0; i < each_value.length; i += 1) {
+  					const child_ctx = get_each_context(ctx, each_value, i);
+
+  					if (each_blocks[i]) {
+  						each_blocks[i].p(child_ctx, dirty);
+  					} else {
+  						each_blocks[i] = create_each_block(child_ctx);
+  						each_blocks[i].c();
+  						each_blocks[i].m(div5, null);
+  					}
+  				}
+
+  				for (; i < each_blocks.length; i += 1) {
+  					each_blocks[i].d(1);
+  				}
+
+  				each_blocks.length = each_value.length;
+  			}
+  		},
   		i: noop,
   		o: noop,
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(div5);
+  			destroy_each(each_blocks, detaching);
   		}
   	};
 
@@ -693,29 +807,29 @@
   	validate_slots("App", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(1, votes = $$props.votes);
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
+  		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
   	};
 
   	$$self.$capture_state = () => ({ user, votes });
 
   	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(1, votes = $$props.votes);
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
+  		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [user, votes];
+  	return [votes, user];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-1j3wdui-style")) add_css();
-  		init(this, options, instance, create_fragment, safe_not_equal, { user: 0, votes: 1 });
+  		init(this, options, instance, create_fragment, safe_not_equal, { user: 1, votes: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -727,11 +841,11 @@
   		const { ctx } = this.$$;
   		const props = options.props || {};
 
-  		if (/*user*/ ctx[0] === undefined && !("user" in props)) {
+  		if (/*user*/ ctx[1] === undefined && !("user" in props)) {
   			console.warn("<App> was created without expected prop 'user'");
   		}
 
-  		if (/*votes*/ ctx[1] === undefined && !("votes" in props)) {
+  		if (/*votes*/ ctx[0] === undefined && !("votes" in props)) {
   			console.warn("<App> was created without expected prop 'votes'");
   		}
   	}
