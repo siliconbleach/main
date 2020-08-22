@@ -5,7 +5,7 @@
     user_id: null,
     piece_id: 0
   };
-  export let user;
+  export let user = { votes: [] };
 
   $: votes = user.votes.concat(Array(5 - user.votes.length));
 </script>
