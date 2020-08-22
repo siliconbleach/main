@@ -92,8 +92,7 @@ import cookie from 'js-cookie';
 			.then(data => {
 				const { success } = data;
 				if (success) {
-					toast.message = 'Vote received successfully!';
-					toast.success();
+					toast.success('Vote received successfully!');
 				}
 			});
 		return response;
