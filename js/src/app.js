@@ -1,5 +1,7 @@
 import cookie from 'js-cookie';
 
+import App from './App.svelte';
+
 ((window) => {
 	const isJamPage = window.location.pathname === '/jam';
 	const urlParams = new URLSearchParams(window.location.search);
