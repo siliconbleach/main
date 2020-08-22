@@ -236,6 +236,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       $toast = $('#kokoToast');
       $toastMessage = $('#toastMessage');
       this.el = $toast;
+      this.message = $toastMessage;
     },
     success: function success(message) {
       this.el.toggleClass('js-toast-show');
