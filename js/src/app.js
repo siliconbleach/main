@@ -126,6 +126,10 @@ import cookie from 'js-cookie';
 		$(e.currentTarget).css({ 'z-index': 10 });
 	}).on('mouseleave', '.image-slide-anchor', e => $(e.currentTarget).css({ 'z-index': 'inherit' }));
 
+	$(document).on('click', '.ctrl-button', function () {
+		const $icon = $(this).first();
+		console.log($icon);
+	});
 	$(document).on('ready', function () {
 
 		toast.init();
