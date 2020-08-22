@@ -32,9 +32,18 @@ import cookie from 'js-cookie';
 			this.el = $toast;
 			this.message = $toastMessage;
 		},
+		hide: () => {
+			this.el.removeClass('js-toast-show');
+			this.message.text('');
+		},
+		show: () => {
+			this.el.addClass('js-toast-show');
+		},
 		success: function (message) {
-			this.el.toggleClass('js-toast-show');
 			this.message.text(message);
+			this.show();
+
+			setTimeout(this.hide, 2500);
 		}
 	};
 
