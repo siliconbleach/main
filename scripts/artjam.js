@@ -234,7 +234,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       $('body').append(toastTemplate);
       $toast = $('#kokoToast');
       this.el = $toast;
-      console.log(this.el);
     },
     success: function success() {
       console.log(this);
