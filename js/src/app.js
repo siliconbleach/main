@@ -22,8 +22,10 @@ import cookie from 'js-cookie';
 	let $toast = null;
 
 	const toast = {
-		success: message => {
-
+		el: $toast,
+		message: '',
+		success: function () {
+			console.log(this);
 		}
 	};
 
@@ -81,7 +83,7 @@ import cookie from 'js-cookie';
 			.then(data => {
 				const { success } = data;
 				if (success) {
-
+					toast.success();
 				}
 			});
 		return response;
