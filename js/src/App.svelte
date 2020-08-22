@@ -3,10 +3,12 @@
 </script>
 
 <style>
-  .test {
-    color: pink;
-    font-size: 24px;
+  .vote-container {
+    display: flex;
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
   }
 </style>
 
-<div class="test">This is a test</div>
+<div class="vote-container" />
