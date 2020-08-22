@@ -11,6 +11,7 @@ import cookie from 'js-cookie';
 	let settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
+	const svelteRoot = `<div id="jam-app"></div>`;
 	const toastTemplate = `
 		<div class="toast" id="kokoToast">
 			<section class="toast-content">
