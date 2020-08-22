@@ -7,7 +7,6 @@ import { current_component } from "svelte/internal";
     piece_id: 0
   };
   export let user;
-  export let votes;
 
   $: userVotes = Array(5).map((cur, i) => {
 	  return user.votes[i] ?? {piece_id: 0};
