@@ -25,7 +25,7 @@ import cookie from 'js-cookie';
 		el: $toast,
 		message: '',
 		init: function () {
-			$('body').append('toastTemplate');
+			$('body').append(toastTemplate);
 			$toast = $('#kokoToast');
 			this.el = $toast;
 
