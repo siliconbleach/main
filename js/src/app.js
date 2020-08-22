@@ -131,6 +131,8 @@ import cookie from 'js-cookie';
 
 		toast.init();
 
+		$(body).append(svelteRoot);
+
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
 		yui_gallery_id = $slides[0].id.split('_');
