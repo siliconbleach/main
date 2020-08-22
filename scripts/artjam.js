@@ -227,12 +227,14 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
   var $toast = null;
+  var $toastMessage = null;
   var toast = {
     el: $toast,
-    message: '',
+    message: $toastMessage,
     init: function init() {
       $('body').append(toastTemplate);
       $toast = $('#kokoToast');
+      $toastMessage = $('#toastMessage');
       this.el = $toast;
     },
     success: function success(message) {
