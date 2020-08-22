@@ -32,22 +32,6 @@
 </style>
 
 <div class="vote-container">
-  <div class="vote-holder">
-    <span>Piece name</span>
-  </div>
-  <div class="vote-holder">
-    <span>Piece name</span>
-  </div>
-  <div class="vote-holder">
-    <span>Piece name</span>
-  </div>
-  <div class="vote-holder">
-    <span>Piece name</span>
-  </div>
-  <div class="vote-holder">
-    <span>Piece name</span>
-  </div>
-
   {#each votes as vote}
     <div class="vote-holder">{vote.piece_id}</div>
   {/each}
