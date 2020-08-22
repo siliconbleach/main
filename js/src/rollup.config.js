@@ -13,15 +13,8 @@ export default {
     output: {
         file: '../../scripts/artjam.js',
         sourcemap: true,
-        format: "iife"
+        format: "iife",
         name: 'app'
-    },
-
-    output: {
-        sourcemap: true,
-        format: 'iife',
-        name: 'app',
-        file: 'public/build/bundle.js'
     },
     plugins: [
 
