@@ -20,13 +20,15 @@ import cookie from 'js-cookie';
 	`;
 
 	let $toast = null;
+	let $toastMessage = null;
 
 	const toast = {
 		el: $toast,
-		message: '',
+		message: $toastMessage,
 		init: function () {
 			$('body').append(toastTemplate);
 			$toast = $('#kokoToast');
+			$toastMessage = $('#toastMessage');
 			this.el = $toast;
 		},
 		success: function (message) {
