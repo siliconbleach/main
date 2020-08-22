@@ -185,7 +185,6 @@ import App from './App.svelte';
 						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
 					});
 
-					const { user, votes } = settings;
 					app.$set({
 						user,
 						votes
