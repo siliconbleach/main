@@ -11,4 +11,20 @@
   }
 </style>
 
-<div class="vote-container" />
+<div class="vote-container">
+  <div class="vote-holder">
+    <span>Piece name</span>
+  </div>
+  <div class="vote-holder">
+    <span>Piece name</span>
+  </div>
+  <div class="vote-holder">
+    <span>Piece name</span>
+  </div>
+  <div class="vote-holder">
+    <span>Piece name</span>
+  </div>
+  <div class="vote-holder">
+    <span>Piece name</span>
+  </div>
+</div>
