@@ -16,7 +16,7 @@ export default {
         name: 'app'
     },
     plugins: [
-
+        postcss({ extract: true }),
         svelte({
             // enable run-time checks when not in production
             dev: !production,
