@@ -388,11 +388,6 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       'z-index': 'inherit'
     });
   });
-  $(document).on('click', '.ctrl-button', function (event) {
-    event.preventDefault();
-    var $icon = $(this).first();
-    console.log($icon);
-  });
   $(document).on('ready', function () {
     toast.init();
     var $slides = Array.from(document.querySelectorAll('.slide'));
