@@ -935,6 +935,7 @@
         target: document.getElementById('jam-app'),
         props: settings
       });
+      console.log(app);
       var $slides = Array.from(document.querySelectorAll('.slide'));
       yui_gallery_id = $slides[0].id.split('_');
       yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_'; // $('.slide').append(buttonTemplate);
