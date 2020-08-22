@@ -369,9 +369,9 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     });
   });
   $(document).on('ready', function () {
-    $(this).append(toastTemplate); // $toast = $('#kokoToast');
-    // console.log($toast);
-
+    $('body').append(toastTemplate);
+    $toast = $('#kokoToast');
+    console.log($toast);
     var $slides = Array.from(document.querySelectorAll('.slide'));
     yui_gallery_id = $slides[0].id.split('_');
     yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
