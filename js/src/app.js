@@ -135,6 +135,10 @@ import App from './App.svelte';
 
 		$('body').append(svelteRoot);
 
+		const app = new App({
+			target: document.getElementById('jam-app'),
+		});
+
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
 		yui_gallery_id = $slides[0].id.split('_');
