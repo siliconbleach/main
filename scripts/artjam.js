@@ -579,8 +579,8 @@
 
   function add_css() {
   	var style = element("style");
-  	style.id = "svelte-1c0kdbj-style";
-  	style.textContent = ".vote-container.svelte-1c0kdbj{display:flex;position:fixed;bottom:8px;left:8px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCI+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtFLGVBQWUsZUFBQyxDQUFDLEFBQ2YsT0FBTyxDQUFFLElBQUksQ0FDYixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQUFDWCxDQUFDIn0= */";
+  	style.id = "svelte-npy4m-style";
+  	style.textContent = ".vote-container.svelte-npy4m{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-npy4m{width:34px;height:34px;border:2px inset #fff;border-radius:6px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG48L3NjcmlwdD5cblxuPHN0eWxlPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDM0cHg7XG4gICAgaGVpZ2h0OiAzNHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLRSxlQUFlLGFBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksYUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQUFDcEIsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -623,23 +623,23 @@
   			div4 = element("div");
   			span4 = element("span");
   			span4.textContent = "Piece name";
-  			add_location(span0, file, 15, 4, 214);
-  			attr_dev(div0, "class", "vote-holder");
-  			add_location(div0, file, 14, 2, 184);
-  			add_location(span1, file, 18, 4, 279);
-  			attr_dev(div1, "class", "vote-holder");
-  			add_location(div1, file, 17, 2, 249);
-  			add_location(span2, file, 21, 4, 344);
-  			attr_dev(div2, "class", "vote-holder");
-  			add_location(div2, file, 20, 2, 314);
-  			add_location(span3, file, 24, 4, 409);
-  			attr_dev(div3, "class", "vote-holder");
-  			add_location(div3, file, 23, 2, 379);
-  			add_location(span4, file, 27, 4, 474);
-  			attr_dev(div4, "class", "vote-holder");
-  			add_location(div4, file, 26, 2, 444);
-  			attr_dev(div5, "class", "vote-container svelte-1c0kdbj");
-  			add_location(div5, file, 13, 0, 153);
+  			add_location(span0, file, 23, 4, 324);
+  			attr_dev(div0, "class", "vote-holder svelte-npy4m");
+  			add_location(div0, file, 22, 2, 294);
+  			add_location(span1, file, 26, 4, 389);
+  			attr_dev(div1, "class", "vote-holder svelte-npy4m");
+  			add_location(div1, file, 25, 2, 359);
+  			add_location(span2, file, 29, 4, 454);
+  			attr_dev(div2, "class", "vote-holder svelte-npy4m");
+  			add_location(div2, file, 28, 2, 424);
+  			add_location(span3, file, 32, 4, 519);
+  			attr_dev(div3, "class", "vote-holder svelte-npy4m");
+  			add_location(div3, file, 31, 2, 489);
+  			add_location(span4, file, 35, 4, 584);
+  			attr_dev(div4, "class", "vote-holder svelte-npy4m");
+  			add_location(div4, file, 34, 2, 554);
+  			attr_dev(div5, "class", "vote-container svelte-npy4m");
+  			add_location(div5, file, 21, 0, 263);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -711,7 +711,7 @@
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-1c0kdbj-style")) add_css();
+  		if (!document.getElementById("svelte-npy4m-style")) add_css();
   		init(this, options, instance, create_fragment, safe_not_equal, { name: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
