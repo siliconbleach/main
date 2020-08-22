@@ -583,7 +583,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG4gIGxldCB2b3RlcyA9IFtdO1xuXG4gIGNvbnNvbGUubG9nKHNldHRpbmdzKTtcbjwvc2NyaXB0PlxuXG48c3R5bGU+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
+  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IG5hbWU7XG4gIGxldCB2b3RlcyA9IFtdO1xuICBjb25zb2xlLmxvZyh3aW5kb3cuc2V0dGluZ3MpO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZT5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCI+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbiAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG4gICAgPHNwYW4+UGllY2UgbmFtZTwvc3Bhbj5cbiAgPC9kaXY+XG4gIDxkaXYgY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuICAgIDxzcGFuPlBpZWNlIG5hbWU8L3NwYW4+XG4gIDwvZGl2PlxuICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICA8c3Bhbj5QaWVjZSBuYW1lPC9zcGFuPlxuICA8L2Rpdj5cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9FLGVBQWUsZUFBQyxDQUFDLEFBQ2YsT0FBTyxDQUFFLElBQUksQ0FDYixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQUFDWCxDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixLQUFLLENBQUUsSUFBSSxDQUNYLE1BQU0sQ0FBRSxJQUFJLENBRVosTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsSUFBSSxDQUN0QixhQUFhLENBQUUsR0FBRyxDQUNsQixNQUFNLENBQUUsQ0FBQyxDQUFDLEdBQUcsQUFDZixDQUFDLEFBRUQsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQUNwQyxlQUFlLGVBQUMsQ0FBQyxBQUNmLGNBQWMsQ0FBRSxNQUFNLEFBQ3hCLENBQUMsQUFFRCxZQUFZLGVBQUMsQ0FBQyxBQUNaLE1BQU0sQ0FBRSxHQUFHLENBQUMsSUFBSSxBQUNsQixDQUFDLEFBQ0gsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -626,23 +626,23 @@
   			div4 = element("div");
   			span4 = element("span");
   			span4.textContent = "Piece name";
-  			add_location(span0, file, 37, 4, 541);
+  			add_location(span0, file, 36, 4, 547);
   			attr_dev(div0, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div0, file, 36, 2, 511);
-  			add_location(span1, file, 40, 4, 606);
+  			add_location(div0, file, 35, 2, 517);
+  			add_location(span1, file, 39, 4, 612);
   			attr_dev(div1, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div1, file, 39, 2, 576);
-  			add_location(span2, file, 43, 4, 671);
+  			add_location(div1, file, 38, 2, 582);
+  			add_location(span2, file, 42, 4, 677);
   			attr_dev(div2, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div2, file, 42, 2, 641);
-  			add_location(span3, file, 46, 4, 736);
+  			add_location(div2, file, 41, 2, 647);
+  			add_location(span3, file, 45, 4, 742);
   			attr_dev(div3, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div3, file, 45, 2, 706);
-  			add_location(span4, file, 49, 4, 801);
+  			add_location(div3, file, 44, 2, 712);
+  			add_location(span4, file, 48, 4, 807);
   			attr_dev(div4, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div4, file, 48, 2, 771);
+  			add_location(div4, file, 47, 2, 777);
   			attr_dev(div5, "class", "vote-container svelte-1j3wdui");
-  			add_location(div5, file, 35, 0, 480);
+  			add_location(div5, file, 34, 0, 486);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -686,7 +686,7 @@
   function instance($$self, $$props, $$invalidate) {
   	let { name } = $$props;
   	let votes = [];
-  	console.log(settings);
+  	console.log(window.settings);
   	const writable_props = ["name"];
 
   	Object.keys($$props).forEach(key => {
@@ -744,7 +744,7 @@
   	}
   }
 
-  var settings$1 = {
+  var settings = {
     user: {},
     votes: []
   };
@@ -797,17 +797,17 @@
         background: 'white',
         color: '#e86d6d'
       };
-      var voteIndex = settings$1.votes.indexOf(id);
+      var voteIndex = settings.votes.indexOf(id);
 
       if (voteIndex > -1) {
-        settings$1.votes.splice(voteIndex, 1);
+        settings.votes.splice(voteIndex, 1);
         styles = {
           background: 'transparent',
           color: '#fff'
         };
       } else {
-        if (settings$1.votes.length < 5) {
-          settings$1.votes.push(id);
+        if (settings.votes.length < 5) {
+          settings.votes.push(id);
         } else {
           return alert('You can only vote for five pieces.');
         }
@@ -856,18 +856,18 @@
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                if (settings$1.user.twitch_id) {
+                if (settings.user.twitch_id) {
                   _context2.next = 2;
                   break;
                 }
 
-                return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(settings$1.votes.join(',')));
+                return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(settings.votes.join(',')));
 
               case 2:
                 _context2.next = 4;
                 return fetch("".concat(API_URL, "/api/votes"), {
                   method: 'POST',
-                  body: JSON.stringify(settings$1),
+                  body: JSON.stringify(settings),
                   headers: {
                     'Content-Type': 'application/json'
                   }
@@ -932,8 +932,8 @@
 
       if (urlParams.has('success') && urlParams.has('twitch_id')) {
         var twitchId = urlParams.get('twitch_id');
-        settings$1.user.twitchId = urlParams.get('twitch_id');
-        var twitchIdCookie = js_cookie.set('userTwitchId', settings$1.user.twitchId, {
+        settings.user.twitchId = urlParams.get('twitch_id');
+        var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
           expires: 14,
           secure: true
         });
@@ -943,8 +943,8 @@
 
       if (typeof retrieveStoredSettings === 'string') {
         var storedSettings = JSON.parse(retrieveVotesFromStorage);
-        settings$1 = Object.assign(settings$1, storedSettings);
-        return settings$1;
+        settings = Object.assign(settings, storedSettings);
+        return settings;
       }
 
       var twitchIdFromCookie = js_cookie.get('userTwitchId');
@@ -963,15 +963,15 @@
                 twitch_id = user.twitch_id,
                 id = user.id,
                 name = user.name;
-            settings$1.user = {
+            settings.user = {
               twitch_id: twitch_id,
               id: id,
               name: name
             };
-            settings$1.votes = votes.map(function (v) {
+            settings.votes = votes.map(function (v) {
               return v.piece_id;
             });
-            (_settings = settings$1) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
+            (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
               $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
             });
           }
