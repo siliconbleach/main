@@ -10,7 +10,7 @@
   $: votes = user.votes.concat(Array(5 - user.votes.length));
 </script>
 
-<style>
+<style lang="postcss">
   .vote-container {
     display: flex;
     position: fixed;
