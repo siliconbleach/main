@@ -227,6 +227,13 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   var buttonTemplate = "<button class=\"voting-button\">&uarr; SELECT &uarr;</button>";
   var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
   var $toast = null;
+  var toast = {
+    el: $toast,
+    message: '',
+    success: function success() {
+      console.log(this);
+    }
+  };
   /**
    * Main
    */
@@ -315,6 +322,10 @@ var js_cookie = createCommonjsModule(function (module, exports) {
                 return res.json();
               }).then(function (data) {
                 var success = data.success;
+
+                if (success) {
+                  toast.success();
+                }
               });
 
             case 4:
