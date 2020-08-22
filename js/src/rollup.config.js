@@ -12,7 +12,16 @@ export default {
     input: './app.js',
     output: {
         file: '../../scripts/artjam.js',
-        format: "cjs"
+        sourcemap: true,
+        format: "iife"
+        name: 'app'
+    },
+
+    output: {
+        sourcemap: true,
+        format: 'iife',
+        name: 'app',
+        file: 'public/build/bundle.js'
     },
     plugins: [
 
