@@ -111,7 +111,7 @@ import cookie from 'js-cookie';
 
 	$(document).on('ready', function () {
 
-		// $(this).append(toastTemplate);
+		$(this).append(toastTemplate);
 
 		// $toast = $('#kokoToast');
 		// console.log($toast);
