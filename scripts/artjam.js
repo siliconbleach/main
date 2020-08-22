@@ -230,6 +230,12 @@ var js_cookie = createCommonjsModule(function (module, exports) {
   var toast = {
     el: $toast,
     message: '',
+    init: function init() {
+      $('body').append('toastTemplate');
+      $toast = $('#kokoToast');
+      this.el = $toast;
+      console.log(this.el);
+    },
     success: function success() {
       console.log(this);
     }
