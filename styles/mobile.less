@@ -29,7 +29,8 @@ html.mobile-view {
     right: 45px;
     z-index: 11000;
 
-    .icon-close {}
+    .icon-close {
+    }
   }
 
   #topNav {
@@ -47,7 +48,6 @@ html.mobile-view {
   }
 
   body:not(.auto-play) {
-
     .arrow-wrapper,
     .arrow-wrapper.left,
     .arrow-wrapper.right {
@@ -62,14 +62,12 @@ html.mobile-view {
   }
 
   body.index-transition-slide {
-
     .arrow-wrapper,
     .arrow-wrapper.left,
     .arrow-wrapper.right {
       display: none;
     }
   }
-
 
   body.collection-type-gallery {
     #headerWrapper {
@@ -83,7 +81,6 @@ html.mobile-view {
       width: auto !important;
       position: static !important;
     }
-
   }
 
   #mobile-navigation {
@@ -102,7 +99,7 @@ html.mobile-view {
     transform: translate3d(100%, 0, 0);
     transition: transform 0.2s ease-in;
 
-    >ul {
+    > ul {
       list-style: none;
       padding: 0;
       margin: 0;
@@ -113,7 +110,7 @@ html.mobile-view {
 
         &.folders-collection ul,
         &.index-collection ul,
-        .folder-toggle-box+ul {
+        .folder-toggle-box + ul {
           position: relative;
           height: 0;
           max-height: 0;
@@ -128,9 +125,8 @@ html.mobile-view {
 
         .folder-toggle-box:checked,
         &.active-folder {
-
-          ~ul,
-          >ul {
+          ~ ul,
+          > ul {
             display: block;
             height: auto;
             max-height: 999px;
@@ -151,8 +147,8 @@ html.mobile-view {
           font-size: 18px !important;
         }
 
-        >a,
-        >label {
+        > a,
+        > label {
           margin-left: 20px;
         }
       }
@@ -162,7 +158,6 @@ html.mobile-view {
       margin-left: 16px;
       margin-top: 15px;
     }
-
   }
 
   .sqs-mobile-nav-open {
@@ -173,11 +168,11 @@ html.mobile-view {
   }
 
   body:not(.hide-folder-symbol) {
-    #mobile-navigation>ul li .folder-toggle-label {
+    #mobile-navigation > ul li .folder-toggle-label {
       margin-left: 0;
 
       &:before {
-        content: '+';
+        content: "+";
         margin-right: 0.5em;
         text-decoration: none !important;
       }
@@ -226,7 +221,7 @@ html.mobile-view {
       position: relative;
       float: none;
 
-      >img {
+      > img {
         max-width: 100% !important;
         // height: auto !important;
         position: static !important;
@@ -266,7 +261,6 @@ html.mobile-view {
 }
 
 @media only screen and (max-width: 768px) {
-
   body.collection-type-index,
   body.collection-type-gallery {
     #headerWrapper header {
@@ -311,7 +305,6 @@ html.mobile-view {
   }
 
   .collection-type-blog {
-
     .article-list,
     .hentry {
       float: none;
@@ -382,13 +375,12 @@ html.mobile-view {
   }
 
   // collapse sqs layouts
-  @import 'sqs-grid-breaker';
+  @import "sqs-grid-breaker";
 
   // .sqs-block { clear: none; }
   // .sqs-layout .col { float: none !important; width: auto !important; }
   // .sqs-layout .spacer-block { display: none; }
   // .sqs-layout .sqs-row .sqs-block:last-child { padding-bottom: @vgrid;}
-
 }
 
 html.touch {
@@ -405,7 +397,6 @@ html.touch {
 
 @media only screen and (max-width: 769px) {
   body:not(.auto-play) {
-
     .arrow-wrapper,
     .arrow-wrapper.left,
     .arrow-wrapper.right {
@@ -414,7 +405,6 @@ html.touch {
   }
 
   body.index-transition-slide {
-
     .arrow-wrapper,
     .arrow-wrapper.left,
     .arrow-wrapper.right {
@@ -424,7 +414,6 @@ html.touch {
 }
 
 @media only screen and (max-width: 700px) {
-
   #productDetails,
   #productGallery {
     width: 100%;
@@ -496,17 +485,15 @@ html.touch {
   }
 
   #categoryNav #categoryNavToggle:checked {
-
-    +.category-nav-toggle-label {
+    + .category-nav-toggle-label {
       z-index: 0;
 
       &:after {
-        content: '–';
+        content: "–";
       }
     }
 
-    ~.category-nav {
-
+    ~ .category-nav {
       ul {
         z-index: 2;
 
