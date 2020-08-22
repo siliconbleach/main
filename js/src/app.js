@@ -11,6 +11,13 @@ import cookie from 'js-cookie';
 	let settings = { user: {}, votes: [] };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
+	const toastTemplate = `
+		<div class="toast" id="kokoToast">
+			<section class="toast-content">
+				<span id="toastMessage">{{message}}</span>
+			</section>
+		</div>
+	`;
 
 	/**
 	 * Main
