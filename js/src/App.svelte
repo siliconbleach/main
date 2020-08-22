@@ -16,6 +16,8 @@
 
     border: 2px inset #fff;
     border-radius: 6px;
+
+    margin: 0 8px;
   }
 </style>
 
