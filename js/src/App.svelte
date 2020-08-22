@@ -25,7 +25,7 @@
     }
 
     .vote-holder {
-      margin: 8px 0;
+      margin: 8px auto;
     }
   }
 </style>
