@@ -923,7 +923,8 @@
       toast.init();
       $('body').append(svelteRoot);
       var app = new App({
-        target: document.getElementById('jam-app')
+        target: document.getElementById('jam-app'),
+        props: settings
       });
       var $slides = Array.from(document.querySelectorAll('.slide'));
       yui_gallery_id = $slides[0].id.split('_');
