@@ -23,6 +23,10 @@
     .vote-container {
       flex-direction: column;
     }
+
+    .vote-holder {
+      margin: 8px 0;
+    }
   }
 </style>
 
