@@ -744,11 +744,6 @@
   	}
   }
 
-  var settings = {
-    user: {},
-    votes: []
-  };
-
   (function (window) {
     var isJamPage = window.location.pathname === '/jam';
     var urlParams = new URLSearchParams(window.location.search);
