@@ -240,6 +240,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
     },
     success: function success(message) {
       this.el.toggleClass('js-toast-show');
+      this.message.text(message);
     }
   };
   /**
