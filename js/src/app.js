@@ -30,7 +30,7 @@ import cookie from 'js-cookie';
 			this.el = $toast;
 		},
 		success: function (message) {
-			this.el.toggleClass('js-toast-show')
+			this.el.toggleClass('js-toast-show');
 		}
 	};
 
