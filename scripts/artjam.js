@@ -251,7 +251,7 @@ var js_cookie = createCommonjsModule(function (module, exports) {
       this.message.text(message);
       this.show();
       setTimeout(function () {
-        return _this.hide;
+        return _this.hide();
       }, 2500);
     }
   };
