@@ -30,6 +30,7 @@ import cookie from 'js-cookie';
 			$toast = $('#kokoToast');
 			$toastMessage = $('#toastMessage');
 			this.el = $toast;
+			this.message = $toastMessage;
 		},
 		success: function (message) {
 			this.el.toggleClass('js-toast-show');
