@@ -51,5 +51,6 @@ export default {
             // generate a named export for every property of the JSON object
             namedExports: true // Default: true
         }),
+        production && terser()
     ],
 }
