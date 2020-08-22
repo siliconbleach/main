@@ -31,6 +31,7 @@ export default {
             dedupe: ['svelte']
         }),
         commonjs(),
+        babel(),
         json({
             // All JSON files will be parsed by default,
             // but you can also specifically include/exclude files
