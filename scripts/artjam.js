@@ -1361,13 +1361,8 @@
                 twitch_id = user.twitch_id,
                 id = user.id,
                 name = user.name;
-            settings.user = {
-              twitch_id: twitch_id,
-              id: id,
-              name: name,
-              votes: votes
-            };
-            settings.votes = votes.map(function (v) {
+            settings.user = user;
+            settings.votes = settings.user.votes.map(function (v) {
               return v.piece_id;
             });
             (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
