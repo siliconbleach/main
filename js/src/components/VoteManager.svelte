@@ -1,4 +1,8 @@
 <script>
+  const INITIAL_VOTE = {
+    user_id: null,
+    piece_id: 0
+  };
   export let votes = [];
 </script>
 
