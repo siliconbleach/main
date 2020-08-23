@@ -24,5 +24,9 @@
 </style>
 
 <form id="vote-submission">
-  <button id="submitvotes-button">Submit Votes</button>
+  <button
+    id="submitvotes-button"
+    class:isShowing={(this.mode = 'questionable')}>
+    Submit Votes
+  </button>
 </form>
