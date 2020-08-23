@@ -47,4 +47,6 @@
 	  {vote?.piece_id}
 	  </span>
   {/each}
+
+  <FloatingSubmitButton />
 </div>
