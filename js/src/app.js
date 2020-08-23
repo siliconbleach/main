@@ -189,8 +189,8 @@ import App from './App.svelte';
 					});
 
 					app.$set({
-						user,
-						votes
+						user: settings.user,
+						votes: settings.votes,
 					});
 				}
 			});
