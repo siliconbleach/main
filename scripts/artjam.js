@@ -962,7 +962,7 @@
   function add_css$1() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgc2V0dGluZ3MgPSB7XG4gICAgdXNlcjoge1xuICAgICAgdm90ZXM6IFtdXG4gICAgfVxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48Vm90ZU1hbmFnZXIgey4uLnNldHRpbmdzfSAvPlxuPEZsb2F0aW5nU3VibWl0QnV0dG9uIHsuLi5zZXR0aW5nc30gLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQkUsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQVF0QyxDQUFDIn0= */";
+  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgdXNlciA9IHtcbiAgICB2b3RlczogW11cbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPFZvdGVNYW5hZ2VyIHsuLi5zZXR0aW5nc30gLz5cbjxGbG9hdGluZ1N1Ym1pdEJ1dHRvbiB7Li4uc2V0dGluZ3N9IC8+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUJFLE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFRdEMsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -971,7 +971,7 @@
   	let t;
   	let floatingsubmitbutton;
   	let current;
-  	const votemanager_spread_levels = [/*settings*/ ctx[0]];
+  	const votemanager_spread_levels = [settings];
   	let votemanager_props = {};
 
   	for (let i = 0; i < votemanager_spread_levels.length; i += 1) {
@@ -979,7 +979,7 @@
   	}
 
   	votemanager = new VoteManager({ props: votemanager_props, $$inline: true });
-  	const floatingsubmitbutton_spread_levels = [/*settings*/ ctx[0]];
+  	const floatingsubmitbutton_spread_levels = [settings];
   	let floatingsubmitbutton_props = {};
 
   	for (let i = 0; i < floatingsubmitbutton_spread_levels.length; i += 1) {
@@ -1007,14 +1007,14 @@
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
-  			const votemanager_changes = (dirty & /*settings*/ 1)
-  			? get_spread_update(votemanager_spread_levels, [get_spread_object(/*settings*/ ctx[0])])
+  			const votemanager_changes = (dirty & /*settings*/ 0)
+  			? get_spread_update(votemanager_spread_levels, [get_spread_object(settings)])
   			: {};
 
   			votemanager.$set(votemanager_changes);
 
-  			const floatingsubmitbutton_changes = (dirty & /*settings*/ 1)
-  			? get_spread_update(floatingsubmitbutton_spread_levels, [get_spread_object(/*settings*/ ctx[0])])
+  			const floatingsubmitbutton_changes = (dirty & /*settings*/ 0)
+  			? get_spread_update(floatingsubmitbutton_spread_levels, [get_spread_object(settings)])
   			: {};
 
   			floatingsubmitbutton.$set(floatingsubmitbutton_changes);
@@ -1049,8 +1049,8 @@
   }
 
   function instance$2($$self, $$props, $$invalidate) {
-  	let { settings = { user: { votes: [] } } } = $$props;
-  	const writable_props = ["settings"];
+  	let { user = { votes: [] } } = $$props;
+  	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
@@ -1060,31 +1060,27 @@
   	validate_slots("App", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("settings" in $$props) $$invalidate(0, settings = $$props.settings);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({
-  		VoteManager,
-  		FloatingSubmitButton,
-  		settings
-  	});
+  	$$self.$capture_state = () => ({ VoteManager, FloatingSubmitButton, user });
 
   	$$self.$inject_state = $$props => {
-  		if ("settings" in $$props) $$invalidate(0, settings = $$props.settings);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [settings];
+  	return [user];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-1j3wdui-style")) add_css$1();
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { settings: 0 });
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { user: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1094,11 +1090,11 @@
   		});
   	}
 
-  	get settings() {
+  	get user() {
   		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
 
-  	set settings(value) {
+  	set user(value) {
   		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
