@@ -174,7 +174,7 @@ import App from './App.svelte';
 		const twitchIdFromCookie = cookie.get('userTwitchId');
 		if (typeof twitchIdFromCookie === 'string') {
 			fetchVotes(twitchIdFromCookie).then(res => res.json()).then(({ user }) => {
-				console.log(user);
+
 				if (user) {
 					const { votes, twitch_id, id, name } = user;
 					settings.user = {
