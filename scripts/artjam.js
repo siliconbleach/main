@@ -432,10 +432,11 @@
             });
             (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
               $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
-            }); // app.$set({
-            // 	user,
-            // 	votes
-            // });
+            });
+            app.$set({
+              user: user,
+              votes: votes
+            });
           }
         });
       }
