@@ -638,23 +638,19 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-h91xav-style";
-  	style.textContent = "#vote-submission.svelte-h91xav{position:fixed;left:3%;bottom:2%;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-h91xav{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjdm90ZS1zdWJtaXNzaW9uIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbGVmdDogMyU7XG4gICAgYm90dG9tOiAyJTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIH1cblxuICAjc3VibWl0dm90ZXMtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZzogMC43NXJlbTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0gaWQ9XCJ2b3RlLXN1Ym1pc3Npb25cIj5cbiAgPGJ1dHRvbiBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiPlxuICAgIFN1Ym1pdCBWb3Rlc1xuICAgIDxzcGFuIC8+XG4gIDwvYnV0dG9uPlxuPC9mb3JtPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtFLGdCQUFnQixjQUFDLENBQUMsQUFDaEIsUUFBUSxDQUFFLEtBQUssQ0FDZixJQUFJLENBQUUsRUFBRSxDQUNSLE1BQU0sQ0FBRSxFQUFFLENBQ1YsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsTUFBTSxDQUN2QixXQUFXLENBQUUsTUFBTSxBQUNyQixDQUFDLEFBRUQsbUJBQW1CLGNBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMifQ== */";
+  	style.textContent = "#vote-submission.svelte-h91xav{position:fixed;left:3%;bottom:2%;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-h91xav{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjdm90ZS1zdWJtaXNzaW9uIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbGVmdDogMyU7XG4gICAgYm90dG9tOiAyJTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIH1cblxuICAjc3VibWl0dm90ZXMtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZzogMC43NXJlbTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0gaWQ9XCJ2b3RlLXN1Ym1pc3Npb25cIj5cbiAgPGJ1dHRvbiBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiPlN1Ym1pdCBWb3RlczwvYnV0dG9uPlxuPC9mb3JtPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtFLGdCQUFnQixjQUFDLENBQUMsQUFDaEIsUUFBUSxDQUFFLEtBQUssQ0FDZixJQUFJLENBQUUsRUFBRSxDQUNSLE1BQU0sQ0FBRSxFQUFFLENBQ1YsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsTUFBTSxDQUN2QixXQUFXLENBQUUsTUFBTSxBQUNyQixDQUFDLEFBRUQsbUJBQW1CLGNBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
   function create_fragment(ctx) {
   	let form;
   	let button;
-  	let t;
-  	let span;
 
   	const block = {
   		c: function create() {
   			form = element("form");
   			button = element("button");
-  			t = text("Submit Votes\n    ");
-  			span = element("span");
-  			add_location(span, file, 28, 4, 510);
+  			button.textContent = "Submit Votes";
   			attr_dev(button, "id", "submitvotes-button");
   			attr_dev(button, "class", "svelte-h91xav");
   			add_location(button, file, 26, 2, 456);
@@ -668,8 +664,6 @@
   		m: function mount(target, anchor) {
   			insert_dev(target, form, anchor);
   			append_dev(form, button);
-  			append_dev(button, t);
-  			append_dev(button, span);
   		},
   		p: noop,
   		i: noop,
