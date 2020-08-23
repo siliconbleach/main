@@ -9,6 +9,7 @@
     votes: []
   };
 
+  $: user.votes;
   $: votes = user.votes || Array(5);
 </script>
 
