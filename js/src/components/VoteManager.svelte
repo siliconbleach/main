@@ -17,5 +17,5 @@
 </style>
 
 <div class="vote-container">
-  {#each user.votes as vote}{vote}{/each}
+  {#each votes as vote}{vote}{/each}
 </div>
