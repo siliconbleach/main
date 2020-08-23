@@ -1,8 +1,8 @@
 <script>
   import VoteManager from "./components/VoteManager.svelte";
   import FloatingSubmitButton from "./components/FloatingSubmitButton.svelte";
-  export let user: {
-    votes: [];
+  export let user = {
+    votes: []
   };
 </script>
 
