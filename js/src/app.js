@@ -134,7 +134,7 @@ import App from './App.svelte';
 
 		toast.init();
 
-		// $('body').append(svelteRoot);
+		$('body').append(svelteRoot);
 
 		const app = new App({
 			target: document.getElementById('jam-app'),
