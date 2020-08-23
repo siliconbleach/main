@@ -34,5 +34,5 @@
   }
 </style>
 
-<VoteManager {user} {votes} />
-<FloatingSubmitButton {user} {votes} />
+<VoteManager {user} votes={user.votes} />
+<FloatingSubmitButton {user} votes={user.votes} />
