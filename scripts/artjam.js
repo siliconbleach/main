@@ -638,7 +638,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-114ds3y-style";
-  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBleHBvcnQgbGV0IHVzZXIgPSB7XG4gICAgdm90ZXM6IFtdXG4gIH07XG4gIGV4cG9ydCBsZXQgdm90ZXMgPSBBcnJheSg1KTtcbiAgJDogdXNlci52b3Rlcztcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgI3N1Ym1pdHZvdGVzLWJ1dHRvbiB7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjYpO1xuICAgIGFwcGVhcmFuY2U6IG5vbmU7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIHBhZGRpbmc6IDAuNzVyZW07XG4gICAgY29sb3I6ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogMC4yNXJlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDExMTExMTExMTExMDtcbiAgICBsZWZ0OiAxJTtcbiAgICBib3R0b206IDIlO1xuICB9XG48L3N0eWxlPlxuXG48Zm9ybT5cbiAgPGJ1dHRvbiBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiPlxuICAgIFN1Ym1pdCBWb3Rlc1xuICAgIDxzcGFuIC8+XG4gIDwvYnV0dG9uPlxuPC9mb3JtPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVVFLG1CQUFtQixlQUFDLENBQUMsQUFDbkIsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzlCLFVBQVUsQ0FBRSxJQUFJLENBQ2hCLE1BQU0sQ0FBRSxJQUFJLENBQ1osT0FBTyxDQUFFLE9BQU8sQ0FDaEIsS0FBSyxDQUFFLElBQUksQ0FDWCxhQUFhLENBQUUsT0FBTyxDQUN0QixTQUFTLENBQUUsSUFBSSxDQUNmLFFBQVEsQ0FBRSxLQUFLLENBQ2YsT0FBTyxDQUFFLFlBQVksQ0FDckIsSUFBSSxDQUFFLEVBQUUsQ0FDUixNQUFNLENBQUUsRUFBRSxBQUNaLENBQUMifQ== */";
+  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjc3VibWl0dm90ZXMtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZzogMC43NXJlbTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgei1pbmRleDogMTExMTExMTExMTEwO1xuICAgIGxlZnQ6IDElO1xuICAgIGJvdHRvbTogMiU7XG4gIH1cbjwvc3R5bGU+XG5cbjxmb3JtPlxuICA8YnV0dG9uIGlkPVwic3VibWl0dm90ZXMtYnV0dG9uXCI+XG4gICAgU3VibWl0IFZvdGVzXG4gICAgPHNwYW4gLz5cbiAgPC9idXR0b24+XG48L2Zvcm0+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0UsbUJBQW1CLGVBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsUUFBUSxDQUFFLEtBQUssQ0FDZixPQUFPLENBQUUsWUFBWSxDQUNyQixJQUFJLENBQUUsRUFBRSxDQUNSLE1BQU0sQ0FBRSxFQUFFLEFBQ1osQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -654,11 +654,11 @@
   			button = element("button");
   			t = text("Submit Votes\n    ");
   			span = element("span");
-  			add_location(span, file, 28, 4, 506);
+  			add_location(span, file, 23, 4, 417);
   			attr_dev(button, "id", "submitvotes-button");
   			attr_dev(button, "class", "svelte-114ds3y");
-  			add_location(button, file, 26, 2, 452);
-  			add_location(form, file, 25, 0, 443);
+  			add_location(button, file, 21, 2, 363);
+  			add_location(form, file, 20, 0, 354);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -691,9 +691,7 @@
   const MAX_VOTES_ALLOWED = 5;
 
   function instance($$self, $$props, $$invalidate) {
-  	let { user = { votes: [] } } = $$props;
-  	let { votes = Array(5) } = $$props;
-  	const writable_props = ["user", "votes"];
+  	const writable_props = [];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<FloatingSubmitButton> was created with unknown prop '${key}'`);
@@ -701,37 +699,15 @@
 
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("FloatingSubmitButton", $$slots, []);
-
-  	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(1, votes = $$props.votes);
-  	};
-
-  	$$self.$capture_state = () => ({ MAX_VOTES_ALLOWED, user, votes });
-
-  	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(1, votes = $$props.votes);
-  	};
-
-  	if ($$props && "$$inject" in $$props) {
-  		$$self.$inject_state($$props.$$inject);
-  	}
-
-  	$$self.$$.update = () => {
-  		if ($$self.$$.dirty & /*user*/ 1) {
-  			 user.votes;
-  		}
-  	};
-
-  	return [user, votes];
+  	$$self.$capture_state = () => ({ MAX_VOTES_ALLOWED });
+  	return [];
   }
 
   class FloatingSubmitButton extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-114ds3y-style")) add_css();
-  		init(this, options, instance, create_fragment, safe_not_equal, { user: 0, votes: 1 });
+  		init(this, options, instance, create_fragment, safe_not_equal, {});
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -739,22 +715,6 @@
   			options,
   			id: create_fragment.name
   		});
-  	}
-
-  	get user() {
-  		throw new Error("<FloatingSubmitButton>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	set user(value) {
-  		throw new Error("<FloatingSubmitButton>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	get votes() {
-  		throw new Error("<FloatingSubmitButton>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	set votes(value) {
-  		throw new Error("<FloatingSubmitButton>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
 
