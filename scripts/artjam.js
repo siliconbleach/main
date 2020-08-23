@@ -1283,7 +1283,10 @@
       $('body').append(svelteRoot);
       var app = new App({
         target: document.getElementById('jam-app'),
-        props: settings
+        props: {
+          user: settings.user,
+          votes: setttings.user.votes
+        }
       });
       var $slides = Array.from(document.querySelectorAll('.slide'));
       yui_gallery_id = $slides[0].id.split('_');
