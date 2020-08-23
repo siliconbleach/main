@@ -1,6 +1,8 @@
 <script>
   const MAX_VOTES_ALLOWED = 5;
   let isSubmitButtonActive = false;
+
+  const dispatch = createEventDispatcher();
 </script>
 
 <style lang="postcss">
