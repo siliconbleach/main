@@ -140,7 +140,7 @@ import App from './App.svelte';
 			target: document.getElementById('jam-app'),
 			props: {
 				user: settings.user,
-				votes: setttings.user.votes,
+				votes: settings.user.votes,
 			},
 		})
 
