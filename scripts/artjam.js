@@ -274,6 +274,10 @@
     return document.createTextNode(data);
   }
 
+  function space() {
+    return text(' ');
+  }
+
   function attr(node, attribute, value) {
     if (value == null) node.removeAttribute(attribute);else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
   }
@@ -960,12 +964,14 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgc2V0dGluZ3MgPSB7XG4gICAgdXNlcjoge1xuICAgICAgdm90ZXM6IFtdXG4gICAgfVxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48Vm90ZU1hbmFnZXIgey4uLnNldHRpbmdzfSAvPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJCRSxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBUXRDLENBQUMifQ== */";
+  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgc2V0dGluZ3MgPSB7XG4gICAgdXNlcjoge1xuICAgICAgdm90ZXM6IFtdXG4gICAgfVxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48Vm90ZU1hbmFnZXIgey4uLnNldHRpbmdzfSAvPlxuPEZsb2F0aW5nU3VibWl0QnV0dG9uIHsuLi5zZXR0aW5nc30gLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQkUsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQVF0QyxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
   function create_fragment$2(ctx) {
   	let votemanager;
+  	let t;
+  	let floatingsubmitbutton;
   	let current;
   	const votemanager_spread_levels = [/*settings*/ ctx[0]];
   	let votemanager_props = {};
@@ -975,16 +981,31 @@
   	}
 
   	votemanager = new VoteManager({ props: votemanager_props, $$inline: true });
+  	const floatingsubmitbutton_spread_levels = [/*settings*/ ctx[0]];
+  	let floatingsubmitbutton_props = {};
+
+  	for (let i = 0; i < floatingsubmitbutton_spread_levels.length; i += 1) {
+  		floatingsubmitbutton_props = assign(floatingsubmitbutton_props, floatingsubmitbutton_spread_levels[i]);
+  	}
+
+  	floatingsubmitbutton = new FloatingSubmitButton({
+  			props: floatingsubmitbutton_props,
+  			$$inline: true
+  		});
 
   	const block = {
   		c: function create() {
   			create_component(votemanager.$$.fragment);
+  			t = space();
+  			create_component(floatingsubmitbutton.$$.fragment);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
   		},
   		m: function mount(target, anchor) {
   			mount_component(votemanager, target, anchor);
+  			insert_dev(target, t, anchor);
+  			mount_component(floatingsubmitbutton, target, anchor);
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
@@ -993,18 +1014,28 @@
   			: {};
 
   			votemanager.$set(votemanager_changes);
+
+  			const floatingsubmitbutton_changes = (dirty & /*settings*/ 1)
+  			? get_spread_update(floatingsubmitbutton_spread_levels, [get_spread_object(/*settings*/ ctx[0])])
+  			: {};
+
+  			floatingsubmitbutton.$set(floatingsubmitbutton_changes);
   		},
   		i: function intro(local) {
   			if (current) return;
   			transition_in(votemanager.$$.fragment, local);
+  			transition_in(floatingsubmitbutton.$$.fragment, local);
   			current = true;
   		},
   		o: function outro(local) {
   			transition_out(votemanager.$$.fragment, local);
+  			transition_out(floatingsubmitbutton.$$.fragment, local);
   			current = false;
   		},
   		d: function destroy(detaching) {
   			destroy_component(votemanager, detaching);
+  			if (detaching) detach_dev(t);
+  			destroy_component(floatingsubmitbutton, detaching);
   		}
   	};
 
