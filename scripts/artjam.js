@@ -767,7 +767,7 @@
   	return child_ctx;
   }
 
-  // (20:2) {#each votes as vote}
+  // (21:2) {#each votes as vote}
   function create_each_block(ctx) {
   	let t_value = /*vote*/ ctx[3] + "";
   	let t;
@@ -791,7 +791,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(20:2) {#each votes as vote}",
+  		source: "(21:2) {#each votes as vote}",
   		ctx
   	});
 
@@ -817,7 +817,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container");
-  			add_location(div, file$1, 18, 0, 267);
+  			add_location(div, file$1, 19, 0, 284);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -908,6 +908,10 @@
   	}
 
   	$$self.$$.update = () => {
+  		if ($$self.$$.dirty & /*user*/ 2) {
+  			 user.votes;
+  		}
+
   		if ($$self.$$.dirty & /*user*/ 2) {
   			 $$invalidate(0, votes = user.votes || Array(5));
   		}
