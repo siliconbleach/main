@@ -291,6 +291,15 @@
     current_component = component;
   }
 
+  function get_current_component() {
+    if (!current_component) throw new Error(`Function called outside component initialization`);
+    return current_component;
+  }
+
+  function onMount(fn) {
+    get_current_component().$$.on_mount.push(fn);
+  }
+
   const dirty_components = [];
   const binding_callbacks = [];
   const render_callbacks = [];
@@ -933,7 +942,7 @@
   function add_css$1() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgdXNlciA9IHtcbiAgICB2b3RlczogW11cbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPFZvdGVNYW5hZ2VyIHt1c2VyfSAvPlxuPEZsb2F0aW5nU3VibWl0QnV0dG9uIHt1c2VyfSB2b3Rlcz17dXNlci52b3Rlc30gLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5QkUsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQVF0QyxDQUFDIn0= */";
+  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgeyBvbk1vdW50IH0gZnJvbSBcInN2ZWx0ZS9pbnRlcm5hbFwiO1xuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgdXNlciA9IHtcbiAgICB2b3RlczogW11cbiAgfTtcblxuICBvbk1vdW50KCgpID0+IHt9KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPFZvdGVNYW5hZ2VyIHt1c2VyfSAvPlxuPEZsb2F0aW5nU3VibWl0QnV0dG9uIHt1c2VyfSB2b3Rlcz17dXNlci52b3Rlc30gLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0QkUsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQVF0QyxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -1011,6 +1020,11 @@
 
   function instance$2($$self, $$props, $$invalidate) {
   	let { user = { votes: [] } } = $$props;
+
+  	onMount(() => {
+  		
+  	});
+
   	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
@@ -1024,7 +1038,12 @@
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({ VoteManager, FloatingSubmitButton, user });
+  	$$self.$capture_state = () => ({
+  		onMount,
+  		VoteManager,
+  		FloatingSubmitButton,
+  		user
+  	});
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
