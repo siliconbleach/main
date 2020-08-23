@@ -136,10 +136,10 @@ import App from './App.svelte';
 
 		// $('body').append(svelteRoot);
 
-		// const app = new App({
-		// 	target: document.getElementById('jam-app'),
-		// 	props: settings,
-		// });
+		const app = new App({
+			target: document.getElementById('jam-app'),
+			props: settings,
+		});
 
 
 		const $slides = Array.from(document.querySelectorAll('.slide'));
