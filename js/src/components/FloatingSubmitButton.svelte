@@ -25,11 +25,12 @@
 	font-size: 20px;
 	opacity: 0;
 	visibility: hidden;
-	
-	&.is-shown{
-		opacity: 1;
-		visibility: visible;
-	}
+	transition: all .75s ease-in-out;
+  }
+
+  #submitvotes-button.is-shown {
+	  opacity:1;
+	  visibility: visible;
   }
 </style>
 
