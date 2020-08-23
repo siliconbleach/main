@@ -12,6 +12,7 @@
   $: user.votes;
   debugger;
   $: votes = user.votes;
+  debugger;
 </script>
 
 <style lang="postcss">
