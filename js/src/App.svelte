@@ -5,10 +5,10 @@
     piece_id: 0
   };
   export let user = { votes: [] };
-  export let votes = Array(5);
-  $: votes = user?.votes?.concat(Array(5 - user.votes.length))
+  export let votes = Array(5).map(_ => INITIAL_VOTE);
+  $:
 
-  
+
 </script>
 
 <style lang="postcss">
