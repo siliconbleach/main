@@ -5,6 +5,7 @@
     user_id: null,
     piece_id: 0
   };
+  export let user = {};
   export let votes = [];
 </script>
 
