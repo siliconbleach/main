@@ -637,8 +637,8 @@
 
   function add_css() {
   	var style = element("style");
-  	style.id = "svelte-114ds3y-style";
-  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjc3VibWl0dm90ZXMtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZzogMC43NXJlbTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgei1pbmRleDogMTExMTExMTExMTEwO1xuICAgIGxlZnQ6IDElO1xuICAgIGJvdHRvbTogMiU7XG4gIH1cbjwvc3R5bGU+XG5cbjxmb3JtPlxuICA8YnV0dG9uIGlkPVwic3VibWl0dm90ZXMtYnV0dG9uXCI+XG4gICAgU3VibWl0IFZvdGVzXG4gICAgPHNwYW4gLz5cbiAgPC9idXR0b24+XG48L2Zvcm0+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0UsbUJBQW1CLGVBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsUUFBUSxDQUFFLEtBQUssQ0FDZixPQUFPLENBQUUsWUFBWSxDQUNyQixJQUFJLENBQUUsRUFBRSxDQUNSLE1BQU0sQ0FBRSxFQUFFLEFBQ1osQ0FBQyJ9 */";
+  	style.id = "svelte-1opx81n-style";
+  	style.textContent = "#vote-submission.svelte-1opx81n{position:fixed;left:3%;bottom:2%}#submitvotes-button.svelte-1opx81n{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjdm90ZS1zdWJtaXNzaW9uIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbGVmdDogMyU7XG4gICAgYm90dG9tOiAyJTtcbiAgfVxuXG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICB9XG48L3N0eWxlPlxuXG48Zm9ybSBpZD1cInZvdGUtc3VibWlzc2lvblwiPlxuICA8YnV0dG9uIGlkPVwic3VibWl0dm90ZXMtYnV0dG9uXCI+XG4gICAgU3VibWl0IFZvdGVzXG4gICAgPHNwYW4gLz5cbiAgPC9idXR0b24+XG48L2Zvcm0+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBS0UsZ0JBQWdCLGVBQUMsQ0FBQyxBQUNoQixRQUFRLENBQUUsS0FBSyxDQUNmLElBQUksQ0FBRSxFQUFFLENBQ1IsTUFBTSxDQUFFLEVBQUUsQUFDWixDQUFDLEFBRUQsbUJBQW1CLGVBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
@@ -654,11 +654,13 @@
   			button = element("button");
   			t = text("Submit Votes\n    ");
   			span = element("span");
-  			add_location(span, file, 23, 4, 417);
+  			add_location(span, file, 25, 4, 437);
   			attr_dev(button, "id", "submitvotes-button");
-  			attr_dev(button, "class", "svelte-114ds3y");
-  			add_location(button, file, 21, 2, 363);
-  			add_location(form, file, 20, 0, 354);
+  			attr_dev(button, "class", "svelte-1opx81n");
+  			add_location(button, file, 23, 2, 383);
+  			attr_dev(form, "id", "vote-submission");
+  			attr_dev(form, "class", "svelte-1opx81n");
+  			add_location(form, file, 22, 0, 353);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -706,7 +708,7 @@
   class FloatingSubmitButton extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-114ds3y-style")) add_css();
+  		if (!document.getElementById("svelte-1opx81n-style")) add_css();
   		init(this, options, instance, create_fragment, safe_not_equal, {});
 
   		dispatch_dev("SvelteRegisterComponent", {
