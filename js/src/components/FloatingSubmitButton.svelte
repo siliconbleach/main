@@ -24,8 +24,5 @@
 </style>
 
 <form id="vote-submission">
-  <button id="submitvotes-button">
-    Submit Votes
-    <span />
-  </button>
+  <button id="submitvotes-button">Submit Votes</button>
 </form>
