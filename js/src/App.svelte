@@ -1,11 +1,6 @@
 <script>
-import VoteManager from "./components/VoteManager.svelte";
-
-
-imporpt VoteManager from 'components/VoteManager.svelte';
-
-
-
+  import VoteManager from "./components/VoteManager.svelte";
+  import FloatingSubmitButton from "./components/FloatingSubmitButton.svelte";
 </script>
 
 <style lang="postcss">
@@ -36,10 +31,4 @@ imporpt VoteManager from 'components/VoteManager.svelte';
   }
 </style>
 
-<div class="vote-container">
-  {#each votes as vote}
-    <div class="vote-holder">
-      <span>{vote?.piece_id || ''}</span>
-    </div>
-  {/each}
-</div>
+<VoteManager {...settings} />
