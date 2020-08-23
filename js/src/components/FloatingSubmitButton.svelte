@@ -4,10 +4,9 @@
     votes: []
   };
   export let votes = Array(5);
+  $: user.votes;
 
-  debugger;
-
-  $: votesRemaining = MAX_VOTES_ALLOWED - user.votes.length;
+  console.log(user.votes);
 </script>
 
 <style lang="postcss">
