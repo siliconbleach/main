@@ -3,22 +3,24 @@
 </script>
 
 <style lang="postcss">
-  #submitvotes-button {
-    background: rgba(0, 0, 0, 0.6);
-    appearance: none;
-    border: none;
-    padding: 0.75rem;
-    color: #fff;
-    border-radius: 0.25rem;
-    font-size: 20px;
+  #vote-submission {
     position: fixed;
-    z-index: 111111111110;
-    left: 1%;
+    left: 3%;
     bottom: 2%;
+
+    & #submitvotes-button {
+      background: rgba(0, 0, 0, 0.6);
+      appearance: none;
+      border: none;
+      padding: 0.75rem;
+      color: #fff;
+      border-radius: 0.25rem;
+      font-size: 20px;
+    }
   }
 </style>
 
-<form>
+<form id="vote-submission">
   <button id="submitvotes-button">
     Submit Votes
     <span />
