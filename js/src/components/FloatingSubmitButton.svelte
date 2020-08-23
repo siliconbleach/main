@@ -5,8 +5,6 @@
   };
   export let votes = Array(5);
   $: user.votes;
-
-  console.log(user.votes);
 </script>
 
 <style lang="postcss">
