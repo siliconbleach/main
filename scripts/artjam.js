@@ -678,8 +678,8 @@
 
   function add_css() {
   	var style = element("style");
-  	style.id = "svelte-10gbtqq-style";
-  	style.textContent = "#submitvotes-button.svelte-10gbtqq{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;bottom:24px;z-index:111111111110;left:25%;right:25%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBleHBvcnQgbGV0IHZvdGVzO1xuXG4gICQ6IHZvdGVzUmVtYWluaW5nID0gTUFYX1ZPVEVTX0FMTE9XRUQgLSB2b3Rlcy5sZW5ndGg7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDI0cHg7XG4gICAgei1pbmRleDogMTExMTExMTExMTEwO1xuICAgIGxlZnQ6IDI1JTtcbiAgICByaWdodDogMjUlO1xuICB9XG48L3N0eWxlPlxuXG48Zm9ybT5cbiAgPGJ1dHRvbiBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiPlxuICAgIFN1Ym1pdCBWb3Rlc1xuICAgIDxzcGFuIC8+XG4gIDwvYnV0dG9uPlxuPC9mb3JtPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFFLG1CQUFtQixlQUFDLENBQUMsQUFDbkIsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzlCLFVBQVUsQ0FBRSxJQUFJLENBQ2hCLE1BQU0sQ0FBRSxJQUFJLENBQ1osT0FBTyxDQUFFLE9BQU8sQ0FDaEIsS0FBSyxDQUFFLElBQUksQ0FDWCxhQUFhLENBQUUsT0FBTyxDQUN0QixTQUFTLENBQUUsSUFBSSxDQUNmLFFBQVEsQ0FBRSxLQUFLLENBQ2YsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsWUFBWSxDQUNyQixJQUFJLENBQUUsR0FBRyxDQUNULEtBQUssQ0FBRSxHQUFHLEFBQ1osQ0FBQyJ9 */";
+  	style.id = "svelte-114ds3y-style";
+  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBleHBvcnQgbGV0IHZvdGVzO1xuXG4gICQ6IHZvdGVzUmVtYWluaW5nID0gTUFYX1ZPVEVTX0FMTE9XRUQgLSB2b3Rlcy5sZW5ndGg7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxMTExMTExMTExMTA7XG4gICAgbGVmdDogMSU7XG4gICAgYm90dG9tOiAyJTtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0+XG4gIDxidXR0b24gaWQ9XCJzdWJtaXR2b3Rlcy1idXR0b25cIj5cbiAgICBTdWJtaXQgVm90ZXNcbiAgICA8c3BhbiAvPlxuICA8L2J1dHRvbj5cbjwvZm9ybT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRRSxtQkFBbUIsZUFBQyxDQUFDLEFBQ25CLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUM5QixVQUFVLENBQUUsSUFBSSxDQUNoQixNQUFNLENBQUUsSUFBSSxDQUNaLE9BQU8sQ0FBRSxPQUFPLENBQ2hCLEtBQUssQ0FBRSxJQUFJLENBQ1gsYUFBYSxDQUFFLE9BQU8sQ0FDdEIsU0FBUyxDQUFFLElBQUksQ0FDZixRQUFRLENBQUUsS0FBSyxDQUNmLE9BQU8sQ0FBRSxZQUFZLENBQ3JCLElBQUksQ0FBRSxFQUFFLENBQ1IsTUFBTSxDQUFFLEVBQUUsQUFDWixDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -695,11 +695,11 @@
   			button = element("button");
   			t = text("Submit Votes\n    ");
   			span = element("span");
-  			add_location(span, file, 27, 4, 513);
+  			add_location(span, file, 26, 4, 494);
   			attr_dev(button, "id", "submitvotes-button");
-  			attr_dev(button, "class", "svelte-10gbtqq");
-  			add_location(button, file, 25, 2, 459);
-  			add_location(form, file, 24, 0, 450);
+  			attr_dev(button, "class", "svelte-114ds3y");
+  			add_location(button, file, 24, 2, 440);
+  			add_location(form, file, 23, 0, 431);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -771,7 +771,7 @@
   class FloatingSubmitButton extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-10gbtqq-style")) add_css();
+  		if (!document.getElementById("svelte-114ds3y-style")) add_css();
   		init(this, options, instance, create_fragment, safe_not_equal, { votes: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
