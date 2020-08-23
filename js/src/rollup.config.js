@@ -5,7 +5,6 @@ import json from 'rollup-plugin-json'
 import svelte from 'rollup-plugin-svelte';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
-import postcssNesting from 'postcss-nesting';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
@@ -17,7 +16,7 @@ export default {
         name: 'app'
     },
     plugins: [
-        postcss([postcssNesting(), { extract: true }]),
+        postcss({ extract: true }),
         svelte({
             // enable run-time checks when not in production
             dev: !production,
