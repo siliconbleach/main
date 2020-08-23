@@ -1,10 +1,5 @@
 <script>
   const MAX_VOTES_ALLOWED = 5;
-  export let user = {
-    votes: []
-  };
-  export let votes = Array(5);
-  $: user.votes;
 </script>
 
 <style lang="postcss">
