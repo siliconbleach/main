@@ -6,4 +6,6 @@
 
 </style>
 
-<div class="vote-container" />
+<div class="vote-container">
+  {#each votes as vote}{vote}{/each}
+</div>
