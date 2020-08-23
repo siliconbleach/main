@@ -43,8 +43,7 @@
   }
 </style>
 
-<div class="vote-container">
-{@debug votes}
+<div class="vote-container"></div></div>
   {#each votes as vote}
  	 <span class="vote-holder">
 	  {vote?.piece_id}
