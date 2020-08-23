@@ -7,16 +7,16 @@
     position: fixed;
     left: 3%;
     bottom: 2%;
+  }
 
-    & #submitvotes-button {
-      background: rgba(0, 0, 0, 0.6);
-      appearance: none;
-      border: none;
-      padding: 0.75rem;
-      color: #fff;
-      border-radius: 0.25rem;
-      font-size: 20px;
-    }
+  #submitvotes-button {
+    background: rgba(0, 0, 0, 0.6);
+    appearance: none;
+    border: none;
+    padding: 0.75rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 20px;
   }
 </style>
 
