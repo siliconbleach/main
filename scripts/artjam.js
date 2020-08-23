@@ -796,13 +796,13 @@
 
   function get_each_context(ctx, list, i) {
   	const child_ctx = ctx.slice();
-  	child_ctx[3] = list[i];
+  	child_ctx[2] = list[i];
   	return child_ctx;
   }
 
-  // (17:2) {#each votes as vote}
+  // (18:2) {#each user.votes as vote}
   function create_each_block(ctx) {
-  	let t_value = /*vote*/ ctx[3] + "";
+  	let t_value = /*vote*/ ctx[2] + "";
   	let t;
 
   	const block = {
@@ -813,7 +813,7 @@
   			insert_dev(target, t, anchor);
   		},
   		p: function update(ctx, dirty) {
-  			if (dirty & /*votes*/ 1 && t_value !== (t_value = /*vote*/ ctx[3] + "")) set_data_dev(t, t_value);
+  			if (dirty & /*user*/ 1 && t_value !== (t_value = /*vote*/ ctx[2] + "")) set_data_dev(t, t_value);
   		},
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(t);
@@ -824,7 +824,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(17:2) {#each votes as vote}",
+  		source: "(18:2) {#each user.votes as vote}",
   		ctx
   	});
 
@@ -833,7 +833,7 @@
 
   function create_fragment$1(ctx) {
   	let div;
-  	let each_value = /*votes*/ ctx[0];
+  	let each_value = /*user*/ ctx[0].votes;
   	validate_each_argument(each_value);
   	let each_blocks = [];
 
@@ -850,7 +850,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container");
-  			add_location(div, file$1, 15, 0, 237);
+  			add_location(div, file$1, 16, 0, 229);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -863,8 +863,8 @@
   			}
   		},
   		p: function update(ctx, [dirty]) {
-  			if (dirty & /*votes*/ 1) {
-  				each_value = /*votes*/ ctx[0];
+  			if (dirty & /*user*/ 1) {
+  				each_value = /*user*/ ctx[0].votes;
   				validate_each_argument(each_value);
   				let i;
 
@@ -908,9 +908,8 @@
 
   function instance$1($$self, $$props, $$invalidate) {
   	const INITIAL_VOTE = { user_id: null, piece_id: 0 };
-  	let { user = {} } = $$props;
-  	let { votes = [] } = $$props;
-  	const writable_props = ["user", "votes"];
+  	let { user = { votes: [] } } = $$props;
+  	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<VoteManager> was created with unknown prop '${key}'`);
@@ -920,33 +919,26 @@
   	validate_slots("VoteManager", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({
-  		FloatingSubmitButton,
-  		INITIAL_VOTE,
-  		user,
-  		votes
-  	});
+  	$$self.$capture_state = () => ({ FloatingSubmitButton, INITIAL_VOTE, user });
 
   	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [votes, user];
+  	return [user];
   }
 
   class VoteManager extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		init(this, options, instance$1, create_fragment$1, safe_not_equal, { user: 1, votes: 0 });
+  		init(this, options, instance$1, create_fragment$1, safe_not_equal, { user: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -961,14 +953,6 @@
   	}
 
   	set user(value) {
-  		throw new Error("<VoteManager>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	get votes() {
-  		throw new Error("<VoteManager>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	set votes(value) {
   		throw new Error("<VoteManager>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
