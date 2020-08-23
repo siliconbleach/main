@@ -775,7 +775,7 @@
   	return child_ctx;
   }
 
-  // (20:2) {#each user.votes as vote}
+  // (20:2) {#each votes as vote}
   function create_each_block(ctx) {
   	let t_value = /*vote*/ ctx[3] + "";
   	let t;
@@ -788,7 +788,7 @@
   			insert_dev(target, t, anchor);
   		},
   		p: function update(ctx, dirty) {
-  			if (dirty & /*user*/ 1 && t_value !== (t_value = /*vote*/ ctx[3] + "")) set_data_dev(t, t_value);
+  			if (dirty & /*votes*/ 1 && t_value !== (t_value = /*vote*/ ctx[3] + "")) set_data_dev(t, t_value);
   		},
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(t);
@@ -799,7 +799,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(20:2) {#each user.votes as vote}",
+  		source: "(20:2) {#each votes as vote}",
   		ctx
   	});
 
@@ -808,7 +808,7 @@
 
   function create_fragment$1(ctx) {
   	let div;
-  	let each_value = /*user*/ ctx[0].votes;
+  	let each_value = /*votes*/ ctx[0];
   	validate_each_argument(each_value);
   	let each_blocks = [];
 
@@ -838,8 +838,8 @@
   			}
   		},
   		p: function update(ctx, [dirty]) {
-  			if (dirty & /*user*/ 1) {
-  				each_value = /*user*/ ctx[0].votes;
+  			if (dirty & /*votes*/ 1) {
+  				each_value = /*votes*/ ctx[0];
   				validate_each_argument(each_value);
   				let i;
 
@@ -894,7 +894,7 @@
   	validate_slots("VoteManager", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
   	};
 
   	$$self.$capture_state = () => ({
@@ -905,8 +905,8 @@
   	});
 
   	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("votes" in $$props) votes = $$props.votes;
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
+  		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
   	};
 
   	let votes;
@@ -916,18 +916,18 @@
   	}
 
   	$$self.$$.update = () => {
-  		if ($$self.$$.dirty & /*user*/ 1) {
-  			 votes = user.votes || Array(5);
+  		if ($$self.$$.dirty & /*user*/ 2) {
+  			 $$invalidate(0, votes = user.votes || Array(5));
   		}
   	};
 
-  	return [user];
+  	return [votes, user];
   }
 
   class VoteManager extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		init(this, options, instance$1, create_fragment$1, safe_not_equal, { user: 0 });
+  		init(this, options, instance$1, create_fragment$1, safe_not_equal, { user: 1 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
