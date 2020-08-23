@@ -10,6 +10,7 @@
   };
 
   $: user.votes;
+  debugger;
   $: votes = user.votes;
 </script>
 
@@ -45,8 +46,8 @@
 
 <div class="vote-container">
 
-{@debug votes}
   {#each votes as vote}
+
  	 <span class="vote-holder">
 	  {vote?.piece_id}
 	  </span>
