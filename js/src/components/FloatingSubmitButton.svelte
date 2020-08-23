@@ -14,10 +14,10 @@
     color: #fff;
     border-radius: 0.25rem;
     font-size: 20px;
-	position: fixed;
+    position: fixed;
     z-index: 111111111110;
-	left: 1%
-	bottom: 2%;
+    left: 1%;
+    bottom: 2%;
   }
 </style>
 
