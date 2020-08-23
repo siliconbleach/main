@@ -5,8 +5,9 @@
     user_id: null,
     piece_id: 0
   };
-  export let user = {};
-  export let votes = [];
+  export let user = {
+    votes: []
+  };
 </script>
 
 <style lang="postcss">
@@ -14,5 +15,5 @@
 </style>
 
 <div class="vote-container">
-  {#each votes as vote}{vote}{/each}
+  {#each user.votes as vote}{vote}{/each}
 </div>
