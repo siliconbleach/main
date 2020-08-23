@@ -5,8 +5,8 @@
 <style lang="postcss">
   #vote-submission {
     position: fixed;
-    left: 3%;
-    bottom: 2%;
+    left: 3.5rem;
+    bottom: 0.75rem%;
     display: flex;
     justify-content: center;
     align-items: center;
