@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   const MAX_VOTES_ALLOWED = 5;
   let isSubmitButtonActive = false;
 
