@@ -1,4 +1,7 @@
 <script>
+import { current_component } from "svelte/internal";
+
+
 
   const INITIAL_VOTE = {
     user_id: null,
@@ -6,7 +9,10 @@
   };
   export let user = { votes: [] };
   export let votes = Array(5).map(_ => INITIAL_VOTE);
-  $:
+
+  $: votes = user?.votes?.map((vote, i) => { 
+	  return votes[i].piece_id === 0 ? vote : votes[i];
+  }));
 
 
 </script>
