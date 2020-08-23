@@ -190,7 +190,6 @@ import App from './App.svelte';
 
 					app.$set({
 						user: settings.user,
-						votes: settings.votes,
 					});
 				}
 			});
