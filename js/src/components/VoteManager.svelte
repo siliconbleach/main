@@ -10,7 +10,7 @@
   };
 
   $: user.votes;
-  $: votes = user.votes ?? Array(5);
+  $: votes = user?.votes || Array(5)
 </script>
 
 <style lang="postcss">
