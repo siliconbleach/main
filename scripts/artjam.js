@@ -642,7 +642,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-x28trx-style";
-  	style.textContent = "#vote-submission.svelte-x28trx{position:fixed;left:3.7rem;bottom:0.75rem;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-x28trx{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;opacity:0;visibility:hidden;transition:all 0.75s ease-in-out}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBsZXQgaXNTdWJtaXRCdXR0b25BY3RpdmUgPSBmYWxzZTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgI3ZvdGUtc3VibWlzc2lvbiB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGxlZnQ6IDMuN3JlbTtcbiAgICBib3R0b206IDAuNzVyZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgI3N1Ym1pdHZvdGVzLWJ1dHRvbiB7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjYpO1xuICAgIGFwcGVhcmFuY2U6IG5vbmU7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIHBhZGRpbmc6IDAuNzVyZW07XG4gICAgY29sb3I6ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogMC4yNXJlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgb3BhY2l0eTogMDtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNzVzIGVhc2UtaW4tb3V0O1xuICB9XG5cbiAgI3N1Ym1pdHZvdGVzLWJ1dHRvbi5pcy1zaG93biB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG48L3N0eWxlPlxuXG48Zm9ybSBpZD1cInZvdGUtc3VibWlzc2lvblwiPlxuICA8YnV0dG9uIGlkPVwic3VibWl0dm90ZXMtYnV0dG9uXCIgY2xhc3M6aXNTaG93bj17aXNTdWJtaXRCdXR0b25BY3RpdmV9PlxuICAgIFN1Ym1pdCBWb3Rlc1xuICA8L2J1dHRvbj5cbjwvZm9ybT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFNRSxnQkFBZ0IsY0FBQyxDQUFDLEFBQ2hCLFFBQVEsQ0FBRSxLQUFLLENBQ2YsSUFBSSxDQUFFLE1BQU0sQ0FDWixNQUFNLENBQUUsT0FBTyxDQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLE1BQU0sQ0FDdkIsV0FBVyxDQUFFLE1BQU0sQUFDckIsQ0FBQyxBQUVELG1CQUFtQixjQUFDLENBQUMsQUFDbkIsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzlCLFVBQVUsQ0FBRSxJQUFJLENBQ2hCLE1BQU0sQ0FBRSxJQUFJLENBQ1osT0FBTyxDQUFFLE9BQU8sQ0FDaEIsS0FBSyxDQUFFLElBQUksQ0FDWCxhQUFhLENBQUUsT0FBTyxDQUN0QixTQUFTLENBQUUsSUFBSSxDQUNmLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE1BQU0sQ0FDbEIsVUFBVSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxBQUNuQyxDQUFDIn0= */";
+  	style.textContent = "#vote-submission.svelte-x28trx{position:fixed;left:3.7rem;bottom:0.75rem;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-x28trx{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;opacity:0;visibility:hidden;transition:all 0.75s ease-in-out}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBsZXQgaXNTdWJtaXRCdXR0b25BY3RpdmUgPSBmYWxzZTtcblxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAjdm90ZS1zdWJtaXNzaW9uIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbGVmdDogMy43cmVtO1xuICAgIGJvdHRvbTogMC43NXJlbTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIH1cblxuICAjc3VibWl0dm90ZXMtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gICAgYXBwZWFyYW5jZTogbm9uZTtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZzogMC43NXJlbTtcbiAgICBjb2xvcjogI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiAwLjI1cmVtO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBvcGFjaXR5OiAwO1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC43NXMgZWFzZS1pbi1vdXQ7XG4gIH1cblxuICAjc3VibWl0dm90ZXMtYnV0dG9uLmlzLXNob3duIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cbjwvc3R5bGU+XG5cbjxmb3JtIGlkPVwidm90ZS1zdWJtaXNzaW9uXCI+XG4gIDxidXR0b24gaWQ9XCJzdWJtaXR2b3Rlcy1idXR0b25cIiBjbGFzczppc1Nob3duPXtpc1N1Ym1pdEJ1dHRvbkFjdGl2ZX0+XG4gICAgU3VibWl0IFZvdGVzXG4gIDwvYnV0dG9uPlxuPC9mb3JtPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVFFLGdCQUFnQixjQUFDLENBQUMsQUFDaEIsUUFBUSxDQUFFLEtBQUssQ0FDZixJQUFJLENBQUUsTUFBTSxDQUNaLE1BQU0sQ0FBRSxPQUFPLENBQ2YsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsTUFBTSxDQUN2QixXQUFXLENBQUUsTUFBTSxBQUNyQixDQUFDLEFBRUQsbUJBQW1CLGNBQUMsQ0FBQyxBQUNuQixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FDOUIsVUFBVSxDQUFFLElBQUksQ0FDaEIsTUFBTSxDQUFFLElBQUksQ0FDWixPQUFPLENBQUUsT0FBTyxDQUNoQixLQUFLLENBQUUsSUFBSSxDQUNYLGFBQWEsQ0FBRSxPQUFPLENBQ3RCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsT0FBTyxDQUFFLENBQUMsQ0FDVixVQUFVLENBQUUsTUFBTSxDQUNsQixVQUFVLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxXQUFXLEFBQ25DLENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
@@ -658,10 +658,10 @@
   			attr_dev(button, "id", "submitvotes-button");
   			attr_dev(button, "class", "svelte-x28trx");
   			toggle_class(button, "isShown", /*isSubmitButtonActive*/ ctx[0]);
-  			add_location(button, file, 35, 2, 659);
+  			add_location(button, file, 37, 2, 704);
   			attr_dev(form, "id", "vote-submission");
   			attr_dev(form, "class", "svelte-x28trx");
-  			add_location(form, file, 34, 0, 629);
+  			add_location(form, file, 36, 0, 674);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -697,6 +697,7 @@
 
   function instance($$self, $$props, $$invalidate) {
   	let isSubmitButtonActive = false;
+  	const dispatch = createEventDispatcher();
   	const writable_props = [];
 
   	Object.keys($$props).forEach(key => {
@@ -705,7 +706,12 @@
 
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("FloatingSubmitButton", $$slots, []);
-  	$$self.$capture_state = () => ({ MAX_VOTES_ALLOWED, isSubmitButtonActive });
+
+  	$$self.$capture_state = () => ({
+  		MAX_VOTES_ALLOWED,
+  		isSubmitButtonActive,
+  		dispatch
+  	});
 
   	$$self.$inject_state = $$props => {
   		if ("isSubmitButtonActive" in $$props) $$invalidate(0, isSubmitButtonActive = $$props.isSubmitButtonActive);
