@@ -206,13 +206,6 @@
 
   function noop() {}
 
-  function assign(tar, src) {
-    // @ts-ignore
-    for (const k in src) tar[k] = src[k];
-
-    return tar;
-  }
-
   function add_location(element, file, line, column, char) {
     element.__svelte_meta = {
       loc: {
@@ -397,49 +390,6 @@
       block.o(local);
     }
   }
-
-  function get_spread_update(levels, updates) {
-    const update = {};
-    const to_null_out = {};
-    const accounted_for = {
-      $$scope: 1
-    };
-    let i = levels.length;
-
-    while (i--) {
-      const o = levels[i];
-      const n = updates[i];
-
-      if (n) {
-        for (const key in o) {
-          if (!(key in n)) to_null_out[key] = 1;
-        }
-
-        for (const key in n) {
-          if (!accounted_for[key]) {
-            update[key] = n[key];
-            accounted_for[key] = 1;
-          }
-        }
-
-        levels[i] = n;
-      } else {
-        for (const key in o) {
-          accounted_for[key] = 1;
-        }
-      }
-    }
-
-    for (const key in to_null_out) {
-      if (!(key in update)) update[key] = undefined;
-    }
-
-    return update;
-  }
-
-  function get_spread_object(spread_props) {
-    return typeof spread_props === 'object' && spread_props !== null ? spread_props : {};
-  } // source: https://html.spec.whatwg.org/multipage/indices.html
 
   function create_component(block) {
     block && block.c();
@@ -962,7 +912,7 @@
   function add_css$1() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgdXNlciA9IHtcbiAgICB2b3RlczogW11cbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPFZvdGVNYW5hZ2VyIHsuLi5zZXR0aW5nc30gLz5cbjxGbG9hdGluZ1N1Ym1pdEJ1dHRvbiB7Li4uc2V0dGluZ3N9IC8+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBeUJFLE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFRdEMsQ0FBQyJ9 */";
+  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgdXNlciA9IHtcbiAgICB2b3RlczogW11cbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDhweCBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPFZvdGVNYW5hZ2VyIHt1c2VyfSB7dm90ZXN9IC8+XG48RmxvYXRpbmdTdWJtaXRCdXR0b24ge3VzZXJ9IHt2b3Rlc30gLz5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5QkUsT0FBTyxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQVF0QyxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -971,23 +921,14 @@
   	let t;
   	let floatingsubmitbutton;
   	let current;
-  	const votemanager_spread_levels = [settings];
-  	let votemanager_props = {};
 
-  	for (let i = 0; i < votemanager_spread_levels.length; i += 1) {
-  		votemanager_props = assign(votemanager_props, votemanager_spread_levels[i]);
-  	}
-
-  	votemanager = new VoteManager({ props: votemanager_props, $$inline: true });
-  	const floatingsubmitbutton_spread_levels = [settings];
-  	let floatingsubmitbutton_props = {};
-
-  	for (let i = 0; i < floatingsubmitbutton_spread_levels.length; i += 1) {
-  		floatingsubmitbutton_props = assign(floatingsubmitbutton_props, floatingsubmitbutton_spread_levels[i]);
-  	}
+  	votemanager = new VoteManager({
+  			props: { user: /*user*/ ctx[0], votes },
+  			$$inline: true
+  		});
 
   	floatingsubmitbutton = new FloatingSubmitButton({
-  			props: floatingsubmitbutton_props,
+  			props: { user: /*user*/ ctx[0], votes },
   			$$inline: true
   		});
 
@@ -1007,16 +948,11 @@
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
-  			const votemanager_changes = (dirty & /*settings*/ 0)
-  			? get_spread_update(votemanager_spread_levels, [get_spread_object(settings)])
-  			: {};
-
+  			const votemanager_changes = {};
+  			if (dirty & /*user*/ 1) votemanager_changes.user = /*user*/ ctx[0];
   			votemanager.$set(votemanager_changes);
-
-  			const floatingsubmitbutton_changes = (dirty & /*settings*/ 0)
-  			? get_spread_update(floatingsubmitbutton_spread_levels, [get_spread_object(settings)])
-  			: {};
-
+  			const floatingsubmitbutton_changes = {};
+  			if (dirty & /*user*/ 1) floatingsubmitbutton_changes.user = /*user*/ ctx[0];
   			floatingsubmitbutton.$set(floatingsubmitbutton_changes);
   		},
   		i: function intro(local) {
