@@ -1,7 +1,4 @@
 <script>
-import { current_component } from "svelte/internal";
-
-
 
   const INITIAL_VOTE = {
     user_id: null,
