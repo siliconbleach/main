@@ -1,4 +1,8 @@
 <script>
+import VoteManager from "./components/VoteManager.svelte";
+
+
+imporpt VoteManager from 'components/VoteManager';
 
   const INITIAL_VOTE = {
     user_id: null,
