@@ -14,4 +14,6 @@
 
 <div class="vote-container">
   {#each votes as vote}{vote}{/each}
+
+  <FloatingSubmitButton {votes} ) />
 </div>
