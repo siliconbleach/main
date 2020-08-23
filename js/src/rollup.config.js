@@ -5,6 +5,7 @@ import json from 'rollup-plugin-json'
 import svelte from 'rollup-plugin-svelte';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
+import postcsssNesting from 'postcss-nesting';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
