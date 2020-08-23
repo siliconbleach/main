@@ -14,6 +14,8 @@ import { current_component } from "svelte/internal";
 	  return votes[i].piece_id === 0 ? vote : votes[i];
   }));
 
+  console.log(votes);
+
 
 </script>
 
