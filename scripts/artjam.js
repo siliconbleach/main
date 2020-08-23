@@ -274,10 +274,6 @@
     return document.createTextNode(data);
   }
 
-  function space() {
-    return text(' ');
-  }
-
   function attr(node, attribute, value) {
     if (value == null) node.removeAttribute(attribute);else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
   }
@@ -831,9 +827,6 @@
 
   function create_fragment$1(ctx) {
   	let div;
-  	let t;
-  	let floatingsubmitbutton;
-  	let current;
   	let each_value = /*votes*/ ctx[0];
   	validate_each_argument(each_value);
   	let each_blocks = [];
@@ -841,11 +834,6 @@
   	for (let i = 0; i < each_value.length; i += 1) {
   		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
   	}
-
-  	floatingsubmitbutton = new FloatingSubmitButton({
-  			props: { votes: /*votes*/ ctx[0] },
-  			$$inline: true
-  		});
 
   	const block = {
   		c: function create() {
@@ -855,8 +843,6 @@
   				each_blocks[i].c();
   			}
 
-  			t = space();
-  			create_component(floatingsubmitbutton.$$.fragment);
   			attr_dev(div, "class", "vote-container");
   			add_location(div, file$1, 14, 0, 213);
   		},
@@ -869,10 +855,6 @@
   			for (let i = 0; i < each_blocks.length; i += 1) {
   				each_blocks[i].m(div, null);
   			}
-
-  			append_dev(div, t);
-  			mount_component(floatingsubmitbutton, div, null);
-  			current = true;
   		},
   		p: function update(ctx, [dirty]) {
   			if (dirty & /*votes*/ 1) {
@@ -888,7 +870,7 @@
   					} else {
   						each_blocks[i] = create_each_block(child_ctx);
   						each_blocks[i].c();
-  						each_blocks[i].m(div, t);
+  						each_blocks[i].m(div, null);
   					}
   				}
 
@@ -898,24 +880,12 @@
 
   				each_blocks.length = each_value.length;
   			}
-
-  			const floatingsubmitbutton_changes = {};
-  			if (dirty & /*votes*/ 1) floatingsubmitbutton_changes.votes = /*votes*/ ctx[0];
-  			floatingsubmitbutton.$set(floatingsubmitbutton_changes);
   		},
-  		i: function intro(local) {
-  			if (current) return;
-  			transition_in(floatingsubmitbutton.$$.fragment, local);
-  			current = true;
-  		},
-  		o: function outro(local) {
-  			transition_out(floatingsubmitbutton.$$.fragment, local);
-  			current = false;
-  		},
+  		i: noop,
+  		o: noop,
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(div);
   			destroy_each(each_blocks, detaching);
-  			destroy_component(floatingsubmitbutton);
   		}
   	};
 
