@@ -1068,9 +1068,7 @@
     var YUI_PREFIX = 'yui_';
     var yui_gallery_id = '';
     var settings = {
-      user: {
-        votes: []
-      }
+      user: {}
     };
     var svelteRoot = "<div id=\"jam-app\"></div>";
     var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
@@ -1295,7 +1293,8 @@
               $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
             });
             app.$set({
-              user: settings.user
+              user: settings.user,
+              votes: settings.votes
             });
           }
         });
