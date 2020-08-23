@@ -9,10 +9,8 @@
     votes: []
   };
 
-  $: user.votes;
-  debugger;
-  $: votes = user.votes;
-  debugger;
+
+  $: votes = $$props.user.votes;
 </script>
 
 <style lang="postcss">
