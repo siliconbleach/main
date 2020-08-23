@@ -1,8 +1,11 @@
 <script>
   const MAX_VOTES_ALLOWED = 5;
+  export let user = {
+    votes: []
+  };
   export let votes = Array(5);
 
-  $: votesRemaining = MAX_VOTES_ALLOWED - votes.length;
+  $: votesRemaining = MAX_VOTES_ALLOWED - user.votes.length;
 </script>
 
 <style lang="postcss">
