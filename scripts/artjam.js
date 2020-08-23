@@ -771,13 +771,13 @@
 
   function get_each_context(ctx, list, i) {
   	const child_ctx = ctx.slice();
-  	child_ctx[2] = list[i];
+  	child_ctx[3] = list[i];
   	return child_ctx;
   }
 
-  // (18:2) {#each user.votes as vote}
+  // (20:2) {#each user.votes as vote}
   function create_each_block(ctx) {
-  	let t_value = /*vote*/ ctx[2] + "";
+  	let t_value = /*vote*/ ctx[3] + "";
   	let t;
 
   	const block = {
@@ -788,7 +788,7 @@
   			insert_dev(target, t, anchor);
   		},
   		p: function update(ctx, dirty) {
-  			if (dirty & /*user*/ 1 && t_value !== (t_value = /*vote*/ ctx[2] + "")) set_data_dev(t, t_value);
+  			if (dirty & /*user*/ 1 && t_value !== (t_value = /*vote*/ ctx[3] + "")) set_data_dev(t, t_value);
   		},
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(t);
@@ -799,7 +799,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(18:2) {#each user.votes as vote}",
+  		source: "(20:2) {#each user.votes as vote}",
   		ctx
   	});
 
@@ -825,7 +825,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container");
-  			add_location(div, file$1, 16, 0, 229);
+  			add_location(div, file$1, 18, 0, 267);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -897,15 +897,29 @@
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({ FloatingSubmitButton, INITIAL_VOTE, user });
+  	$$self.$capture_state = () => ({
+  		FloatingSubmitButton,
+  		INITIAL_VOTE,
+  		user,
+  		votes
+  	});
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
+  		if ("votes" in $$props) votes = $$props.votes;
   	};
+
+  	let votes;
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
+
+  	$$self.$$.update = () => {
+  		if ($$self.$$.dirty & /*user*/ 1) {
+  			 votes = user.votes || Array(5);
+  		}
+  	};
 
   	return [user];
   }
