@@ -611,7 +611,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuaW1wb3J0IHsgY3VycmVudF9jb21wb25lbnQgfSBmcm9tIFwic3ZlbHRlL2ludGVybmFsXCI7XG5cblxuXG4gIGNvbnN0IElOSVRJQUxfVk9URSA9IHtcbiAgICB1c2VyX2lkOiBudWxsLFxuICAgIHBpZWNlX2lkOiAwXG4gIH07XG4gIGV4cG9ydCBsZXQgdXNlciA9IHsgdm90ZXM6IFtdIH07XG4gIGV4cG9ydCBsZXQgdm90ZXMgPSBBcnJheSg1KS5tYXAoXyA9PiBJTklUSUFMX1ZPVEUpO1xuXG4gICQ6IHZvdGVzID0gdXNlcj8udm90ZXM/Lm1hcCgodm90ZSwgaSkgPT4geyBcblx0ICByZXR1cm4gdm90ZXNbaV0ucGllY2VfaWQgPT09IDAgPyB2b3RlIDogdm90ZXNbaV07XG4gIH0pO1xuXG4gIGNvbnNvbGUubG9nKHZvdGVzKTtcblxuXG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2VhY2ggdm90ZXMgYXMgdm90ZX1cbiAgICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICAgIDxzcGFuPnt2b3RlPy5waWVjZV9pZCB8fCAnJ308L3NwYW4+XG4gICAgPC9kaXY+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
+  	style.textContent = ".vote-container.svelte-1j3wdui{display:flex;position:fixed;bottom:8px;left:8px}.vote-holder.svelte-1j3wdui{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-1j3wdui{flex-direction:column}.vote-holder.svelte-1j3wdui{margin:8px auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuXG4gIGNvbnN0IElOSVRJQUxfVk9URSA9IHtcbiAgICB1c2VyX2lkOiBudWxsLFxuICAgIHBpZWNlX2lkOiAwXG4gIH07XG4gIGV4cG9ydCBsZXQgdXNlciA9IHsgdm90ZXM6IFtdIH07XG4gIGV4cG9ydCBsZXQgdm90ZXMgPSBBcnJheSg1KS5tYXAoXyA9PiBJTklUSUFMX1ZPVEUpO1xuXG4gICQ6IHZvdGVzID0gdXNlcj8udm90ZXM/Lm1hcCgodm90ZSwgaSkgPT4geyBcblx0ICByZXR1cm4gdm90ZXNbaV0ucGllY2VfaWQgPT09IDAgPyB2b3RlIDogdm90ZXNbaV07XG4gIH0pO1xuXG4gIGNvbnNvbGUubG9nKHZvdGVzKTtcblxuXG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2VhY2ggdm90ZXMgYXMgdm90ZX1cbiAgICA8ZGl2IGNsYXNzPVwidm90ZS1ob2xkZXJcIj5cbiAgICAgIDxzcGFuPnt2b3RlPy5waWVjZV9pZCB8fCAnJ308L3NwYW4+XG4gICAgPC9kaXY+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CRSxlQUFlLGVBQUMsQ0FBQyxBQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLEFBQ1gsQ0FBQyxBQUVELFlBQVksZUFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSxlQUFDLENBQUMsQUFDZixjQUFjLENBQUUsTUFBTSxBQUN4QixDQUFDLEFBRUQsWUFBWSxlQUFDLENBQUMsQUFDWixNQUFNLENBQUUsR0FBRyxDQUFDLElBQUksQUFDbEIsQ0FBQyxBQUNILENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
@@ -621,7 +621,7 @@
   	return child_ctx;
   }
 
-  // (51:2) {#each votes as vote}
+  // (48:2) {#each votes as vote}
   function create_each_block(ctx) {
   	let div;
   	let span;
@@ -635,9 +635,9 @@
   			span = element("span");
   			t0 = text(t0_value);
   			t1 = space();
-  			add_location(span, file, 52, 6, 862);
+  			add_location(span, file, 49, 6, 807);
   			attr_dev(div, "class", "vote-holder svelte-1j3wdui");
-  			add_location(div, file, 51, 4, 830);
+  			add_location(div, file, 48, 4, 775);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, div, anchor);
@@ -657,7 +657,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(51:2) {#each votes as vote}",
+  		source: "(48:2) {#each votes as vote}",
   		ctx
   	});
 
@@ -683,7 +683,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container svelte-1j3wdui");
-  			add_location(div, file, 49, 0, 773);
+  			add_location(div, file, 46, 0, 718);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -758,12 +758,7 @@
   		if ("votes" in $$props) $$invalidate(0, votes = $$props.votes);
   	};
 
-  	$$self.$capture_state = () => ({
-  		current_component,
-  		INITIAL_VOTE,
-  		user,
-  		votes
-  	});
+  	$$self.$capture_state = () => ({ INITIAL_VOTE, user, votes });
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(1, user = $$props.user);
