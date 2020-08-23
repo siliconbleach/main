@@ -5,10 +5,7 @@
     user_id: null,
     piece_id: 0
   };
-  export let user = {
-    votes: []
-  };
-
+  export let user = {votes:[]};
   $: votes = $$props.user.votes;
 </script>
 
