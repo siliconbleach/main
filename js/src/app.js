@@ -1,5 +1,5 @@
 import cookie from 'js-cookie';
-
+import { createEventDispatcher } from 'svelte';
 import App from './App.svelte';
 
 ((window) => {
