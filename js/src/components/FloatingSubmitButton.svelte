@@ -6,7 +6,20 @@
 </script>
 
 <style lang="postcss">
-
+  #submitvotes-button {
+    background: rgba(0, 0, 0, 0.6);
+    appearance: none;
+    border: none;
+    padding: 0.75rem;
+    color: #fff;
+    border-radius: 0.25rem;
+    font-size: 20px;
+    position: fixed;
+    bottom: 24px;
+    z-index: 111111111110;
+    left: 25%;
+    right: 25%;
+  }
 </style>
 
 <form>
