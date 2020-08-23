@@ -638,7 +638,7 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-114ds3y-style";
-  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBleHBvcnQgbGV0IHVzZXIgPSB7XG4gICAgdm90ZXM6IFtdXG4gIH07XG4gIGV4cG9ydCBsZXQgdm90ZXMgPSBBcnJheSg1KTtcblxuICAkOiB2b3Rlc1JlbWFpbmluZyA9IE1BWF9WT1RFU19BTExPV0VEIC0gdXNlci52b3Rlcy5sZW5ndGg7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxMTExMTExMTExMTA7XG4gICAgbGVmdDogMSU7XG4gICAgYm90dG9tOiAyJTtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0+XG4gIDxidXR0b24gaWQ9XCJzdWJtaXR2b3Rlcy1idXR0b25cIj5cbiAgICBTdWJtaXQgVm90ZXNcbiAgICA8c3BhbiAvPlxuICA8L2J1dHRvbj5cbjwvZm9ybT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXRSxtQkFBbUIsZUFBQyxDQUFDLEFBQ25CLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUM5QixVQUFVLENBQUUsSUFBSSxDQUNoQixNQUFNLENBQUUsSUFBSSxDQUNaLE9BQU8sQ0FBRSxPQUFPLENBQ2hCLEtBQUssQ0FBRSxJQUFJLENBQ1gsYUFBYSxDQUFFLE9BQU8sQ0FDdEIsU0FBUyxDQUFFLElBQUksQ0FDZixRQUFRLENBQUUsS0FBSyxDQUNmLE9BQU8sQ0FBRSxZQUFZLENBQ3JCLElBQUksQ0FBRSxFQUFFLENBQ1IsTUFBTSxDQUFFLEVBQUUsQUFDWixDQUFDIn0= */";
+  	style.textContent = "#submitvotes-button.svelte-114ds3y{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;position:fixed;z-index:111111111110;left:1%;bottom:2%}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgY29uc3QgTUFYX1ZPVEVTX0FMTE9XRUQgPSA1O1xuICBleHBvcnQgbGV0IHVzZXIgPSB7XG4gICAgdm90ZXM6IFtdXG4gIH07XG4gIGV4cG9ydCBsZXQgdm90ZXMgPSBBcnJheSg1KTtcblxuICBkZWJ1Z2dlcjtcblxuICAkOiB2b3Rlc1JlbWFpbmluZyA9IE1BWF9WT1RFU19BTExPV0VEIC0gdXNlci52b3Rlcy5sZW5ndGg7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxMTExMTExMTExMTA7XG4gICAgbGVmdDogMSU7XG4gICAgYm90dG9tOiAyJTtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0+XG4gIDxidXR0b24gaWQ9XCJzdWJtaXR2b3Rlcy1idXR0b25cIj5cbiAgICBTdWJtaXQgVm90ZXNcbiAgICA8c3BhbiAvPlxuICA8L2J1dHRvbj5cbjwvZm9ybT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFhRSxtQkFBbUIsZUFBQyxDQUFDLEFBQ25CLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUM5QixVQUFVLENBQUUsSUFBSSxDQUNoQixNQUFNLENBQUUsSUFBSSxDQUNaLE9BQU8sQ0FBRSxPQUFPLENBQ2hCLEtBQUssQ0FBRSxJQUFJLENBQ1gsYUFBYSxDQUFFLE9BQU8sQ0FDdEIsU0FBUyxDQUFFLElBQUksQ0FDZixRQUFRLENBQUUsS0FBSyxDQUNmLE9BQU8sQ0FBRSxZQUFZLENBQ3JCLElBQUksQ0FBRSxFQUFFLENBQ1IsTUFBTSxDQUFFLEVBQUUsQUFDWixDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -654,11 +654,11 @@
   			button = element("button");
   			t = text("Submit Votes\n    ");
   			span = element("span");
-  			add_location(span, file, 29, 4, 551);
+  			add_location(span, file, 31, 4, 564);
   			attr_dev(button, "id", "submitvotes-button");
   			attr_dev(button, "class", "svelte-114ds3y");
-  			add_location(button, file, 27, 2, 497);
-  			add_location(form, file, 26, 0, 488);
+  			add_location(button, file, 29, 2, 510);
+  			add_location(form, file, 28, 0, 501);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -693,6 +693,7 @@
   function instance($$self, $$props, $$invalidate) {
   	let { user = { votes: [] } } = $$props;
   	let { votes = Array(5) } = $$props;
+  	debugger;
   	const writable_props = ["user", "votes"];
 
   	Object.keys($$props).forEach(key => {
