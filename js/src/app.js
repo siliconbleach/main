@@ -177,13 +177,9 @@ import App from './App.svelte';
 
 				if (user) {
 					const { votes, twitch_id, id, name } = user;
-					settings.user = {
-						twitch_id,
-						id,
-						name,
-						votes,
-					}
-					settings.votes = votes.map(v => v.piece_id);
+
+					settings.user = user;
+					settings.votes = settings.user.votes.map(v => v.piece_id);
 
 					settings?.votes.forEach(vote => {
 						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
