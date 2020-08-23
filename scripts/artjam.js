@@ -775,7 +775,7 @@
   	return child_ctx;
   }
 
-  // (18:2) {#each user.votes as vote}
+  // (20:2) {#each user.votes as vote}
   function create_each_block(ctx) {
   	let t_value = /*vote*/ ctx[2] + "";
   	let t;
@@ -799,7 +799,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(18:2) {#each user.votes as vote}",
+  		source: "(20:2) {#each user.votes as vote}",
   		ctx
   	});
 
@@ -825,7 +825,7 @@
   			}
 
   			attr_dev(div, "class", "vote-container");
-  			add_location(div, file$1, 16, 0, 229);
+  			add_location(div, file$1, 18, 0, 242);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -884,6 +884,7 @@
   function instance$1($$self, $$props, $$invalidate) {
   	const INITIAL_VOTE = { user_id: null, piece_id: 0 };
   	let { user = { votes: [] } } = $$props;
+  	debugger;
   	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
