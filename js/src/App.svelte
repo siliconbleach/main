@@ -2,20 +2,8 @@
 import VoteManager from "./components/VoteManager.svelte";
 
 
-imporpt VoteManager from 'components/VoteManager';
+imporpt VoteManager from 'components/VoteManager.svelte';
 
-  const INITIAL_VOTE = {
-    user_id: null,
-    piece_id: 0
-  };
-  export let user = { votes: [] };
-  export let votes = Array(5).map(_ => INITIAL_VOTE);
-
-  $: votes = user?.votes?.map((vote, i) => { 
-	  return votes[i].piece_id === 0 ? vote : votes[i];
-  });
-
-  console.log(votes);
 
 
 </script>
