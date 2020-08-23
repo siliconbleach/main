@@ -1364,7 +1364,8 @@
             settings.user = {
               twitch_id: twitch_id,
               id: id,
-              name: name
+              name: name,
+              votes: votes
             };
             settings.votes = votes.map(function (v) {
               return v.piece_id;
