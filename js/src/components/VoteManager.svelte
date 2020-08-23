@@ -10,7 +10,7 @@
   };
 
   $: user.votes;
-  $: votes = user?.votes || Array(5)
+  $: votes = user.votes;
 </script>
 
 <style lang="postcss">
@@ -48,6 +48,8 @@
  	 <span class="vote-holder">
 	  {vote?.piece_id}
 	  </span>
+    {:else}
+    
   {/each}
 
   <FloatingSubmitButton />
