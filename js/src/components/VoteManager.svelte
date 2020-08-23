@@ -9,7 +9,6 @@
     votes: []
   };
 
-
   $: votes = $$props.user.votes;
 </script>
 
