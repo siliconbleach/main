@@ -15,10 +15,12 @@
 
 <style lang="postcss">
   .vote-container {
-    display: flex;
     position: fixed;
     bottom: 8px;
     left: 8px;
+
+    display: flex;
+    flex-direction: row;
   }
 
   .vote-holder {
