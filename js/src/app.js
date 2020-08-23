@@ -181,6 +181,7 @@ import App from './App.svelte';
 						twitch_id,
 						id,
 						name,
+						votes,
 					}
 					settings.votes = votes.map(v => v.piece_id);
 
