@@ -1,8 +1,6 @@
 <script>
   const MAX_VOTES_ALLOWED = 5;
   let isSubmitButtonActive = false;
-
-
 </script>
 
 <style lang="postcss">
@@ -22,22 +20,20 @@
     padding: 0.75rem;
     color: #fff;
     border-radius: 0.25rem;
-	font-size: 20px;
-	opacity: 0;
-	visibility: hidden;
-	transition: all .75s ease-in-out;
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.75s ease-in-out;
   }
 
   #submitvotes-button.is-shown {
-	  opacity:1;
-	  visibility: visible;
+    opacity: 1;
+    visibility: visible;
   }
 </style>
 
 <form id="vote-submission">
-  <button
-    id="submitvotes-button"
-    class:isShowing={(this.isSubmitButtonActive))}>
+  <button id="submitvotes-button" class:isShowing={isSubmitButtonActive}>
     Submit Votes
   </button>
 </form>
