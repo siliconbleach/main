@@ -1337,8 +1337,8 @@
               $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
             });
             app.$set({
-              user: user,
-              votes: votes
+              user: settings.user,
+              votes: settings.votes
             });
           }
         });
