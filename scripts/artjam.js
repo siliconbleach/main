@@ -822,6 +822,7 @@
       user: {},
       votes: []
     };
+    var svelteRoot = "<div id=\"jam-app\"></div>";
     var toastTemplate = "\n\t\t<div class=\"toast\" id=\"kokoToast\">\n\t\t\t<section class=\"toast-content\">\n\t\t\t\t<span id=\"toastMessage\">{{message}}</span>\n\t\t\t</section>\n\t\t</div>\n\t";
     var $toast = null;
     var $toastMessage = null;
@@ -986,8 +987,8 @@
       });
     });
     $(document).on('ready', function () {
-      toast.init(); // $('body').append(svelteRoot);
-
+      toast.init();
+      $('body').append(svelteRoot);
       var app = new App({
         target: document.getElementById('jam-app'),
         props: settings
