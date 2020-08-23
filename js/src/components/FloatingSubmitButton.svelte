@@ -33,7 +33,7 @@
 </style>
 
 <form id="vote-submission">
-  <button id="submitvotes-button" class:isShowing={isSubmitButtonActive}>
+  <button id="submitvotes-button" class:isShown={isSubmitButtonActive}>
     Submit Votes
   </button>
 </form>
