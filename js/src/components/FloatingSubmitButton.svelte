@@ -7,6 +7,9 @@
     position: fixed;
     left: 3%;
     bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #submitvotes-button {
