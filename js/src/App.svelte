@@ -12,7 +12,7 @@ import { current_component } from "svelte/internal";
 
   $: votes = user?.votes?.map((vote, i) => { 
 	  return votes[i].piece_id === 0 ? vote : votes[i];
-  });
+  })
 
   console.log(votes);
 
