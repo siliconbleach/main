@@ -8,8 +8,6 @@
   export let user = {
     votes: []
   };
-
-  console.log(user);
 </script>
 
 <style lang="postcss">
