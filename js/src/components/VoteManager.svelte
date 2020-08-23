@@ -44,6 +44,7 @@
 </style>
 
 <div class="vote-container">
+{@debug votes}
   {#each votes as vote}
  	 <span class="vote-holder">
 	  {vote?.piece_id}
