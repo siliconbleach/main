@@ -42,5 +42,7 @@
 </style>
 
 <div class="vote-container">
-  {#each votes as vote}{vote}{/each}
+  {#each votes as vote}
+ 	 {vote?.piece_id}
+  {/each}
 </div>
