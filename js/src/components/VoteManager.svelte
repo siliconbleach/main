@@ -49,7 +49,7 @@
 	  {vote?.piece_id}
 	  </span>
     {:else}
-    <span>No votes yet, what are you waiting for?</span>
+      <span>No votes yet, what are you waiting for?</span>
   {/each}
 
   <FloatingSubmitButton />
