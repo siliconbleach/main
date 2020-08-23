@@ -1,6 +1,6 @@
 <script>
   const MAX_VOTES_ALLOWED = 5;
-  export let votes;
+  export let votes = [];
 
   $: votesRemaining = MAX_VOTES_ALLOWED - votes.length;
 </script>
