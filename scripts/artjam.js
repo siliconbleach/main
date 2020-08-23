@@ -938,8 +938,6 @@
 
   function create_fragment$2(ctx) {
   	let votemanager;
-  	let t;
-  	let floatingsubmitbutton;
   	let current;
 
   	votemanager = new VoteManager({
@@ -947,49 +945,33 @@
   			$$inline: true
   		});
 
-  	floatingsubmitbutton = new FloatingSubmitButton({
-  			props: { user: /*user*/ ctx[0] },
-  			$$inline: true
-  		});
-
   	const block = {
   		c: function create() {
   			create_component(votemanager.$$.fragment);
-  			t = space();
-  			create_component(floatingsubmitbutton.$$.fragment);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
   		},
   		m: function mount(target, anchor) {
   			mount_component(votemanager, target, anchor);
-  			insert_dev(target, t, anchor);
-  			mount_component(floatingsubmitbutton, target, anchor);
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
   			const votemanager_changes = {};
   			if (dirty & /*user*/ 1) votemanager_changes.user = /*user*/ ctx[0];
   			votemanager.$set(votemanager_changes);
-  			const floatingsubmitbutton_changes = {};
-  			if (dirty & /*user*/ 1) floatingsubmitbutton_changes.user = /*user*/ ctx[0];
-  			floatingsubmitbutton.$set(floatingsubmitbutton_changes);
   		},
   		i: function intro(local) {
   			if (current) return;
   			transition_in(votemanager.$$.fragment, local);
-  			transition_in(floatingsubmitbutton.$$.fragment, local);
   			current = true;
   		},
   		o: function outro(local) {
   			transition_out(votemanager.$$.fragment, local);
-  			transition_out(floatingsubmitbutton.$$.fragment, local);
   			current = false;
   		},
   		d: function destroy(detaching) {
   			destroy_component(votemanager, detaching);
-  			if (detaching) detach_dev(t);
-  			destroy_component(floatingsubmitbutton, detaching);
   		}
   	};
 
@@ -1024,12 +1006,7 @@
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({
-  		onMount,
-  		VoteManager,
-  		FloatingSubmitButton,
-  		user
-  	});
+  	$$self.$capture_state = () => ({ onMount, VoteManager, user });
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
