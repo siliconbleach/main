@@ -1363,7 +1363,6 @@
           return res.json();
         }).then(function (_ref3) {
           var user = _ref3.user;
-          console.log(user);
 
           if (user) {
             var _settings;
