@@ -8,7 +8,7 @@
     left: 3%;
     bottom: 2%;
 
-    #submitvotes-button {
+    & #submitvotes-button {
       background: rgba(0, 0, 0, 0.6);
       appearance: none;
       border: none;
