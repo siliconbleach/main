@@ -10,7 +10,7 @@ import App from './App.svelte';
 
 	const YUI_PREFIX = 'yui_';
 	let yui_gallery_id = '';
-	let settings = { user: {} };
+	let settings = { user: { votes: [] } };
 
 	const buttonTemplate = `<button class="voting-button">&uarr; SELECT &uarr;</button>`;
 	const svelteRoot = `<div id="jam-app"></div>`;
