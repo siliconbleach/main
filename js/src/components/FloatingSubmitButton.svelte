@@ -5,6 +5,8 @@
   };
   export let votes = Array(5);
 
+  debugger;
+
   $: votesRemaining = MAX_VOTES_ALLOWED - user.votes.length;
 </script>
 
