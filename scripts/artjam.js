@@ -990,14 +990,14 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-1j3wdui-style";
-  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC52b3RlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiA4cHggYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxWb3RlTWFuYWdlciB7Li4uc2V0dGluZ3N9IC8+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0JFLE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFRdEMsQ0FBQyJ9 */";
+  	style.textContent = "@media screen and (min-width: 768px){}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQXBwLnN2ZWx0ZSIsInNvdXJjZXMiOlsiQXBwLnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBpbXBvcnQgVm90ZU1hbmFnZXIgZnJvbSBcIi4vY29tcG9uZW50cy9Wb3RlTWFuYWdlci5zdmVsdGVcIjtcbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL2NvbXBvbmVudHMvRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlXCI7XG4gIGV4cG9ydCBsZXQgc2V0dGluZ3MgPSB7XG4gICAgdXNlcjoge1xuICAgICAgdm90ZXM6IFtdXG4gICAgfVxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogOHB4O1xuICAgIGxlZnQ6IDhweDtcbiAgfVxuXG4gIC52b3RlLWhvbGRlciB7XG4gICAgd2lkdGg6IDY0cHg7XG4gICAgaGVpZ2h0OiA2NHB4O1xuXG4gICAgYm9yZGVyOiAycHggaW5zZXQgI2ZmZjtcbiAgICBib3JkZXItcmFkaXVzOiA2cHg7XG4gICAgbWFyZ2luOiAwIDhweDtcbiAgfVxuXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDc2OHB4KSB7XG4gICAgLnZvdGUtY29udGFpbmVyIHtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgfVxuXG4gICAgLnZvdGUtaG9sZGVyIHtcbiAgICAgIG1hcmdpbjogOHB4IGF1dG87XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48Vm90ZU1hbmFnZXIgey4uLnNldHRpbmdzfSAvPlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTJCRSxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBUXRDLENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
   function create_fragment$2(ctx) {
   	let votemanager;
   	let current;
-  	const votemanager_spread_levels = [settings];
+  	const votemanager_spread_levels = [/*settings*/ ctx[0]];
   	let votemanager_props = {};
 
   	for (let i = 0; i < votemanager_spread_levels.length; i += 1) {
@@ -1018,8 +1018,8 @@
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
-  			const votemanager_changes = (dirty & /*settings*/ 0)
-  			? get_spread_update(votemanager_spread_levels, [get_spread_object(settings)])
+  			const votemanager_changes = (dirty & /*settings*/ 1)
+  			? get_spread_update(votemanager_spread_levels, [get_spread_object(/*settings*/ ctx[0])])
   			: {};
 
   			votemanager.$set(votemanager_changes);
@@ -1050,7 +1050,8 @@
   }
 
   function instance$2($$self, $$props, $$invalidate) {
-  	const writable_props = [];
+  	let { settings = { user: { votes: [] } } } = $$props;
+  	const writable_props = ["settings"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
@@ -1058,15 +1059,33 @@
 
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("App", $$slots, []);
-  	$$self.$capture_state = () => ({ VoteManager, FloatingSubmitButton });
-  	return [];
+
+  	$$self.$$set = $$props => {
+  		if ("settings" in $$props) $$invalidate(0, settings = $$props.settings);
+  	};
+
+  	$$self.$capture_state = () => ({
+  		VoteManager,
+  		FloatingSubmitButton,
+  		settings
+  	});
+
+  	$$self.$inject_state = $$props => {
+  		if ("settings" in $$props) $$invalidate(0, settings = $$props.settings);
+  	};
+
+  	if ($$props && "$$inject" in $$props) {
+  		$$self.$inject_state($$props.$$inject);
+  	}
+
+  	return [settings];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-1j3wdui-style")) add_css();
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, {});
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { settings: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1074,6 +1093,14 @@
   			options,
   			id: create_fragment$2.name
   		});
+  	}
+
+  	get settings() {
+  		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+  	}
+
+  	set settings(value) {
+  		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
 
