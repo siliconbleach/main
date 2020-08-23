@@ -23,10 +23,12 @@
     color: #fff;
     border-radius: 0.25rem;
 	font-size: 20px;
+	opacity: 0;
+	visibility: hidden;
 	
-	&.is-shown P
-	opacity: .90;
-
+	&.is-shown{
+		opacity: 1;
+		visibility: visible;
 	}
   }
 </style>
