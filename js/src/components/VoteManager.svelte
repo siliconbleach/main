@@ -1,5 +1,6 @@
 <script>
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
+
   const INITIAL_VOTE = {
     user_id: null,
     piece_id: 0
