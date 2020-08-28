@@ -11,7 +11,7 @@
   let currentVotes = [null, null, null, null, null];
 
   $: votes = $$props.user.votes;
-  $: offset = Array(5 - votes.length);
+  $: offset = Array(20 - votes.length);
   $: currentVotes: votes.concat(offset);
 
   const clearVote = (index) => {
