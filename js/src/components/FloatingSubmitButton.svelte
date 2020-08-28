@@ -41,8 +41,11 @@
   }
 </style>
 
-<form id="vote-submission">
-  <button id="submitvotes-button" class:isShown={isSubmitButtonActive}>
+<form id="vote-submission" on:submit={handleSubmit}>
+  <button
+    id="submitvotes-button"
+    class:isShown={isSubmitButtonActive}
+    type="submit">
     Submit Votes
   </button>
 </form>
