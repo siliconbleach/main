@@ -185,6 +185,8 @@ import App from './App.svelte';
 						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
 					});
 
+					console.log('Calling app set because of Cookie');
+
 					app.$set({
 						user: settings.user
 					});
