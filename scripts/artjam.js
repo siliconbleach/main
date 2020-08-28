@@ -1127,13 +1127,20 @@
 
   const file$2 = "components/ContestGallery.svelte";
 
+  function add_css$2() {
+  	var style = element("style");
+  	style.id = "svelte-1w1j73c-style";
+  	style.textContent = ".artjam-gallery-container.svelte-1w1j73c{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cImFydGphbS1nYWxsZXJ5LWNvbnRhaW5lclwiPlxuICB7I2VhY2ggY29udGVzdD8uZW50cmllcyBhcyBlbnRyeX1cbiAgICA8c3Bhbj57ZW50cnkubmFtZX0gLSB7ZW50cnkuYXJ0aXN0fTwvc3Bhbj5cbiAgey9lYWNofVxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0UseUJBQXlCLGVBQUMsQ0FBQyxBQUN6QixPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxhQUFhLENBQzlCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsV0FBVyxDQUFFLE1BQU0sQUFDckIsQ0FBQyJ9 */";
+  	append_dev(document.head, style);
+  }
+
   function get_each_context$1(ctx, list, i) {
   	const child_ctx = ctx.slice();
   	child_ctx[1] = list[i];
   	return child_ctx;
   }
 
-  // (12:2) {#each contest?.entries as entry}
+  // (17:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let span;
   	let t0_value = /*entry*/ ctx[1].name + "";
@@ -1148,7 +1155,7 @@
   			t0 = text(t0_value);
   			t1 = text(" - ");
   			t2 = text(t2_value);
-  			add_location(span, file$2, 12, 4, 180);
+  			add_location(span, file$2, 17, 4, 314);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -1169,7 +1176,7 @@
   		block,
   		id: create_each_block$1.name,
   		type: "each",
-  		source: "(12:2) {#each contest?.entries as entry}",
+  		source: "(17:2) {#each contest?.entries as entry}",
   		ctx
   	});
 
@@ -1194,8 +1201,8 @@
   				each_blocks[i].c();
   			}
 
-  			attr_dev(div, "class", "artjam-gallery-container");
-  			add_location(div, file$2, 10, 0, 101);
+  			attr_dev(div, "class", "artjam-gallery-container svelte-1w1j73c");
+  			add_location(div, file$2, 15, 0, 235);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1282,6 +1289,7 @@
   class ContestGallery extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
+  		if (!document.getElementById("svelte-1w1j73c-style")) add_css$2();
   		init(this, options, instance$2, create_fragment$2, safe_not_equal, { contest: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
