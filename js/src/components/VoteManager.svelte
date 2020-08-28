@@ -47,10 +47,10 @@
 
   {#each votes as vote}
 
- 	 <span class="vote-holder">
+ 	 <div class="vote-holder">
 	  {vote?.piece_id}
     <img src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`} alt="Artjam entry vote thumbnail" />
-	  </span>
+	  </div>
     {:else}
       <span>No votes yet, what are you waiting for?</span>
   {/each}
