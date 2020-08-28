@@ -150,7 +150,7 @@ import App from './App.svelte';
 		yui_gallery_id = $slides[0].id.split('_');
 		yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
 
-		$('.margin-wrapper').append(buttonTemplate);
+		$('.image-slide-anchor').append(buttonTemplate);
 
 
 		if (urlParams.has('success') && urlParams.has('twitch_id')) {
