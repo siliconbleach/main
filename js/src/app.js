@@ -141,7 +141,6 @@ import App from './App.svelte';
 			target: document.getElementById('jam-app'),
 			props: {
 				user: settings.user,
-				votes: settings.user.votes,
 			},
 		})
 
