@@ -1130,7 +1130,7 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-1s3m1f7-style";
-  	style.textContent = ".artjam-gallery-container.svelte-1s3m1f7{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxzcGFuPntlbnRyeS5uYW1lfSAtIHtlbnRyeS5hcnRpc3R9PC9zcGFuPlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPRSx5QkFBeUIsZUFBQyxDQUFDLEFBQ3pCLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLGFBQWEsQ0FDOUIsU0FBUyxDQUFFLElBQUksQ0FDZixXQUFXLENBQUUsTUFBTSxDQUNuQixTQUFTLENBQUUsS0FBSyxBQUNsQixDQUFDIn0= */";
+  	style.textContent = ".artjam-gallery-container.svelte-1s3m1f7{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxidXR0b24+e2VudHJ5Lm5hbWV9PC9idXR0b24+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9FLHlCQUF5QixlQUFDLENBQUMsQUFDekIsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsYUFBYSxDQUM5QixTQUFTLENBQUUsSUFBSSxDQUNmLFdBQVcsQ0FBRSxNQUFNLENBQ25CLFNBQVMsQ0FBRSxLQUFLLEFBQ2xCLENBQUMifQ== */";
   	append_dev(document.head, style);
   }
 
@@ -1142,33 +1142,25 @@
 
   // (18:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
-  	let span;
-  	let t0_value = /*entry*/ ctx[1].name + "";
-  	let t0;
-  	let t1;
-  	let t2_value = /*entry*/ ctx[1].artist + "";
-  	let t2;
+  	let button;
+  	let t_value = /*entry*/ ctx[1].name + "";
+  	let t;
 
   	const block = {
   		c: function create() {
-  			span = element("span");
-  			t0 = text(t0_value);
-  			t1 = text(" - ");
-  			t2 = text(t2_value);
-  			add_location(span, file$2, 18, 4, 336);
+  			button = element("button");
+  			t = text(t_value);
+  			add_location(button, file$2, 18, 4, 336);
   		},
   		m: function mount(target, anchor) {
-  			insert_dev(target, span, anchor);
-  			append_dev(span, t0);
-  			append_dev(span, t1);
-  			append_dev(span, t2);
+  			insert_dev(target, button, anchor);
+  			append_dev(button, t);
   		},
   		p: function update(ctx, dirty) {
-  			if (dirty & /*contest*/ 1 && t0_value !== (t0_value = /*entry*/ ctx[1].name + "")) set_data_dev(t0, t0_value);
-  			if (dirty & /*contest*/ 1 && t2_value !== (t2_value = /*entry*/ ctx[1].artist + "")) set_data_dev(t2, t2_value);
+  			if (dirty & /*contest*/ 1 && t_value !== (t_value = /*entry*/ ctx[1].name + "")) set_data_dev(t, t_value);
   		},
   		d: function destroy(detaching) {
-  			if (detaching) detach_dev(span);
+  			if (detaching) detach_dev(button);
   		}
   	};
 
