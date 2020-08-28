@@ -286,6 +286,11 @@
     return text(' ');
   }
 
+  function listen(node, event, handler, options) {
+    node.addEventListener(event, handler, options);
+    return () => node.removeEventListener(event, handler, options);
+  }
+
   function attr(node, attribute, value) {
     if (value == null) node.removeAttribute(attribute);else if (node.getAttribute(attribute) !== value) node.setAttribute(attribute, value);
   }
@@ -601,6 +606,28 @@
     detach(node);
   }
 
+  function listen_dev(node, event, handler, options, has_prevent_default, has_stop_propagation) {
+    const modifiers = options === true ? ["capture"] : options ? Array.from(Object.keys(options)) : [];
+    if (has_prevent_default) modifiers.push('preventDefault');
+    if (has_stop_propagation) modifiers.push('stopPropagation');
+    dispatch_dev("SvelteDOMAddEventListener", {
+      node,
+      event,
+      handler,
+      modifiers
+    });
+    const dispose = listen(node, event, handler, options);
+    return () => {
+      dispatch_dev("SvelteDOMRemoveEventListener", {
+        node,
+        event,
+        handler,
+        modifiers
+      });
+      dispose();
+    };
+  }
+
   function attr_dev(node, attribute, value) {
     attr(node, attribute, value);
     if (value == null) dispatch_dev("SvelteDOMRemoveAttribute", {
@@ -672,13 +699,15 @@
   function add_css() {
   	var style = element("style");
   	style.id = "svelte-x28trx-style";
-  	style.textContent = "#vote-submission.svelte-x28trx{position:fixed;left:3.7rem;bottom:0.75rem;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-x28trx{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;opacity:0;visibility:hidden;transition:all 0.75s ease-in-out}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBjb25zdCBNQVhfVk9URVNfQUxMT1dFRCA9IDU7XG4gIGxldCBpc1N1Ym1pdEJ1dHRvbkFjdGl2ZSA9IGZhbHNlO1xuXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XG5cbiAgZXhwb3J0IGNvbnN0IHZvdGVzID0gW107XG5cbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gZGlzcGF0Y2goXCJ2b3RlU3VibWlzc2lvblwiLCB7XG4gICAgdm90ZXNcbiAgfSk7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICN2b3RlLXN1Ym1pc3Npb24ge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiAzLjdyZW07XG4gICAgYm90dG9tOiAwLjc1cmVtO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuXG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIG9wYWNpdHk6IDA7XG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjc1cyBlYXNlLWluLW91dDtcbiAgfVxuXG4gICNzdWJtaXR2b3Rlcy1idXR0b24uaXMtc2hvd24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0gaWQ9XCJ2b3RlLXN1Ym1pc3Npb25cIj5cbiAgPGJ1dHRvbiBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiIGNsYXNzOmlzU2hvd249e2lzU3VibWl0QnV0dG9uQWN0aXZlfT5cbiAgICBTdWJtaXQgVm90ZXNcbiAgPC9idXR0b24+XG48L2Zvcm0+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZUUsZ0JBQWdCLGNBQUMsQ0FBQyxBQUNoQixRQUFRLENBQUUsS0FBSyxDQUNmLElBQUksQ0FBRSxNQUFNLENBQ1osTUFBTSxDQUFFLE9BQU8sQ0FDZixPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxNQUFNLENBQ3ZCLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCxtQkFBbUIsY0FBQyxDQUFDLEFBQ25CLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLEdBQUcsQ0FBQyxDQUM5QixVQUFVLENBQUUsSUFBSSxDQUNoQixNQUFNLENBQUUsSUFBSSxDQUNaLE9BQU8sQ0FBRSxPQUFPLENBQ2hCLEtBQUssQ0FBRSxJQUFJLENBQ1gsYUFBYSxDQUFFLE9BQU8sQ0FDdEIsU0FBUyxDQUFFLElBQUksQ0FDZixPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFVBQVUsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFdBQVcsQUFDbkMsQ0FBQyJ9 */";
+  	style.textContent = "#vote-submission.svelte-x28trx{position:fixed;left:3.7rem;bottom:0.75rem;display:flex;justify-content:center;align-items:center}#submitvotes-button.svelte-x28trx{background:rgba(0, 0, 0, 0.6);appearance:none;border:none;padding:0.75rem;color:#fff;border-radius:0.25rem;font-size:20px;opacity:0;visibility:hidden;transition:all 0.75s ease-in-out}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiRmxvYXRpbmdTdWJtaXRCdXR0b24uc3ZlbHRlIiwic291cmNlcyI6WyJGbG9hdGluZ1N1Ym1pdEJ1dHRvbi5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBjb25zdCBNQVhfVk9URVNfQUxMT1dFRCA9IDU7XG4gIGxldCBpc1N1Ym1pdEJ1dHRvbkFjdGl2ZSA9IGZhbHNlO1xuXG4gIGNvbnN0IGRpc3BhdGNoID0gY3JlYXRlRXZlbnREaXNwYXRjaGVyKCk7XG5cbiAgZXhwb3J0IGNvbnN0IHZvdGVzID0gW107XG5cbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gZGlzcGF0Y2goXCJ2b3RlU3VibWlzc2lvblwiLCB7XG4gICAgdm90ZXNcbiAgfSk7XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gICN2b3RlLXN1Ym1pc3Npb24ge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBsZWZ0OiAzLjdyZW07XG4gICAgYm90dG9tOiAwLjc1cmVtO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuXG4gICNzdWJtaXR2b3Rlcy1idXR0b24ge1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgICBhcHBlYXJhbmNlOiBub25lO1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBwYWRkaW5nOiAwLjc1cmVtO1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDAuMjVyZW07XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIG9wYWNpdHk6IDA7XG4gICAgdmlzaWJpbGl0eTogaGlkZGVuO1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjc1cyBlYXNlLWluLW91dDtcbiAgfVxuXG4gICNzdWJtaXR2b3Rlcy1idXR0b24uaXMtc2hvd24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgfVxuPC9zdHlsZT5cblxuPGZvcm0gaWQ9XCJ2b3RlLXN1Ym1pc3Npb25cIiBvbjpzdWJtaXQ9e2hhbmRsZVN1Ym1pdH0+XG4gIDxidXR0b25cbiAgICBpZD1cInN1Ym1pdHZvdGVzLWJ1dHRvblwiXG4gICAgY2xhc3M6aXNTaG93bj17aXNTdWJtaXRCdXR0b25BY3RpdmV9XG4gICAgdHlwZT1cInN1Ym1pdFwiPlxuICAgIFN1Ym1pdCBWb3Rlc1xuICA8L2J1dHRvbj5cbjwvZm9ybT5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFlRSxnQkFBZ0IsY0FBQyxDQUFDLEFBQ2hCLFFBQVEsQ0FBRSxLQUFLLENBQ2YsSUFBSSxDQUFFLE1BQU0sQ0FDWixNQUFNLENBQUUsT0FBTyxDQUNmLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLE1BQU0sQ0FDdkIsV0FBVyxDQUFFLE1BQU0sQUFDckIsQ0FBQyxBQUVELG1CQUFtQixjQUFDLENBQUMsQUFDbkIsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsR0FBRyxDQUFDLENBQzlCLFVBQVUsQ0FBRSxJQUFJLENBQ2hCLE1BQU0sQ0FBRSxJQUFJLENBQ1osT0FBTyxDQUFFLE9BQU8sQ0FDaEIsS0FBSyxDQUFFLElBQUksQ0FDWCxhQUFhLENBQUUsT0FBTyxDQUN0QixTQUFTLENBQUUsSUFBSSxDQUNmLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE1BQU0sQ0FDbEIsVUFBVSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxBQUNuQyxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
   function create_fragment(ctx) {
   	let form;
   	let button;
+  	let mounted;
+  	let dispose;
 
   	const block = {
   		c: function create() {
@@ -686,9 +715,10 @@
   			button = element("button");
   			button.textContent = "Submit Votes";
   			attr_dev(button, "id", "submitvotes-button");
+  			attr_dev(button, "type", "submit");
   			attr_dev(button, "class", "svelte-x28trx");
   			toggle_class(button, "isShown", /*isSubmitButtonActive*/ ctx[0]);
-  			add_location(button, file, 44, 2, 851);
+  			add_location(button, file, 44, 2, 876);
   			attr_dev(form, "id", "vote-submission");
   			attr_dev(form, "class", "svelte-x28trx");
   			add_location(form, file, 43, 0, 821);
@@ -699,6 +729,11 @@
   		m: function mount(target, anchor) {
   			insert_dev(target, form, anchor);
   			append_dev(form, button);
+
+  			if (!mounted) {
+  				dispose = listen_dev(form, "submit", /*handleSubmit*/ ctx[1], false, false, false);
+  				mounted = true;
+  			}
   		},
   		p: function update(ctx, [dirty]) {
   			if (dirty & /*isSubmitButtonActive*/ 1) {
@@ -709,6 +744,8 @@
   		o: noop,
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(form);
+  			mounted = false;
+  			dispose();
   		}
   	};
 
@@ -756,14 +793,14 @@
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [isSubmitButtonActive, votes];
+  	return [isSubmitButtonActive, handleSubmit, votes];
   }
 
   class FloatingSubmitButton extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-x28trx-style")) add_css();
-  		init(this, options, instance, create_fragment, safe_not_equal, { votes: 1 });
+  		init(this, options, instance, create_fragment, safe_not_equal, { votes: 2 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -774,7 +811,7 @@
   	}
 
   	get votes() {
-  		return this.$$.ctx[1];
+  		return this.$$.ctx[2];
   	}
 
   	set votes(value) {
