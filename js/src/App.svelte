@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte/internal";
-  import VoteManager from "./components/VoteManager.svelte";
+
+  import VoteManagerCont from "./components/VoteManager.svelte";
+  import ContestGallery from "./components/ContestGallery.svelte";
 
   const API_URL = "https://artofkoko.com";
   const ARTJAM_ID = 5;
