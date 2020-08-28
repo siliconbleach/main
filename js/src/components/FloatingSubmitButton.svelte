@@ -4,6 +4,12 @@
   let isSubmitButtonActive = false;
 
   const dispatch = createEventDispatcher();
+
+  const handleSubmit = () => dispatch({
+    'voteSubmission'
+  });
+
+
 </script>
 
 <style lang="postcss">
