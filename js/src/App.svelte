@@ -5,17 +5,17 @@
   const API_URL = "https://artofkoko.com";
   const ARTJAM_ID = 5;
   export let user = {
-    votes: Array(5)
+    votes: Array(5),
   };
 
-  const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
+  const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
 
   export let contest;
 
   onMount(() => {
     getContest(ARTJAM_ID)
-      .then(res => res.json())
-      .then(data => (contest = data));
+      .then((res) => res.json())
+      .then((data) => (contest = data));
   });
 </script>
 
@@ -24,3 +24,4 @@
 </style>
 
 <VoteManager {user} />
+<ContestGallery {contest} />
