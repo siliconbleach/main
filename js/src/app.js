@@ -122,10 +122,10 @@ import App from './App.svelte';
 	});
 
 
-	$(document).on('click', '#submitvotes-button', e => {
-		e.preventDefault();
-		submitVotes();
-	});
+	// $(document).on('click', '#submitvotes-button', e => {
+	// 	e.preventDefault();
+	// 	submitVotes();
+	// });
 
 	$(document).on('mouseenter', '.image-slide-anchor', e => {
 		$(e.currentTarget).css({ 'z-index': 10 });
