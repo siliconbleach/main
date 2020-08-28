@@ -69,6 +69,7 @@
 
   {#if currentVotes}
     {#each currentVotes as vote}
+      {@debug}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
           <img
