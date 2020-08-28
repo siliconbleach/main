@@ -5,7 +5,12 @@
 </script>
 
 <style lang="postcss">
-
+  .artjam-gallery-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 </style>
 
 <div class="artjam-gallery-container">
