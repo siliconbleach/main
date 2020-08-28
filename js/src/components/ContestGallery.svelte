@@ -10,6 +10,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 960px;
   }
 </style>
 
