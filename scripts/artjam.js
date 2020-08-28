@@ -1181,13 +1181,13 @@
   function instance$2($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
-  	let contest;
+  	let { contest } = $$props;
 
   	onMount(() => {
-  		getContest(ARTJAM_ID).then(res => res.json()).then(data => contest = data);
+  		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
   	});
 
-  	const writable_props = ["user"];
+  	const writable_props = ["user", "contest"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
@@ -1198,6 +1198,7 @@
 
   	$$self.$$set = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
+  		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
   	};
 
   	$$self.$capture_state = () => ({
@@ -1212,20 +1213,20 @@
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("contest" in $$props) contest = $$props.contest;
+  		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [user];
+  	return [user, contest];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { user: 0 });
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { user: 0, contest: 1 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1233,6 +1234,13 @@
   			options,
   			id: create_fragment$2.name
   		});
+
+  		const { ctx } = this.$$;
+  		const props = options.props || {};
+
+  		if (/*contest*/ ctx[1] === undefined && !("contest" in props)) {
+  			console.warn("<App> was created without expected prop 'contest'");
+  		}
   	}
 
   	get user() {
@@ -1240,6 +1248,14 @@
   	}
 
   	set user(value) {
+  		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+  	}
+
+  	get contest() {
+  		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+  	}
+
+  	set contest(value) {
   		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
