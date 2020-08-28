@@ -1,5 +1,7 @@
 <script>
-  export let contest;
+  export let contest = {
+    entries: [],
+  };
 </script>
 
 <style lang="postcss">
