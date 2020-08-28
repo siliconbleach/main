@@ -1133,7 +1133,7 @@
   	return child_ctx;
   }
 
-  // (10:2) {#each contest?.entries as entry}
+  // (12:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let span;
   	let t0_value = /*entry*/ ctx[1].name + "";
@@ -1148,7 +1148,7 @@
   			t0 = text(t0_value);
   			t1 = text(" - ");
   			t2 = text(t2_value);
-  			add_location(span, file$2, 10, 4, 155);
+  			add_location(span, file$2, 12, 4, 180);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -1169,7 +1169,7 @@
   		block,
   		id: create_each_block$1.name,
   		type: "each",
-  		source: "(10:2) {#each contest?.entries as entry}",
+  		source: "(12:2) {#each contest?.entries as entry}",
   		ctx
   	});
 
@@ -1195,7 +1195,7 @@
   			}
 
   			attr_dev(div, "class", "artjam-gallery-container");
-  			add_location(div, file$2, 8, 0, 76);
+  			add_location(div, file$2, 10, 0, 101);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1252,7 +1252,7 @@
   }
 
   function instance$2($$self, $$props, $$invalidate) {
-  	let { contest } = $$props;
+  	let { contest = { entries: [] } } = $$props;
   	const writable_props = ["contest"];
 
   	Object.keys($$props).forEach(key => {
@@ -1290,13 +1290,6 @@
   			options,
   			id: create_fragment$2.name
   		});
-
-  		const { ctx } = this.$$;
-  		const props = options.props || {};
-
-  		if (/*contest*/ ctx[0] === undefined && !("contest" in props)) {
-  			console.warn("<ContestGallery> was created without expected prop 'contest'");
-  		}
   	}
 
   	get contest() {
