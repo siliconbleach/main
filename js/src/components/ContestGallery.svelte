@@ -1,6 +1,13 @@
 <script>
+  import { createEventDispatcher } from "svelte";
   export let contest = {
     entries: [],
+  };
+
+  const toggleVote = (entry) => {
+    dispatch("toggle-vote", {
+      vote,
+    });
   };
 </script>
 
