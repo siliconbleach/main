@@ -19,6 +19,7 @@
     background: purple;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    margin: 1rem auto;
   }
 </style>
 
