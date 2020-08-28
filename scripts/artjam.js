@@ -1211,6 +1211,7 @@
       var voteIndex = settings.votes.indexOf(id);
 
       if (voteIndex > -1) {
+        //remove vote
         settings.votes.splice(voteIndex, 1);
         styles = {
           background: 'transparent',
