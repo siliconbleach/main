@@ -9,6 +9,8 @@
 
   export const user = { votes: [] };
   $: votes = $$props.user.votes;
+  $: offset = Array(5 - votes.length);
+  $: currentVotes: votes.concat(offset);
 
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
@@ -63,7 +65,7 @@
 
 <div class="vote-container">
 
-  {#each votes as vote}
+  {#each currentVotes as vote}
     <div class="vote-holder" on:click={clearVote(vote)}>
       {vote?.piece_id}
       <img
