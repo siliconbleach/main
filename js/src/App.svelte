@@ -3,7 +3,7 @@
   import VoteManager from "./components/VoteManager.svelte";
 
   export let user = {
-    votes: []
+    votes: Array(5)
   };
 
   onMount(() => {});
