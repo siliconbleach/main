@@ -1176,7 +1176,7 @@
   }
 
   function instance$2($$self, $$props, $$invalidate) {
-  	let { user = { votes: [] } } = $$props;
+  	let { user = { votes: Array(5) } } = $$props;
 
   	onMount(() => {
   		
