@@ -5,7 +5,7 @@
 
   const dispatch = createEventDispatcher();
 
-  export const votes = [];
+  export const votes = Array(5);
 
   const handleSubmit = dispatch("submitVotes", {
     votes
