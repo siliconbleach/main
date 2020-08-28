@@ -1179,11 +1179,7 @@
 
   function instance$2($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
-
-  	const getPieces = async () => {
-  		const response = await fetch(`${API_URL}/api/artjam`).then(res => res.json());
-  		return response;
-  	};
+  	const getPieces = async id => await fetch(`${API_URL}/api/artjam/${id}`);
 
   	onMount(() => {
   		
