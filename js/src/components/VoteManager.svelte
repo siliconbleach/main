@@ -1,17 +1,16 @@
 <script>
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
-  const CDN_BASE_URL = 'https://assets.artofkoko.com/artjam/5';
-  
+  const CDN_BASE_URL = "https://assets.artofkoko.com/artjam/5";
+
   const INITIAL_VOTE = {
     user_id: null,
-    piece_id: 0
+    piece_id: 0,
   };
- 
-   
-  export const user = {votes:[]};
+
+  export const user = { votes: [] };
   $: votes = $$props.user.votes;
 
-  const clearVote = index => {
+  const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
   };
@@ -47,32 +46,32 @@
       overflow: hidden;
     }
 
-    .vote-holder
-      img {
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: auto;
-        max-height: 100%;
-      }
+    .vote-holder img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
 
-      img:hover {
-        cursor: pointer;
-      }
+    img:hover {
+      cursor: pointer;
+    }
   }
 </style>
 
 <div class="vote-container">
 
   {#each votes as vote}
-
- 	 <div class="vote-holder" on:click={clearVote(vote)}>
-	  {vote?.piece_id}
-    <img src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`} alt="Artjam entry vote thumbnail" />
-	  </div>
-    {:else}
-      <span>No votes yet, what are you waiting for?</span>
+    <div class="vote-holder" on:click={clearVote(vote)}>
+      {vote?.piece_id}
+      <img
+        src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`}
+        alt="Artjam entry vote thumbnail" />
+    </div>
+  {:else}
+    <span>No votes yet, what are you waiting for?</span>
   {/each}
 
   <FloatingSubmitButton />
