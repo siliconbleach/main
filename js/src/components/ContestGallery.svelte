@@ -1,5 +1,5 @@
 <script>
-
+  export let contest;
 </script>
 
 <style lang="postcss">
