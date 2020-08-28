@@ -41,8 +41,8 @@
       margin: 0.5rem auto;
       position: relative;
       overflow: hidden;
-      
-      & img {
+
+      img {
         position: absolute;
         top:0;
         left:0;
