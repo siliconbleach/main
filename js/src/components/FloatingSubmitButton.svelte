@@ -10,6 +10,8 @@
   const handleSubmit = dispatch("voteSubmission", {
     votes
   });
+
+  $: isSubmitButtonActive;
 </script>
 
 <style lang="postcss">
