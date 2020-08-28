@@ -16,7 +16,7 @@
   .artjam-entry {
     width: 100%;
     max-width: 23vw;
-    background: purple;
+    background-color: lightslategray;
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 1rem auto;
