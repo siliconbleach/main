@@ -1422,7 +1422,7 @@
         settings.user.twitchId = urlParams.get('twitch_id');
         var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
           expires: 14,
-          secure: true
+          secure: 'none'
         });
       }
 
