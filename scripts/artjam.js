@@ -1130,7 +1130,7 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-1stxss0-style";
-  	style.textContent = ".artjam-gallery-container.svelte-1stxss0{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}.artjam-entry.svelte-1stxss0{width:100%;max-width:23vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LXdpZHRoOiAyM3Z3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c2xhdGVncmF5O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBib3JkZXItcmFkaXVzOiAwLjVyZW07XG4gICAgcGFkZGluZzogMC41cmVtO1xuICAgIG1hcmdpbjogMXJlbSBhdXRvO1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxidXR0b24gY2xhc3M9XCJhcnRqYW0tZW50cnlcIj57ZW50cnkubmFtZX08L2J1dHRvbj5cbiAgey9lYWNofVxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0UseUJBQXlCLGVBQUMsQ0FBQyxBQUN6QixPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxhQUFhLENBQzlCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsV0FBVyxDQUFFLE1BQU0sQ0FDbkIsU0FBUyxDQUFFLEtBQUssQUFDbEIsQ0FBQyxBQUVELGFBQWEsZUFBQyxDQUFDLEFBQ2IsS0FBSyxDQUFFLElBQUksQ0FDWCxTQUFTLENBQUUsSUFBSSxDQUNmLGdCQUFnQixDQUFFLGNBQWMsQ0FDaEMsS0FBSyxDQUFFLEtBQUssQ0FDWixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxXQUFXLENBQzdCLGFBQWEsQ0FBRSxNQUFNLENBQ3JCLE9BQU8sQ0FBRSxNQUFNLENBQ2YsTUFBTSxDQUFFLElBQUksQ0FBQyxJQUFJLEFBQ25CLENBQUMifQ== */";
+  	style.textContent = ".artjam-gallery-container.svelte-1stxss0{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}.artjam-entry.svelte-1stxss0{width:100%;max-width:23vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LXdpZHRoOiAyM3Z3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c2xhdGVncmF5O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBib3JkZXItcmFkaXVzOiAwLjVyZW07XG4gICAgcGFkZGluZzogMC41cmVtO1xuICAgIG1hcmdpbjogMXJlbSBhdXRvO1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxidXR0b24gY2xhc3M9XCJhcnRqYW0tZW50cnlcIiBvbjpjbGljaz17dG9nZ2xlVm90ZShlbnRyeSl9PlxuICAgICAge2VudHJ5Lm5hbWV9XG4gICAgPC9idXR0b24+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQU9FLHlCQUF5QixlQUFDLENBQUMsQUFDekIsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsYUFBYSxDQUM5QixTQUFTLENBQUUsSUFBSSxDQUNmLFdBQVcsQ0FBRSxNQUFNLENBQ25CLFNBQVMsQ0FBRSxLQUFLLEFBQ2xCLENBQUMsQUFFRCxhQUFhLGVBQUMsQ0FBQyxBQUNiLEtBQUssQ0FBRSxJQUFJLENBQ1gsU0FBUyxDQUFFLElBQUksQ0FDZixnQkFBZ0IsQ0FBRSxjQUFjLENBQ2hDLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUM3QixhQUFhLENBQUUsTUFBTSxDQUNyQixPQUFPLENBQUUsTUFBTSxDQUNmLE1BQU0sQ0FBRSxJQUFJLENBQUMsSUFBSSxBQUNuQixDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -1143,25 +1143,48 @@
   // (29:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let button;
-  	let t_value = /*entry*/ ctx[1].name + "";
-  	let t;
+  	let t0_value = /*entry*/ ctx[1].name + "";
+  	let t0;
+  	let t1;
+  	let mounted;
+  	let dispose;
 
   	const block = {
   		c: function create() {
   			button = element("button");
-  			t = text(t_value);
+  			t0 = text(t0_value);
+  			t1 = space();
   			attr_dev(button, "class", "artjam-entry svelte-1stxss0");
   			add_location(button, file$2, 29, 4, 559);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, button, anchor);
-  			append_dev(button, t);
+  			append_dev(button, t0);
+  			append_dev(button, t1);
+
+  			if (!mounted) {
+  				dispose = listen_dev(
+  					button,
+  					"click",
+  					function () {
+  						if (is_function(toggleVote(/*entry*/ ctx[1]))) toggleVote(/*entry*/ ctx[1]).apply(this, arguments);
+  					},
+  					false,
+  					false,
+  					false
+  				);
+
+  				mounted = true;
+  			}
   		},
-  		p: function update(ctx, dirty) {
-  			if (dirty & /*contest*/ 1 && t_value !== (t_value = /*entry*/ ctx[1].name + "")) set_data_dev(t, t_value);
+  		p: function update(new_ctx, dirty) {
+  			ctx = new_ctx;
+  			if (dirty & /*contest*/ 1 && t0_value !== (t0_value = /*entry*/ ctx[1].name + "")) set_data_dev(t0, t0_value);
   		},
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(button);
+  			mounted = false;
+  			dispose();
   		}
   	};
 
@@ -1208,7 +1231,7 @@
   			}
   		},
   		p: function update(ctx, [dirty]) {
-  			if (dirty & /*contest*/ 1) {
+  			if (dirty & /*toggleVote, contest*/ 1) {
   				each_value = /*contest*/ ctx[0]?.entries;
   				validate_each_argument(each_value);
   				let i;
