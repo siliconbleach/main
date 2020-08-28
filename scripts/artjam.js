@@ -1129,8 +1129,8 @@
 
   function add_css$2() {
   	var style = element("style");
-  	style.id = "svelte-1w1j73c-style";
-  	style.textContent = ".artjam-gallery-container.svelte-1w1j73c{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cImFydGphbS1nYWxsZXJ5LWNvbnRhaW5lclwiPlxuICB7I2VhY2ggY29udGVzdD8uZW50cmllcyBhcyBlbnRyeX1cbiAgICA8c3Bhbj57ZW50cnkubmFtZX0gLSB7ZW50cnkuYXJ0aXN0fTwvc3Bhbj5cbiAgey9lYWNofVxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0UseUJBQXlCLGVBQUMsQ0FBQyxBQUN6QixPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxhQUFhLENBQzlCLFNBQVMsQ0FBRSxJQUFJLENBQ2YsV0FBVyxDQUFFLE1BQU0sQUFDckIsQ0FBQyJ9 */";
+  	style.id = "svelte-1s3m1f7-style";
+  	style.textContent = ".artjam-gallery-container.svelte-1s3m1f7{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgZXhwb3J0IGxldCBjb250ZXN0ID0ge1xuICAgIGVudHJpZXM6IFtdLFxuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxzcGFuPntlbnRyeS5uYW1lfSAtIHtlbnRyeS5hcnRpc3R9PC9zcGFuPlxuICB7L2VhY2h9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPRSx5QkFBeUIsZUFBQyxDQUFDLEFBQ3pCLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLGFBQWEsQ0FDOUIsU0FBUyxDQUFFLElBQUksQ0FDZixXQUFXLENBQUUsTUFBTSxDQUNuQixTQUFTLENBQUUsS0FBSyxBQUNsQixDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -1140,7 +1140,7 @@
   	return child_ctx;
   }
 
-  // (17:2) {#each contest?.entries as entry}
+  // (18:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let span;
   	let t0_value = /*entry*/ ctx[1].name + "";
@@ -1155,7 +1155,7 @@
   			t0 = text(t0_value);
   			t1 = text(" - ");
   			t2 = text(t2_value);
-  			add_location(span, file$2, 17, 4, 314);
+  			add_location(span, file$2, 18, 4, 336);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -1176,7 +1176,7 @@
   		block,
   		id: create_each_block$1.name,
   		type: "each",
-  		source: "(17:2) {#each contest?.entries as entry}",
+  		source: "(18:2) {#each contest?.entries as entry}",
   		ctx
   	});
 
@@ -1201,8 +1201,8 @@
   				each_blocks[i].c();
   			}
 
-  			attr_dev(div, "class", "artjam-gallery-container svelte-1w1j73c");
-  			add_location(div, file$2, 15, 0, 235);
+  			attr_dev(div, "class", "artjam-gallery-container svelte-1s3m1f7");
+  			add_location(div, file$2, 16, 0, 257);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1289,7 +1289,7 @@
   class ContestGallery extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-1w1j73c-style")) add_css$2();
+  		if (!document.getElementById("svelte-1s3m1f7-style")) add_css$2();
   		init(this, options, instance$2, create_fragment$2, safe_not_equal, { contest: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
