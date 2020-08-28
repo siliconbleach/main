@@ -1418,6 +1418,7 @@
       $('.image-slide-anchor').append(buttonTemplate);
 
       if (urlParams.has('success') && urlParams.has('twitch_id')) {
+        console.log('saving cookie because of success & twitch_id params');
         var twitchId = urlParams.get('twitch_id');
         settings.user.twitchId = urlParams.get('twitch_id');
         var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
