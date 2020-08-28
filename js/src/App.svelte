@@ -3,6 +3,7 @@
   import VoteManager from "./components/VoteManager.svelte";
 
   const API_URL = "https://artofkoko.com";
+  const ARTJAM_ID = 5;
   export let user = {
     votes: Array(5)
   };
