@@ -1133,7 +1133,7 @@
   	return child_ctx;
   }
 
-  // (10:2) {#each contest.entries as entry}
+  // (10:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let span;
   	let t0_value = /*entry*/ ctx[1].name + "";
@@ -1148,7 +1148,7 @@
   			t0 = text(t0_value);
   			t1 = text(" - ");
   			t2 = text(t2_value);
-  			add_location(span, file$2, 10, 4, 154);
+  			add_location(span, file$2, 10, 4, 155);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -1169,7 +1169,7 @@
   		block,
   		id: create_each_block$1.name,
   		type: "each",
-  		source: "(10:2) {#each contest.entries as entry}",
+  		source: "(10:2) {#each contest?.entries as entry}",
   		ctx
   	});
 
@@ -1178,7 +1178,7 @@
 
   function create_fragment$2(ctx) {
   	let div;
-  	let each_value = /*contest*/ ctx[0].entries;
+  	let each_value = /*contest*/ ctx[0]?.entries;
   	validate_each_argument(each_value);
   	let each_blocks = [];
 
@@ -1209,7 +1209,7 @@
   		},
   		p: function update(ctx, [dirty]) {
   			if (dirty & /*contest*/ 1) {
-  				each_value = /*contest*/ ctx[0].entries;
+  				each_value = /*contest*/ ctx[0]?.entries;
   				validate_each_argument(each_value);
   				let i;
 
