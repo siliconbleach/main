@@ -5,11 +5,11 @@
 
   const dispatch = createEventDispatcher();
 
-  const handleSubmit = () => dispatch({
-    'voteSubmission'
+  export const votes = [];
+
+  const handleSubmit = dispatch("voteSubmission", {
+    votes
   });
-
-
 </script>
 
 <style lang="postcss">
