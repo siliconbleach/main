@@ -1401,8 +1401,7 @@
       var app = new App({
         target: document.getElementById('jam-app'),
         props: {
-          user: settings.user,
-          votes: settings.user.votes
+          user: settings.user
         }
       });
       var $slides = Array.from(document.querySelectorAll('.slide'));
