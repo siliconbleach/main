@@ -52,6 +52,10 @@
         height: auto;
         max-height: 100%;
       }
+
+      img:hover {
+        cursor: pointer;
+      }
   }
 </style>
 
