@@ -19,6 +19,10 @@
       .then((res) => res.json())
       .then((data) => (contest = data));
   });
+
+  function handleToggle(arguments) {
+    console.log(arguments);
+  }
 </script>
 
 <style lang="postcss">
@@ -26,4 +30,4 @@
 </style>
 
 <VoteManager {user} />
-<ContestGallery {contest} />
+<ContestGallery {contest} on:toggle-vote={handleToggle} />
