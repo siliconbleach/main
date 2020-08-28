@@ -20,8 +20,8 @@
       .then((data) => (contest = data));
   });
 
-  function handleToggle(arguments) {
-    console.log(arguments);
+  function handleToggle(args) {
+    console.log({ args });
   }
 </script>
 
