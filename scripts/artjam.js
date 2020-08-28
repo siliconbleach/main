@@ -1100,7 +1100,7 @@
   	return [votes, clearVote, user];
   }
 
-  class VoteManager$1 extends SvelteComponentDev {
+  class VoteManager extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-16tvp5v-style")) add_css$1();
@@ -1406,7 +1406,7 @@
 
   	$$self.$capture_state = () => ({
   		onMount,
-  		VoteManagerCont: VoteManager$1,
+  		VoteManager,
   		ContestGallery,
   		API_URL,
   		ARTJAM_ID,
