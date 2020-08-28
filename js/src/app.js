@@ -72,13 +72,13 @@ import App from './App.svelte';
 			}
 		} else {
 			if (settings.votes.length < 5) {
-				settings.votes.push(id);
+
 			} else {
 				return alert('You can only vote for five pieces.');
 			}
 		}
 
-		$voteSlide.find('.voting-button').toggleClass('is-selected').css(styles)
+		$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
 	};
 
 	const elementIdToVoteId = id => id.split('_').pop();
@@ -115,7 +115,7 @@ import App from './App.svelte';
 	/**
 	 * Event Listeners
 	 */
-	$(document).on('click', '.voting-button', function (e) {
+	$(document).on('click', '.artjam-vote-button', function (e) {
 		const $slide = $(this).parent();
 		const voteId = elementIdToVoteId($slide.attr('id'));
 		toggleVote(voteId);
@@ -182,7 +182,7 @@ import App from './App.svelte';
 					settings.votes = settings.user.votes.map(v => v.piece_id);
 
 					settings?.votes.forEach(vote => {
-						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.voting-button').toggleClass('is-selected');
+						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.artjam-vote-button').toggleClass('is-selected');
 					});
 
 					console.log('Calling app set because of Cookie');
