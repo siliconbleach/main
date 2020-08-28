@@ -39,6 +39,17 @@
 
     .vote-holder {
       margin: 0.5rem auto;
+      position: relative;
+      overflow: hidden;
+      
+      & img {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+      }
     }
   }
 </style>
