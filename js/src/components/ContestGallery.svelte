@@ -4,6 +4,8 @@
     entries: [],
   };
 
+  const dispatch = createEventDispatcher();
+
   const toggleVote = (entry) => {
     dispatch("toggle-vote", {
       vote,
