@@ -1127,40 +1127,58 @@
 
   function create_fragment$2(ctx) {
   	let votemanager;
+  	let t;
+  	let contestgallery;
   	let current;
 
   	votemanager = new VoteManager({
-  			props: { user: /*user*/ ctx[0] },
+  			props: { user: /*user*/ ctx[1] },
+  			$$inline: true
+  		});
+
+  	contestgallery = new ContestGallery({
+  			props: { contest: /*contest*/ ctx[0] },
   			$$inline: true
   		});
 
   	const block = {
   		c: function create() {
   			create_component(votemanager.$$.fragment);
+  			t = space();
+  			create_component(contestgallery.$$.fragment);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
   		},
   		m: function mount(target, anchor) {
   			mount_component(votemanager, target, anchor);
+  			insert_dev(target, t, anchor);
+  			mount_component(contestgallery, target, anchor);
   			current = true;
   		},
   		p: function update(ctx, [dirty]) {
   			const votemanager_changes = {};
-  			if (dirty & /*user*/ 1) votemanager_changes.user = /*user*/ ctx[0];
+  			if (dirty & /*user*/ 2) votemanager_changes.user = /*user*/ ctx[1];
   			votemanager.$set(votemanager_changes);
+  			const contestgallery_changes = {};
+  			if (dirty & /*contest*/ 1) contestgallery_changes.contest = /*contest*/ ctx[0];
+  			contestgallery.$set(contestgallery_changes);
   		},
   		i: function intro(local) {
   			if (current) return;
   			transition_in(votemanager.$$.fragment, local);
+  			transition_in(contestgallery.$$.fragment, local);
   			current = true;
   		},
   		o: function outro(local) {
   			transition_out(votemanager.$$.fragment, local);
+  			transition_out(contestgallery.$$.fragment, local);
   			current = false;
   		},
   		d: function destroy(detaching) {
   			destroy_component(votemanager, detaching);
+  			if (detaching) detach_dev(t);
+  			destroy_component(contestgallery, detaching);
   		}
   	};
 
@@ -1184,7 +1202,7 @@
   	let { contest } = $$props;
 
   	onMount(() => {
-  		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
+  		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(0, contest = data));
   	});
 
   	const writable_props = ["user", "contest"];
@@ -1197,8 +1215,8 @@
   	validate_slots("App", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
+  		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
   	};
 
   	$$self.$capture_state = () => ({
@@ -1212,21 +1230,21 @@
   	});
 
   	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
-  		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
+  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
+  		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [user, contest];
+  	return [contest, user];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { user: 0, contest: 1 });
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { user: 1, contest: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1238,7 +1256,7 @@
   		const { ctx } = this.$$;
   		const props = options.props || {};
 
-  		if (/*contest*/ ctx[1] === undefined && !("contest" in props)) {
+  		if (/*contest*/ ctx[0] === undefined && !("contest" in props)) {
   			console.warn("<App> was created without expected prop 'contest'");
   		}
   	}
