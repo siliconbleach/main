@@ -67,16 +67,18 @@
 
 <div class="vote-container">
 
-  {#each currentVotes as vote}
-    <div class="vote-holder" on:click={clearVote(vote)}>
-      {vote?.piece_id}
-      <img
-        src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`}
-        alt="Artjam entry vote thumbnail" />
-    </div>
-  {:else}
-    <span>No votes yet, what are you waiting for?</span>
-  {/each}
+  {#if currentVotes.length}
+    {#each currentVotes as vote}
+      <div class="vote-holder" on:click={clearVote(vote)}>
+        {vote?.piece_id}
+        <img
+          src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`}
+          alt="Artjam entry vote thumbnail" />
+      </div>
+    {:else}
+      <span>No votes yet, what are you waiting for?</span>
+    {/each}
+  {/if}
 
   <FloatingSubmitButton />
 </div>
