@@ -67,7 +67,7 @@
 
 <div class="vote-container">
 
-  {#if currentVotes.length}
+  {#if currentVotes}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {vote?.piece_id}
