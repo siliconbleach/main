@@ -27,6 +27,8 @@
 
 <div class="artjam-gallery-container">
   {#each contest?.entries as entry}
-    <button class="artjam-entry">{entry.name}</button>
+    <button class="artjam-entry" on:click={toggleVote(entry)}>
+      {entry.name}
+    </button>
   {/each}
 </div>
