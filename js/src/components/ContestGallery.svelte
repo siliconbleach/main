@@ -8,7 +8,7 @@
 
   const toggleVote = (entry) => {
     dispatch("toggle-vote", {
-      vote,
+      entry,
     });
   };
 </script>
