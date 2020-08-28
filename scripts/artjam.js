@@ -1176,6 +1176,7 @@
   }
 
   const API_URL = "https://artofkoko.com";
+  const ARTJAM_ID = 5;
 
   function instance$2($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
@@ -1202,6 +1203,7 @@
   		onMount,
   		VoteManager,
   		API_URL,
+  		ARTJAM_ID,
   		user,
   		getPieces
   	});
