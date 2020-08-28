@@ -10,10 +10,12 @@
 
   const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
 
+  let contest;
+
   onMount(() => {
     getContest(ARTJAM_ID)
       .then(res => res.json())
-      .then(data => console.log(data));
+      .then(data => (contest = data));
   });
 </script>
 
