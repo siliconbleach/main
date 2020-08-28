@@ -41,7 +41,9 @@
       margin: 0.5rem auto;
       position: relative;
       overflow: hidden;
+    }
 
+    .vote-holder
       img {
         position: absolute;
         top:0;
@@ -50,7 +52,6 @@
         height: auto;
         max-height: 100%;
       }
-    }
   }
 </style>
 
