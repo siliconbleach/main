@@ -51,9 +51,6 @@
         width: 100%;
         height: auto;
         max-height: 100%;
-        &::hover {
-          cursor: pointer;
-        }
       }
   }
 </style>
