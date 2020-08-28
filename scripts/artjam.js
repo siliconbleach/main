@@ -1329,55 +1329,6 @@
         return _ref.apply(this, arguments);
       };
     }();
-
-    var submitVotes = /*#__PURE__*/function () {
-      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-        var response;
-        return regeneratorRuntime.wrap(function _callee2$(_context2) {
-          while (1) {
-            switch (_context2.prev = _context2.next) {
-              case 0:
-                if (settings.user.twitch_id) {
-                  _context2.next = 2;
-                  break;
-                }
-
-                return _context2.abrupt("return", window.location.href = "".concat(API_URL, "/authenticate?votes=").concat(settings.votes.join(',')));
-
-              case 2:
-                _context2.next = 4;
-                return fetch("".concat(API_URL, "/api/votes"), {
-                  method: 'POST',
-                  body: JSON.stringify(settings),
-                  headers: {
-                    'Content-Type': 'application/json'
-                  }
-                }).then(function (res) {
-                  return res.json();
-                }).then(function (data) {
-                  var success = data.success;
-
-                  if (success) {
-                    toast.success('Vote received successfully!');
-                  }
-                });
-
-              case 4:
-                response = _context2.sent;
-                return _context2.abrupt("return", response);
-
-              case 6:
-              case "end":
-                return _context2.stop();
-            }
-          }
-        }, _callee2);
-      }));
-
-      return function submitVotes() {
-        return _ref2.apply(this, arguments);
-      };
-    }();
     /**
      * Event Listeners
      */
@@ -1387,11 +1338,11 @@
       var $slide = $(this).parent();
       var voteId = elementIdToVoteId($slide.attr('id'));
       toggleVote(voteId);
-    });
-    $(document).on('click', '#submitvotes-button', function (e) {
-      e.preventDefault();
-      submitVotes();
-    });
+    }); // $(document).on('click', '#submitvotes-button', e => {
+    // 	e.preventDefault();
+    // 	submitVotes();
+    // });
+
     $(document).on('mouseenter', '.image-slide-anchor', function (e) {
       $(e.currentTarget).css({
         'z-index': 10
