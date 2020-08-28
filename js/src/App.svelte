@@ -7,12 +7,7 @@
     votes: Array(5)
   };
 
-  const getPieces = async () => {
-    const response = await fetch(`${API_URL}/api/artjam`).then(res =>
-      res.json()
-    );
-    return response;
-  };
+  const getPieces = async id => await fetch(`${API_URL}/api/artjam/${id}`);
 
   onMount(() => {});
 </script>
