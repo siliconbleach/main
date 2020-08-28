@@ -8,9 +8,11 @@
     votes: Array(5)
   };
 
-  const getPieces = async id => await fetch(`${API_URL}/api/artjam/${id}`);
+  const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
 
-  onMount(() => {});
+  onMount(() => {
+    getContest.then(res => res.json()).then(data => console.log(data));)
+  });
 </script>
 
 <style lang="postcss">
