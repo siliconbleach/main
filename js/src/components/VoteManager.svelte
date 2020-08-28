@@ -70,7 +70,7 @@
   {#if currentVotes}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
-        {#if vote}
+        {#if vote !== null}
           <img
             src={`${CDN_BASE_URL}/${vote?.piece_id}.jpg`}
             alt="Artjam entry vote thumbnail" />
