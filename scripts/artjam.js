@@ -1289,14 +1289,12 @@
           color: '#fff'
         };
       } else {
-        if (settings.votes.length < 5) {
-          settings.votes.push(id);
-        } else {
+        if (settings.votes.length < 5) ; else {
           return alert('You can only vote for five pieces.');
         }
       }
 
-      $voteSlide.find('.voting-button').toggleClass('is-selected').css(styles);
+      $voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles);
     };
 
     var elementIdToVoteId = function elementIdToVoteId(id) {
@@ -1385,7 +1383,7 @@
      */
 
 
-    $(document).on('click', '.voting-button', function (e) {
+    $(document).on('click', '.artjam-vote-button', function (e) {
       var $slide = $(this).parent();
       var voteId = elementIdToVoteId($slide.attr('id'));
       toggleVote(voteId);
@@ -1455,7 +1453,7 @@
               return v.piece_id;
             });
             (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
-              $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.voting-button').toggleClass('is-selected');
+              $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.artjam-vote-button').toggleClass('is-selected');
             });
             console.log('Calling app set because of Cookie');
             app.$set({
