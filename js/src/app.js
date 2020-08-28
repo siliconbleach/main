@@ -159,7 +159,7 @@ import App from './App.svelte';
 			settings.user.twitchId = urlParams.get('twitch_id');
 			const twitchIdCookie = cookie.set('userTwitchId', settings.user.twitchId, {
 				expires: 14,
-				secure: true
+				secure: 'none'
 			});
 		}
 
