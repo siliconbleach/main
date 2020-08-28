@@ -17,6 +17,8 @@
     width: 100%;
     max-width: 23vw;
     background-color: lightslategray;
+    color: white;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 1rem auto;
