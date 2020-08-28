@@ -19,10 +19,6 @@
       .then((res) => res.json())
       .then((data) => (contest = data));
   });
-
-  function handleToggle(args) {
-    console.log({ args });
-  }
 </script>
 
 <style lang="postcss">
