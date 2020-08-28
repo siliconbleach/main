@@ -7,7 +7,7 @@
 
   export const votes = [];
 
-  const handleSubmit = dispatch("voteSubmission", {
+  const handleSubmit = dispatch("submitVotes", {
     votes
   });
 
