@@ -1175,8 +1175,20 @@
   	return block;
   }
 
+  const API_URL = "https://artofkoko.com";
+
   function instance$2($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
+
+  	const getPieces = async () => {
+  		const response = await fetch(`${API_URL}/api/artjam`).then(res => res.json());
+  		return response;
+  	};
+
+  	onMount(() => {
+  		
+  	});
+
   	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
@@ -1190,7 +1202,13 @@
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
-  	$$self.$capture_state = () => ({ onMount, VoteManager, user });
+  	$$self.$capture_state = () => ({
+  		onMount,
+  		VoteManager,
+  		API_URL,
+  		user,
+  		getPieces
+  	});
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
