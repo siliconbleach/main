@@ -85,6 +85,8 @@ import App from './App.svelte';
 
 	const saveStoredSettings = () => localStorage.setItem('artJamInfo', JSON.stringify(settings))
 	const fetchVotes = async twitchId => {
+
+		console.log('Fetching votes');
 		const response = await fetch(`${API_URL}/api/user/${twitchId}/votes`, {
 			method: 'GET',
 		});
