@@ -1308,16 +1308,17 @@
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _context.next = 2;
+                console.log('Fetching votes');
+                _context.next = 3;
                 return fetch("".concat(API_URL, "/api/user/").concat(twitchId, "/votes"), {
                   method: 'GET'
                 });
 
-              case 2:
+              case 3:
                 response = _context.sent;
                 return _context.abrupt("return", response);
 
-              case 4:
+              case 5:
               case "end":
                 return _context.stop();
             }
