@@ -153,7 +153,7 @@ import App from './App.svelte';
 
 
 		if (urlParams.has('success') && urlParams.has('twitch_id')) {
-			console.log('saving cookie because of success & twitch_id params')
+			console.log('saving cookie because of success & twitch_id params');
 			const twitchId = urlParams.get('twitch_id');
 
 			settings.user.twitchId = urlParams.get('twitch_id');
