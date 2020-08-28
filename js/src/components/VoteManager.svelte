@@ -6,11 +6,15 @@
     user_id: null,
     piece_id: 0
   };
-
-  
-  
+ 
+   
   export const user = {votes:[]};
   $: votes = $$props.user.votes;
+
+  const clearVote = index => {
+    const currentVotes = votes.filter((v, i) => i !== index);
+    votes = currentVotes;
+  };
 </script>
 
 <style lang="postcss">
@@ -63,7 +67,7 @@
 
   {#each votes as vote}
 
- 	 <div class="vote-holder">
+ 	 <div class="vote-holder" onclick={clearVote(vote)}>
 	  {vote?.piece_id}
     <img src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`} alt="Artjam entry vote thumbnail" />
 	  </div>
