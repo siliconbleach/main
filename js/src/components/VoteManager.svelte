@@ -11,7 +11,7 @@
   let currentVotes;
 
   $: votes = $$props.user.votes;
-  debugger'
+  debugger;
   $: offset = Array(5 - votes.length);
   debbugger;
   $: currentVotes: votes.concat(offset);
