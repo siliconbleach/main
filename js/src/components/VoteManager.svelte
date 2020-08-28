@@ -7,7 +7,7 @@
     piece_id: 0
   };
 
-
+  
   
   export const user = {votes:[]};
   $: votes = $$props.user.votes;
@@ -49,7 +49,7 @@
 
  	 <span class="vote-holder">
 	  {vote?.piece_id}
-    <img src={`${CDN_BASE_URL}/${vote.piece_id}.png`} alt="Artjam entry vote thumbnail" />
+    <img src={`${CDN_BASE_URL}/${vote.piece_id}.jpg`} alt="Artjam entry vote thumbnail" />
 	  </span>
     {:else}
       <span>No votes yet, what are you waiting for?</span>
