@@ -11,10 +11,10 @@
   let currentVotes;
 
   $: votes = $$props.user.votes;
-  debugger;
   $: offset = Array(5 - votes.length);
-  debbugger;
   $: currentVotes: votes.concat(offset);
+
+  debugger;
 
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
