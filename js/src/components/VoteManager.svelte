@@ -1,11 +1,15 @@
 <script>
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
-
+  const CDN_BASE_URL = 'https://assets.artofkoko.com/artjam/5/';
+  
   const INITIAL_VOTE = {
     user_id: null,
     piece_id: 0
   };
-  export let user = {votes:[]};
+
+
+  
+  export const user = {votes:[]};
   $: votes = $$props.user.votes;
 </script>
 
@@ -45,6 +49,7 @@
 
  	 <span class="vote-holder">
 	  {vote?.piece_id}
+    <img src={`${CDN_BASE_URL}/${vote.piece_id}.png`} alt="Artjam entry vote thumbnail" />
 	  </span>
     {:else}
       <span>No votes yet, what are you waiting for?</span>
