@@ -16,6 +16,6 @@
 
 <div class="artjam-gallery-container">
   {#each contest?.entries as entry}
-    <span>{entry.name} - {entry.artist}</span>
+    <button>{entry.name}</button>
   {/each}
 </div>
