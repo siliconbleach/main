@@ -1,6 +1,6 @@
 <script>
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
-  const CDN_BASE_URL = 'https://assets.artofkoko.com/artjam/5/';
+  const CDN_BASE_URL = 'https://assets.artofkoko.com/artjam/5';
   
   const INITIAL_VOTE = {
     user_id: null,
