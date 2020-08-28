@@ -776,7 +776,7 @@
   function add_css$1() {
   	var style = element("style");
   	style.id = "svelte-ubk6mf-style";
-  	style.textContent = ".vote-container.svelte-ubk6mf{position:fixed;bottom:8px;left:8px;display:flex;flex-direction:row}.vote-holder.svelte-ubk6mf{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-ubk6mf{flex-direction:column}.vote-holder.svelte-ubk6mf{margin:0.5rem auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVm90ZU1hbmFnZXIuc3ZlbHRlIiwic291cmNlcyI6WyJWb3RlTWFuYWdlci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL0Zsb2F0aW5nU3VibWl0QnV0dG9uLnN2ZWx0ZVwiO1xuICBjb25zdCBDRE5fQkFTRV9VUkwgPSAnaHR0cHM6Ly9hc3NldHMuYXJ0b2Zrb2tvLmNvbS9hcnRqYW0vNS8nO1xuICBcbiAgY29uc3QgSU5JVElBTF9WT1RFID0ge1xuICAgIHVzZXJfaWQ6IG51bGwsXG4gICAgcGllY2VfaWQ6IDBcbiAgfTtcblxuICBcbiAgZXhwb3J0IGNvbnN0IHVzZXIgPSB7dm90ZXM6W119O1xuICAkOiB2b3RlcyA9ICQkcHJvcHMudXNlci52b3Rlcztcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuXG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBpbnNldCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIge1xuICAgICAgbWFyZ2luOiAwLjVyZW0gYXV0bztcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuXG4gIHsjZWFjaCB2b3RlcyBhcyB2b3RlfVxuXG4gXHQgPHNwYW4gY2xhc3M9XCJ2b3RlLWhvbGRlclwiPlxuXHQgIHt2b3RlPy5waWVjZV9pZH1cbiAgICA8aW1nIHNyYz17YCR7Q0ROX0JBU0VfVVJMfS8ke3ZvdGUucGllY2VfaWR9LmpwZ2B9IGFsdD1cIkFydGphbSBlbnRyeSB2b3RlIHRodW1ibmFpbFwiIC8+XG5cdCAgPC9zcGFuPlxuICAgIHs6ZWxzZX1cbiAgICAgIDxzcGFuPk5vIHZvdGVzIHlldCwgd2hhdCBhcmUgeW91IHdhaXRpbmcgZm9yPzwvc3Bhbj5cbiAgey9lYWNofVxuXG4gIDxGbG9hdGluZ1N1Ym1pdEJ1dHRvbiAvPlxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZUUsZUFBZSxjQUFDLENBQUMsQUFDZixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQ0FFVCxPQUFPLENBQUUsSUFBSSxDQUNiLGNBQWMsQ0FBRSxHQUFHLEFBQ3JCLENBQUMsQUFFRCxZQUFZLGNBQUMsQ0FBQyxBQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLElBQUksQ0FFWixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLGFBQWEsQ0FBRSxHQUFHLENBQ2xCLE1BQU0sQ0FBRSxDQUFDLENBQUMsR0FBRyxBQUNmLENBQUMsQUFFRCxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBQ3BDLGVBQWUsY0FBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLE1BQU0sQUFDeEIsQ0FBQyxBQUVELFlBQVksY0FBQyxDQUFDLEFBQ1osTUFBTSxDQUFFLE1BQU0sQ0FBQyxJQUFJLEFBQ3JCLENBQUMsQUFDSCxDQUFDIn0= */";
+  	style.textContent = ".vote-container.svelte-ubk6mf{position:fixed;bottom:8px;left:8px;display:flex;flex-direction:row}.vote-holder.svelte-ubk6mf{width:64px;height:64px;border:2px inset #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-ubk6mf{flex-direction:column}.vote-holder.svelte-ubk6mf{margin:0.5rem auto}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVm90ZU1hbmFnZXIuc3ZlbHRlIiwic291cmNlcyI6WyJWb3RlTWFuYWdlci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL0Zsb2F0aW5nU3VibWl0QnV0dG9uLnN2ZWx0ZVwiO1xuICBjb25zdCBDRE5fQkFTRV9VUkwgPSAnaHR0cHM6Ly9hc3NldHMuYXJ0b2Zrb2tvLmNvbS9hcnRqYW0vNS8nO1xuICBcbiAgY29uc3QgSU5JVElBTF9WT1RFID0ge1xuICAgIHVzZXJfaWQ6IG51bGwsXG4gICAgcGllY2VfaWQ6IDBcbiAgfTtcblxuXG4gIFxuICBleHBvcnQgY29uc3QgdXNlciA9IHt2b3RlczpbXX07XG4gICQ6IHZvdGVzID0gJCRwcm9wcy51c2VyLnZvdGVzO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAudm90ZS1jb250YWluZXIge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDhweDtcbiAgICBsZWZ0OiA4cHg7XG5cbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIH1cblxuICAudm90ZS1ob2xkZXIge1xuICAgIHdpZHRoOiA2NHB4O1xuICAgIGhlaWdodDogNjRweDtcblxuICAgIGJvcmRlcjogMnB4IGluc2V0ICNmZmY7XG4gICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgIG1hcmdpbjogMCA4cHg7XG4gIH1cblxuICBAbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOiA3NjhweCkge1xuICAgIC52b3RlLWNvbnRhaW5lciB7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDAuNXJlbSBhdXRvO1xuICAgIH1cbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cInZvdGUtY29udGFpbmVyXCI+XG5cbiAgeyNlYWNoIHZvdGVzIGFzIHZvdGV9XG5cbiBcdCA8c3BhbiBjbGFzcz1cInZvdGUtaG9sZGVyXCI+XG5cdCAge3ZvdGU/LnBpZWNlX2lkfVxuICAgIDxpbWcgc3JjPXtgJHtDRE5fQkFTRV9VUkx9LyR7dm90ZS5waWVjZV9pZH0ucG5nYH0gYWx0PVwiQXJ0amFtIGVudHJ5IHZvdGUgdGh1bWJuYWlsXCIgLz5cblx0ICA8L3NwYW4+XG4gICAgezplbHNlfVxuICAgICAgPHNwYW4+Tm8gdm90ZXMgeWV0LCB3aGF0IGFyZSB5b3Ugd2FpdGluZyBmb3I/PC9zcGFuPlxuICB7L2VhY2h9XG5cbiAgPEZsb2F0aW5nU3VibWl0QnV0dG9uIC8+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQkUsZUFBZSxjQUFDLENBQUMsQUFDZixRQUFRLENBQUUsS0FBSyxDQUNmLE1BQU0sQ0FBRSxHQUFHLENBQ1gsSUFBSSxDQUFFLEdBQUcsQ0FFVCxPQUFPLENBQUUsSUFBSSxDQUNiLGNBQWMsQ0FBRSxHQUFHLEFBQ3JCLENBQUMsQUFFRCxZQUFZLGNBQUMsQ0FBQyxBQUNaLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLElBQUksQ0FFWixNQUFNLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxJQUFJLENBQ3RCLGFBQWEsQ0FBRSxHQUFHLENBQ2xCLE1BQU0sQ0FBRSxDQUFDLENBQUMsR0FBRyxBQUNmLENBQUMsQUFFRCxPQUFPLE1BQU0sQ0FBQyxHQUFHLENBQUMsWUFBWSxLQUFLLENBQUMsQUFBQyxDQUFDLEFBQ3BDLGVBQWUsY0FBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLE1BQU0sQUFDeEIsQ0FBQyxBQUVELFlBQVksY0FBQyxDQUFDLEFBQ1osTUFBTSxDQUFFLE1BQU0sQ0FBQyxJQUFJLEFBQ3JCLENBQUMsQUFDSCxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
@@ -786,7 +786,7 @@
   	return child_ctx;
   }
 
-  // (53:4) {:else}
+  // (54:4) {:else}
   function create_else_block(ctx) {
   	let span;
 
@@ -794,7 +794,7 @@
   		c: function create() {
   			span = element("span");
   			span.textContent = "No votes yet, what are you waiting for?";
-  			add_location(span, file$1, 53, 6, 958);
+  			add_location(span, file$1, 54, 6, 959);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -808,14 +808,14 @@
   		block,
   		id: create_else_block.name,
   		type: "else",
-  		source: "(53:4) {:else}",
+  		source: "(54:4) {:else}",
   		ctx
   	});
 
   	return block;
   }
 
-  // (47:2) {#each votes as vote}
+  // (48:2) {#each votes as vote}
   function create_each_block(ctx) {
   	let span;
   	let t0_value = /*vote*/ ctx[4]?.piece_id + "";
@@ -830,11 +830,11 @@
   			t0 = text(t0_value);
   			t1 = space();
   			img = element("img");
-  			if (img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[4].piece_id}.jpg`)) attr_dev(img, "src", img_src_value);
+  			if (img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[4].piece_id}.png`)) attr_dev(img, "src", img_src_value);
   			attr_dev(img, "alt", "Artjam entry vote thumbnail");
-  			add_location(img, file$1, 50, 4, 842);
+  			add_location(img, file$1, 51, 4, 843);
   			attr_dev(span, "class", "vote-holder svelte-ubk6mf");
-  			add_location(span, file$1, 48, 3, 791);
+  			add_location(span, file$1, 49, 3, 792);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -845,7 +845,7 @@
   		p: function update(ctx, dirty) {
   			if (dirty & /*votes*/ 1 && t0_value !== (t0_value = /*vote*/ ctx[4]?.piece_id + "")) set_data_dev(t0, t0_value);
 
-  			if (dirty & /*votes*/ 1 && img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[4].piece_id}.jpg`)) {
+  			if (dirty & /*votes*/ 1 && img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[4].piece_id}.png`)) {
   				attr_dev(img, "src", img_src_value);
   			}
   		},
@@ -858,7 +858,7 @@
   		block,
   		id: create_each_block.name,
   		type: "each",
-  		source: "(47:2) {#each votes as vote}",
+  		source: "(48:2) {#each votes as vote}",
   		ctx
   	});
 
@@ -901,7 +901,7 @@
   			t = space();
   			create_component(floatingsubmitbutton.$$.fragment);
   			attr_dev(div, "class", "vote-container svelte-ubk6mf");
-  			add_location(div, file$1, 44, 0, 733);
+  			add_location(div, file$1, 45, 0, 734);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
