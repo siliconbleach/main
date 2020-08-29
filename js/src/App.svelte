@@ -12,7 +12,7 @@
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
 
-  export let contest;
+  let contest = {};
 
   onMount(() => {
     getContest(ARTJAM_ID)
