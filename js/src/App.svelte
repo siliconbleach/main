@@ -25,6 +25,7 @@
     } = event;
   };
   onMount(() => {
+    debugger;
     getContest(ARTJAM_ID)
       .then((res) => res.json())
       .then((data) => (contest = data));
