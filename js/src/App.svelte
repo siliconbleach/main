@@ -19,18 +19,16 @@
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
 
   let contest = {};
-
-  onMount(() => {
-    getContest(ARTJAM_ID)
-      .then((res) => res.json())
-      .then((data) => (contest = data));
-  });
-
   const handleToggle = (event) => {
     const {
       details: { entry },
     } = event;
   };
+  onMount(() => {
+    getContest(ARTJAM_ID)
+      .then((res) => res.json())
+      .then((data) => (contest = data));
+  });
 </script>
 
 <style lang="postcss">
