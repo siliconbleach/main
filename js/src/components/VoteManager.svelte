@@ -79,6 +79,6 @@
       <span>No votes yet, what are you waiting for?</span>
     {/each}
   {/if}
-
+  {@debug}
   <FloatingSubmitButton />
 </div>
