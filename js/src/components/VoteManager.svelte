@@ -71,7 +71,6 @@
 
 <div class="vote-container" on:togglevote={toggleVote}>
   {#if currentVotes}
-    {@debug}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
@@ -80,9 +79,9 @@
             alt="Artjam entry vote thumbnail" />
         {/if}
       </div>
+    {:else}
+      <span>No votes yet, what are you waiting for?</span>
     {/each}
-  {:else}
-    <span>No votes yet, what are you waiting for?</span>
   {/if}
 
   <FloatingSubmitButton />
