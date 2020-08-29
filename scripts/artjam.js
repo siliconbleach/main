@@ -1432,6 +1432,8 @@
   			$$inline: true
   		});
 
+  	contestgallery.$on("togglevote", handleToggle);
+
   	const block = {
   		c: function create() {
   			create_component(votemanager.$$.fragment);
