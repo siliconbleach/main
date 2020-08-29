@@ -23,6 +23,7 @@
   function handleToggle(event) {
     console.log(this);
     console.log(event);
+    debugger;
   }
 </script>
 
