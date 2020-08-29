@@ -13,8 +13,6 @@
   $: offset = Array(5 - votes.length);
   $: currentVotes: votes.concat(offset);
 
-  console.log(currentVotes);
-
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
