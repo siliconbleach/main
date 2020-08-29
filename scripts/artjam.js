@@ -1428,6 +1428,8 @@
   			$$inline: true
   		});
 
+  	votemanager.$on("toggle-vote", handleToggle);
+
   	contestgallery = new ContestGallery({
   			props: { contest: /*contest*/ ctx[0] },
   			$$inline: true
