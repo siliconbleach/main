@@ -19,9 +19,9 @@
     votes = currentVotes;
   };
 
-  function handleToggle(event) {
-    console.log({ event });
-  }
+  const handleToggle = (event) => {
+    console.log(event);
+  };
 </script>
 
 <style lang="postcss">
