@@ -1538,7 +1538,7 @@
   	let contest = {};
 
   	const handleToggle = event => {
-  		const { details: { entry } } = event;
+  		const { detail: { entry } } = event;
   		console.log(entry);
   	};
 
