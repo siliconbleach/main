@@ -71,6 +71,7 @@
 
 <div class="vote-container" on:togglevote={toggleVote}>
   {#if currentVotes}
+    {@debug}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
