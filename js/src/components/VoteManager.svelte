@@ -83,7 +83,6 @@
     {/each}
   {:else}
     <span>No votes yet, what are you waiting for?</span>
-    {/else}
   {/if}
 
   <FloatingSubmitButton />
