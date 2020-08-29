@@ -18,6 +18,11 @@
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
   };
+
+  const handleToggle = (event) => {
+    console.log(this);
+    console.log(event);
+  };
 </script>
 
 <style lang="postcss">
