@@ -1227,24 +1227,28 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-1stxss0-style";
-  	style.textContent = ".artjam-gallery-container.svelte-1stxss0{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}.artjam-entry.svelte-1stxss0{width:100%;max-width:23vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBleHBvcnQgbGV0IGNvbnRlc3QgPSB7XG4gICAgZW50cmllczogW10sXG4gIH07XG5cbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcblxuICBjb25zdCB0b2dnbGVWb3RlID0gKGVudHJ5KSA9PiB7XG4gICAgY29uc29sZS5sb2coXCJUb2dnbGUtdm90ZSBiZWluZyBkaXNwYXRjaGVkXCIpO1xuICAgIGRpc3BhdGNoKFwidG9nZ2xldm90ZVwiLCB7IGVudHJ5IH0pO1xuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LXdpZHRoOiAyM3Z3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c2xhdGVncmF5O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBib3JkZXItcmFkaXVzOiAwLjVyZW07XG4gICAgcGFkZGluZzogMC41cmVtO1xuICAgIG1hcmdpbjogMXJlbSBhdXRvO1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxidXR0b24gY2xhc3M9XCJhcnRqYW0tZW50cnlcIiBvbjpjbGljaz17dG9nZ2xlVm90ZShlbnRyeSl9PlxuICAgICAge2VudHJ5Lm5hbWV9XG4gICAgPC9idXR0b24+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVFLHlCQUF5QixlQUFDLENBQUMsQUFDekIsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsYUFBYSxDQUM5QixTQUFTLENBQUUsSUFBSSxDQUNmLFdBQVcsQ0FBRSxNQUFNLENBQ25CLFNBQVMsQ0FBRSxLQUFLLEFBQ2xCLENBQUMsQUFFRCxhQUFhLGVBQUMsQ0FBQyxBQUNiLEtBQUssQ0FBRSxJQUFJLENBQ1gsU0FBUyxDQUFFLElBQUksQ0FDZixnQkFBZ0IsQ0FBRSxjQUFjLENBQ2hDLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUM3QixhQUFhLENBQUUsTUFBTSxDQUNyQixPQUFPLENBQUUsTUFBTSxDQUNmLE1BQU0sQ0FBRSxJQUFJLENBQUMsSUFBSSxBQUNuQixDQUFDIn0= */";
+  	style.textContent = ".artjam-gallery-container.svelte-1stxss0{display:flex;justify-content:space-between;flex-wrap:wrap;align-items:center;max-width:960px}.artjam-entry.svelte-1stxss0{width:100%;max-width:23vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBleHBvcnQgbGV0IGNvbnRlc3QgPSB7XG4gICAgZW50cmllczogW10sXG4gIH07XG5cbiAgY29uc3QgZGlzcGF0Y2ggPSBjcmVhdGVFdmVudERpc3BhdGNoZXIoKTtcblxuICBjb25zdCB0b2dnbGVWb3RlID0gKGVudHJ5KSA9PiB7XG4gICAgY29uc29sZS5sb2coXCJUb2dnbGUtdm90ZSBiZWluZyBkaXNwYXRjaGVkXCIpO1xuICAgIGRpc3BhdGNoKFwidG9nZ2xldm90ZVwiLCB7IGVudHJ5IH0pO1xuICB9O1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBmbGV4LXdyYXA6IHdyYXA7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDk2MHB4O1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWF4LXdpZHRoOiAyM3Z3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c2xhdGVncmF5O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICBib3JkZXItcmFkaXVzOiAwLjVyZW07XG4gICAgcGFkZGluZzogMC41cmVtO1xuICAgIG1hcmdpbjogMXJlbSBhdXRvO1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIHsjZWFjaCBjb250ZXN0Py5lbnRyaWVzIGFzIGVudHJ5fVxuICAgIDxidXR0b24gY2xhc3M9XCJhcnRqYW0tZW50cnlcIiBvbjpjbGljaz17KCkgPT4gdG9nZ2xlVm90ZShlbnRyeSl9PlxuICAgICAge2VudHJ5Lm5hbWV9XG4gICAgPC9idXR0b24+XG4gIHsvZWFjaH1cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVFLHlCQUF5QixlQUFDLENBQUMsQUFDekIsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsYUFBYSxDQUM5QixTQUFTLENBQUUsSUFBSSxDQUNmLFdBQVcsQ0FBRSxNQUFNLENBQ25CLFNBQVMsQ0FBRSxLQUFLLEFBQ2xCLENBQUMsQUFFRCxhQUFhLGVBQUMsQ0FBQyxBQUNiLEtBQUssQ0FBRSxJQUFJLENBQ1gsU0FBUyxDQUFFLElBQUksQ0FDZixnQkFBZ0IsQ0FBRSxjQUFjLENBQ2hDLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUM3QixhQUFhLENBQUUsTUFBTSxDQUNyQixPQUFPLENBQUUsTUFBTSxDQUNmLE1BQU0sQ0FBRSxJQUFJLENBQUMsSUFBSSxBQUNuQixDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
   function get_each_context$1(ctx, list, i) {
   	const child_ctx = ctx.slice();
-  	child_ctx[3] = list[i];
+  	child_ctx[4] = list[i];
   	return child_ctx;
   }
 
   // (37:2) {#each contest?.entries as entry}
   function create_each_block$1(ctx) {
   	let button;
-  	let t0_value = /*entry*/ ctx[3].name + "";
+  	let t0_value = /*entry*/ ctx[4].name + "";
   	let t0;
   	let t1;
   	let mounted;
   	let dispose;
+
+  	function click_handler(...args) {
+  		return /*click_handler*/ ctx[2](/*entry*/ ctx[4], ...args);
+  	}
 
   	const block = {
   		c: function create() {
@@ -1260,23 +1264,13 @@
   			append_dev(button, t1);
 
   			if (!mounted) {
-  				dispose = listen_dev(
-  					button,
-  					"click",
-  					function () {
-  						if (is_function(/*toggleVote*/ ctx[1](/*entry*/ ctx[3]))) /*toggleVote*/ ctx[1](/*entry*/ ctx[3]).apply(this, arguments);
-  					},
-  					false,
-  					false,
-  					false
-  				);
-
+  				dispose = listen_dev(button, "click", click_handler, false, false, false);
   				mounted = true;
   			}
   		},
   		p: function update(new_ctx, dirty) {
   			ctx = new_ctx;
-  			if (dirty & /*contest*/ 1 && t0_value !== (t0_value = /*entry*/ ctx[3].name + "")) set_data_dev(t0, t0_value);
+  			if (dirty & /*contest*/ 1 && t0_value !== (t0_value = /*entry*/ ctx[4].name + "")) set_data_dev(t0, t0_value);
   		},
   		d: function destroy(detaching) {
   			if (detaching) detach_dev(button);
@@ -1388,6 +1382,7 @@
 
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("ContestGallery", $$slots, []);
+  	const click_handler = entry => toggleVote(entry);
 
   	$$self.$$set = $$props => {
   		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
@@ -1408,7 +1403,7 @@
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [contest, toggleVote];
+  	return [contest, toggleVote, click_handler];
   }
 
   class ContestGallery extends SvelteComponentDev {
