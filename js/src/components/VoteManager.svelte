@@ -79,9 +79,9 @@
             alt="Artjam entry vote thumbnail" />
         {/if}
       </div>
-    {:else}
-      <span>No votes yet, what are you waiting for?</span>
     {/each}
+  {:else}
+    <span>No votes yet, what are you waiting for?</span>
   {/if}
 
   <FloatingSubmitButton />
