@@ -19,9 +19,12 @@
     votes = currentVotes;
   };
 
-  const handleToggle = entry => {
-    console.log()'handleToggle called', 'now to find out what to do with this design.')
-  }
+  const handleToggle = (entry) => {
+    console.log(
+      "handleToggle called",
+      "now to find out what to do with this design."
+    );
+  };
 </script>
 
 <style lang="postcss">
