@@ -7,6 +7,7 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => {
+    console.log("Toggle-vote being dispatched");
     dispatch("toggle-vote", {
       entry,
     });
