@@ -26,11 +26,11 @@
       .then((data) => (contest = data));
   });
 
-  function handleToggle(event) {
+  const handleToggle = (event) => {
     const {
       details: { entry },
     } = event;
-  }
+  };
 </script>
 
 <style lang="postcss">
