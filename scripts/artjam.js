@@ -343,17 +343,6 @@
       }
     };
   }
-  // shorthand events, or if we want to implement
-  // a real bubbling mechanism
-
-
-  function bubble(component, event) {
-    const callbacks = component.$$.callbacks[event.type];
-
-    if (callbacks) {
-      callbacks.slice().forEach(fn => fn(event));
-    }
-  }
 
   const dirty_components = [];
   const binding_callbacks = [];
@@ -1435,7 +1424,7 @@
   			$$inline: true
   		});
 
-  	votemanager.$on("toggle-vote", /*toggle_vote_handler*/ ctx[2]);
+  	votemanager.$on("toggle-vote", handleToggle$1);
 
   	contestgallery = new ContestGallery({
   			props: { contest: /*contest*/ ctx[0] },
@@ -1520,10 +1509,6 @@
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("App", $$slots, []);
 
-  	function toggle_vote_handler(event) {
-  		bubble($$self, event);
-  	}
-
   	$$self.$$set = $$props => {
   		if ("user" in $$props) $$invalidate(1, user = $$props.user);
   		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
@@ -1550,7 +1535,7 @@
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [contest, user, toggle_vote_handler];
+  	return [contest, user];
   }
 
   class App extends SvelteComponentDev {
