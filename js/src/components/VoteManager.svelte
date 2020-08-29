@@ -33,7 +33,7 @@
     width: 64px;
     height: 64px;
 
-    border: 2px inset #fff;
+    border: 2px solid #fff;
     border-radius: 6px;
     margin: 0 8px;
   }
