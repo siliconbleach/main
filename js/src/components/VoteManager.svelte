@@ -9,7 +9,7 @@
 
   export const user = { votes: [] };
 
-  $: votes = $$props.user.votes;
+  $: votes = user.votes;
   $: offset = Array(5 - votes.length);
   $: currentVotes: votes.concat(offset);
 
