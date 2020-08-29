@@ -1528,12 +1528,12 @@
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
   	let contest = {};
 
+  	const handleToggle = event => {
+  	};
+
   	onMount(() => {
   		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
   	});
-
-  	const handleToggle = event => {
-  	};
 
   	const writable_props = ["user"];
 
