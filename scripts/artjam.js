@@ -1457,14 +1457,14 @@
   			$$inline: true
   		});
 
-  	votemanager.$on("togglevote", handleToggle$1);
+  	votemanager.$on("togglevote", /*handleToggle*/ ctx[2]);
 
   	contestgallery = new ContestGallery({
   			props: { contest: /*contest*/ ctx[1] },
   			$$inline: true
   		});
 
-  	contestgallery.$on("togglevote", handleToggle$1);
+  	contestgallery.$on("togglevote", /*handleToggle*/ ctx[2]);
 
   	const block = {
   		c: function create() {
@@ -1522,9 +1522,6 @@
   const ARTJAM_ID = 5;
   const MAX_VOTES = 5;
 
-  function handleToggle$1(event) {
-  }
-
   function instance$3($$self, $$props, $$invalidate) {
   	let count = 0;
   	let { user = { votes: Array(5) } } = $$props;
@@ -1534,6 +1531,9 @@
   	onMount(() => {
   		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
   	});
+
+  	const handleToggle = event => {
+  	};
 
   	const writable_props = ["user"];
 
@@ -1559,7 +1559,7 @@
   		user,
   		getContest,
   		contest,
-  		handleToggle: handleToggle$1,
+  		handleToggle,
   		remaining
   	});
 
@@ -1582,7 +1582,7 @@
   		}
   	};
 
-  	return [user, contest];
+  	return [user, contest, handleToggle];
   }
 
   class App extends SvelteComponentDev {
