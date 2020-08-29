@@ -8,6 +8,7 @@
   };
 
   export const user = { votes: [] };
+  export const handleToggle = () => ({});
   let currentVotes = [null, null, null, null, null];
 
   $: votes = $$props.user.votes;
