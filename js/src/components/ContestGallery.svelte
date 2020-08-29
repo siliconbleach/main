@@ -9,9 +9,7 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => {
-    console.log("Toggle-vote being dispatched");
-    debugger;
-    const fireEvent = dispatch("togglevote", { entry });
+    dispatch("togglevote", { entry });
   };
 </script>
 
