@@ -1420,14 +1420,14 @@
   	let current;
 
   	votemanager = new VoteManager({
-  			props: { user: /*user*/ ctx[1] },
+  			props: { user: /*user*/ ctx[0] },
   			$$inline: true
   		});
 
   	votemanager.$on("togglevote", handleToggle);
 
   	contestgallery = new ContestGallery({
-  			props: { contest: /*contest*/ ctx[0] },
+  			props: { contest: /*contest*/ ctx[1] },
   			$$inline: true
   		});
 
@@ -1448,10 +1448,10 @@
   		},
   		p: function update(ctx, [dirty]) {
   			const votemanager_changes = {};
-  			if (dirty & /*user*/ 2) votemanager_changes.user = /*user*/ ctx[1];
+  			if (dirty & /*user*/ 1) votemanager_changes.user = /*user*/ ctx[0];
   			votemanager.$set(votemanager_changes);
   			const contestgallery_changes = {};
-  			if (dirty & /*contest*/ 1) contestgallery_changes.contest = /*contest*/ ctx[0];
+  			if (dirty & /*contest*/ 2) contestgallery_changes.contest = /*contest*/ ctx[1];
   			contestgallery.$set(contestgallery_changes);
   		},
   		i: function intro(local) {
@@ -1494,13 +1494,13 @@
   function instance$3($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
-  	let { contest } = $$props;
+  	let contest = {};
 
   	onMount(() => {
-  		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(0, contest = data));
+  		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
   	});
 
-  	const writable_props = ["user", "contest"];
+  	const writable_props = ["user"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$1.warn(`<App> was created with unknown prop '${key}'`);
@@ -1510,8 +1510,7 @@
   	validate_slots("App", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
-  		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
   	};
 
   	$$self.$capture_state = () => ({
@@ -1527,21 +1526,21 @@
   	});
 
   	$$self.$inject_state = $$props => {
-  		if ("user" in $$props) $$invalidate(1, user = $$props.user);
-  		if ("contest" in $$props) $$invalidate(0, contest = $$props.contest);
+  		if ("user" in $$props) $$invalidate(0, user = $$props.user);
+  		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
   	};
 
   	if ($$props && "$$inject" in $$props) {
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	return [contest, user];
+  	return [user, contest];
   }
 
   class App extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		init(this, options, instance$3, create_fragment$3, safe_not_equal, { user: 1, contest: 0 });
+  		init(this, options, instance$3, create_fragment$3, safe_not_equal, { user: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1549,13 +1548,6 @@
   			options,
   			id: create_fragment$3.name
   		});
-
-  		const { ctx } = this.$$;
-  		const props = options.props || {};
-
-  		if (/*contest*/ ctx[0] === undefined && !("contest" in props)) {
-  			console_1$1.warn("<App> was created without expected prop 'contest'");
-  		}
   	}
 
   	get user() {
@@ -1563,14 +1555,6 @@
   	}
 
   	set user(value) {
-  		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	get contest() {
-  		throw new Error("<App>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-  	}
-
-  	set contest(value) {
   		throw new Error("<App>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
