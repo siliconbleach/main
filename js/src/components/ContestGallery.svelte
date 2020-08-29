@@ -8,9 +8,7 @@
 
   const toggleVote = (entry) => {
     console.log("Toggle-vote being dispatched");
-    dispatch("toggle-vote", {
-      entry,
-    });
+    dispatch("togglevote", { entry });
   };
 </script>
 
