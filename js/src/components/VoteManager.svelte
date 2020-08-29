@@ -66,7 +66,7 @@
   }
 </style>
 
-<div class="vote-container" on:votetoggle>
+<div class="vote-container" on:votetoggle={handleToggle}>
   {#if currentVotes}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
