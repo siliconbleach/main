@@ -1609,30 +1609,28 @@
     /**
      * Main
      */
-
-    var toggleVote = function toggleVote(id) {
-      var $voteSlide = $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(id));
-      var styles = {
-        background: 'white',
-        color: '#e86d6d'
-      };
-      var voteIndex = settings.votes.indexOf(id);
-
-      if (voteIndex > -1) {
-        //remove vote
-        settings.votes.splice(voteIndex, 1);
-        styles = {
-          background: 'transparent',
-          color: '#fff'
-        };
-      } else {
-        if (settings.votes.length < 5) ; else {
-          return alert('You can only vote for five pieces.');
-        }
-      }
-
-      $voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles);
-    };
+    // const toggleVote = id => {
+    // 	const $voteSlide = $(`#${YUI_PREFIX}${yui_gallery_id}${id}`);
+    // 	let styles = {
+    // 		background: 'white',
+    // 		color: '#e86d6d'
+    // 	}
+    // 	const voteIndex = settings.votes.indexOf(id);
+    // 	if (voteIndex > -1) {
+    // 		//remove vote
+    // 		settings.votes.splice(voteIndex, 1);
+    // 		styles = {
+    // 			background: 'transparent',
+    // 			color: '#fff'
+    // 		}
+    // 	} else {
+    // 		if (settings.votes.length < 5) {
+    // 		} else {
+    // 			return alert('You can only vote for five pieces.');
+    // 		}
+    // 	}
+    // 	$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
+    // };
 
     var elementIdToVoteId = function elementIdToVoteId(id) {
       return id.split('_').pop();
