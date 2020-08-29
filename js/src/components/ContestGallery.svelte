@@ -12,7 +12,6 @@
     console.log("Toggle-vote being dispatched");
     debugger;
     const fireEvent = dispatch("togglevote", { entry });
-    debugger;
   };
 </script>
 
