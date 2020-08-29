@@ -31,4 +31,4 @@
 </style>
 
 <VoteManager {user} on:togglevote={handleToggle} />
-<ContestGallery {contest} />
+<ContestGallery {contest} on:togglevote={handleToggle} />
