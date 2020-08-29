@@ -78,7 +78,7 @@ import App from './App.svelte';
 	// 		}
 	// 	}
 
-	// 	$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
+	// $voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
 	// };
 
 	const elementIdToVoteId = id => id.split('_').pop();
