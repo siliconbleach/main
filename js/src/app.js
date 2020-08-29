@@ -54,32 +54,32 @@ import App from './App.svelte';
 	/**
 	 * Main
 	 */
-	const toggleVote = id => {
+	// const toggleVote = id => {
 
-		const $voteSlide = $(`#${YUI_PREFIX}${yui_gallery_id}${id}`);
-		let styles = {
-			background: 'white',
-			color: '#e86d6d'
-		}
+	// 	const $voteSlide = $(`#${YUI_PREFIX}${yui_gallery_id}${id}`);
+	// 	let styles = {
+	// 		background: 'white',
+	// 		color: '#e86d6d'
+	// 	}
 
-		const voteIndex = settings.votes.indexOf(id);
-		if (voteIndex > -1) {
-			//remove vote
-			settings.votes.splice(voteIndex, 1);
-			styles = {
-				background: 'transparent',
-				color: '#fff'
-			}
-		} else {
-			if (settings.votes.length < 5) {
+	// 	const voteIndex = settings.votes.indexOf(id);
+	// 	if (voteIndex > -1) {
+	// 		//remove vote
+	// 		settings.votes.splice(voteIndex, 1);
+	// 		styles = {
+	// 			background: 'transparent',
+	// 			color: '#fff'
+	// 		}
+	// 	} else {
+	// 		if (settings.votes.length < 5) {
 
-			} else {
-				return alert('You can only vote for five pieces.');
-			}
-		}
+	// 		} else {
+	// 			return alert('You can only vote for five pieces.');
+	// 		}
+	// 	}
 
-		$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
-	};
+	// 	$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
+	// };
 
 	const elementIdToVoteId = id => id.split('_').pop();
 
