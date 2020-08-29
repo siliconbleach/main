@@ -1491,6 +1491,7 @@
   function handleToggle(event) {
   	console.log(this);
   	console.log(event);
+  	debugger;
   }
 
   function instance$3($$self, $$props, $$invalidate) {
