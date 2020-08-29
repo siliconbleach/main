@@ -1532,7 +1532,6 @@
   	};
 
   	onMount(() => {
-  		debugger;
   		getContest(ARTJAM_ID).then(res => res.json()).then(data => $$invalidate(1, contest = data));
   	});
 
