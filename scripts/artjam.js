@@ -1497,15 +1497,14 @@
   const API_URL = "https://artofkoko.com";
   const ARTJAM_ID = 5;
 
+  function handleToggle$1(event) {
+  	console.log(this);
+  	console.log(event);
+  }
+
   function instance$3($$self, $$props, $$invalidate) {
   	let { user = { votes: Array(5) } } = $$props;
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
-
-  	const handleToggle = event => {
-  		console.log(this);
-  		console.log(event);
-  	};
-
   	let { contest } = $$props;
 
   	onMount(() => {
@@ -1538,8 +1537,8 @@
   		ARTJAM_ID,
   		user,
   		getContest,
-  		handleToggle,
-  		contest
+  		contest,
+  		handleToggle: handleToggle$1
   	});
 
   	$$self.$inject_state = $$props => {
