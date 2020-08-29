@@ -6,9 +6,15 @@
 
   const API_URL = "https://artofkoko.com";
   const ARTJAM_ID = 5;
+  const MAX_VOTES = 5;
+
+  let count = 0;
+
   export let user = {
     votes: Array(5),
   };
+
+  $: remaining = MAX_VOTES - user.votes.length;
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
 
@@ -21,9 +27,9 @@
   });
 
   function handleToggle(event) {
-    console.log(this);
-    console.log(event);
-    debugger;
+    const {
+      details: { entry },
+    } = event;
   }
 </script>
 
