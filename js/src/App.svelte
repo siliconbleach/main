@@ -11,10 +11,6 @@
   };
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
-  const handleToggle = (event) => {
-    console.log(this);
-    console.log(event);
-  };
 
   export let contest;
 
@@ -23,6 +19,11 @@
       .then((res) => res.json())
       .then((data) => (contest = data));
   });
+
+  function handleToggle(event) {
+    console.log(this);
+    console.log(event);
+  }
 </script>
 
 <style lang="postcss">
