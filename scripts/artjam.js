@@ -1679,7 +1679,7 @@
     // 			return alert('You can only vote for five pieces.');
     // 		}
     // 	}
-    // 	$voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
+    // $voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
     // };
 
     var elementIdToVoteId = function elementIdToVoteId(id) {
