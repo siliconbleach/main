@@ -18,6 +18,10 @@
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
   };
+
+  function toggleVote() {
+    console.log("Here we are");
+  }
 </script>
 
 <style lang="postcss">
@@ -65,7 +69,7 @@
   }
 </style>
 
-<div class="vote-container" on:votetoggle={handleToggle}>
+<div class="vote-container" on:votetoggle={toggleVote}>
   {#if currentVotes}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
