@@ -8,7 +8,6 @@
   };
 
   export const user = { votes: [] };
-  let currentVotes = [];
 
   $: votes = $$props.user.votes;
   $: offset = Array(5 - votes.length);
