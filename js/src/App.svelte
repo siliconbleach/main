@@ -12,7 +12,7 @@
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
   const handleToggle = (event) => {
-    console.log({this});
+    console.log(this);
     console.log(event);
   };
 
