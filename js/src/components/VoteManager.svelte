@@ -65,7 +65,7 @@
   }
 </style>
 
-<div class="vote-container" on:toggle-vote={() => handleToggle()}>
+<div class="vote-container" on:toggle-vote={handleToggle}>
 
   {#if currentVotes}
     {#each currentVotes as vote}
