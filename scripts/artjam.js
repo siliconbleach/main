@@ -1567,10 +1567,12 @@
   	let count = 0;
   	let { user = { votes: Array(5) } } = $$props;
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
+  	let pictureVoter = {};
   	let contest = {};
 
   	const handleToggle = event => {
-  		debugger;
+  		const { detail: { entry } } = event;
+  		pictureVoter[entry.piece_id] = !pictureVoter[entry.piece_id];
   	};
 
   	onMount(() => {
@@ -1600,6 +1602,7 @@
   		count,
   		user,
   		getContest,
+  		pictureVoter,
   		contest,
   		handleToggle,
   		remaining
@@ -1608,6 +1611,7 @@
   	$$self.$inject_state = $$props => {
   		if ("count" in $$props) count = $$props.count;
   		if ("user" in $$props) $$invalidate(0, user = $$props.user);
+  		if ("pictureVoter" in $$props) pictureVoter = $$props.pictureVoter;
   		if ("contest" in $$props) $$invalidate(1, contest = $$props.contest);
   		if ("remaining" in $$props) remaining = $$props.remaining;
   	};
