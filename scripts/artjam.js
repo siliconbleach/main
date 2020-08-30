@@ -1573,7 +1573,7 @@
   	const handleToggle = event => {
   		const { detail: { entry } } = event;
   		debugger;
-  		pictureVoter[entry.piece_id] = !pictureVoter[entry.piece_id];
+  		pictureVoter[entry.id] = !pictureVoter[entry.id];
   	};
 
   	onMount(() => {
