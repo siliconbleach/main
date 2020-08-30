@@ -8,9 +8,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const toggleVote = (entry) => {
-    dispatch("togglevote", { entry });
-  };
+  const toggleVote = (entry) => dispatch("togglevote", { entry });
 </script>
 
 <style lang="postcss">
