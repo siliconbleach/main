@@ -23,6 +23,7 @@
     const {
       detail: { entry },
     } = event;
+    debugger;
   };
   onMount(() => {
     getContest(ARTJAM_ID)
