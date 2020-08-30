@@ -23,7 +23,7 @@
     const {
       detail: { entry },
     } = event;
-
+    debugger;
     pictureVoter[entry.piece_id] = !pictureVoter[entry.piece_id];
   };
   onMount(() => {
