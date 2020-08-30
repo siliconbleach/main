@@ -17,10 +17,6 @@
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
   };
-
-  function toggleVote(vote) {
-    console.log("Vote toggling");
-  }
 </script>
 
 <style lang="postcss">
