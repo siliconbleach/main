@@ -17,13 +17,14 @@
   $: remaining = MAX_VOTES - user.votes.length;
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
-
+  let pictureVoter = {};
   let contest = {};
   const handleToggle = (event) => {
     const {
       detail: { entry },
     } = event;
-    debugger;
+
+    pictureVoter[entry.piece_id] = !pictureVoter[entry.piece_id];
   };
   onMount(() => {
     getContest(ARTJAM_ID)
