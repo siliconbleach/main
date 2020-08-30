@@ -1574,6 +1574,7 @@
   	let contest = {};
 
   	const handleToggle = event => {
+  		debugger;
   	};
 
   	onMount(() => {
