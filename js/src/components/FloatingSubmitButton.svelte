@@ -11,6 +11,7 @@
     votes,
   });
 
+  debugger;
   $: hasChanged;
 </script>
 
