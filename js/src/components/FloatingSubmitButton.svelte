@@ -42,7 +42,7 @@
   }
 </style>
 
-<form id="vote-submission" on:submit={handleSubmit}>
+<form id="vote-submission" on:submit|preventDefault={handleSubmit}>
   <button id="submitvotes-button" class:is-shown={hasChanged} type="submit">
     Submit Votes
   </button>
