@@ -7,7 +7,7 @@
     piece_id: 0,
   };
 
-  export const user = { votes: [] };
+  export let user = { votes: [] };
 
   $: votes = user.votes;
   $: offset = Array(5 - votes.length);
