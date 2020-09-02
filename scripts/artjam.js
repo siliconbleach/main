@@ -1622,6 +1622,13 @@
   	let count = 0;
   	let { user = { votes: Array(5) } } = $$props;
   	const getContest = async id => await fetch(`${API_URL}/api/artjam/${id}`);
+
+  	const submitVotes = async votes => fetch(`${API_URL}/api/votes`, {
+  		method: "POST",
+  		body: JSON.stringify(votes),
+  		headers: { "Content-Type": "application/json" }
+  	});
+
   	let pictureVoter = {};
   	let contest = {};
 
@@ -1633,7 +1640,6 @@
   	};
 
   	const handleSubmit = event => {
-  		
   	};
 
   	onMount(() => {
@@ -1663,6 +1669,7 @@
   		count,
   		user,
   		getContest,
+  		submitVotes,
   		pictureVoter,
   		contest,
   		handleToggle,
