@@ -17,6 +17,14 @@
   $: remaining = MAX_VOTES - user.votes.length;
 
   const getContest = async (id) => await fetch(`${API_URL}/api/artjam/${id}`);
+  const submitVotes = async (votes) =>
+    fetch(`${API_URL}/api/votes`, {
+      method: "POST",
+      body: JSON.stringify(votes),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
   let pictureVoter = {};
   let contest = {};
   const handleToggle = (event) => {
@@ -30,7 +38,11 @@
     return newValue;
   };
 
-  const handleSubmit = (event) => {};
+  const handleSubmit = (event) => {
+    const {
+      detail: { entries },
+    } = event;
+  };
   onMount(() => {
     getContest(ARTJAM_ID)
       .then((res) => res.json())
