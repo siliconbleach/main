@@ -832,14 +832,14 @@
   function add_css$1() {
   	var style = element("style");
   	style.id = "svelte-44m7i4-style";
-  	style.textContent = ".vote-container.svelte-44m7i4.svelte-44m7i4{position:fixed;bottom:8px;left:8px;display:flex;flex-direction:row}.vote-holder.svelte-44m7i4.svelte-44m7i4{width:64px;height:64px;border:2px solid #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-44m7i4.svelte-44m7i4{flex-direction:column-reverse}.vote-holder.svelte-44m7i4.svelte-44m7i4{margin:0.5rem auto;position:relative;overflow:hidden}.vote-holder.svelte-44m7i4 img.svelte-44m7i4{position:absolute;top:0;left:0;width:100%;height:auto;max-height:100%}img.svelte-44m7i4.svelte-44m7i4:hover{cursor:pointer}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVm90ZU1hbmFnZXIuc3ZlbHRlIiwic291cmNlcyI6WyJWb3RlTWFuYWdlci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL0Zsb2F0aW5nU3VibWl0QnV0dG9uLnN2ZWx0ZVwiO1xuICBjb25zdCBDRE5fQkFTRV9VUkwgPSBcImh0dHBzOi8vYXNzZXRzLmFydG9ma29rby5jb20vYXJ0amFtLzVcIjtcblxuICBjb25zdCBJTklUSUFMX1ZPVEUgPSB7XG4gICAgdXNlcl9pZDogbnVsbCxcbiAgICBwaWVjZV9pZDogMCxcbiAgfTtcblxuICBleHBvcnQgbGV0IHVzZXIgPSB7IHZvdGVzOiBbXSB9O1xuXG4gICQ6IHZvdGVzID0gdXNlci52b3RlcztcbiAgJDogb2Zmc2V0ID0gQXJyYXkoNSAtIHZvdGVzLmxlbmd0aCk7XG4gICQ6IGN1cnJlbnRWb3RlcyA9IHZvdGVzLmNvbmNhdChvZmZzZXQpO1xuXG4gIGNvbnN0IGNsZWFyVm90ZSA9IChpbmRleCkgPT4ge1xuICAgIGNvbnNvbGUubG9nKGluZGV4KTtcbiAgICBjb25zdCBjdXJyZW50Vm90ZXMgPSB2b3Rlcy5maWx0ZXIoKHYsIGkpID0+IGkgIT09IGluZGV4KTtcbiAgICB2b3RlcyA9IGN1cnJlbnRWb3RlcztcbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuXG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbi1yZXZlcnNlO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDAuNXJlbSBhdXRvO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIgaW1nIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHRvcDogMDtcbiAgICAgIGxlZnQ6IDA7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIG1heC1oZWlnaHQ6IDEwMCU7XG4gICAgfVxuXG4gICAgaW1nOmhvdmVyIHtcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2lmIGN1cnJlbnRWb3Rlc31cbiAgICB7I2VhY2ggY3VycmVudFZvdGVzIGFzIHZvdGUsIGluZGV4fVxuICAgICAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCIgb246Y2xpY2s9e2NsZWFyVm90ZShpbmRleCl9PlxuICAgICAgICB7I2lmIHZvdGV9XG4gICAgICAgICAgPGltZ1xuICAgICAgICAgICAgc3JjPXtgJHtDRE5fQkFTRV9VUkx9LyR7dm90ZT8ucGllY2VfaWR9LmpwZ2B9XG4gICAgICAgICAgICBhbHQ9XCJBcnRqYW0gZW50cnkgdm90ZSB0aHVtYm5haWxcIiAvPlxuICAgICAgICB7L2lmfVxuICAgICAgPC9kaXY+XG4gICAgezplbHNlfVxuICAgICAgPHNwYW4+Tm8gdm90ZXMgeWV0LCB3aGF0IGFyZSB5b3Ugd2FpdGluZyBmb3I/PC9zcGFuPlxuICAgIHsvZWFjaH1cbiAgey9pZn1cbiAgPEZsb2F0aW5nU3VibWl0QnV0dG9uIC8+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1QkUsZUFBZSw0QkFBQyxDQUFDLEFBQ2YsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLENBRVQsT0FBTyxDQUFFLElBQUksQ0FDYixjQUFjLENBQUUsR0FBRyxBQUNyQixDQUFDLEFBRUQsWUFBWSw0QkFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSw0QkFBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLGNBQWMsQUFDaEMsQ0FBQyxBQUVELFlBQVksNEJBQUMsQ0FBQyxBQUNaLE1BQU0sQ0FBRSxNQUFNLENBQUMsSUFBSSxDQUNuQixRQUFRLENBQUUsUUFBUSxDQUNsQixRQUFRLENBQUUsTUFBTSxBQUNsQixDQUFDLEFBRUQsMEJBQVksQ0FBQyxHQUFHLGNBQUMsQ0FBQyxBQUNoQixRQUFRLENBQUUsUUFBUSxDQUNsQixHQUFHLENBQUUsQ0FBQyxDQUNOLElBQUksQ0FBRSxDQUFDLENBQ1AsS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUNaLFVBQVUsQ0FBRSxJQUFJLEFBQ2xCLENBQUMsQUFFRCwrQkFBRyxNQUFNLEFBQUMsQ0FBQyxBQUNULE1BQU0sQ0FBRSxPQUFPLEFBQ2pCLENBQUMsQUFDSCxDQUFDIn0= */";
+  	style.textContent = ".vote-container.svelte-44m7i4.svelte-44m7i4{position:fixed;bottom:8px;left:8px;display:flex;flex-direction:row}.vote-holder.svelte-44m7i4.svelte-44m7i4{width:64px;height:64px;border:2px solid #fff;border-radius:6px;margin:0 8px}@media screen and (min-width: 768px){.vote-container.svelte-44m7i4.svelte-44m7i4{flex-direction:column-reverse}.vote-holder.svelte-44m7i4.svelte-44m7i4{margin:0.5rem auto;position:relative;overflow:hidden}.vote-holder.svelte-44m7i4 img.svelte-44m7i4{position:absolute;top:0;left:0;width:100%;height:auto;max-height:100%}img.svelte-44m7i4.svelte-44m7i4:hover{cursor:pointer}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiVm90ZU1hbmFnZXIuc3ZlbHRlIiwic291cmNlcyI6WyJWb3RlTWFuYWdlci5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IEZsb2F0aW5nU3VibWl0QnV0dG9uIGZyb20gXCIuL0Zsb2F0aW5nU3VibWl0QnV0dG9uLnN2ZWx0ZVwiO1xuICBjb25zdCBDRE5fQkFTRV9VUkwgPSBcImh0dHBzOi8vYXNzZXRzLmFydG9ma29rby5jb20vYXJ0amFtLzVcIjtcblxuICBjb25zdCBJTklUSUFMX1ZPVEUgPSB7XG4gICAgdXNlcl9pZDogbnVsbCxcbiAgICBwaWVjZV9pZDogMCxcbiAgfTtcblxuICBleHBvcnQgbGV0IHVzZXIgPSB7IHZvdGVzOiBbXSB9O1xuXG4gICQ6IHZvdGVzID0gdXNlci52b3RlcztcbiAgJDogb2Zmc2V0ID0gQXJyYXkoNSAtIHZvdGVzLmxlbmd0aCk7XG4gICQ6IGN1cnJlbnRWb3RlcyA9IHZvdGVzLmNvbmNhdChvZmZzZXQpO1xuXG4gIGNvbnN0IGNsZWFyVm90ZSA9IChpbmRleCkgPT4ge1xuICAgIGNvbnNvbGUubG9nKGluZGV4KTtcbiAgICBjb25zdCBjdXJyZW50Vm90ZXMgPSB2b3Rlcy5maWx0ZXIoKHYsIGkpID0+IGkgIT09IGluZGV4KTtcbiAgICB2b3RlcyA9IGN1cnJlbnRWb3RlcztcbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLnZvdGUtY29udGFpbmVyIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiA4cHg7XG4gICAgbGVmdDogOHB4O1xuXG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICB9XG5cbiAgLnZvdGUtaG9sZGVyIHtcbiAgICB3aWR0aDogNjRweDtcbiAgICBoZWlnaHQ6IDY0cHg7XG5cbiAgICBib3JkZXI6IDJweCBzb2xpZCAjZmZmO1xuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBtYXJnaW46IDAgOHB4O1xuICB9XG5cbiAgQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogNzY4cHgpIHtcbiAgICAudm90ZS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbi1yZXZlcnNlO1xuICAgIH1cblxuICAgIC52b3RlLWhvbGRlciB7XG4gICAgICBtYXJnaW46IDAuNXJlbSBhdXRvO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB9XG5cbiAgICAudm90ZS1ob2xkZXIgaW1nIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIHRvcDogMDtcbiAgICAgIGxlZnQ6IDA7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIG1heC1oZWlnaHQ6IDEwMCU7XG4gICAgfVxuXG4gICAgaW1nOmhvdmVyIHtcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJ2b3RlLWNvbnRhaW5lclwiPlxuICB7I2lmIGN1cnJlbnRWb3Rlc31cbiAgICB7I2VhY2ggY3VycmVudFZvdGVzIGFzIHZvdGUsIGluZGV4fVxuICAgICAgPGRpdiBjbGFzcz1cInZvdGUtaG9sZGVyXCIgb246Y2xpY2s9eygpID0+IGNsZWFyVm90ZShpbmRleCl9PlxuICAgICAgICB7I2lmIHZvdGV9XG4gICAgICAgICAgPGltZ1xuICAgICAgICAgICAgc3JjPXtgJHtDRE5fQkFTRV9VUkx9LyR7dm90ZT8ucGllY2VfaWR9LmpwZ2B9XG4gICAgICAgICAgICBhbHQ9XCJBcnRqYW0gZW50cnkgdm90ZSB0aHVtYm5haWxcIiAvPlxuICAgICAgICB7L2lmfVxuICAgICAgPC9kaXY+XG4gICAgezplbHNlfVxuICAgICAgPHNwYW4+Tm8gdm90ZXMgeWV0LCB3aGF0IGFyZSB5b3Ugd2FpdGluZyBmb3I/PC9zcGFuPlxuICAgIHsvZWFjaH1cbiAgey9pZn1cbiAgPEZsb2F0aW5nU3VibWl0QnV0dG9uIC8+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF1QkUsZUFBZSw0QkFBQyxDQUFDLEFBQ2YsUUFBUSxDQUFFLEtBQUssQ0FDZixNQUFNLENBQUUsR0FBRyxDQUNYLElBQUksQ0FBRSxHQUFHLENBRVQsT0FBTyxDQUFFLElBQUksQ0FDYixjQUFjLENBQUUsR0FBRyxBQUNyQixDQUFDLEFBRUQsWUFBWSw0QkFBQyxDQUFDLEFBQ1osS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUVaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLElBQUksQ0FDdEIsYUFBYSxDQUFFLEdBQUcsQ0FDbEIsTUFBTSxDQUFFLENBQUMsQ0FBQyxHQUFHLEFBQ2YsQ0FBQyxBQUVELE9BQU8sTUFBTSxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDcEMsZUFBZSw0QkFBQyxDQUFDLEFBQ2YsY0FBYyxDQUFFLGNBQWMsQUFDaEMsQ0FBQyxBQUVELFlBQVksNEJBQUMsQ0FBQyxBQUNaLE1BQU0sQ0FBRSxNQUFNLENBQUMsSUFBSSxDQUNuQixRQUFRLENBQUUsUUFBUSxDQUNsQixRQUFRLENBQUUsTUFBTSxBQUNsQixDQUFDLEFBRUQsMEJBQVksQ0FBQyxHQUFHLGNBQUMsQ0FBQyxBQUNoQixRQUFRLENBQUUsUUFBUSxDQUNsQixHQUFHLENBQUUsQ0FBQyxDQUNOLElBQUksQ0FBRSxDQUFDLENBQ1AsS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsSUFBSSxDQUNaLFVBQVUsQ0FBRSxJQUFJLEFBQ2xCLENBQUMsQUFFRCwrQkFBRyxNQUFNLEFBQUMsQ0FBQyxBQUNULE1BQU0sQ0FBRSxPQUFPLEFBQ2pCLENBQUMsQUFDSCxDQUFDIn0= */";
   	append_dev(document.head, style);
   }
 
   function get_each_context(ctx, list, i) {
   	const child_ctx = ctx.slice();
-  	child_ctx[6] = list[i];
-  	child_ctx[8] = i;
+  	child_ctx[7] = list[i];
+  	child_ctx[9] = i;
   	return child_ctx;
   }
 
@@ -945,7 +945,7 @@
   		c: function create() {
   			span = element("span");
   			span.textContent = "No votes yet, what are you waiting for?";
-  			add_location(span, file$1, 78, 6, 1542);
+  			add_location(span, file$1, 78, 6, 1548);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, span, anchor);
@@ -974,16 +974,16 @@
   	const block = {
   		c: function create() {
   			img = element("img");
-  			if (img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[6]?.piece_id}.jpg`)) attr_dev(img, "src", img_src_value);
+  			if (img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[7]?.piece_id}.jpg`)) attr_dev(img, "src", img_src_value);
   			attr_dev(img, "alt", "Artjam entry vote thumbnail");
   			attr_dev(img, "class", "svelte-44m7i4");
-  			add_location(img, file$1, 72, 10, 1385);
+  			add_location(img, file$1, 72, 10, 1391);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, img, anchor);
   		},
   		p: function update(ctx, dirty) {
-  			if (dirty & /*currentVotes*/ 1 && img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[6]?.piece_id}.jpg`)) {
+  			if (dirty & /*currentVotes*/ 1 && img.src !== (img_src_value = `${CDN_BASE_URL}/${/*vote*/ ctx[7]?.piece_id}.jpg`)) {
   				attr_dev(img, "src", img_src_value);
   			}
   		},
@@ -1009,7 +1009,11 @@
   	let t;
   	let mounted;
   	let dispose;
-  	let if_block = /*vote*/ ctx[6] && create_if_block_1(ctx);
+  	let if_block = /*vote*/ ctx[7] && create_if_block_1(ctx);
+
+  	function click_handler(...args) {
+  		return /*click_handler*/ ctx[3](/*index*/ ctx[9], ...args);
+  	}
 
   	const block = {
   		c: function create() {
@@ -1025,14 +1029,14 @@
   			append_dev(div, t);
 
   			if (!mounted) {
-  				dispose = listen_dev(div, "click", /*clearVote*/ ctx[1](/*index*/ ctx[8]), false, false, false);
+  				dispose = listen_dev(div, "click", click_handler, false, false, false);
   				mounted = true;
   			}
   		},
   		p: function update(new_ctx, dirty) {
   			ctx = new_ctx;
 
-  			if (/*vote*/ ctx[6]) {
+  			if (/*vote*/ ctx[7]) {
   				if (if_block) {
   					if_block.p(ctx, dirty);
   				} else {
@@ -1141,7 +1145,7 @@
   	const clearVote = index => {
   		console.log(index);
   		const currentVotes = votes.filter((v, i) => i !== index);
-  		$$invalidate(3, votes = currentVotes);
+  		$$invalidate(4, votes = currentVotes);
   	};
 
   	const writable_props = ["user"];
@@ -1152,6 +1156,7 @@
 
   	let { $$slots = {}, $$scope } = $$props;
   	validate_slots("VoteManager", $$slots, []);
+  	const click_handler = index => clearVote(index);
 
   	$$self.$$set = $$props => {
   		if ("user" in $$props) $$invalidate(2, user = $$props.user);
@@ -1170,8 +1175,8 @@
 
   	$$self.$inject_state = $$props => {
   		if ("user" in $$props) $$invalidate(2, user = $$props.user);
-  		if ("votes" in $$props) $$invalidate(3, votes = $$props.votes);
-  		if ("offset" in $$props) $$invalidate(4, offset = $$props.offset);
+  		if ("votes" in $$props) $$invalidate(4, votes = $$props.votes);
+  		if ("offset" in $$props) $$invalidate(5, offset = $$props.offset);
   		if ("currentVotes" in $$props) $$invalidate(0, currentVotes = $$props.currentVotes);
   	};
 
@@ -1185,19 +1190,19 @@
 
   	$$self.$$.update = () => {
   		if ($$self.$$.dirty & /*user*/ 4) {
-  			 $$invalidate(3, votes = user.votes);
+  			 $$invalidate(4, votes = user.votes);
   		}
 
-  		if ($$self.$$.dirty & /*votes*/ 8) {
-  			 $$invalidate(4, offset = Array(5 - votes.length));
+  		if ($$self.$$.dirty & /*votes*/ 16) {
+  			 $$invalidate(5, offset = Array(5 - votes.length));
   		}
 
-  		if ($$self.$$.dirty & /*votes, offset*/ 24) {
+  		if ($$self.$$.dirty & /*votes, offset*/ 48) {
   			 $$invalidate(0, currentVotes = votes.concat(offset));
   		}
   	};
 
-  	return [currentVotes, clearVote, user];
+  	return [currentVotes, clearVote, user, click_handler];
   }
 
   class VoteManager extends SvelteComponentDev {
