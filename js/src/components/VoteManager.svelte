@@ -41,7 +41,7 @@
 
   @media screen and (min-width: 768px) {
     .vote-container {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
 
     .vote-holder {
