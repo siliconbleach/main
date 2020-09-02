@@ -1,17 +1,17 @@
 <script>
   import { createEventDispatcher } from "svelte";
   const MAX_VOTES_ALLOWED = 5;
-  let isSubmitButtonActive = false;
+  export let hasChanged = false;
 
   const dispatch = createEventDispatcher();
 
   export const votes = Array(5);
 
   const handleSubmit = dispatch("submitVotes", {
-    votes
+    votes,
   });
 
-  $: isSubmitButtonActive;
+  $: hasChanged;
 </script>
 
 <style lang="postcss">
