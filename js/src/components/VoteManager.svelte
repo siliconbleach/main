@@ -7,6 +7,10 @@
     piece_id: 0,
   };
 
+  export let handleSubmit = () => {
+    console.log("Not overriden");
+  };
+
   export let user = { votes: [] };
 
   let changeCount = 0;
@@ -82,5 +86,5 @@
       <span>No votes yet, what are you waiting for?</span>
     {/each}
   {/if}
-  <FloatingSubmitButton {hasChanged} />
+  <FloatingSubmitButton {hasChanged} on:submitVotes={handleSubmit} />
 </div>
