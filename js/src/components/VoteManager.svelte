@@ -82,5 +82,5 @@
       <span>No votes yet, what are you waiting for?</span>
     {/each}
   {/if}
-  <FloatingSubmitButton />
+  <FloatingSubmitButton {hasChanged} />
 </div>
