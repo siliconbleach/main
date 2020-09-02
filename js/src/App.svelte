@@ -30,9 +30,7 @@
     return newValue;
   };
 
-  const handleSubmit = (event) => {
-    console.log("Overriden");
-  };
+  const handleSubmit = (event) => {};
   onMount(() => {
     getContest(ARTJAM_ID)
       .then((res) => res.json())
