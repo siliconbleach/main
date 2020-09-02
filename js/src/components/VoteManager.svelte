@@ -68,7 +68,7 @@
 <div class="vote-container">
   {#if currentVotes}
     {#each currentVotes as vote, index}
-      <div class="vote-holder" on:click={clearVote(index)}>
+      <div class="vote-holder" on:click={() => clearVote(index)}>
         {#if vote}
           <img
             src={`${CDN_BASE_URL}/${vote?.piece_id}.jpg`}
