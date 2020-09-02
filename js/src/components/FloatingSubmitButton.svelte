@@ -10,6 +10,8 @@
   const handleSubmit = dispatch("submitVotes", {
     votes,
   });
+
+  console.log(hasChanged);
 </script>
 
 <style lang="postcss">
