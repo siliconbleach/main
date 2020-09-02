@@ -65,7 +65,7 @@
 </style>
 
 <div class="vote-container">
-  {#if currentVotes}
+  {#if i}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
