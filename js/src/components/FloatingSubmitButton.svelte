@@ -11,7 +11,7 @@
     votes,
   });
 
-  console.log(hasChanged);
+  $: hasChanged;
 </script>
 
 <style lang="postcss">
