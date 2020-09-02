@@ -16,6 +16,7 @@
   $: currentVotes = votes.concat(offset);
   $: hasChanged = changeCount > 0;
 
+  console.log(changeCount);
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
