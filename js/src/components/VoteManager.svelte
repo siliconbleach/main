@@ -9,13 +9,17 @@
 
   export let user = { votes: [] };
 
+  let changeCount = 0;
+
   $: votes = user.votes;
   $: offset = Array(5 - votes.length);
   $: currentVotes = votes.concat(offset);
+  $: hasChanged = changeCount > 0;
 
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
+    changeCount++;
   };
 </script>
 
