@@ -19,7 +19,7 @@
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
-    changeCount++;
+    changeCount += 1;
   };
 </script>
 
