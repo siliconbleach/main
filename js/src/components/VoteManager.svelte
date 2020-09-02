@@ -67,7 +67,7 @@
 
 <div class="vote-container">
   {#if currentVotes}
-    {#each currentVotes as vote}
+    {#each currentVotes as vote, index}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
           <img
