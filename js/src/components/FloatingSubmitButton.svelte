@@ -7,9 +7,10 @@
 
   export const votes = Array(5);
 
-  const handleSubmit = dispatch("submitVotes", {
-    votes,
-  });
+  const handleSubmit = (votesToSubmit) =>
+    dispatch("submitVotes", {
+      votes: votesToSubmit,
+    });
 </script>
 
 <style lang="postcss">
