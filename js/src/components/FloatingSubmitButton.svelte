@@ -42,10 +42,7 @@
 </style>
 
 <form id="vote-submission" on:submit={handleSubmit}>
-  <button
-    id="submitvotes-button"
-    class:isShown={hasChanged === true}
-    type="submit">
+  <button id="submitvotes-button" class:isShown={hasChanged} type="submit">
     Submit Votes
   </button>
 </form>
