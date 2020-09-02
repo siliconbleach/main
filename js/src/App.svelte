@@ -24,8 +24,10 @@
       detail: { entry },
     } = event;
 
-    pictureVoter[entry.id] = !pictureVoter[entry.id];
-    console.log(pictureVoter);
+    const newValue = !pictureVoter[entry.id];
+
+    pictureVoter[entry.id] = newValue;
+    return newValue;
   };
   onMount(() => {
     getContest(ARTJAM_ID)
