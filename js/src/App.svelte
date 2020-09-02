@@ -25,7 +25,7 @@
     } = event;
 
     pictureVoter[entry.id] = !pictureVoter[entry.id];
-    console.log(pictureVoter)p;
+    console.log(pictureVoter);
   };
   onMount(() => {
     getContest(ARTJAM_ID)
