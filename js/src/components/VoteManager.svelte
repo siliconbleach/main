@@ -11,7 +11,7 @@
 
   $: votes = user.votes;
   $: offset = Array(5 - votes.length);
-  $: currentVotes = votes;
+  $: currentVotes = votes.concat(offset);
 
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
@@ -65,7 +65,7 @@
 </style>
 
 <div class="vote-container">
-  {#if i}
+  {#if currentVotes}
     {#each currentVotes as vote}
       <div class="vote-holder" on:click={clearVote(vote)}>
         {#if vote}
