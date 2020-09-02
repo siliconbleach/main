@@ -29,6 +29,10 @@
     pictureVoter[entry.id] = newValue;
     return newValue;
   };
+
+  const handleSubmit = (event) => {
+    console.log("Overriden");
+  };
   onMount(() => {
     getContest(ARTJAM_ID)
       .then((res) => res.json())
@@ -40,5 +44,5 @@
 
 </style>
 
-<VoteManager {user} on:togglevote={handleToggle} />
+<VoteManager {user} on:togglevote={handleToggle} {handleSubmit} />
 <ContestGallery {contest} on:togglevote={handleToggle} />
