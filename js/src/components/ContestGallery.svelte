@@ -18,6 +18,14 @@
     entry.src = `${CDN_BASE_URL}/${entry.id}.jpg`;
     activeItem = entry;
   };
+
+  const closeOverlayByKey = (event) => {
+    if (event.keyCode === 13) {
+      activeItem = null;
+    }
+
+    return false;
+  };
 </script>
 
 <style lang="postcss">
@@ -55,7 +63,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox {activeItem} />
+  <GalleryLightbox {activeItem} on:keypress={closeOverlayByKey)} />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
