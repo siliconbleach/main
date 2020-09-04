@@ -31,8 +31,8 @@
 
   beforeUpdate((...args) => {
     debugger;
-  }))
-</script> 
+  });
+</script>
 
 <style lang="postcss">
   .vote-container {
