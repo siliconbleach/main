@@ -9,6 +9,7 @@
     } = event;
 
     activeImg = entry;
+    debugger;
   };
 </script>
 
