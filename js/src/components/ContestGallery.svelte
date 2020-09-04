@@ -6,12 +6,14 @@
     entries: [],
   };
 
+  let activeItem = null;
+
   $: contest = $$props.contest;
 
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
-  const selectLightboxPicture = (entry) => (activeItem = entry);
+  const activateItem = (entry) => (activeItem = entry);
 </script>
 
 <style lang="postcss">
@@ -52,9 +54,7 @@
   <GalleryLightbox />
   {#if contest.entries}
     {#each contest.entries as entry}
-      <button
-        class="artjam-entry"
-        on:click={() => selectLightboxPicture(entry)}>
+      <button class="artjam-entry" on:click={() => activateItem(entry)}>
         {entry.name}
       </button>
     {/each}
