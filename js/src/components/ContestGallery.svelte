@@ -15,7 +15,7 @@
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
   const activateItem = (entry) => {
-    entry.src = `${CDN_BASE_URL}/${entry.piece_id}.jpg`;
+    entry.src = `${CDN_BASE_URL}/${entry.id}.jpg`;
     activeItem = entry;
   };
 </script>
