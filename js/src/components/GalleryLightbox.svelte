@@ -22,7 +22,7 @@
     left: 0;
     width: 100vw;
     height: 100vw;
-    z-index: 9999;
+    z-index: 10001;
     background: rgba(0, 0, 0, 0.75);
     opacity: 0;
     visibility: hidden;
