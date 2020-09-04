@@ -39,6 +39,7 @@
 
     .artjam-entry {
       max-width: 23vw;
+      width: 100%;
     }
   }
 </style>
