@@ -32,6 +32,7 @@
       detail: { entry },
     } = event;
 
+    console.log("Toggle vote");
     const newValue = !pictureVoter[entry.id];
 
     pictureVoter[entry.id] = newValue;
