@@ -36,6 +36,10 @@
     .artjam-gallery-container {
       max-width: 960px;
     }
+
+    .artjam-entry {
+      max-width: 23vw;
+    }
   }
 </style>
 
