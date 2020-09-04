@@ -18,16 +18,6 @@
     entry.src = `${CDN_BASE_URL}/${entry.id}.jpg`;
     activeItem = entry;
   };
-
-  const closeOverlayByKey = (event) => {
-    console.log("Hit");
-
-    if (event.keyCode === 13) {
-      activeItem = null;
-    }
-
-    return false;
-  };
 </script>
 
 <style lang="postcss">
