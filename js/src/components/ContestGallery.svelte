@@ -32,6 +32,7 @@
   .artjam-entry {
     display: flex;
     width: 100%;
+    height: 20vh;
     max-width: 49vw;
     background-color: lightslategray;
     color: white;
