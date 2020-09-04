@@ -35,6 +35,9 @@
     const newValue = !pictureVoter[entry.id];
 
     pictureVoter[entry.id] = newValue;
+    if (newValue) {
+      user.votes[user.votes.length] = entry;
+    }
     return newValue;
   };
 
