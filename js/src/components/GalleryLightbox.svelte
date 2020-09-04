@@ -2,6 +2,8 @@
   export let activeItem = null;
 
   $: lightBoxOpen = !!activeItem;
+
+  const toggleOverlay = (activeItem = null);
 </script>
 
 <style lang="postcss">
@@ -34,7 +36,10 @@
   }
 </style>
 
-<div class="gallery-lightbox-overlay" class:is-open={lightBoxOpen} />
+<div
+  class="gallery-lightbox-overlay"
+  class:is-open={lightBoxOpen}
+  on:keyup={toggleOverlay} />
 <div class="gallery-lightbox">
   <picture>
     <img src={activeItem && activeItem.src} alt="Text for the alt tag" />
