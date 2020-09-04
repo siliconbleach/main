@@ -5,6 +5,7 @@
 
   const toggleOverlay = () => (activeItem = null);
   const closeOverlayByKey = (event) => {
+    debugger;
     if (event.keyCode === 13) {
       activeItem = null;
     }
