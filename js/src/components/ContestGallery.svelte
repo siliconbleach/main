@@ -73,7 +73,9 @@
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
         {entry.name}
 
-        <button class="artjam-vote" on:click={() => toggleVote(entry)} />
+        <button
+          class="artjam-vote"
+          on:click={() => toggleVote(entry)}>Vote</button>
       </button>
     {/each}
   {/if}
