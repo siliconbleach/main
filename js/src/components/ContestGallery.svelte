@@ -13,9 +13,8 @@
 
 <style lang="postcss">
   .artjam-gallery-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+
     align-items: center;
     margin: 0 auto;
     width: 100%;
