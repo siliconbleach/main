@@ -51,7 +51,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox />
+  <GalleryLightbox {activeItem} />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
