@@ -45,6 +45,8 @@
 </style>
 
 <div class="artjam-gallery-container">
+  <div class="gallery-lightbox-overlay" />
+  <div class="gallery-lightbox" />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => toggleVote(entry)}>
