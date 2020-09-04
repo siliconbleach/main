@@ -40,6 +40,16 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 1rem auto;
+    position: relative;
+  }
+
+  .artjam-vote {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.75);
   }
 
   @media all and (min-width: 960px) {
