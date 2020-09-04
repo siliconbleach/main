@@ -33,6 +33,7 @@
 
   @media all and (min-width: 960px) {
     .artjam-gallery-container {
+      grid-template-columns: repeat(4, 23vw);
       max-width: 960px;
     }
 
