@@ -1,5 +1,6 @@
 <script>
   export let activeImg = null;
+  export let lightBoxOpen = false;
 </script>
 
 <style lang="postcss">
@@ -22,7 +23,7 @@
   }
 </style>
 
-<div class="gallery-lightbox-overlay" />
+<div class="gallery-lightbox-overlay" class:is-shown={lightBoxOpen} />
 <div class="gallery-lightbox">
   <picture>
     <img src={activeImg && activeImg.src} alt="Text for the alt tag" />
