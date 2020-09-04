@@ -23,6 +23,7 @@
 
   .artjam-entry {
     display: flex;
+    width: 100%;
     max-width: 49vw;
     background-color: lightslategray;
     color: white;
@@ -39,7 +40,6 @@
 
     .artjam-entry {
       max-width: 23vw;
-      width: 100%;
     }
   }
 </style>
