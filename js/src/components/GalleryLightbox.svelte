@@ -39,6 +39,7 @@
     width: 50vw;
     margin: 0;
     display: flex;
+    positon: absolute;
   }
 </style>
 
