@@ -53,7 +53,9 @@
   <GalleryLightbox {lightBoxOpen} />
   {#if contest.entries}
     {#each contest.entries as entry}
-      <button class="artjam-entry" on:click={() => toggleVote(entry)}>
+      <button
+        class="artjam-entry"
+        on:click={() => selectLightboxPicture(entry)}>
         {entry.name}
       </button>
     {/each}
