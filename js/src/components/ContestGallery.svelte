@@ -13,7 +13,7 @@
   const toggleVote = (entry) => dispatch("togglevote", { entry });
   const selectLightboxPicture = (entry) => {
     console.log("Firing select lightbox picture");
-    dispatch("lightbox-select", { entry });
+    dispatch("lightboxSelect", { entry });
   };
 </script>
 
