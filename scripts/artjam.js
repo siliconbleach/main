@@ -1296,7 +1296,7 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-t3jzpv-style";
-  	style.textContent = ".gallery-lightbox-overlay.svelte-t3jzpv{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out;display:flex;justify-content:center;align-items:center}.gallery-lightbox-overlay.is-open.svelte-t3jzpv{opacity:1;visibility:visible}.gallery-lightbox.svelte-t3jzpv{width:50vw;margin:0;display:flex;positon:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUl0ZW0gPSBudWxsO1xuXG4gICQ6IGxpZ2h0Qm94T3BlbiA9ICEhYWN0aXZlSXRlbTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBoZWlnaHQ6IDEwMHZ3O1xuICAgIHotaW5kZXg6IDk5OTk7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjc1KTtcbiAgICBvcGFjaXR5OiAwO1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC43NXMgZWFzZS1pbi1vdXQ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheS5pcy1vcGVuIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAuZ2FsbGVyeS1saWdodGJveCB7XG4gICAgd2lkdGg6IDUwdnc7XG4gICAgbWFyZ2luOiAwO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRvbjogYWJzb2x1dGU7XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiBjbGFzczppcy1vcGVuPXtsaWdodEJveE9wZW59IC8+XG48ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiIG9uOmxpZ2h0Ym94U2VsZWN0PXtzZWxlY3RMaWdodGJveFBpY3R1cmV9PlxuICA8cGljdHVyZT5cbiAgICA8aW1nIHNyYz17YWN0aXZlSW1nICYmIGFjdGl2ZUltZy5zcmN9IGFsdD1cIlRleHQgZm9yIHRoZSBhbHQgdGFnXCIgLz5cbiAgPC9waWN0dXJlPlxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBT0UseUJBQXlCLGNBQUMsQ0FBQyxBQUN6QixRQUFRLENBQUUsS0FBSyxDQUNmLEdBQUcsQ0FBRSxDQUFDLENBQ04sSUFBSSxDQUFFLENBQUMsQ0FDUCxLQUFLLENBQUUsS0FBSyxDQUNaLE1BQU0sQ0FBRSxLQUFLLENBQ2IsT0FBTyxDQUFFLElBQUksQ0FDYixVQUFVLENBQUUsS0FBSyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxJQUFJLENBQUMsQ0FDL0IsT0FBTyxDQUFFLENBQUMsQ0FDVixVQUFVLENBQUUsTUFBTSxDQUNsQixVQUFVLENBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxXQUFXLENBQ2pDLE9BQU8sQ0FBRSxJQUFJLENBQ2IsZUFBZSxDQUFFLE1BQU0sQ0FDdkIsV0FBVyxDQUFFLE1BQU0sQUFDckIsQ0FBQyxBQUVELHlCQUF5QixRQUFRLGNBQUMsQ0FBQyxBQUNqQyxPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxPQUFPLEFBQ3JCLENBQUMsQUFFRCxpQkFBaUIsY0FBQyxDQUFDLEFBQ2pCLEtBQUssQ0FBRSxJQUFJLENBQ1gsTUFBTSxDQUFFLENBQUMsQ0FDVCxPQUFPLENBQUUsSUFBSSxDQUNiLE9BQU8sQ0FBRSxRQUFRLEFBQ25CLENBQUMifQ== */";
+  	style.textContent = ".gallery-lightbox-overlay.svelte-t3jzpv{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out;display:flex;justify-content:center;align-items:center}.gallery-lightbox-overlay.is-open.svelte-t3jzpv{opacity:1;visibility:visible}.gallery-lightbox.svelte-t3jzpv{width:50vw;margin:0;display:flex;positon:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUl0ZW0gPSBudWxsO1xuXG4gICQ6IGxpZ2h0Qm94T3BlbiA9ICEhYWN0aXZlSXRlbTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBoZWlnaHQ6IDEwMHZ3O1xuICAgIHotaW5kZXg6IDk5OTk7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjc1KTtcbiAgICBvcGFjaXR5OiAwO1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC43NXMgZWFzZS1pbi1vdXQ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheS5pcy1vcGVuIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAuZ2FsbGVyeS1saWdodGJveCB7XG4gICAgd2lkdGg6IDUwdnc7XG4gICAgbWFyZ2luOiAwO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRvbjogYWJzb2x1dGU7XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiBjbGFzczppcy1vcGVuPXtsaWdodEJveE9wZW59IC8+XG48ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiPlxuICA8cGljdHVyZT5cbiAgICA8aW1nIHNyYz17YWN0aXZlSXRlbSAmJiBhY3RpdmVJdGVtLnNyY30gYWx0PVwiVGV4dCBmb3IgdGhlIGFsdCB0YWdcIiAvPlxuICA8L3BpY3R1cmU+XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFPRSx5QkFBeUIsY0FBQyxDQUFDLEFBQ3pCLFFBQVEsQ0FBRSxLQUFLLENBQ2YsR0FBRyxDQUFFLENBQUMsQ0FDTixJQUFJLENBQUUsQ0FBQyxDQUNQLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEtBQUssQ0FDYixPQUFPLENBQUUsSUFBSSxDQUNiLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUMvQixPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFVBQVUsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FDakMsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsTUFBTSxDQUN2QixXQUFXLENBQUUsTUFBTSxBQUNyQixDQUFDLEFBRUQseUJBQXlCLFFBQVEsY0FBQyxDQUFDLEFBQ2pDLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE9BQU8sQUFDckIsQ0FBQyxBQUVELGlCQUFpQixjQUFDLENBQUMsQUFDakIsS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsQ0FBQyxDQUNULE9BQU8sQ0FBRSxJQUFJLENBQ2IsT0FBTyxDQUFFLFFBQVEsQUFDbkIsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -1307,8 +1307,6 @@
   	let picture;
   	let img;
   	let img_src_value;
-  	let mounted;
-  	let dispose;
 
   	const block = {
   		c: function create() {
@@ -1318,12 +1316,12 @@
   			picture = element("picture");
   			img = element("img");
   			attr_dev(div0, "class", "gallery-lightbox-overlay svelte-t3jzpv");
-  			toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[0]);
+  			toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[1]);
   			add_location(div0, file$2, 36, 0, 630);
-  			if (img.src !== (img_src_value = activeImg && activeImg.src)) attr_dev(img, "src", img_src_value);
+  			if (img.src !== (img_src_value = /*activeItem*/ ctx[0] && /*activeItem*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
   			attr_dev(img, "alt", "Text for the alt tag");
-  			add_location(img, file$2, 39, 4, 789);
-  			add_location(picture, file$2, 38, 2, 775);
+  			add_location(img, file$2, 39, 4, 747);
+  			add_location(picture, file$2, 38, 2, 733);
   			attr_dev(div1, "class", "gallery-lightbox svelte-t3jzpv");
   			add_location(div1, file$2, 37, 0, 700);
   		},
@@ -1336,15 +1334,14 @@
   			insert_dev(target, div1, anchor);
   			append_dev(div1, picture);
   			append_dev(picture, img);
-
-  			if (!mounted) {
-  				dispose = listen_dev(div1, "lightboxSelect", selectLightboxPicture, false, false, false);
-  				mounted = true;
-  			}
   		},
   		p: function update(ctx, [dirty]) {
-  			if (dirty & /*lightBoxOpen*/ 1) {
-  				toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[0]);
+  			if (dirty & /*lightBoxOpen*/ 2) {
+  				toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[1]);
+  			}
+
+  			if (dirty & /*activeItem*/ 1 && img.src !== (img_src_value = /*activeItem*/ ctx[0] && /*activeItem*/ ctx[0].src)) {
+  				attr_dev(img, "src", img_src_value);
   			}
   		},
   		i: noop,
@@ -1353,8 +1350,6 @@
   			if (detaching) detach_dev(div0);
   			if (detaching) detach_dev(t);
   			if (detaching) detach_dev(div1);
-  			mounted = false;
-  			dispose();
   		}
   	};
 
@@ -1381,14 +1376,14 @@
   	validate_slots("GalleryLightbox", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("activeItem" in $$props) $$invalidate(1, activeItem = $$props.activeItem);
+  		if ("activeItem" in $$props) $$invalidate(0, activeItem = $$props.activeItem);
   	};
 
   	$$self.$capture_state = () => ({ activeItem, lightBoxOpen });
 
   	$$self.$inject_state = $$props => {
-  		if ("activeItem" in $$props) $$invalidate(1, activeItem = $$props.activeItem);
-  		if ("lightBoxOpen" in $$props) $$invalidate(0, lightBoxOpen = $$props.lightBoxOpen);
+  		if ("activeItem" in $$props) $$invalidate(0, activeItem = $$props.activeItem);
+  		if ("lightBoxOpen" in $$props) $$invalidate(1, lightBoxOpen = $$props.lightBoxOpen);
   	};
 
   	let lightBoxOpen;
@@ -1398,19 +1393,19 @@
   	}
 
   	$$self.$$.update = () => {
-  		if ($$self.$$.dirty & /*activeItem*/ 2) {
-  			 $$invalidate(0, lightBoxOpen = !!activeItem);
+  		if ($$self.$$.dirty & /*activeItem*/ 1) {
+  			 $$invalidate(1, lightBoxOpen = !!activeItem);
   		}
   	};
 
-  	return [lightBoxOpen, activeItem];
+  	return [activeItem, lightBoxOpen];
   }
 
   class GalleryLightbox extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-t3jzpv-style")) add_css$2();
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { activeItem: 1 });
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { activeItem: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
