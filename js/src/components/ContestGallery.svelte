@@ -50,7 +50,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox {lightBoxOpen} />
+  <GalleryLightbox />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button
