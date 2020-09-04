@@ -1297,7 +1297,7 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-t3jzpv-style";
-  	style.textContent = ".gallery-lightbox-overlay.svelte-t3jzpv{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out;display:flex;justify-content:center;align-items:center}.gallery-lightbox-overlay.is-open.svelte-t3jzpv{opacity:1;visibility:visible}.gallery-lightbox.svelte-t3jzpv{width:50vw;margin:0;display:flex;positon:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUltZyA9IG51bGw7XG5cbiAgJDogbGlnaHRCb3hPcGVuID0gISFhY3RpdmVJbWc7XG5cbiAgY29uc3Qgc2VsZWN0TGlnaHRib3hQaWN0dXJlID0gKGV2ZW50KSA9PiB7XG4gICAgY29uc3Qge1xuICAgICAgZGV0YWlsOiB7IGVudHJ5IH0sXG4gICAgfSA9IGV2ZW50O1xuICAgIGNvbnNvbGUubG9nKFwiSW5zaWdodCBTZWxlY3QgbGlnaHRib3ggcGljdHVyZVwiKTtcbiAgICBhY3RpdmVJbWcgPSBlbnRyeTtcbiAgICBkZWJ1Z2dlcjtcbiAgfTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgbGFuZz1cInBvc3Rjc3NcIj5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheSB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICBsZWZ0OiAwO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBoZWlnaHQ6IDEwMHZ3O1xuICAgIHotaW5kZXg6IDk5OTk7XG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjc1KTtcbiAgICBvcGFjaXR5OiAwO1xuICAgIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgICB0cmFuc2l0aW9uOiBhbGwgMC43NXMgZWFzZS1pbi1vdXQ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheS5pcy1vcGVuIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cblxuICAuZ2FsbGVyeS1saWdodGJveCB7XG4gICAgd2lkdGg6IDUwdnc7XG4gICAgbWFyZ2luOiAwO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgcG9zaXRvbjogYWJzb2x1dGU7XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiBjbGFzczppcy1vcGVuPXtsaWdodEJveE9wZW59IC8+XG48ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiIG9uOmxpZ2h0Ym94U2VsZWN0PXtzZWxlY3RMaWdodGJveFBpY3R1cmV9PlxuICA8cGljdHVyZT5cbiAgICA8aW1nIHNyYz17YWN0aXZlSW1nICYmIGFjdGl2ZUltZy5zcmN9IGFsdD1cIlRleHQgZm9yIHRoZSBhbHQgdGFnXCIgLz5cbiAgPC9waWN0dXJlPlxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0JFLHlCQUF5QixjQUFDLENBQUMsQUFDekIsUUFBUSxDQUFFLEtBQUssQ0FDZixHQUFHLENBQUUsQ0FBQyxDQUNOLElBQUksQ0FBRSxDQUFDLENBQ1AsS0FBSyxDQUFFLEtBQUssQ0FDWixNQUFNLENBQUUsS0FBSyxDQUNiLE9BQU8sQ0FBRSxJQUFJLENBQ2IsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQy9CLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE1BQU0sQ0FDbEIsVUFBVSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUNqQyxPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxNQUFNLENBQ3ZCLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCx5QkFBeUIsUUFBUSxjQUFDLENBQUMsQUFDakMsT0FBTyxDQUFFLENBQUMsQ0FDVixVQUFVLENBQUUsT0FBTyxBQUNyQixDQUFDLEFBRUQsaUJBQWlCLGNBQUMsQ0FBQyxBQUNqQixLQUFLLENBQUUsSUFBSSxDQUNYLE1BQU0sQ0FBRSxDQUFDLENBQ1QsT0FBTyxDQUFFLElBQUksQ0FDYixPQUFPLENBQUUsUUFBUSxBQUNuQixDQUFDIn0= */";
+  	style.textContent = ".gallery-lightbox-overlay.svelte-t3jzpv{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out;display:flex;justify-content:center;align-items:center}.gallery-lightbox-overlay.is-open.svelte-t3jzpv{opacity:1;visibility:visible}.gallery-lightbox.svelte-t3jzpv{width:50vw;margin:0;display:flex;positon:absolute}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUl0ZW0gPSBudWxsO1xuXG4gICQ6IGxpZ2h0Qm94T3BlbiA9ICEhYWN0aXZlSW1nO1xuXG4gIGNvbnN0IHNlbGVjdExpZ2h0Ym94UGljdHVyZSA9IChldmVudCkgPT4ge1xuICAgIGNvbnN0IHtcbiAgICAgIGRldGFpbDogeyBlbnRyeSB9LFxuICAgIH0gPSBldmVudDtcbiAgICBjb25zb2xlLmxvZyhcIkluc2lnaHQgU2VsZWN0IGxpZ2h0Ym94IHBpY3R1cmVcIik7XG4gICAgYWN0aXZlSW1nID0gZW50cnk7XG4gICAgZGVidWdnZXI7XG4gIH07XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC5nYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXkge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2dztcbiAgICB6LWluZGV4OiA5OTk5O1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC43NSk7XG4gICAgb3BhY2l0eTogMDtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNzVzIGVhc2UtaW4tb3V0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuXG4gIC5nYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXkuaXMtb3BlbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gge1xuICAgIHdpZHRoOiA1MHZ3O1xuICAgIG1hcmdpbjogMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIHBvc2l0b246IGFic29sdXRlO1xuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveC1vdmVybGF5XCIgY2xhc3M6aXMtb3Blbj17bGlnaHRCb3hPcGVufSAvPlxuPGRpdiBjbGFzcz1cImdhbGxlcnktbGlnaHRib3hcIiBvbjpsaWdodGJveFNlbGVjdD17c2VsZWN0TGlnaHRib3hQaWN0dXJlfT5cbiAgPHBpY3R1cmU+XG4gICAgPGltZyBzcmM9e2FjdGl2ZUltZyAmJiBhY3RpdmVJbWcuc3JjfSBhbHQ9XCJUZXh0IGZvciB0aGUgYWx0IHRhZ1wiIC8+XG4gIDwvcGljdHVyZT5cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCRSx5QkFBeUIsY0FBQyxDQUFDLEFBQ3pCLFFBQVEsQ0FBRSxLQUFLLENBQ2YsR0FBRyxDQUFFLENBQUMsQ0FDTixJQUFJLENBQUUsQ0FBQyxDQUNQLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEtBQUssQ0FDYixPQUFPLENBQUUsSUFBSSxDQUNiLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUMvQixPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFVBQVUsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FDakMsT0FBTyxDQUFFLElBQUksQ0FDYixlQUFlLENBQUUsTUFBTSxDQUN2QixXQUFXLENBQUUsTUFBTSxBQUNyQixDQUFDLEFBRUQseUJBQXlCLFFBQVEsY0FBQyxDQUFDLEFBQ2pDLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE9BQU8sQUFDckIsQ0FBQyxBQUVELGlCQUFpQixjQUFDLENBQUMsQUFDakIsS0FBSyxDQUFFLElBQUksQ0FDWCxNQUFNLENBQUUsQ0FBQyxDQUNULE9BQU8sQ0FBRSxJQUFJLENBQ2IsT0FBTyxDQUFFLFFBQVEsQUFDbkIsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -1319,14 +1319,14 @@
   			picture = element("picture");
   			img = element("img");
   			attr_dev(div0, "class", "gallery-lightbox-overlay svelte-t3jzpv");
-  			toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[1]);
-  			add_location(div0, file$2, 45, 0, 820);
-  			if (img.src !== (img_src_value = /*activeImg*/ ctx[0] && /*activeImg*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
+  			toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[0]);
+  			add_location(div0, file$2, 45, 0, 821);
+  			if (img.src !== (img_src_value = activeImg && activeImg.src)) attr_dev(img, "src", img_src_value);
   			attr_dev(img, "alt", "Text for the alt tag");
-  			add_location(img, file$2, 48, 4, 979);
-  			add_location(picture, file$2, 47, 2, 965);
+  			add_location(img, file$2, 48, 4, 980);
+  			add_location(picture, file$2, 47, 2, 966);
   			attr_dev(div1, "class", "gallery-lightbox svelte-t3jzpv");
-  			add_location(div1, file$2, 46, 0, 890);
+  			add_location(div1, file$2, 46, 0, 891);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1339,17 +1339,13 @@
   			append_dev(picture, img);
 
   			if (!mounted) {
-  				dispose = listen_dev(div1, "lightboxSelect", /*selectLightboxPicture*/ ctx[2], false, false, false);
+  				dispose = listen_dev(div1, "lightboxSelect", /*selectLightboxPicture*/ ctx[1], false, false, false);
   				mounted = true;
   			}
   		},
   		p: function update(ctx, [dirty]) {
-  			if (dirty & /*lightBoxOpen*/ 2) {
-  				toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[1]);
-  			}
-
-  			if (dirty & /*activeImg*/ 1 && img.src !== (img_src_value = /*activeImg*/ ctx[0] && /*activeImg*/ ctx[0].src)) {
-  				attr_dev(img, "src", img_src_value);
+  			if (dirty & /*lightBoxOpen*/ 1) {
+  				toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[0]);
   			}
   		},
   		i: noop,
@@ -1375,16 +1371,16 @@
   }
 
   function instance$2($$self, $$props, $$invalidate) {
-  	let { activeImg = null } = $$props;
+  	let { activeItem = null } = $$props;
 
   	const selectLightboxPicture = event => {
   		const { detail: { entry } } = event;
   		console.log("Insight Select lightbox picture");
-  		$$invalidate(0, activeImg = entry);
+  		activeImg = entry;
   		debugger;
   	};
 
-  	const writable_props = ["activeImg"];
+  	const writable_props = ["activeItem"];
 
   	Object.keys($$props).forEach(key => {
   		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$1.warn(`<GalleryLightbox> was created with unknown prop '${key}'`);
@@ -1394,18 +1390,18 @@
   	validate_slots("GalleryLightbox", $$slots, []);
 
   	$$self.$$set = $$props => {
-  		if ("activeImg" in $$props) $$invalidate(0, activeImg = $$props.activeImg);
+  		if ("activeItem" in $$props) $$invalidate(2, activeItem = $$props.activeItem);
   	};
 
   	$$self.$capture_state = () => ({
-  		activeImg,
+  		activeItem,
   		selectLightboxPicture,
   		lightBoxOpen
   	});
 
   	$$self.$inject_state = $$props => {
-  		if ("activeImg" in $$props) $$invalidate(0, activeImg = $$props.activeImg);
-  		if ("lightBoxOpen" in $$props) $$invalidate(1, lightBoxOpen = $$props.lightBoxOpen);
+  		if ("activeItem" in $$props) $$invalidate(2, activeItem = $$props.activeItem);
+  		if ("lightBoxOpen" in $$props) $$invalidate(0, lightBoxOpen = $$props.lightBoxOpen);
   	};
 
   	let lightBoxOpen;
@@ -1414,20 +1410,15 @@
   		$$self.$inject_state($$props.$$inject);
   	}
 
-  	$$self.$$.update = () => {
-  		if ($$self.$$.dirty & /*activeImg*/ 1) {
-  			 $$invalidate(1, lightBoxOpen = !!activeImg);
-  		}
-  	};
-
-  	return [activeImg, lightBoxOpen, selectLightboxPicture];
+  	 $$invalidate(0, lightBoxOpen = !!activeImg);
+  	return [lightBoxOpen, selectLightboxPicture, activeItem];
   }
 
   class GalleryLightbox extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
   		if (!document.getElementById("svelte-t3jzpv-style")) add_css$2();
-  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { activeImg: 0 });
+  		init(this, options, instance$2, create_fragment$2, safe_not_equal, { activeItem: 2 });
 
   		dispatch_dev("SvelteRegisterComponent", {
   			component: this,
@@ -1437,11 +1428,11 @@
   		});
   	}
 
-  	get activeImg() {
+  	get activeItem() {
   		throw new Error("<GalleryLightbox>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
 
-  	set activeImg(value) {
+  	set activeItem(value) {
   		throw new Error("<GalleryLightbox>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
   	}
   }
