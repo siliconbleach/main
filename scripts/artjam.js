@@ -1861,6 +1861,11 @@
   		const { detail: { entry } } = event;
   		const newValue = !pictureVoter[entry.id];
   		pictureVoter[entry.id] = newValue;
+
+  		if (newValue) {
+  			$$invalidate(0, user.votes[user.votes.length] = entry, user);
+  		}
+
   		return newValue;
   	};
 
