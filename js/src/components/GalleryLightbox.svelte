@@ -7,7 +7,7 @@
     const {
       detail: { entry },
     } = event;
-
+    console.log("Insight Select lightbox picture");
     activeImg = entry;
     debugger;
   };
