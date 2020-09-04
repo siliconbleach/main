@@ -61,6 +61,8 @@
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
         {entry.name}
+
+        <button class="artjam-vote" on:click={() => toggleVote(entry)} />
       </button>
     {/each}
   {/if}
