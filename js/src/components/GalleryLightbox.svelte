@@ -49,7 +49,9 @@
 <div
   class="gallery-lightbox-overlay"
   class:is-open={lightBoxOpen}
-  on:keypress={() => closeOverlayByKey()} />
+  on:keypress={() => {
+    console.log('Key press');
+  }} />
 <div class="gallery-lightbox">
   <picture>
     <img src={activeItem && activeItem.src} alt="Text for the alt tag" />
