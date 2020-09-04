@@ -38,6 +38,7 @@
   .gallery-lightbox {
     width: 50vw;
     margin: 0;
+    display: flex;
   }
 </style>
 
