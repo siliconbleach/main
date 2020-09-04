@@ -7,6 +7,7 @@
 
   const toggleOverlay = () => (activeItem = null);
   const closeOverlayByKey = (event) => {
+    console.log("hittt");
     if (lightBoxOpen && event.keyCode === 13) {
       activeItem = null;
     }
