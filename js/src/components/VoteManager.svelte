@@ -35,7 +35,7 @@
 
     display: flex;
     flex-direction: row;
-    z-index: 9999;
+    z-index: 10000;
   }
 
   .vote-holder {
