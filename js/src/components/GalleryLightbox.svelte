@@ -6,6 +6,13 @@
   $: lightBoxOpen = !!activeItem;
 
   const toggleOverlay = () => (activeItem = null);
+  const closeOverlayByKey = (event) => {
+    if (event.keyCode === 13) {
+      activeItem = null;
+    }
+
+    return false;
+  };
 </script>
 
 <style lang="postcss">
