@@ -1,4 +1,6 @@
 <script>
+  import GalleryLightbox from "./GalleryLightbox.svelte";
+
   import { createEventDispatcher } from "svelte";
   export let contest = {
     entries: [],
@@ -46,10 +48,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <div class="gallery-lightbox-overlay" />
-  <div class="gallery-lightbox">
-    <picture> <img src={activeImgSrc} alt="Text for the alt tag" /> </picture>
-  </div>
+  <GalleryLightbox />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => toggleVote(entry)}>
