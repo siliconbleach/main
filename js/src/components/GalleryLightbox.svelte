@@ -1,19 +1,18 @@
 <script>
+  import { onMount } from "svelte";
+
   export let activeItem = null;
 
   $: lightBoxOpen = !!activeItem;
 
   const toggleOverlay = () => (activeItem = null);
   const closeOverlayByKey = (event) => {
-    debugger;
     if (event.keyCode === 13) {
       activeItem = null;
     }
 
     return false;
   };
-
-  window.addEventListener("keypress", closeOverlayByKey, false);
 </script>
 
 <style lang="postcss">
