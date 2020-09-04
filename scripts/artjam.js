@@ -1295,8 +1295,8 @@
 
   function add_css$2() {
   	var style = element("style");
-  	style.id = "svelte-uz7lsx-style";
-  	style.textContent = ".gallery-lightbox-overlay.svelte-uz7lsx{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out}.gallery-lightbox-overlay.is-open.svelte-uz7lsx{opacity:1;visibility:visible}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUltZyA9IG51bGw7XG5cbiAgJDogbGlnaHRCb3hPcGVuID0gISFhY3RpdmVJbWc7XG5cbiAgY29uc3Qgc2VsZWN0TGlnaHRib3hQaWN0dXJlID0gKGV2ZW50KSA9PiB7XG4gICAgY29uc3Qge1xuICAgICAgZGV0YWlsOiB7IGVudHJ5IH0sXG4gICAgfSA9IGV2ZW50O1xuXG4gICAgYWN0aXZlSW1nID0gZW50cnk7XG4gICAgZGVidWdnZXI7XG4gIH07XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC5nYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXkge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2dztcbiAgICB6LWluZGV4OiA5OTk5O1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC43NSk7XG4gICAgb3BhY2l0eTogMDtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNzVzIGVhc2UtaW4tb3V0O1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gtb3ZlcmxheS5pcy1vcGVuIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHZpc2liaWxpdHk6IHZpc2libGU7XG4gIH1cbjwvc3R5bGU+XG5cbjxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiBjbGFzczppcy1vcGVuPXtsaWdodEJveE9wZW59IC8+XG48ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiIG9uOmxpZ2h0Ym94LXNlbGVjdD17c2VsZWN0TGlnaHRib3hQaWN0dXJlfT5cbiAgPHBpY3R1cmU+XG4gICAgPGltZyBzcmM9e2FjdGl2ZUltZyAmJiBhY3RpdmVJbWcuc3JjfSBhbHQ9XCJUZXh0IGZvciB0aGUgYWx0IHRhZ1wiIC8+XG4gIDwvcGljdHVyZT5cbjwvZGl2PlxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCRSx5QkFBeUIsY0FBQyxDQUFDLEFBQ3pCLFFBQVEsQ0FBRSxLQUFLLENBQ2YsR0FBRyxDQUFFLENBQUMsQ0FDTixJQUFJLENBQUUsQ0FBQyxDQUNQLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEtBQUssQ0FDYixPQUFPLENBQUUsSUFBSSxDQUNiLFVBQVUsQ0FBRSxLQUFLLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUMvQixPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxNQUFNLENBQ2xCLFVBQVUsQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFdBQVcsQUFDbkMsQ0FBQyxBQUVELHlCQUF5QixRQUFRLGNBQUMsQ0FBQyxBQUNqQyxPQUFPLENBQUUsQ0FBQyxDQUNWLFVBQVUsQ0FBRSxPQUFPLEFBQ3JCLENBQUMifQ== */";
+  	style.id = "svelte-2zvabd-style";
+  	style.textContent = ".gallery-lightbox-overlay.svelte-2zvabd{position:fixed;top:0;left:0;width:100vw;height:100vw;z-index:9999;background:rgba(0, 0, 0, 0.75);opacity:0;visibility:hidden;transition:all 0.75s ease-in-out;display:flex;justify-content:center;align-items:center}.gallery-lightbox-overlay.is-open.svelte-2zvabd{opacity:1;visibility:visible}.gallery-lightbox.svelte-2zvabd{width:50vw;margin:0}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSIsInNvdXJjZXMiOlsiR2FsbGVyeUxpZ2h0Ym94LnN2ZWx0ZSJdLCJzb3VyY2VzQ29udGVudCI6WyI8c2NyaXB0PlxuICBleHBvcnQgbGV0IGFjdGl2ZUltZyA9IG51bGw7XG5cbiAgJDogbGlnaHRCb3hPcGVuID0gISFhY3RpdmVJbWc7XG5cbiAgY29uc3Qgc2VsZWN0TGlnaHRib3hQaWN0dXJlID0gKGV2ZW50KSA9PiB7XG4gICAgY29uc3Qge1xuICAgICAgZGV0YWlsOiB7IGVudHJ5IH0sXG4gICAgfSA9IGV2ZW50O1xuXG4gICAgYWN0aXZlSW1nID0gZW50cnk7XG4gICAgZGVidWdnZXI7XG4gIH07XG48L3NjcmlwdD5cblxuPHN0eWxlIGxhbmc9XCJwb3N0Y3NzXCI+XG4gIC5nYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXkge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgbGVmdDogMDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgaGVpZ2h0OiAxMDB2dztcbiAgICB6LWluZGV4OiA5OTk5O1xuICAgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC43NSk7XG4gICAgb3BhY2l0eTogMDtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gICAgdHJhbnNpdGlvbjogYWxsIDAuNzVzIGVhc2UtaW4tb3V0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuXG4gIC5nYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXkuaXMtb3BlbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB2aXNpYmlsaXR5OiB2aXNpYmxlO1xuICB9XG5cbiAgLmdhbGxlcnktbGlnaHRib3gge1xuICAgIHdpZHRoOiA1MHZ3O1xuICAgIG1hcmdpbjogMDtcbiAgfVxuPC9zdHlsZT5cblxuPGRpdiBjbGFzcz1cImdhbGxlcnktbGlnaHRib3gtb3ZlcmxheVwiIGNsYXNzOmlzLW9wZW49e2xpZ2h0Qm94T3Blbn0gLz5cbjxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94XCIgb246bGlnaHRib3gtc2VsZWN0PXtzZWxlY3RMaWdodGJveFBpY3R1cmV9PlxuICA8cGljdHVyZT5cbiAgICA8aW1nIHNyYz17YWN0aXZlSW1nICYmIGFjdGl2ZUltZy5zcmN9IGFsdD1cIlRleHQgZm9yIHRoZSBhbHQgdGFnXCIgLz5cbiAgPC9waWN0dXJlPlxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBZ0JFLHlCQUF5QixjQUFDLENBQUMsQUFDekIsUUFBUSxDQUFFLEtBQUssQ0FDZixHQUFHLENBQUUsQ0FBQyxDQUNOLElBQUksQ0FBRSxDQUFDLENBQ1AsS0FBSyxDQUFFLEtBQUssQ0FDWixNQUFNLENBQUUsS0FBSyxDQUNiLE9BQU8sQ0FBRSxJQUFJLENBQ2IsVUFBVSxDQUFFLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQy9CLE9BQU8sQ0FBRSxDQUFDLENBQ1YsVUFBVSxDQUFFLE1BQU0sQ0FDbEIsVUFBVSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUNqQyxPQUFPLENBQUUsSUFBSSxDQUNiLGVBQWUsQ0FBRSxNQUFNLENBQ3ZCLFdBQVcsQ0FBRSxNQUFNLEFBQ3JCLENBQUMsQUFFRCx5QkFBeUIsUUFBUSxjQUFDLENBQUMsQUFDakMsT0FBTyxDQUFFLENBQUMsQ0FDVixVQUFVLENBQUUsT0FBTyxBQUNyQixDQUFDLEFBRUQsaUJBQWlCLGNBQUMsQ0FBQyxBQUNqQixLQUFLLENBQUUsSUFBSSxDQUNYLE1BQU0sQ0FBRSxDQUFDLEFBQ1gsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -1317,15 +1317,15 @@
   			div1 = element("div");
   			picture = element("picture");
   			img = element("img");
-  			attr_dev(div0, "class", "gallery-lightbox-overlay svelte-uz7lsx");
+  			attr_dev(div0, "class", "gallery-lightbox-overlay svelte-2zvabd");
   			toggle_class(div0, "is-open", /*lightBoxOpen*/ ctx[1]);
-  			add_location(div0, file$2, 35, 0, 595);
+  			add_location(div0, file$2, 43, 0, 727);
   			if (img.src !== (img_src_value = /*activeImg*/ ctx[0] && /*activeImg*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
   			attr_dev(img, "alt", "Text for the alt tag");
-  			add_location(img, file$2, 38, 4, 755);
-  			add_location(picture, file$2, 37, 2, 741);
-  			attr_dev(div1, "class", "gallery-lightbox");
-  			add_location(div1, file$2, 36, 0, 665);
+  			add_location(img, file$2, 46, 4, 887);
+  			add_location(picture, file$2, 45, 2, 873);
+  			attr_dev(div1, "class", "gallery-lightbox svelte-2zvabd");
+  			add_location(div1, file$2, 44, 0, 797);
   		},
   		l: function claim(nodes) {
   			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1424,7 +1424,7 @@
   class GalleryLightbox extends SvelteComponentDev {
   	constructor(options) {
   		super(options);
-  		if (!document.getElementById("svelte-uz7lsx-style")) add_css$2();
+  		if (!document.getElementById("svelte-2zvabd-style")) add_css$2();
   		init(this, options, instance$2, create_fragment$2, safe_not_equal, { activeImg: 0 });
 
   		dispatch_dev("SvelteRegisterComponent", {
