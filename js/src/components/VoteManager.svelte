@@ -35,6 +35,7 @@
 
     display: flex;
     flex-direction: row;
+    z-index: 9999;
   }
 
   .vote-holder {
@@ -82,9 +83,7 @@
             alt="Artjam entry vote thumbnail" />
         {/if}
       </div>
-    {:else}
-      <span>No votes yet, what are you waiting for?</span>
-    {/each}
+    {:else}<span>No votes yet, what are you waiting for?</span>{/each}
   {/if}
   <FloatingSubmitButton {hasChanged} on:submitVotes={handleSubmit} />
 </div>
