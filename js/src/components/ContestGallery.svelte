@@ -11,9 +11,7 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
-  const selectLightboxPicture = (entry) => {
-    activeItem = entry;
-  };
+  const selectLightboxPicture = (entry) => (activeItem = entry);
 </script>
 
 <style lang="postcss">
