@@ -11,6 +11,8 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
+  const selectLightboxPicture = (entry) =>
+    dispatch("lightbox-select", { entry });
 </script>
 
 <style lang="postcss">
@@ -48,7 +50,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox />
+  <GalleryLightbox {lightBoxOpen} />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => toggleVote(entry)}>
