@@ -1,14 +1,14 @@
 <script>
   export let activeItem = null;
 
-  $: lightBoxOpen = !!activeImg;
+  $: lightBoxOpen = !!activeItem;
 
   const selectLightboxPicture = (event) => {
     const {
       detail: { entry },
     } = event;
     console.log("Insight Select lightbox picture");
-    activeImg = entry;
+    activeItem = entry;
     debugger;
   };
 </script>
