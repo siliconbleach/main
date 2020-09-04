@@ -17,8 +17,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 960px;
     margin: 0 auto;
+    width: 100%;
   }
 
   .artjam-entry {
@@ -30,6 +30,12 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     margin: 1rem auto;
+  }
+
+  @media all and (min-width: 960px) {
+    .artjam-gallery-container {
+      max-width: 960px;
+    }
   }
 </style>
 
