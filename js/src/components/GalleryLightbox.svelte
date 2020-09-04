@@ -33,7 +33,7 @@
   }
 </style>
 
-<div class="gallery-lightbox-overlay" class:is-shown={lightBoxOpen} />
+<div class="gallery-lightbox-overlay" class:is-open={lightBoxOpen} />
 <div class="gallery-lightbox" on:lightbox-select={selectLightboxPicture}>
   <picture>
     <img src={activeImg && activeImg.src} alt="Text for the alt tag" />
