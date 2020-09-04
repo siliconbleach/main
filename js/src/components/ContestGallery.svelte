@@ -50,6 +50,7 @@
     width: 2rem;
     height: 2rem;
     background: rgba(255, 255, 255, 0.75);
+    border: none;
   }
 
   @media all and (min-width: 960px) {
