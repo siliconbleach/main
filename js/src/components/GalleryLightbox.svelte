@@ -2,15 +2,6 @@
   export let activeItem = null;
 
   $: lightBoxOpen = !!activeItem;
-
-  const selectLightboxPicture = (event) => {
-    const {
-      detail: { entry },
-    } = event;
-    console.log("Insight Select lightbox picture");
-    activeItem = entry;
-    debugger;
-  };
 </script>
 
 <style lang="postcss">
