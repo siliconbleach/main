@@ -51,7 +51,7 @@
 <div
   class="gallery-lightbox-overlay"
   class:is-open={lightBoxOpen}
-  on:keypress={() => {
+  on:keypress={(event) => {
     console.log('Key press');
   }} />
 <div class="gallery-lightbox">
