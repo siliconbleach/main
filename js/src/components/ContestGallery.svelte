@@ -65,7 +65,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox {activeItem} on:keypress={closeOverlayByKey} />
+  <GalleryLightbox {activeItem} />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
