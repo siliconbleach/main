@@ -20,6 +20,9 @@
   };
 
   const closeOverlayByKey = (event) => {
+   
+    console.log('Hit');
+   
     if (event.keyCode === 13) {
       activeItem = null;
     }
