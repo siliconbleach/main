@@ -49,7 +49,7 @@
 <div
   class="gallery-lightbox-overlay"
   class:is-open={lightBoxOpen}
-  on:keyup={() => closeOverlayByKey()} />
+  on:keypress={() => closeOverlayByKey()} />
 <div class="gallery-lightbox">
   <picture>
     <img src={activeItem && activeItem.src} alt="Text for the alt tag" />
