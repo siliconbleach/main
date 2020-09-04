@@ -1,5 +1,5 @@
 <script>
-  export let activeImg = null;
+  export let activeItem = null;
 
   $: lightBoxOpen = !!activeImg;
 
