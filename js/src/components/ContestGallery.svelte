@@ -20,9 +20,8 @@
   };
 
   const closeOverlayByKey = (event) => {
-   
-    console.log('Hit');
-   
+    console.log("Hit");
+
     if (event.keyCode === 13) {
       activeItem = null;
     }
@@ -66,7 +65,7 @@
 </style>
 
 <div class="artjam-gallery-container">
-  <GalleryLightbox {activeItem} on:keypress={closeOverlayByKey)} />
+  <GalleryLightbox {activeItem} on:keypress={closeOverlayByKey} />
   {#if contest.entries}
     {#each contest.entries as entry}
       <button class="artjam-entry" on:click={() => activateItem(entry)}>
