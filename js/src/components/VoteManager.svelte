@@ -1,5 +1,5 @@
 <script>
-  import { beforeUpdate, onMount } from "svelte";
+  import { afterUpdate, beforeUpdate, onMount } from "svelte";
 
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
   const CDN_BASE_URL = "https://assets.artofkoko.com/artjam/5";
@@ -25,12 +25,10 @@
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
-    changeCount += 1;
-    debugger;
   };
 
-  beforeUpdate((...args) => {
-    debugger;
+  afterUpdate(() => {
+    changeCount += 1;
   });
 </script>
 
