@@ -3,7 +3,7 @@
 
   $: lightBoxOpen = !!activeItem;
 
-  const toggleOverlay = (activeItem = null);
+  const toggleOverlay = () => (activeItem = null);
 </script>
 
 <style lang="postcss">
