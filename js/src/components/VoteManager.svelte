@@ -1,5 +1,5 @@
 <script>
-import { onMount } from "svelte";
+  import { onMount } from "svelte";
 
   import FloatingSubmitButton from "./FloatingSubmitButton.svelte";
   const CDN_BASE_URL = "https://assets.artofkoko.com/artjam/5";
@@ -22,7 +22,6 @@ import { onMount } from "svelte";
   $: currentVotes = votes.concat(offset);
   $: hasChanged = changeCount > 0;
 
-
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
     votes = currentVotes;
@@ -30,7 +29,9 @@ import { onMount } from "svelte";
     debugger;
   };
 
-  onMount(() => debugger)
+  onMount(() => {
+    debugger;
+  });
 </script>
 
 <style lang="postcss">
