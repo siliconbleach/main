@@ -1,6 +1,15 @@
 <script>
   export let activeImg = null;
-  export let lightBoxOpen = false;
+
+  $: lightBoxOpen = !!activeImg;
+
+  const selectLightboxPicture = (event) => {
+    const {
+      detail: { entry },
+    } = event;
+
+    activeImg = entry;
+  };
 </script>
 
 <style lang="postcss">
@@ -24,7 +33,7 @@
 </style>
 
 <div class="gallery-lightbox-overlay" class:is-shown={lightBoxOpen} />
-<div class="gallery-lightbox">
+<div class="gallery-lightbox" on:lightbox-select={selectLightboxPicture}>
   <picture>
     <img src={activeImg && activeImg.src} alt="Text for the alt tag" />
   </picture>
