@@ -25,11 +25,19 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.75s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .gallery-lightbox-overlay.is-open {
     opacity: 1;
     visibility: visible;
+  }
+
+  .gallery-lightbox {
+    width: 50vw;
+    margin: 0;
   }
 </style>
 
