@@ -18,9 +18,7 @@
   $: votes = user.votes;
   $: offset = Array(5 - votes.length);
   $: currentVotes = votes.concat(offset);
-  $: hasChanged = changeCount > 0;
-
-  debugger;
+  $: hasChanged = !!$$self.$$.dirty;
 
   const clearVote = (index) => {
     const currentVotes = votes.filter((v, i) => i !== index);
