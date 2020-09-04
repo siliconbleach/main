@@ -14,8 +14,7 @@
 <style lang="postcss">
   .artjam-gallery-container {
     display: grid;
-
-    align-items: center;
+    grid-template-columns: 49vw 49vw;
     margin: 0 auto;
     width: 100%;
   }
