@@ -33,6 +33,7 @@
     margin: 0;
     display: flex;
     positon: absolute;
+    z-index: 10000;
   }
 </style>
 
