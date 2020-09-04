@@ -11,8 +11,10 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
-  const selectLightboxPicture = (entry) =>
+  const selectLightboxPicture = (entry) => {
+    console.log("Firing select lightbox picture");
     dispatch("lightbox-select", { entry });
+  };
 </script>
 
 <style lang="postcss">
