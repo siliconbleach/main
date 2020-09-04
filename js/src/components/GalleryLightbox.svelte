@@ -42,7 +42,7 @@
     margin: 0 auto;
     display: flex;
     position: absolute;
-    z-index: 10000;
+    z-index: 10001;
     top: 25%;
   }
 </style>
