@@ -30,10 +30,11 @@
 
   .gallery-lightbox {
     width: 50vw;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     positon: absolute;
     z-index: 10000;
+    top: 25%;
   }
 </style>
 
