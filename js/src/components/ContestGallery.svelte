@@ -2,6 +2,7 @@
   import GalleryLightbox from "./GalleryLightbox.svelte";
 
   import { createEventDispatcher } from "svelte";
+  const CDN_BASE_URL = "https://assets.artofkoko.com/artjam/5";
   export let contest = {
     entries: [],
   };
@@ -13,7 +14,10 @@
   const dispatch = createEventDispatcher();
 
   const toggleVote = (entry) => dispatch("togglevote", { entry });
-  const activateItem = (entry) => (activeItem = entry);
+  const activateItem = (entry) => {
+    entry.src = `${CDN_BASE_URL}/${entry.piece_id}.jpg`;
+    activeItem = entry;
+  };
 </script>
 
 <style lang="postcss">
