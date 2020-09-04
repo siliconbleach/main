@@ -18,6 +18,7 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 960px;
+    margin: 0 auto;
   }
 
   .artjam-entry {
