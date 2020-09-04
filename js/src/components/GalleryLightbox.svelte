@@ -12,6 +12,8 @@
 
     return false;
   };
+
+  window.addEventListener("keypress", closeOverlayByKey, false);
 </script>
 
 <style lang="postcss">
