@@ -7,7 +7,7 @@
 
   const toggleOverlay = () => (activeItem = null);
   const closeOverlayByKey = (event) => {
-    if (event.keyCode === 13) {
+    if (lightBoxOpen && event.keyCode === 13) {
       activeItem = null;
     }
 
@@ -47,12 +47,8 @@
   }
 </style>
 
-<div
-  class="gallery-lightbox-overlay"
-  class:is-open={lightBoxOpen}
-  on:keypress={(event) => {
-    console.log('Key press');
-  }} />
+<svelte:window on:keyup={closeOverlayByKey} />
+<div class="gallery-lightbox-overlay" class:is-open={lightBoxOpen} />
 <div class="gallery-lightbox">
   <picture>
     <img src={activeItem && activeItem.src} alt="Text for the alt tag" />
