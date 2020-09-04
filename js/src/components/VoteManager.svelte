@@ -29,7 +29,7 @@
     debugger;
   };
 
-  beforeUpdate((arguments) => {
+  beforeUpdate((...args) => {
     debugger;
   }))
 </script> 
