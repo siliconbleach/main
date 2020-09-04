@@ -17,6 +17,7 @@
     grid-template-columns: 49vw 49vw;
     margin: 0 auto;
     width: 100%;
+    position: relative;
   }
 
   .artjam-entry {
@@ -47,7 +48,7 @@
 <div class="artjam-gallery-container">
   <div class="gallery-lightbox-overlay" />
   <div class="gallery-lightbox">
-    <picture> <img src={activeImgSrc} /> </picture>
+    <picture> <img src={activeImgSrc} alt="Text for the alt tag" /> </picture>
   </div>
   {#if contest.entries}
     {#each contest.entries as entry}
