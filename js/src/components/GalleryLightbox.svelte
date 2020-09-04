@@ -44,7 +44,7 @@
 </style>
 
 <div class="gallery-lightbox-overlay" class:is-open={lightBoxOpen} />
-<div class="gallery-lightbox" on:lightbox-select={selectLightboxPicture}>
+<div class="gallery-lightbox" on:lightboxSelect={selectLightboxPicture}>
   <picture>
     <img src={activeImg && activeImg.src} alt="Text for the alt tag" />
   </picture>
