@@ -1295,7 +1295,7 @@
   function add_css$2() {
   	var style = element("style");
   	style.id = "svelte-1dktyt9-style";
-  	style.textContent = ".artjam-gallery-container.svelte-1dktyt9{display:grid;grid-template-columns:49vw 49vw;margin:0 auto;width:100%}.artjam-entry.svelte-1dktyt9{display:flex;width:100%;max-width:49vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}@media all and (min-width: 960px){.artjam-gallery-container.svelte-1dktyt9{grid-template-columns:repeat(4, 23vw);grid-column-gap:1vw;max-width:960px}.artjam-entry.svelte-1dktyt9{max-width:23vw}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBleHBvcnQgbGV0IGNvbnRlc3QgPSB7XG4gICAgZW50cmllczogW10sXG4gIH07XG5cbiAgJDogY29udGVzdCA9ICQkcHJvcHMuY29udGVzdDtcblxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xuXG4gIGNvbnN0IHRvZ2dsZVZvdGUgPSAoZW50cnkpID0+IGRpc3BhdGNoKFwidG9nZ2xldm90ZVwiLCB7IGVudHJ5IH0pO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNDl2dyA0OXZ3O1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXgtd2lkdGg6IDQ5dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRzbGF0ZWdyYXk7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1yYWRpdXM6IDAuNXJlbTtcbiAgICBwYWRkaW5nOiAwLjVyZW07XG4gICAgbWFyZ2luOiAxcmVtIGF1dG87XG4gIH1cblxuICBAbWVkaWEgYWxsIGFuZCAobWluLXdpZHRoOiA5NjBweCkge1xuICAgIC5hcnRqYW0tZ2FsbGVyeS1jb250YWluZXIge1xuICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMjN2dyk7XG4gICAgICBncmlkLWNvbHVtbi1nYXA6IDF2dztcbiAgICAgIG1heC13aWR0aDogOTYwcHg7XG4gICAgfVxuXG4gICAgLmFydGphbS1lbnRyeSB7XG4gICAgICBtYXgtd2lkdGg6IDIzdnc7XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIDxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiAvPlxuICA8ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiIC8+XG4gIHsjaWYgY29udGVzdC5lbnRyaWVzfVxuICAgIHsjZWFjaCBjb250ZXN0LmVudHJpZXMgYXMgZW50cnl9XG4gICAgICA8YnV0dG9uIGNsYXNzPVwiYXJ0amFtLWVudHJ5XCIgb246Y2xpY2s9eygpID0+IHRvZ2dsZVZvdGUoZW50cnkpfT5cbiAgICAgICAge2VudHJ5Lm5hbWV9XG4gICAgICA8L2J1dHRvbj5cbiAgICB7L2VhY2h9XG4gIHsvaWZ9XG48L2Rpdj5cbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFjRSx5QkFBeUIsZUFBQyxDQUFDLEFBQ3pCLE9BQU8sQ0FBRSxJQUFJLENBQ2IscUJBQXFCLENBQUUsSUFBSSxDQUFDLElBQUksQ0FDaEMsTUFBTSxDQUFFLENBQUMsQ0FBQyxJQUFJLENBQ2QsS0FBSyxDQUFFLElBQUksQUFDYixDQUFDLEFBRUQsYUFBYSxlQUFDLENBQUMsQUFDYixPQUFPLENBQUUsSUFBSSxDQUNiLEtBQUssQ0FBRSxJQUFJLENBQ1gsU0FBUyxDQUFFLElBQUksQ0FDZixnQkFBZ0IsQ0FBRSxjQUFjLENBQ2hDLEtBQUssQ0FBRSxLQUFLLENBQ1osTUFBTSxDQUFFLEdBQUcsQ0FBQyxLQUFLLENBQUMsV0FBVyxDQUM3QixhQUFhLENBQUUsTUFBTSxDQUNyQixPQUFPLENBQUUsTUFBTSxDQUNmLE1BQU0sQ0FBRSxJQUFJLENBQUMsSUFBSSxBQUNuQixDQUFDLEFBRUQsT0FBTyxHQUFHLENBQUMsR0FBRyxDQUFDLFlBQVksS0FBSyxDQUFDLEFBQUMsQ0FBQyxBQUNqQyx5QkFBeUIsZUFBQyxDQUFDLEFBQ3pCLHFCQUFxQixDQUFFLE9BQU8sQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQ3RDLGVBQWUsQ0FBRSxHQUFHLENBQ3BCLFNBQVMsQ0FBRSxLQUFLLEFBQ2xCLENBQUMsQUFFRCxhQUFhLGVBQUMsQ0FBQyxBQUNiLFNBQVMsQ0FBRSxJQUFJLEFBQ2pCLENBQUMsQUFDSCxDQUFDIn0= */";
+  	style.textContent = ".artjam-gallery-container.svelte-1dktyt9{display:grid;grid-template-columns:49vw 49vw;margin:0 auto;width:100%}.artjam-entry.svelte-1dktyt9{display:flex;width:100%;max-width:49vw;background-color:lightslategray;color:white;border:1px solid transparent;border-radius:0.5rem;padding:0.5rem;margin:1rem auto}@media all and (min-width: 960px){.artjam-gallery-container.svelte-1dktyt9{grid-template-columns:repeat(4, 23vw);grid-column-gap:1vw;max-width:960px}.artjam-entry.svelte-1dktyt9{max-width:23vw}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiQ29udGVzdEdhbGxlcnkuc3ZlbHRlIiwic291cmNlcyI6WyJDb250ZXN0R2FsbGVyeS5zdmVsdGUiXSwic291cmNlc0NvbnRlbnQiOlsiPHNjcmlwdD5cbiAgaW1wb3J0IHsgY3JlYXRlRXZlbnREaXNwYXRjaGVyIH0gZnJvbSBcInN2ZWx0ZVwiO1xuICBleHBvcnQgbGV0IGNvbnRlc3QgPSB7XG4gICAgZW50cmllczogW10sXG4gIH07XG5cbiAgJDogY29udGVzdCA9ICQkcHJvcHMuY29udGVzdDtcblxuICBjb25zdCBkaXNwYXRjaCA9IGNyZWF0ZUV2ZW50RGlzcGF0Y2hlcigpO1xuXG4gIGNvbnN0IHRvZ2dsZVZvdGUgPSAoZW50cnkpID0+IGRpc3BhdGNoKFwidG9nZ2xldm90ZVwiLCB7IGVudHJ5IH0pO1xuPC9zY3JpcHQ+XG5cbjxzdHlsZSBsYW5nPVwicG9zdGNzc1wiPlxuICAuYXJ0amFtLWdhbGxlcnktY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNDl2dyA0OXZ3O1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG5cbiAgLmFydGphbS1lbnRyeSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXgtd2lkdGg6IDQ5dnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRzbGF0ZWdyYXk7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIGJvcmRlci1yYWRpdXM6IDAuNXJlbTtcbiAgICBwYWRkaW5nOiAwLjVyZW07XG4gICAgbWFyZ2luOiAxcmVtIGF1dG87XG4gIH1cblxuICBAbWVkaWEgYWxsIGFuZCAobWluLXdpZHRoOiA5NjBweCkge1xuICAgIC5hcnRqYW0tZ2FsbGVyeS1jb250YWluZXIge1xuICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiByZXBlYXQoNCwgMjN2dyk7XG4gICAgICBncmlkLWNvbHVtbi1nYXA6IDF2dztcbiAgICAgIG1heC13aWR0aDogOTYwcHg7XG4gICAgfVxuXG4gICAgLmFydGphbS1lbnRyeSB7XG4gICAgICBtYXgtd2lkdGg6IDIzdnc7XG4gICAgfVxuICB9XG48L3N0eWxlPlxuXG48ZGl2IGNsYXNzPVwiYXJ0amFtLWdhbGxlcnktY29udGFpbmVyXCI+XG4gIDxkaXYgY2xhc3M9XCJnYWxsZXJ5LWxpZ2h0Ym94LW92ZXJsYXlcIiAvPlxuICA8ZGl2IGNsYXNzPVwiZ2FsbGVyeS1saWdodGJveFwiPlxuICAgIDxwaWN0dXJlPiA8aW1nIHNyYz17YWN0aXZlSW1nU3JjfSAvPiA8L3BpY3R1cmU+XG4gIDwvZGl2PlxuICB7I2lmIGNvbnRlc3QuZW50cmllc31cbiAgICB7I2VhY2ggY29udGVzdC5lbnRyaWVzIGFzIGVudHJ5fVxuICAgICAgPGJ1dHRvbiBjbGFzcz1cImFydGphbS1lbnRyeVwiIG9uOmNsaWNrPXsoKSA9PiB0b2dnbGVWb3RlKGVudHJ5KX0+XG4gICAgICAgIHtlbnRyeS5uYW1lfVxuICAgICAgPC9idXR0b24+XG4gICAgey9lYWNofVxuICB7L2lmfVxuPC9kaXY+XG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY0UseUJBQXlCLGVBQUMsQ0FBQyxBQUN6QixPQUFPLENBQUUsSUFBSSxDQUNiLHFCQUFxQixDQUFFLElBQUksQ0FBQyxJQUFJLENBQ2hDLE1BQU0sQ0FBRSxDQUFDLENBQUMsSUFBSSxDQUNkLEtBQUssQ0FBRSxJQUFJLEFBQ2IsQ0FBQyxBQUVELGFBQWEsZUFBQyxDQUFDLEFBQ2IsT0FBTyxDQUFFLElBQUksQ0FDYixLQUFLLENBQUUsSUFBSSxDQUNYLFNBQVMsQ0FBRSxJQUFJLENBQ2YsZ0JBQWdCLENBQUUsY0FBYyxDQUNoQyxLQUFLLENBQUUsS0FBSyxDQUNaLE1BQU0sQ0FBRSxHQUFHLENBQUMsS0FBSyxDQUFDLFdBQVcsQ0FDN0IsYUFBYSxDQUFFLE1BQU0sQ0FDckIsT0FBTyxDQUFFLE1BQU0sQ0FDZixNQUFNLENBQUUsSUFBSSxDQUFDLElBQUksQUFDbkIsQ0FBQyxBQUVELE9BQU8sR0FBRyxDQUFDLEdBQUcsQ0FBQyxZQUFZLEtBQUssQ0FBQyxBQUFDLENBQUMsQUFDakMseUJBQXlCLGVBQUMsQ0FBQyxBQUN6QixxQkFBcUIsQ0FBRSxPQUFPLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUN0QyxlQUFlLENBQUUsR0FBRyxDQUNwQixTQUFTLENBQUUsS0FBSyxBQUNsQixDQUFDLEFBRUQsYUFBYSxlQUFDLENBQUMsQUFDYixTQUFTLENBQUUsSUFBSSxBQUNqQixDQUFDLEFBQ0gsQ0FBQyJ9 */";
   	append_dev(document.head, style);
   }
 
@@ -1305,7 +1305,7 @@
   	return child_ctx;
   }
 
-  // (50:2) {#if contest.entries}
+  // (52:2) {#if contest.entries}
   function create_if_block$1(ctx) {
   	let each_1_anchor;
   	let each_value = /*contest*/ ctx[0].entries;
@@ -1366,14 +1366,14 @@
   		block,
   		id: create_if_block$1.name,
   		type: "if",
-  		source: "(50:2) {#if contest.entries}",
+  		source: "(52:2) {#if contest.entries}",
   		ctx
   	});
 
   	return block;
   }
 
-  // (51:4) {#each contest.entries as entry}
+  // (53:4) {#each contest.entries as entry}
   function create_each_block$1(ctx) {
   	let button;
   	let t0_value = /*entry*/ ctx[5].name + "";
@@ -1392,7 +1392,7 @@
   			t0 = text(t0_value);
   			t1 = space();
   			attr_dev(button, "class", "artjam-entry svelte-1dktyt9");
-  			add_location(button, file$2, 51, 6, 1079);
+  			add_location(button, file$2, 53, 6, 1138);
   		},
   		m: function mount(target, anchor) {
   			insert_dev(target, button, anchor);
@@ -1419,7 +1419,7 @@
   		block,
   		id: create_each_block$1.name,
   		type: "each",
-  		source: "(51:4) {#each contest.entries as entry}",
+  		source: "(53:4) {#each contest.entries as entry}",
   		ctx
   	});
 
@@ -1431,6 +1431,9 @@
   	let div0;
   	let t0;
   	let div1;
+  	let picture;
+  	let img;
+  	let img_src_value;
   	let t1;
   	let if_block = /*contest*/ ctx[0].entries && create_if_block$1(ctx);
 
@@ -1440,10 +1443,15 @@
   			div0 = element("div");
   			t0 = space();
   			div1 = element("div");
+  			picture = element("picture");
+  			img = element("img");
   			t1 = space();
   			if (if_block) if_block.c();
   			attr_dev(div0, "class", "gallery-lightbox-overlay");
   			add_location(div0, file$2, 47, 2, 936);
+  			if (img.src !== (img_src_value = activeImgSrc)) attr_dev(img, "src", img_src_value);
+  			add_location(img, file$2, 49, 14, 1024);
+  			add_location(picture, file$2, 49, 4, 1014);
   			attr_dev(div1, "class", "gallery-lightbox");
   			add_location(div1, file$2, 48, 2, 979);
   			attr_dev(div2, "class", "artjam-gallery-container svelte-1dktyt9");
@@ -1457,6 +1465,8 @@
   			append_dev(div2, div0);
   			append_dev(div2, t0);
   			append_dev(div2, div1);
+  			append_dev(div1, picture);
+  			append_dev(picture, img);
   			append_dev(div2, t1);
   			if (if_block) if_block.m(div2, null);
   		},
