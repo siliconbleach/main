@@ -32,7 +32,7 @@
     width: 50vw;
     margin: 0 auto;
     display: flex;
-    positon: absolute;
+    position: absolute;
     z-index: 10000;
     top: 25%;
   }
