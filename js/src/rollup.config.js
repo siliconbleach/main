@@ -24,7 +24,7 @@ export default {
         features: {
           "nesting-rules": true,
         }
-      }),
+      })
     ]),
     svelte({
       // enable run-time checks when not in production
