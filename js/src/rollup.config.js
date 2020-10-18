@@ -23,7 +23,7 @@ export default {
         stage: 3,
         features: {
           "nesting-rules": true,
-        },
+        }
       }),
     ]),
     svelte({
