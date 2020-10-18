@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import { fade } from "svelte/transitions";
   const MAX_VOTES_ALLOWED = 5;
   export let hasChanged = false;
 
@@ -42,7 +43,10 @@
   }
 </style>
 
-<form id="vote-submission" on:submit|preventDefault={handleSubmit}>
+<form
+  id="vote-submission"
+  on:submit|preventDefault={handleSubmit}
+  transition:fade={{ delay: 250, duration: 300 }}>
   <button id="submitvotes-button" class:is-shown={hasChanged} type="submit">
     Submit Votes
   </button>
