@@ -48,9 +48,10 @@
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+    border-radius: 0.25rem;
     width: 3rem;
     height: 2rem;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.25);
     border: none;
   }
 
