@@ -4,7 +4,8 @@ import App from "./App.svelte";
 
 ((window) => {
   const isJamPage = window.location.pathname === "/jam";
-  const hasDevCookie = cookie.set("jamDev", "true");
+  const hasDevCookie = cookie.get("jamDev") === "true";
+
   console.log(hasDevCookie);
   const urlParams = new URLSearchParams(window.location.search);
   if (!isJamPage) return;
