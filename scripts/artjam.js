@@ -2335,7 +2335,7 @@
 
   (function (window) {
     var isJamPage = window.location.pathname === "/jam";
-    var hasDevCookie = js_cookie.set("jamDev", "true");
+    var hasDevCookie = js_cookie.get("jamDev") === "true";
     console.log(hasDevCookie);
     var urlParams = new URLSearchParams(window.location.search);
     if (!isJamPage) return;
