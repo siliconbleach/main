@@ -32,12 +32,19 @@
       detail: { entry },
     } = event;
 
+    if (user.votes.length === 5) {
+      console.log("Vote cap reached");
+      return false;
+    }
+
     const newValue = !pictureVoter[entry.id];
 
     pictureVoter[entry.id] = newValue;
     if (newValue) {
       user.votes[user.votes.length] = entry;
     }
+
+    console.log({ pictureVoter });
     return newValue;
   };
 
@@ -45,6 +52,8 @@
     const {
       detail: { entries },
     } = event;
+
+    console.log("Handle submit called");
   };
   onMount(() => {
     getContest(ARTJAM_ID)
@@ -54,7 +63,6 @@
 </script>
 
 <style lang="postcss">
-
 </style>
 
 <VoteManager {user} on:togglevote={handleToggle} {handleSubmit} />
