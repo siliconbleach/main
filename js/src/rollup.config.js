@@ -4,6 +4,7 @@ import babel from "rollup-plugin-babel";
 import json from "rollup-plugin-json";
 import svelte from "rollup-plugin-svelte";
 import { terser } from "rollup-plugin-terser";
+import postcss from 'rollup-plugin-postcss';
 import postcssPresetEnv from "postcss-preset-env";
 const production = !process.env.ROLLUP_WATCH;
 
@@ -16,13 +17,15 @@ export default {
     name: "app",
   },
   plugins: [
-    postcssPresetEnv({
-      autoprefixer: { grid: true },
-      stage: 3,
-      features: {
-        "nesting-rules": true,
-      },
-    }),
+      postcss([
+        postcssPresetEnv({
+            autoprefixer: { grid: true },
+            stage: 3,
+            features: {
+              "nesting-rules": true,
+            },
+          })
+      ])
     svelte({
       // enable run-time checks when not in production
       dev: !production,
