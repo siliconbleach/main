@@ -85,6 +85,7 @@
         {#if vote}
           <img
             src={`${CDN_BASE_URL}/${vote.piece_id || vote.id}.jpg`}
+            srcset={`${CDN_BASE_URL}/${vote.piece_id || vote.id}.png`}
             alt="Artjam entry vote thumbnail" />
         {/if}
       </div>
