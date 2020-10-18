@@ -90,5 +90,7 @@
       </div>
     {:else}<span>No votes yet, what are you waiting for?</span>{/each}
   {/if}
-  <FloatingSubmitButton {hasChanged} on:submitVotes={handleSubmit} />
+  {#if hasChanged}
+    <FloatingSubmitButton {hasChanged} on:submitVotes={handleSubmit} />
+  {/if}
 </div>
