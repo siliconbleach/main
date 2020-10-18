@@ -19,12 +19,12 @@ export default {
   plugins: [
     postcss([
       postcssPresetEnv({
-        autoprefixer: { grid: true }
+        autoprefixer: { grid: true },
         stage: 3,
         features: {
           "nesting-rules": true,
-        }
-      })
+        },
+      }),
     ]),
     svelte({
       // enable run-time checks when not in production
