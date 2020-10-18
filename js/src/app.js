@@ -6,9 +6,8 @@ import App from "./App.svelte";
   const isJamPage = window.location.pathname === "/jam";
   const hasDevCookie = cookie.get("jamDev") === "true";
 
-  console.log(hasDevCookie);
   const urlParams = new URLSearchParams(window.location.search);
-  if (!isJamPage) return;
+  if (!isJamPage || !hasDevCookie) return;
 
   const API_URL = "https://artofkoko.com";
 
