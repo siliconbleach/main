@@ -2335,6 +2335,7 @@
 
   (function (window) {
     var isJamPage = window.location.pathname === "/jam";
+    var hasDevCookie = js_cookie.set("jamDev", "true");
     var urlParams = new URLSearchParams(window.location.search);
     if (!isJamPage) return;
     var API_URL = "https://artofkoko.com";
