@@ -139,6 +139,8 @@ import App from './App.svelte';
 
 		$('body').append(svelteRoot);
 
+		console.log('Here');
+
 		const app = new App({
 			target: document.getElementById('jam-app'),
 			props: {
