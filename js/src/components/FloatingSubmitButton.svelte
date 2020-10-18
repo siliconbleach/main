@@ -35,11 +35,11 @@
     opacity: 0;
     visibility: hidden;
     transition: all 0.75s ease-in-out;
+  }
 
-    &.is-shown {
-      opacity: 1;
-      visibility: hidden;
-    }
+  #submitvotes-button.is-shown {
+    opacity: 1;
+    visibility: visible;
   }
 </style>
 
