@@ -2334,12 +2334,12 @@
   }
 
   (function (window) {
-    var isJamPage = window.location.pathname === '/jam';
+    var isJamPage = window.location.pathname === "/jam";
     var urlParams = new URLSearchParams(window.location.search);
     if (!isJamPage) return;
-    var API_URL = 'https://artofkoko.com';
-    var YUI_PREFIX = 'yui_';
-    var yui_gallery_id = '';
+    var API_URL = "https://artofkoko.com";
+    var YUI_PREFIX = "yui_";
+    var yui_gallery_id = "";
     var settings = {
       user: {
         votes: []
@@ -2354,18 +2354,18 @@
       el: $toast,
       message: $toastMessage,
       init: function init() {
-        $('body').append(toastTemplate);
-        $toast = $('#kokoToast');
-        $toastMessage = $('#toastMessage');
+        $("body").append(toastTemplate);
+        $toast = $("#kokoToast");
+        $toastMessage = $("#toastMessage");
         this.el = $toast;
         this.message = $toastMessage;
       },
       hide: function hide() {
-        this.el.removeClass('js-toast-show');
-        this.message.text('');
+        this.el.removeClass("js-toast-show");
+        this.message.text("");
       },
       show: function show() {
-        this.el.addClass('js-toast-show');
+        this.el.addClass("js-toast-show");
       },
       success: function success(message) {
         var _this = this;
@@ -2404,7 +2404,7 @@
     // };
 
     var elementIdToVoteId = function elementIdToVoteId(id) {
-      return id.split('_').pop();
+      return id.split("_").pop();
     };
 
     var fetchVotes = /*#__PURE__*/function () {
@@ -2414,10 +2414,10 @@
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                console.log('Fetching votes');
+                console.log("Fetching votes");
                 _context.next = 3;
                 return fetch("".concat(API_URL, "/api/user/").concat(twitchId, "/votes"), {
-                  method: 'GET'
+                  method: "GET"
                 });
 
               case 3:
@@ -2441,59 +2441,59 @@
      */
 
 
-    $(document).on('click', '.artjam-vote-button', function (e) {
+    $(document).on("click", ".artjam-vote-button", function (e) {
       var $slide = $(this).parent();
-      var voteId = elementIdToVoteId($slide.attr('id'));
+      var voteId = elementIdToVoteId($slide.attr("id"));
       toggleVote(voteId);
     }); // $(document).on('click', '#submitvotes-button', e => {
     // 	e.preventDefault();
     // 	submitVotes();
     // });
 
-    $(document).on('mouseenter', '.image-slide-anchor', function (e) {
+    $(document).on("mouseenter", ".image-slide-anchor", function (e) {
       $(e.currentTarget).css({
-        'z-index': 10
+        "z-index": 10
       });
-    }).on('mouseleave', '.image-slide-anchor', function (e) {
+    }).on("mouseleave", ".image-slide-anchor", function (e) {
       return $(e.currentTarget).css({
-        'z-index': 'inherit'
+        "z-index": "inherit"
       });
     });
-    $(document).on('ready', function () {
+    $(document).on("ready", function () {
       toast.init();
-      $('body').append(svelteRoot);
+      $("body").append(svelteRoot);
       var app = new App({
-        target: document.getElementById('jam-app'),
+        target: document.getElementById("jam-app"),
         props: {
           user: settings.user
         }
       });
-      var $slides = Array.from(document.querySelectorAll('.slide'));
-      yui_gallery_id = $slides[0].id.split('_');
-      yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join('_') + '_';
-      $('.image-slide-anchor').append(buttonTemplate);
+      var $slides = Array.from(document.querySelectorAll(".slide"));
+      yui_gallery_id = $slides[0].id.split("_");
+      yui_gallery_id = yui_gallery_id.slice(1, yui_gallery_id.length - 1).join("_") + "_";
+      $(".image-slide-anchor").append(buttonTemplate);
 
-      if (urlParams.has('success') && urlParams.has('twitch_id')) {
-        console.log('saving cookie because of success & twitch_id params');
-        var twitchId = urlParams.get('twitch_id');
-        settings.user.twitchId = urlParams.get('twitch_id');
-        var twitchIdCookie = js_cookie.set('userTwitchId', settings.user.twitchId, {
+      if (urlParams.has("success") && urlParams.has("twitch_id")) {
+        console.log("saving cookie because of success & twitch_id params");
+        var twitchId = urlParams.get("twitch_id");
+        settings.user.twitchId = urlParams.get("twitch_id");
+        var twitchIdCookie = js_cookie.set("userTwitchId", settings.user.twitchId, {
           expires: 14,
-          secure: 'none'
+          secure: "none"
         });
       }
 
-      var retrieveStoredSettings = window.localStorage.getItem('artJamInfo');
+      var retrieveStoredSettings = window.localStorage.getItem("artJamInfo");
 
-      if (typeof retrieveStoredSettings === 'string') {
+      if (typeof retrieveStoredSettings === "string") {
         var storedSettings = JSON.parse(retrieveVotesFromStorage);
         settings = Object.assign(settings, storedSettings);
         return settings;
       }
 
-      var twitchIdFromCookie = js_cookie.get('userTwitchId');
+      var twitchIdFromCookie = js_cookie.get("userTwitchId");
 
-      if (typeof twitchIdFromCookie === 'string') {
+      if (typeof twitchIdFromCookie === "string") {
         fetchVotes(twitchIdFromCookie).then(function (res) {
           return res.json();
         }).then(function (_ref3) {
@@ -2511,7 +2511,7 @@
               return v.piece_id;
             });
             (_settings = settings) === null || _settings === void 0 ? void 0 : _settings.votes.forEach(function (vote) {
-              $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find('.artjam-vote-button').toggleClass('is-selected');
+              $("#".concat(YUI_PREFIX).concat(yui_gallery_id).concat(vote)).find(".artjam-vote-button").toggleClass("is-selected");
             });
             app.$set({
               user: settings.user
