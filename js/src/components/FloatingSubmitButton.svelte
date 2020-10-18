@@ -1,6 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
-  import { fade } from "svelte/transitions";
+  import { fade } from "svelte/transition";
   const MAX_VOTES_ALLOWED = 5;
   export let hasChanged = false;
 
