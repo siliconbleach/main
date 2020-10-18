@@ -2448,6 +2448,7 @@
     $(document).on('ready', function () {
       toast.init();
       $('body').append(svelteRoot);
+      console.log('Here');
       var app = new App({
         target: document.getElementById('jam-app'),
         props: {
