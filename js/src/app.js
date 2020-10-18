@@ -139,7 +139,6 @@ import App from './App.svelte';
 
 		$('body').append(svelteRoot);
 
-		console.log('Here');
 
 		const app = new App({
 			target: document.getElementById('jam-app'),
@@ -188,8 +187,6 @@ import App from './App.svelte';
 					settings?.votes.forEach(vote => {
 						$(`#${YUI_PREFIX}${yui_gallery_id}${vote}`).find('.artjam-vote-button').toggleClass('is-selected');
 					});
-
-					console.log('Calling app set because of Cookie');
 
 					app.$set({
 						user: settings.user
