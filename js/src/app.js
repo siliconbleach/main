@@ -8,7 +8,7 @@ $(document).ready(function () {
     //console.log('voted for:' + val);
     console.log(votes.len);
 
-    for (i = 0; i < votes.length; i++) {
+    for (let i = 0; i < votes.length; i++) {
       console.log("votes[i]=" + votes[i]);
       console.log("val=" + val);
       if (votes[i] === val) {
