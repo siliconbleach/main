@@ -42,7 +42,7 @@ $(document).ready(function () {
     e.preventDefault();
     serVotes = JSON.stringify(votes);
     window.location.href =
-      "http://oxdeception.pythonanywhere.com/?votes=" + serVotes;
+      "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
   });
 });
 
