@@ -40,7 +40,8 @@ $(document).ready(function () {
   $("#submitvotes-button").click(function (e) {
     //vote($(this).attr('id'));
     e.preventDefault();
-    serVotes = JSON.stringify(votes);
+    let serVotes = JSON.stringify(votes);
+    console.log(serVotes);
     window.location.href =
       "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
   });
