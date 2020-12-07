@@ -40,7 +40,7 @@
       //vote($(this).attr('id'));
       e.preventDefault();
       serVotes = JSON.stringify(votes);
-      window.location.href = "http://oxdeception.pythonanywhere.com/?votes=" + serVotes;
+      window.location.href = "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
     });
   }); // import cookie from "js-cookie";
   // import { createEventDispatcher } from "svelte";
