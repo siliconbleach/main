@@ -35,14 +35,14 @@
     $(".vote-button").click(function () {
       console.log("clicked - " + $(this).closest(".slide").attr("id"));
       vote($(this).closest(".slide").attr("id"));
-    }); // $("#submitvotes-button").click(function (e) {
-    //   //vote($(this).attr('id'));
-    //   e.preventDefault();
-    //   let serVotes = JSON.stringify(votes);
-    //   console.log(serVotes);
-    //   window.location.href =
-    //     "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
-    // });
+    });
+    $("#submitvotes-button").click(function (e) {
+      //vote($(this).attr('id'));
+      e.preventDefault();
+      var serVotes = JSON.stringify(votes);
+      console.log(serVotes);
+      window.location.href = "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
+    });
   }); // import cookie from "js-cookie";
   // import { createEventDispatcher } from "svelte";
   // import App from "./App.svelte";
