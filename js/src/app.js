@@ -6,7 +6,7 @@ $(document).ready(function () {
   var votes = [];
   function vote(val) {
     //console.log('voted for:' + val);
-    console.log(votes.len);
+    console.log(votes.length);
 
     for (let i = 0; i < votes.length; i++) {
       console.log("votes[i]=" + votes[i]);
