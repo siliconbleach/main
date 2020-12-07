@@ -37,13 +37,13 @@ $(document).ready(function () {
 
     vote($(this).closest(".slide").attr("id"));
   });
-  $("#submitvotes-button").click(function (e) {
-    //vote($(this).attr('id'));
-    e.preventDefault();
-    serVotes = JSON.stringify(votes);
-    window.location.href =
-      "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
-  });
+  // $("#submitvotes-button").click(function (e) {
+  //   //vote($(this).attr('id'));
+  //   e.preventDefault();
+  //   serVotes = JSON.stringify(votes);
+  //   window.location.href =
+  //     "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
+  // });
 });
 
 // import cookie from "js-cookie";
