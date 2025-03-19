@@ -2,6 +2,7 @@
   'use strict';
 
   $(document).ready(function () {
+    console.log("i'm hit")
     $("#block-yui_3_17_2_1_1587646755522_24810 .slide").append('<button class="vote-button" id="vote button">    &uarr; SELECT     &uarr;</button');
     var votes = [];
 
