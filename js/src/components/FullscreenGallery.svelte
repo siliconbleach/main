@@ -1,5 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
+    console.log("✅ FullscreenGallery.svelte is loading!");
+
+    import { onMount } from 'svelte';
   let images = [
     { src: '/path-to-your-image1.jpg', title: 'Artwork 1', medium: 'Oil on Canvas', date: '2024' },
     { src: '/path-to-your-image2.jpg', title: 'Artwork 2', medium: 'Charcoal', date: '2023' },
