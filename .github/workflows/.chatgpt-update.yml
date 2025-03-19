@@ -28,4 +28,4 @@ jobs:
         run: |
           git add .
           git commit -m "Automated update from ChatGPT"
-          git push https://${{ secrets.CHATGPT_TAT }}@github.com/siliconbleach/main.git master
+          git push https://${{ secrets.GH_TOKEN }}@github.com/siliconbleach/main.git master
