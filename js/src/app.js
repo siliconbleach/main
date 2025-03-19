@@ -3,52 +3,8 @@ $(document).ready(function () {
     '<button class="vote-button" id="vote button">    &uarr; SELECT     &uarr;</button'
   );
 
-  var votes = [];
-  function vote(val) {
-    //console.log('voted for:' + val);
-    console.log(votes.length);
-
-    for (let i = 0; i < votes.length; i++) {
-      console.log("votes[i]=" + votes[i]);
-      console.log("val=" + val);
-      if (votes[i] === val) {
-        votes.splice(i, 1);
-        $("#" + val)
-          .closest(".slide")
-          .removeClass("slide-selected");
-        console.log("unvoted for: " + val);
-        return;
-      }
-    }
-    if (votes.length >= 5) {
-      alert("You cannot vote for more than 5 entries!");
-      return;
-    }
-    votes.push(val);
-    $("#" + val)
-      .closest(".slide")
-      .addClass("slide-selected");
-    console.log("voted for: " + val);
-    console.log(votes);
-  }
-
-  $(".vote-button").click(function () {
-    console.log("clicked - " + $(this).closest(".slide").attr("id"));
-
-    vote($(this).closest(".slide").attr("id"));
-  });
-  $("#submitvotes-button").click(function (e) {
-    //vote($(this).attr('id'));
-    e.preventDefault();
-    let serVotes = JSON.stringify(votes);
-    console.log(serVotes);
-    window.location.href =
-      "http://siliconbleach.pythonanywhere.com/?votes=" + serVotes;
-  });
 });
 
-import cookie from "js-cookie";
-import { createEventDispatcher } from "svelte";
 import App from "./App.svelte";
 
 ((window) => {
@@ -56,7 +12,6 @@ import App from "./App.svelte";
   const hasDevCookie = cookie.get("jamDev") === "true";
 
   const urlParams = new URLSearchParams(window.location.search);
-  if (!isJamPage || !hasDevCookie) return;
 
   const API_URL = "https://artofkoko.com";
 
@@ -67,132 +22,8 @@ import App from "./App.svelte";
   const buttonTemplate = `<button class="artjam-vote-button" type="button">Vote</button>`;
   const svelteRoot = `<div id="jam-app"></div>`;
 
-  const toastTemplate = `
-		<div class="toast" id="kokoToast">
-			<section class="toast-content">
-				<span id="toastMessage">{{message}}</span>
-			</section>
-		</div>
-	`;
-
-  let $toast = null;
-  let $toastMessage = null;
-
-  const toast = {
-    el: $toast,
-    message: $toastMessage,
-    init: function () {
-      $("body").append(toastTemplate);
-      $toast = $("#kokoToast");
-      $toastMessage = $("#toastMessage");
-      this.el = $toast;
-      this.message = $toastMessage;
-    },
-    hide: function () {
-      this.el.removeClass("js-toast-show");
-      this.message.text("");
-    },
-    show: function () {
-      this.el.addClass("js-toast-show");
-    },
-    success: function (message) {
-      this.message.text(message);
-      this.show();
-
-      setTimeout(() => this.hide(), 1750);
-    },
-  };
-
-  /**
-   * Main
-   */
-  // const toggleVote = id => {
-
-  // 	const $voteSlide = $(`#${YUI_PREFIX}${yui_gallery_id}${id}`);
-  // 	let styles = {
-  // 		background: 'white',
-  // 		color: '#e86d6d'
-  // 	}
-
-  // 	const voteIndex = settings.votes.indexOf(id);
-  // 	if (voteIndex > -1) {
-  // 		//remove vote
-  // 		settings.votes.splice(voteIndex, 1);
-  // 		styles = {
-  // 			background: 'transparent',
-  // 			color: '#fff'
-  // 		}
-  // 	} else {
-  // 		if (settings.votes.length < 5) {
-
-  // 		} else {
-  // 			return alert('You can only vote for five pieces.');
-  // 		}
-  // 	}
-
-  // $voteSlide.find('.artjam-vote-button').toggleClass('is-selected').css(styles)
-  // };
-
-  const elementIdToVoteId = (id) => id.split("_").pop();
-
-  const saveStoredSettings = () =>
-    localStorage.setItem("artJamInfo", JSON.stringify(settings));
-  const fetchVotes = async (twitchId) => {
-    console.log("Fetching votes");
-    const response = await fetch(`${API_URL}/api/user/${twitchId}/votes`, {
-      method: "GET",
-    });
-    return response;
-  };
-
-  const submitVotes = async () => {
-    if (!settings.user.twitch_id) {
-      return (window.location.href = `${API_URL}/authenticate?votes=${settings.votes.join(
-        ","
-      )}`);
-    }
-
-    const response = await fetch(`${API_URL}/api/votes`, {
-      method: "POST",
-      body: JSON.stringify(settings),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        const { success } = data;
-        if (success) {
-          toast.success("Vote received successfully!");
-        }
-      });
-    return response;
-  };
-
-  /**
-   * Event Listeners
-   */
-  $(document).on("click", ".artjam-vote-button", function (e) {
-    const $slide = $(this).parent();
-    const voteId = elementIdToVoteId($slide.attr("id"));
-    toggleVote(voteId);
-  });
-
-  // $(document).on('click', '#submitvotes-button', e => {
-  // 	e.preventDefault();
-  // 	submitVotes();
-  // });
-
-  $(document)
-    .on("mouseenter", ".image-slide-anchor", (e) => {
-      $(e.currentTarget).css({ "z-index": 10 });
-    })
-    .on("mouseleave", ".image-slide-anchor", (e) =>
-      $(e.currentTarget).css({ "z-index": "inherit" })
-    );
-
   $(document).on("ready", function () {
-    toast.init();
+  
 
     $("body").append(svelteRoot);
 
@@ -210,51 +41,7 @@ import App from "./App.svelte";
 
     $(".image-slide-anchor").append(buttonTemplate);
 
-    if (urlParams.has("success") && urlParams.has("twitch_id")) {
-      console.log("saving cookie because of success & twitch_id params");
-      const twitchId = urlParams.get("twitch_id");
 
-      settings.user.twitchId = urlParams.get("twitch_id");
-      const twitchIdCookie = cookie.set(
-        "userTwitchId",
-        settings.user.twitchId,
-        {
-          expires: 14,
-          secure: "none",
-        }
-      );
-    }
 
-    const retrieveStoredSettings = window.localStorage.getItem("artJamInfo");
-
-    if (typeof retrieveStoredSettings === "string") {
-      const storedSettings = JSON.parse(retrieveVotesFromStorage);
-      settings = Object.assign(settings, storedSettings);
-      return settings;
-    }
-
-    const twitchIdFromCookie = cookie.get("userTwitchId");
-    if (typeof twitchIdFromCookie === "string") {
-      fetchVotes(twitchIdFromCookie)
-        .then((res) => res.json())
-        .then(({ user }) => {
-          if (user) {
-            const { votes, twitch_id, id, name } = user;
-
-            settings.user = user;
-            settings.votes = settings.user.votes.map((v) => v.piece_id);
-
-            settings?.votes.forEach((vote) => {
-              $(`#${YUI_PREFIX}${yui_gallery_id}${vote}`)
-                .find(".artjam-vote-button")
-                .toggleClass("is-selected");
-            });
-
-            app.$set({
-              user: settings.user,
-            });
-          }
-        });
-    }
   });
 })(window);
