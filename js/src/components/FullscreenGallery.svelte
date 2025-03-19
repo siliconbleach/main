@@ -1,5 +1,4 @@
 <script>
-console.log("Fullscreen Swipable Gallery is active!");
   import { onMount } from 'svelte';
   let images = [
     { src: '/path-to-your-image1.jpg', title: 'Artwork 1', medium: 'Oil on Canvas', date: '2024' },
