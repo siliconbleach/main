@@ -1,72 +1,57 @@
-import svelte from 'rollup-plugin-svelte';
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
-import livereload from 'rollup-plugin-livereload';
-import { terser } from 'rollup-plugin-terser';
-import postcss from 'rollup-plugin-postcss';
-const production = !process.env.ROLLUP_WATCH;
-
 export default {
-	input: 'src/main.js',
+	input: "./app.js",
 	output: {
-		sourcemap: true,
-		format: 'iife',
-		name: 'app',
-		file: 'public/build/bundle.js'
+	  file: "../../scripts/artjam.js",
+	  sourcemap: true,
+	  format: "iife",
+	  name: "app",
 	},
 	plugins: [
-		postcss({ extract: true }),
-		svelte({
-			// enable run-time checks when not in production
-			dev: !production,
-			// we'll extract any component CSS out into
-			// a separate file - better for performance
-			css: css => {
-				css.write('public/build/bundle.css');
-			}
+	  postcss({
+		plugins: [
+		  postcssPresetEnv({
+			autoprefixer: { grid: true },
+			stage: 3,
+			features: {
+			  "nesting-rules": true,
+			},
+		  }),
+		],
+	  }),
+	  svelte({
+		extensions: [".svelte"],
+		include: "**/*.svelte",
+		preprocess: sveltePreprocess({
+		  postcss: true,
 		}),
-
-		// If you have external dependencies installed from
-		// npm, you'll most likely need these plugins. In
-		// some cases you'll need additional configuration -
-		// consult the documentation for details:
-		// https://github.com/rollup/plugins/tree/master/packages/commonjs
-		resolve({
-			browser: true,
-			dedupe: ['svelte']
-		}),
-		commonjs(),
-
-		// In dev mode, call `npm run start` once
-		// the bundle has been generated
-		!production && serve(),
-
-		// Watch the `public` directory and refresh the
-		// browser on changes when not in production
-		!production && livereload('public'),
-
-		// If we're building for production (npm run build
-		// instead of npm run dev), minify
-		production && terser()
+		emitCss: false,
+		compilerOptions: {
+		  generate: "dom", // ✅ Ensure it's "dom" if running in browser
+		  hydratable: true,
+		  customElement: false,
+		},
+	  }),
+	  resolve({
+		browser: true,
+		dedupe: ["svelte"],
+		exportConditions: ["svelte", "module", "import"],
+		extensions: [".mjs", ".js", ".json", ".svelte"],
+	  }),
+	  commonjs(), // ✅ Process CommonJS after resolving dependencies
+	  babel({
+		babelHelpers: "bundled",
+		extensions: [".js", ".mjs", ".html", ".svelte"],
+		exclude: ["node_modules/**"],
+	  }),
+	  json({
+		include: "node_modules/**",
+		exclude: ["node_modules/foo/**", "node_modules/bar/**"],
+		preferConst: true,
+		indent: "  ",
+		compact: true,
+		namedExports: true,
+	  }),
+	  production && terser(),
 	],
-	watch: {
-		clearScreen: false
-	}
-};
-
-function serve() {
-	let started = false;
-
-	return {
-		writeBundle() {
-			if (!started) {
-				started = true;
-
-				require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
-					stdio: ['ignore', 'inherit', 'inherit'],
-					shell: true
-				});
-			}
-		}
-	};
-}
+  };
+  
