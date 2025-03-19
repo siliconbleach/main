@@ -1,1 +1,4 @@
+<!-- Include Svelte via CDN -->
+<script src="https://cdn.jsdelivr.net/npm/svelte@3.44.0"></script>
+
 <squarespace:script src="artjam.js" combo="false" />
