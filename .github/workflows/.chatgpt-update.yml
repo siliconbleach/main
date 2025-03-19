@@ -24,7 +24,7 @@ jobs:
 
       - name: Commit and push changes
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.CHATGPT_TAT }}
         run: |
           git add .
           git commit -m "Automated update from ChatGPT"
