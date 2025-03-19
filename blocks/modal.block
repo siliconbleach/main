@@ -1,0 +1,9 @@
+<div class="modal-overlay" id="imageModal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+        <span class="modal-nav modal-prev">&#10094;</span>
+        <img id="modalImage" src="" alt="">
+        <p class="modal-caption" id="modalCaption"></p>
+        <span class="modal-nav modal-next">&#10095;</span>
+    </div>
+</div>
