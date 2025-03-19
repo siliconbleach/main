@@ -3,6 +3,8 @@
 
   import VoteManager from "./components/VoteManager.svelte";
   import ContestGallery from "./components/ContestGallery.svelte";
+  import FullScreenGallery from './components/FullscreenGallery.svelte';
+    import FullscreenGallery from "./components/FullscreenGallery.svelte";
 
   const API_URL = "https://artofkoko.com";
   const ARTJAM_ID = 5;
@@ -67,3 +69,4 @@
 
 <VoteManager {user} on:togglevote={handleToggle} {handleSubmit} />
 <ContestGallery {contest} on:togglevote={handleToggle} />
+<FullscreenGallery />
