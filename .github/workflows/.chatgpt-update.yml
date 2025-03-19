@@ -22,10 +22,11 @@ jobs:
         run: |
           echo "ChatGPT updated your code!" >> update_log.txt
 
-      - name: Commit and push changes
-        env:
-          GH_TOKEN: ${{ secrets.CHATGPT_TAT }}
-        run: |
-          git add .
-          git commit -m "Automated update from ChatGPT"
-          git push https://${{ secrets.GH_TOKEN }}@github.com/siliconbleach/main.git master
+- name: Commit and push changes
+  env:
+    GITHUB_TOKEN: ${{ secrets.CHATGPT_TAT }}
+  run: |
+    git remote set-url origin https://x-access-token:${{ secrets.CHATGPT_TAT }}@github.com/siliconbleach/main.git
+    git add .
+    git commit -m "Automated update from ChatGPT"
+    git push origin master
