@@ -2,31 +2,31 @@ name: ChatGPT Code Updates
 
 on:
   workflow_dispatch:  # Allows manual trigger
-  pull_request:
+  push:
     branches:
-      - master  # Change this if your branch is different
+      - master  # ✅ Make sure this matches your actual branch name
 
 jobs:
   update_code:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Git
         run: |
-          git config --global user.name "ChatGPT-AI"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
-      - name: Make changes
+      - name: Make a test change
         run: |
           echo "ChatGPT updated your code!" >> update_log.txt
 
-- name: Commit and push changes
-  env:
-    GITHUB_TOKEN: ${{ secrets.CHATGPT_TAT }}
-  run: |
-    git remote set-url origin https://x-access-token:${{ secrets.CHATGPT_TAT }}@github.com/siliconbleach/main.git
-    git add .
-    git commit -m "Automated update from ChatGPT"
-    git push origin master
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.CHATGPT_TAT }}
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.CHATGPT_TAT }}@github.com/siliconbleach/main.git
+          git add .
+          git commit -m "Automated update from ChatGPT"
+          git push origin master
